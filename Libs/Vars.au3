@@ -1,13 +1,14 @@
 #include-once
 #cs --------------------------------------------------------------------
 
-AutoIt Version: 3.3.8.1
+ AutoIt Version: 3.3.8.1
  Author: Sp1ker (spiker@pmpc.ru)
- Program: VPN Reconnect
- Site: https://github.com/spikerwork/VPN_Reconnect
+ Program: Nas Test Script
+ Site: https://github.com/spikerwork/NasTestScript
 
  Script Function:
-	The main library for VPN Reconnect
+
+	The main library for Nas Test Script
 	Contains global vars used in scripts
 
 #ce --------------------------------------------------------------------

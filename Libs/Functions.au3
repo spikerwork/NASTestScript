@@ -3,11 +3,12 @@
 
  AutoIt Version: 3.3.8.1
  Author: Sp1ker (spiker@pmpc.ru)
- Program: WakeUp Script Time Checker (WSTC)
- Site: https://github.com/spikerwork/WakeUp
+ Program: Nas Test Script
+ Site: https://github.com/spikerwork/NasTestScript
 
  Script Function:
-	The main library for WakeUp Script Time Checker (WSTC)
+
+	The main library for Nas Test Script
 	Contains main functions
 
 #ce --------------------------------------------------------------------

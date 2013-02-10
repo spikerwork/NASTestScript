@@ -2,11 +2,12 @@
 
  AutoIt Version: 3.3.8.1
  Author: Sp1ker (spiker@pmpc.ru)
- Program: VPN Reconnect
- Site: https://github.com/spikerwork/VPN_Reconnect
+ Program: Nas Test Script
+ Site: https://github.com/spikerwork/NasTestScript
 
  Script Function:
-	The main library for VPN_Reconnect
+
+	The main library for Nas Test Script
 	Include external and internal libs
 
 #ce --------------------------------------------------------------------
@@ -22,6 +23,6 @@
 #include <Crypt.au3>
 
 ; My external libs
-#include "Vars.au3" ; Network functions
+#include "Vars.au3" ; Vars functions
 #include "Functions.au3" ; Network functions
 #include "AzUnixTime.au3" ; Unix timestamp
