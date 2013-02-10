@@ -121,214 +121,137 @@
    EndFunc
 
 
-
-   ; Computer activity gatherer Daemon
-   Func ActivityDaemon()
-
-	IniWrite($timeini, "Start", "WMI", GetUnixTimeStamp())
-	IniWrite($timeini, "WMI", "Fresh", 1)
-	history ("Start WMI daemon...")
-
-
-	  $objWMIService = ObjGet("winmgmts:{impersonationLevel=impersonate}\\.\root\cimv2")
-
-	  Local $time=0 ; Cycle timer
-	  Local $worktime=0 ; All timer
-
-	  While 1
-
-		If IniRead($timeini, "WMI", "Fresh", 1)==1 Then
-
-			If IniRead($timeini, "Start", "WMI", 0)+$TimeStampShift < GetUnixTimeStamp() Then
-			IniWrite($timeini, "WMI", "Fresh", 0)
-			IniWrite($timeini, "Start", "Resume", GetUnixTimeStamp())
-			EndIf
-
-		Else
-		history ("Old WMI. Checking time skipped")
-		EndIf
-
-
-	  $CPULoadArray[0]="0"
-	  $HDDLoadArray[0]="0"
-
-	  if $worktime==0 Then
-		 $run = 1
-	  Else
-		 $run=$worktime/5+1
-	  EndIf
-
-
-	  $time=$time+0.5
-
-		If $cpu_need==0 and $hdd_need==0 Then
-		history ("Skiping WMI daemon. ")
-		IniWrite($timeini, "WMI", "Fresh", 0)
-		IniWrite($timeini, "Start", "Resume", GetUnixTimeStamp())
-		ExitLoop
-		EndIf
-
-	  ; Gathering CPU WMI Information
-		If $cpu_need==1 Then
-
-		 $WMIQuery = $objWMIService.ExecQuery("SELECT * FROM Win32_Processor", "WQL",0x10+0x20)
-		 For $obj In $WMIQuery
-			  $Current_Clock = $obj.CurrentClockSpeed
-			  $Load = $obj.LoadPercentage
-		 Next
-
-		 _ArrayAdd($CPULoadArray, $Load)
-
-		 $CPU_Clock = "Current CPU Clock: " & $Current_Clock & " MHz"
-
-
-
-			$CPU_Load = "Average CPU Load: " & $Load & " %"
-
-		 Else
-			$CPU_Clock = ""
-			$CPU_Load = "CPULoad monitoring off"
-
-		 EndIf
-
-	  ; Gathering HDD WMI Information
-
-		If $hdd_need==1 Then
-
-		 $WMIQuery2 = $objWMIService.ExecQuery ("SELECT * FROM Win32_PerfFormattedData_PerfDisk_PhysicalDisk WHERE Name = '_Total'")
-
-		 For $obj2 In $WMIQuery2
-			   $hdd_activity = $obj2.PercentDiskTime
-			   $hdd_bytes = $obj2.DiskBytesPerSec
-		 Next
-
-		_ArrayAdd($HDDLoadArray, $hdd_activity)
-
-		$HDD_bytes = "HDD bytes sent (DiskBytesPerSec): " &  $hdd_bytes
-
-
-		$HDD = "Average HDD Load (PercentDiskTime): " &  $hdd_activity
-
-		 Else
-
-			$HDD = "HDDLoad monitoring off"
-			$HDD_bytes=" "
-
-		 EndIf
-
-		 $idle = "Elapsed Time: " & $time & " sec"
-
-		 ToolTip("Cycle number " & $run & @CRLF & $CPU_Load & @CRLF & $CPU_Clock & @CRLF & $HDD & @CRLF & $HDD_bytes& @CRLF & $idle, 2000, 0, @ScriptName, 2,4)
-
-		 Sleep(500)
-
-	  if $time >= 5 Then
-
-	  Local $i=0
-	  Local $l=0
-	  Local $r
-
-			; CPU Array
-
-			If $cpu_need==1 Then
-
-			   $r=Ubound($CPULoadArray)
-			   Do
-			   $i=$i+1
-			   $l=$l+$CPULoadArray[$i]
-			   Until $i = $r-1
-			   $CPULoadArray=0
-			   Global $CPULoadArray[1]
-
-			   $r=$r-1
-			   $AverageLoadCPU=$l/$r
-
-				$AverageLoadCPU=StringFormat ( "%d", $AverageLoadCPU)
-
-
-			   ; CPU Load check
-			   $cpu_percent_need=Number($cpu_percent_need)
-			   $AverageLoadCPU=Number($AverageLoadCPU)
-
-				history ("Current CPU Clock: " & $Current_Clock & " MHz")
-
-
-			   If $AverageLoadCPU == "" Then $AverageLoadCPU=100
-
-				  If $AverageLoadCPU > $cpu_percent_need Then
-
-					 history ("Average CPU Load is too high — " & $AverageLoadCPU & "%. Default is " & $cpu_percent_need & "%")
-					 $worktime=$worktime+$time
-					 $time=0
-
-				  Else
-
-					 history ("Average CPU Load is low than — " & $cpu_percent_need & "%")
-
-				  EndIf
-
-			EndIf
-
-			;--------------
-			; HDD Array
-
-			If $hdd_need==1 Then
-
-			   $r=Ubound($HDDLoadArray)
-			   $i=0
-			   $l=0
-
-			   Do
-			   $i=$i+1
-			   $l=$l+$HDDLoadArray[$i]
-			   Until $i = $r-1
-			   $HDDLoadArray=0
-			   Global $HDDLoadArray[1]
-
-			   $r=$r-1
-			   $AverageLoadHDD=$l/$r
-			   $AverageLoadHDD=StringFormat ( "%d", $AverageLoadHDD)
-
-			   ; HDD Load Check
-			   $hdd_percent_need=Number($hdd_percent_need)
-			   $AverageLoadHDD=Number($AverageLoadHDD)
-
-			   If $AverageLoadHDD == "" Then $AverageLoadHDD=100
-
-			   history ("HDD bytes sent (DiskBytesPerSec): " &  $hdd_bytes)
-
-				  If $AverageLoadHDD > $hdd_percent_need Then
-
-					 history ("Average HDD Load is too high — " & $AverageLoadHDD & "%. Default is " & $hdd_percent_need & "%")
-					 $worktime=$worktime+$time
-					 $time=0
-
-				  Else
-
-					 history ("Average HDD Load is low than — " & $hdd_percent_need & "%")
-
-				  EndIf
-
-			EndIf
-
-			if $time==0 Then history ("Next cycle initialized...")
-			If $time<>0 Then ExitLoop
-
-
-	  EndIf
-	  WEnd
-
-   $worktime +=5
-
-   history ("System enter IDLE state, after " & $worktime & " seconds. " & $run & " cycles")
-
-	; Time records
-
-	$TimeStampStartScript=IniRead($timeini, "Start", "Time", 0)
-	$TimeStampStartWMI=IniRead($timeini, "Start", "WMI", 0)
-	$TimeStampResumeWMI=IniRead($timeini, "Start", "Resume", 0)
-
-
-	Return $worktime & "|" & $run & "|" & $TimeStampStartScript & "|" & $TimeStampStartWMI & "|" & $TimeStampResumeWMI
+	; Add to Firewall Exception. Need admin rights
+	; #FUNCTION# ====================================================================================================================
+	; Name ..........: AddToFirewall
+	; Description ...:
+	; Syntax ........: AddToFirewall ($appName, $applicationFullPath[, $appSet = 1])
+	; Parameters ....: $appName             - Name of program.
+	;                  $applicationFullPath - Full path to program (dir+exe).
+	;                  $appSet              - [optional]. Default is 1 - on. 0 Delete program from firewall
+	; Return values .: None
+	; Author ........: Sp1ker
+	; Example .......: AddToFirewall($WakeServer, $ScriptFolder & "\" & $WakeServer,0); $WakeServer="WakeServer.exe", $ScriptFolder=@HomeDrive & "\WakeScript"
+	; ===============================================================================================================================
+	Func AddToFirewall ($appName, $applicationFullPath, $appSet=1)
+
+	If $appSet==1 Then
+	  RunWait ('netsh advfirewall firewall add rule name="' & $appName &'" dir=in action=allow program="' & $applicationFullPath & '" enable=yes profile=any')
+	ElseIf $appSet==0 Then
+	  RunWait ('netsh advfirewall firewall del rule name="' & $appName &'" dir=in program="' & $applicationFullPath )
+	EndIf
 
 	EndFunc
+
+
+	; IMPORTANT MAKE A COPY OF SCRIPT BEFORE DELETION
+	; Deletes the running script
+	; Author MHz
+
+	Func _SelfDelete($iDelay = 0)
+		Local $sCmdFile
+		FileDelete(@TempDir & "\scratch.bat")
+		$sCmdFile = 'ping -n ' & $iDelay & '127.0.0.1 > nul' & @CRLF _
+				& ':loop' & @CRLF _
+				& 'del "' & @ScriptFullPath & '"' & @CRLF _
+				& 'if exist "' & @ScriptFullPath & '" goto loop' & @CRLF _
+				& 'del ' & @TempDir & '\scratch.bat'
+		FileWrite(@TempDir & "\scratch.bat", $sCmdFile)
+		history ("Function _SelfDelete() is called for file " & @ScriptFullPath)
+		Run(@TempDir & "\scratch.bat", @TempDir, @SW_HIDE)
+
+	EndFunc
+
+
+;
+   ; Work with computer IP settings
+   ;
+
+    ; Get the Hardware IDs and GUID of current network adapter. Addon for IPDetail()
+   Func _GetPNPDeviceID($sAdapter)
+	  Local $arra[2]
+
+	  ;history ("Call to GetPNPDeviceID(). Get the Hardware ID of network adapter")
+	   Local $oWMIService = ObjGet("winmgmts:{impersonationLevel = impersonate}!\\" & "." & "\root\cimv2")
+	   Local $oColItems = $oWMIService.ExecQuery('Select * From Win32_NetworkAdapter Where Name = "' & $sAdapter & '"', "WQL", 0x30)
+	   If IsObj($oColItems) Then
+		   For $oObjectItem In $oColItems
+			   $arra[0]=$oObjectItem.PNPDeviceID
+			   $arra[1]=$oObjectItem.GUID
+
+			   ;history ("Found Hardware ID " & $oObjectItem.PNPDeviceID & " for device " & $sAdapter)
+			   ;history ("Found Hardware GUID " & $oObjectItem.GUID & " for device " & $sAdapter)
+
+			   Return $arra
+		   Next
+	   EndIf
+	   Return SetError(1, 0, "Unknown")
+	EndFunc
+
+   ; Get main information of network adapters
+   ; Returns:
+   ;
+   ; $avArray[0][$iCount] — Description
+   ; $avArray[1][$iCount] — IPAddress(0)
+   ; $avArray[2][$iCount] — MACAddress
+   ; $avArray[3][$iCount] — IPSubnet(0)
+   ; $avArray[4][$iCount] — Ven/Dev info
+   ; $avArray[5][$iCount] — Physic (1 or 0)
+   ; $avArray[6][$iCount] — GUID of adapter
+   ;
+   ; This function from http://www.autoitscript.com/forum/topic/128276-display-ip-address-default-gateway-dns-servers/
+
+   Func _IPDetail()
+    ;history ("Call to network function IPDetail(). Get main information of network adapters")
+	Local $iCount = 0
+    Local $oWMIService = ObjGet("winmgmts:{impersonationLevel = impersonate}!\\" & "." & "\root\cimv2")
+    Local $oColItems = $oWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration Where IPEnabled = True", "WQL", 0x30)
+	Local $avArray[7][10]
+	Local $physic
+	Local $descibe[2]
+
+    If IsObj($oColItems) Then
+        For $oObjectItem In $oColItems
+
+		   Local $desc = $oObjectItem.Description
+		   $descibe = _GetPNPDeviceID($desc)
+
+
+			   $avArray[0][$iCount] = _IsString($oObjectItem.Description)
+			   $avArray[1][$iCount] = _IsString($oObjectItem.IPAddress(0))
+			   $avArray[2][$iCount] = _IsString($oObjectItem.MACAddress)
+			   $avArray[3][$iCount] = _IsString($oObjectItem.IPSubnet(0))
+			   $avArray[4][$iCount] = $descibe[0]
+			   $avArray[6][$iCount] = $descibe[1]
+
+
+			If StringInStr($descibe[0], "Ven_") Or StringInStr($descibe[0], "usb") Then
+			$avArray[5][$iCount] = 1
+			$physic += 1
+
+			history ("This is physical adapter (IP: " & $avArray[1][$iCount] & ") - " & $avArray[0][$iCount] & ". Using for it #" & $iCount)
+			Else
+			history ($avArray[0][$iCount] & " this is virtual adapter (IP: " & $avArray[1][$iCount] & ")")
+
+			$avArray[5][$iCount] = 0
+			EndIf
+
+
+			$iCount += 1
+
+		 Next
+
+		history ("At least found " & $iCount & " active network adapters and " & $physic & " of them is physical (PCI or USB)")
+
+		Return $avArray
+    EndIf
+    Return SetError(1, 0, $aReturn)
+   EndFunc
+
+   ; Check string function for IPDetail()
+   Func _IsString($sString)
+    If IsString($sString) Then
+        Return $sString
+    EndIf
+    Return "Not Available"
+   EndFunc

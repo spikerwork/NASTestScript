@@ -1,7 +1,9 @@
 $ScriptStartTime=GetUnixTimeStamp() ; Each script start time
 
 history ("Program started (" & @ScriptName & "). UnixTimeStamp " & $ScriptStartTime)
-history ("Work directory — " & @ScriptDir)
+history ("Working directory — " & @ScriptDir)
+
+If $DefaultScriptFolder<>$ScriptFolder Then history ("Script use different directory, not default — " &  $DefaultScriptFolder)
 
 ;;;; Admin checkin ;;;;
 ;#RequireAdmin Enable this option causes loop-problem!
@@ -20,7 +22,7 @@ history ("Run on system: " & $osversion & "(" & @OSBuild & ") " & $osarch & " " 
 ;
 
 
-;;;; Detect Client/Server install ;;;;
+;;;; Determining whether a program is installed  ;;;;
 If FileExists($inifile)==1 Then
 
    $ScriptInstalled=1

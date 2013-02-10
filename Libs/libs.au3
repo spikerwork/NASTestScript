@@ -2,12 +2,12 @@
 
  AutoIt Version: 3.3.8.1
  Author: Sp1ker (spiker@pmpc.ru)
- Program: Nas Test Script
+ Program: Nas Test Script (NTS)
  Site: https://github.com/spikerwork/NasTestScript
 
  Script Function:
 
-	The main library for Nas Test Script
+	The main library for Nas Test Script (NTS)
 	Include external and internal libs
 
 #ce --------------------------------------------------------------------
@@ -24,5 +24,5 @@
 
 ; My external libs
 #include "Vars.au3" ; Vars functions
-#include "Functions.au3" ; Network functions
+#include "Functions.au3" ; Main functions
 #include "AzUnixTime.au3" ; Unix timestamp

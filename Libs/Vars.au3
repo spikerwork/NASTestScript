@@ -3,34 +3,33 @@
 
  AutoIt Version: 3.3.8.1
  Author: Sp1ker (spiker@pmpc.ru)
- Program: Nas Test Script
+ Program: Nas Test Script (NTS)
  Site: https://github.com/spikerwork/NasTestScript
 
  Script Function:
 
-	The main library for Nas Test Script
+	The main library for Nas Test Script (NTS)
 	Contains global vars used in scripts
 
 #ce --------------------------------------------------------------------
 
    ; ===================================================================
-   ; 								Vars
+   ; 								Vars and Path
    ; ===================================================================
 
 	;;;
 	;;; Files and directories ;;;
 	;;;
 
-Global $log=1
-Global $linedebug=0
 
 ; Folder for script
-Global $ScriptName = "VPN_Reconnect" ; Name
-Global $ScriptFolder=@HomeDrive & "\" & $ScriptName ; Script directory
+Global $ScriptName = "NasTestScript" ; Name
+Global $DefaultScriptFolder=@HomeDrive & "\" & $ScriptName ; Script directory
+Global $ScriptFolder=@ScriptDir ; Script directory
 
-; Ini file
-Global $inifile = "settings.ini" ; Main settings of scipt
-$inifile = $ScriptFolder & "\" & $inifile
+; Ini files
+Global $inifile = $ScriptFolder & "\" & "settings.ini" ; Main settings of scipt
+Global $resultini = $ScriptFolder & "\" & "result.ini" ; Results
 
 ; Tempfile
 Global $tempfile=_TempFile($ScriptFolder, "tst_", ".txt", 7) ; Temp file
@@ -39,18 +38,18 @@ Global $tempfile=_TempFile($ScriptFolder, "tst_", ".txt", 7) ; Temp file
 Global $logfile = "Log_" & @ScriptName & ".txt" ; Generate log file for current script
 $logfile = $ScriptFolder & "\" & $logfile
 
-
+; Program timer
 Global $ScriptStartTime ; Script start time (head.au3)
 Global $ScriptEndTime ; Script end time (foot.au3)
 
 ; Icon | used only for build.exe script
-Global $icon="net.ico"
+Global $icon="nas.ico"
 
 ; Names of scripts
-Global  $VPNReconnect="VPNReconnect.exe"
-Global  $VPNSettings="VPNSettings.exe"
+Global  $NTS="NasTestScript.exe"
+Global  $NTS_Settings="NTS_Settings.exe"
 
-Global 	$FilesArray[2]=[$VPNReconnect, $VPNSettings]
+Global 	$FilesArray[2]=[$NTS, $NTS_Settings]
 
 	;;;
 	;;; Other global vars ;;;
@@ -66,31 +65,29 @@ Global $ScriptInstalled
 Global $filesinfolder=0
 Global $F_arra ; Array of detected files
 
-
 	;;;
 	;;; Vars may store in ini files
 	;;;
-#CS
-   ; Main settings ($inifile)
-   Global $TCPport = IniRead($inifile, "Network", "TCPport", 65432 ) ; TCP port for server. Client has TCPport+1
-   Global $UDPport = IniRead($inifile, "Network", "UDPport", 7 ) ; UDP port for MagicPacket.
-   Global $ServerIP = IniRead($inifile, "Network", "IP", "10.0.0.254" ) ; Default Server IP address
-   Global $Client_IP = IniRead($inifile, "Network", "Client_IP", "192.168.1.3" ) ; Default Client IP address
-   Global $MAC = IniRead($inifile, "Network", "MAC", "00:24:1D:12:CC:3B" ) ; Default Server IP address
-   Global $log = IniRead($inifile, "All", "Log", 1 ) ; Log on/off. Always on.
-   Global $linedebug = IniRead($inifile, "All", "LineDebug", 0 )  ; Enables trayicondebug mode + traytip func. Always off.
-   Global $serverconsole = IniRead($inifile, "All", "Console", 0 )  ; Server console on/off. Server always on. Client - off.
-   Global $ClientPause = IniRead($inifile, "Time", "ClientPause", 2 )
-   Global $ServerPause = IniRead($inifile, "Time", "ServerPause", 3 )
-   Global $WakeUpPause = IniRead($inifile, "Time", "WakeUpPause", 180 )
-   Global $server_broadcast=IniRead($inifile, "Network", "Broadcast", "10.0.0.255")
-   Global $OldGUID=IniRead($inifile, "PowerPlan", "Old", "")
-   Global $NewGUID=IniRead($inifile, "PowerPlan", "New", "")
 
-   ; Client settings ($resultini)
-   Global $testrepeats = IniRead($resultini, "Client", "TestRepeat", 5)
-   Global $cpu_need = IniRead($resultini, "Client", "Cpu_activity",  1) ; Now always on. Will`be fixed when Xperf implemented
-   Global $cpu_percent_need = IniRead($resultini, "Client", "CPU_load",  5)
-   Global $hdd_need = IniRead($resultini, "Client", "Hdd_activity",  1)
-   Global $hdd_percent_need = 0 ; Always off. Used before for old system (WinXP and Vista).
-#CE
+	; NAS default settings
+	Global $NAS_IP = IniRead($inifile, "Network", "NAS_IP", "192.168.1.1" ) ; NAS IP
+	Global $FTPport = IniRead($inifile, "Network", "FTPport", 21 ) ; NAS FTP port
+	Global $FTPFolder = IniRead($inifile, "Network", "FTPFolder", "ftpfolder" ) ; FTP folder/path
+	Global $HTTPport = IniRead($inifile, "Network", "HTTPport", 8080 ) ; NAS HTTP port
+	Global $HTTPFolder = IniRead($inifile, "Network", "HTTPPath", "pathname" ) ; HTTP folder/path
+	Global $SMBLetter = IniRead($inifile, "Network", "SMBLetter", "Z:\" ) ; NAS samba share mount point
+	Global $SMBFolder = IniRead($inifile, "Network", "SMBFolder", "foldername" ) ; NAS FTP port
+
+	; Main settings
+	Global $log = IniRead($inifile, "All", "Log", 1 ) ; Log on/off. Always on.
+	Global $linedebug = IniRead($inifile, "All", "LineDebug", 0 )  ; Enables trayicondebug mode + traytip func. Always off.
+
+	; Client settings
+	Global $TestRepeats = IniRead($inifile, "Client", "TestRepeat", 5) ; Default test repeat
+	Global $ClientPause = IniRead($inifile, "Client", "ClientPause", 5 ) ; Default pause between actions
+	Global $ClearCache = IniRead($inifile, "Client", "ClearCache", 1 ) ; Default clear cache (Prefetch) before each test
+
+	; Powerplan changes
+	Global $OldGUID=IniRead($inifile, "PowerPlan", "Old", "")
+	Global $NewGUID=IniRead($inifile, "PowerPlan", "New", "")
+

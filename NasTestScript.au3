@@ -2,12 +2,12 @@
 
  AutoIt Version: 3.3.8.1
  Author: Sp1ker (spiker@pmpc.ru)
- Program: Nas Test Script
+ Program: Nas Test Script (NTS)
  Site: https://github.com/spikerwork/NasTestScript
 
  Script Function:
 
-   The main part of Nas Test Script
+   The main part of Nas Test Script (NTS)
 
 #ce ----------------------------------------------------------------------------
 
@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.0
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.4
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
