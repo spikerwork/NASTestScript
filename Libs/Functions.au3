@@ -86,8 +86,7 @@
 	; Example .......: No
 	; ===============================================================================================================================
 	Func currenttime ()
-	  $currentdate=@HOUR & ":" & @MIN & ":" & @SEC & ":" & @MSEC
-	  Return $currentdate
+	  Return (@HOUR & ":" & @MIN & ":" & @SEC & ":" & @MSEC)
 	EndFunc
 
    ; Logging function
@@ -255,3 +254,47 @@
     EndIf
     Return "Not Available"
    EndFunc
+
+	; #FUNCTION# ====================================================================================================================
+	; Name ..........: CheckDPI
+	; Description ...: Determine Font DPI in Windows Vista/7/8
+	; Syntax ........: CheckDPI()
+	; Parameters ....: none
+	; Return values .: Array[3]=[$DPI, $Fontsize, $Fontweight]
+	; Author ........: Your Name
+	; Modified ......:
+	; Remarks .......:
+	; Related .......:
+	; Link ..........:
+	; Example .......: No
+	; ===============================================================================================================================
+	Func CheckDPI()
+
+		Local $Fontsize ; GUI font size
+		Local $Fontweight ; GUI font bold
+		Local $DPI = RegRead("HKCU\Control Panel\Desktop\", "LogPixels") ; Font DPI, works on Windows Vista/7/8
+
+			Select
+				case $DPI==96
+					$Fontsize=6
+					$Fontweight=400
+				case $DPI==120
+					$Fontsize=8.5
+					$Fontweight=800 ;400 = normal
+				case $DPI=144
+					$Fontsize=9
+					$Fontweight=800 ;400 = normal
+				case $DPI="" ; Empty means 100% (96 DPI)
+					$DPI=96
+					$Fontsize=6
+					$Fontweight=800 ;400 = normal
+				case else
+					$Fontsize=8.5
+					$Fontweight =800 ;400 = normal
+			EndSelect
+
+		Local $DPI_array[3]=[$DPI, $Fontsize, $Fontweight]
+
+	Return $DPI_array
+
+	EndFunc

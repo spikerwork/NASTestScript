@@ -7,6 +7,7 @@ If $DefaultScriptFolder<>$ScriptFolder Then history ("Script use different direc
 
 ;;;; Admin checkin ;;;;
 ;#RequireAdmin Enable this option causes loop-problem!
+
 If IsAdmin()==0 Then
    MsgBox(0, "", "Для запуска программы необходимы права администратора")
    history ("Admin check failed")
@@ -16,13 +17,13 @@ Else
 EndIf
 ;;;;
 
+;;;; System information ;;;;
+Local $Current_DPI=CheckDPI()
+history ("Run on system: " & @OSVersion & "(" & @OSBuild & ") " & @OSArch & " " & "Language" & " (" & @MUILang & ") [0419=Rus 0409=En]"  & " autoitX64 - " & @AutoItX64 )
+history ("Desktop settings: " & @DesktopWidth & "x" & @DesktopHeight & " : " & @DesktopDepth & "Bit @ " & @DesktopRefresh & "Hz. DPI " & $Current_DPI[0] )
+;;;;
 
-; Systeminfo
-history ("Run on system: " & $osversion & "(" & @OSBuild & ") " & $osarch & " " & "Language" & " (" & $oslang & ") [0419=Rus 0409=En]"  & " autoitX64 - " & @AutoItX64 )
-;
-
-
-;;;; Determining whether a program is installed  ;;;;
+;;;; Determining whether a program is installed ;;;;
 If FileExists($inifile)==1 Then
 
    $ScriptInstalled=1
@@ -39,6 +40,7 @@ EndIf
 ;;;
 ;;; Tray settings
 ;;;
+
 WinMinimizeAll()
 #NoTrayIcon
 Opt("TrayIconDebug",$linedebug)
@@ -49,4 +51,12 @@ TraySetOnEvent($TRAY_EVENT_PRIMARYDOUBLE, "OpenLog") ; Function called when doub
 TraySetIcon(@Scriptname) ; Sets tray icon
 TraySetState()
 
+;;;
+;;; Opt settings
+;;;
 
+Opt("MustDeclareVars", 1) ; All vars must set
+Opt("WinTitleMatchMode", 2) ; 2 = Match any substring in the title
+Opt("GUICoordMode", 1)    ;1=absolute, 0=relative, 2=cell
+Opt("GUIOnEventMode", 0)  ;0=disabled, 1=OnEvent mode enabled
+Opt("GUIEventOptions",0)  ;0=default, 1=just notification, 2=GuiCtrlRead tab index

@@ -55,15 +55,11 @@ Global 	$FilesArray[2]=[$NTS, $NTS_Settings]
 	;;; Other global vars ;;;
 	;;;
 
-; System info
-Global $osarch = @OSArch ; OS architecture
-Global $osversion = @OSVersion ; Version of OS
-Global $oslang=@MUILang ; Check system Language 0419=Rus 0409=En
-
 ; Detect install script, more info in libs/head.au3
 Global $ScriptInstalled
 Global $filesinfolder=0
 Global $F_arra ; Array of detected files
+
 
 	;;;
 	;;; Vars may store in ini files
