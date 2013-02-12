@@ -31,7 +31,7 @@ If FileExists($inifile)==1 Then
 
 Else
 
-   $ScriptInstalled=0
+   $ScriptInstalled=1
    history ("INI file not found, use default vars")
 
 EndIf

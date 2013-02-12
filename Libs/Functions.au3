@@ -201,7 +201,7 @@
    ; This function from http://www.autoitscript.com/forum/topic/128276-display-ip-address-default-gateway-dns-servers/
 
    Func _IPDetail()
-    ;history ("Call to network function IPDetail(). Get main information of network adapters")
+    history ("Call to network function IPDetail(). Get main information of network adapters")
 	Local $iCount = 0
     Local $oWMIService = ObjGet("winmgmts:{impersonationLevel = impersonate}!\\" & "." & "\root\cimv2")
     Local $oColItems = $oWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration Where IPEnabled = True", "WQL", 0x30)
@@ -228,8 +228,10 @@
 			$avArray[5][$iCount] = 1
 			$physic += 1
 
-			history ("This is physical adapter (IP: " & $avArray[1][$iCount] & ") - " & $avArray[0][$iCount] & ". Using for it #" & $iCount)
+			history ($avArray[0][$iCount] & " this is physical adapter (IP: " & $avArray[1][$iCount] & "). Using for it #" & $iCount)
+
 			Else
+
 			history ($avArray[0][$iCount] & " this is virtual adapter (IP: " & $avArray[1][$iCount] & ")")
 
 			$avArray[5][$iCount] = 0
@@ -275,18 +277,15 @@
 		Local $DPI = RegRead("HKCU\Control Panel\Desktop\", "LogPixels") ; Font DPI, works on Windows Vista/7/8
 
 			Select
-				case $DPI==96
-					$Fontsize=6
+				case $DPI==96 Or $DPI=""
+					$DPI=96
+					$Fontsize=10
 					$Fontweight=400
 				case $DPI==120
 					$Fontsize=8.5
 					$Fontweight=800 ;400 = normal
 				case $DPI=144
 					$Fontsize=9
-					$Fontweight=800 ;400 = normal
-				case $DPI="" ; Empty means 100% (96 DPI)
-					$DPI=96
-					$Fontsize=6
 					$Fontweight=800 ;400 = normal
 				case else
 					$Fontsize=8.5

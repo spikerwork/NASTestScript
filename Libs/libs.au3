@@ -23,6 +23,7 @@
 #include <Crypt.au3>
 #include <GUIConstantsEx.au3>
 #include <WindowsConstants.au3>
+#include <ButtonConstants.au3>
 
 ; My external libs
 #include "Vars.au3" ; Vars functions

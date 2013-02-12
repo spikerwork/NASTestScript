@@ -66,7 +66,7 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	;;;
 
 	; NAS default settings
-	Global $NAS_IP = IniRead($inifile, "Network", "NAS_IP", "192.168.1.1" ) ; NAS IP
+	Global $NAS_IP = IniRead($inifile, "Network", "NAS_IP", "192.168.1.1") ; NAS IP
 	Global $FTPport = IniRead($inifile, "Network", "FTPport", 21 ) ; NAS FTP port
 	Global $FTPFolder = IniRead($inifile, "Network", "FTPFolder", "ftpfolder" ) ; FTP folder/path
 	Global $HTTPport = IniRead($inifile, "Network", "HTTPport", 8080 ) ; NAS HTTP port
@@ -83,9 +83,13 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 		$linedebug=1
 		EndIf
 		$linedebug = IniRead($inifile, "All", "LineDebug", $linedebug )  ; Enables trayicondebug mode + traytip func. Always off.
+
+	; NTS_Settings vars
 	Global $NTS_SettingsFormWidth=IniRead($inifile, "All", "SettingsFormWidth", 700)
 	Global $NTS_SettingsFormHeight=IniRead($inifile, "All", "SettingsFormHeight", 500)
 	Global $NTS_SettingsFormBackgroundColor=IniRead($inifile, "All", "FormBackgroundColor", 0xE2EEEF)
+	Global $NTS_SettingsFormGroupFont=IniRead($inifile, "All", "FormGroupFont", "Tahoma")
+	Global $NTS_SettingsFormMainFont=IniRead($inifile, "All", "FormMainFont", "Tahoma")
 
 	; Client settings
 	Global $TestRepeats = IniRead($inifile, "Client", "TestRepeat", 5) ; Default test repeat

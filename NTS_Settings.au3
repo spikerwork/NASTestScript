@@ -36,36 +36,40 @@
 ;;; Local vars
 
 ; GUI
-Local $Button_1
-Local $Button_2
-Local $Button_3
+
+Local $mainGui
+Local $FTP_PassiveMode_ctrl
+Local $NAS_IP_ctrl
+Local $FTP_Group
+
+
 
 ; Other
-Local $adapters=0
-Local $PhyAdapters=0, $MainAdapter, $MainAdapter_ip, $MainAdapter_MAC, $MainAdapter_netmask, $Adapter_GUID
-Local $t=0
+Local $ipdetails, $adapters=0, $PhyAdapters=0, $PhyAdapterName, $NetworkAdapterIp, $NetworkVirtualAdapterIp, $VirtualAdapterName
+Local $AdapterIPs[6] ; Maximum network adapters in system? if not script fails
+Local $t=0 ; Used for cycles
 
 ; Main frame
 
-If $ScriptInstalled==1 Then MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.")
-
-Local $ipdetails=_IPDetail() ; Gather information about network adapters
+$ipdetails=_IPDetail() ; Gather information about network adapters
 
 While $t <= UBound($ipdetails, 2)-1
 
-	if $ipdetails[0][$t]<>"" Then
+	If $ipdetails[0][$t]<>"" Then
 	$adapters+=1
-
+	$AdapterIPs[$t]=$ipdetails[1][$t]
 				If $ipdetails[5][$t]==1 Then
 
-				  $PhyAdapters +=1
-				  $MainAdapter=$ipdetails[0][$t]
-				  $MainAdapter_ip=$ipdetails[1][$t]
-				  $MainAdapter_MAC=$ipdetails[2][$t]
-				  $MainAdapter_netmask=$ipdetails[3][$t]
-				  $Adapter_GUID=$ipdetails[6][$t]
+					$PhyAdapters +=1
+					$PhyAdapterName=$ipdetails[0][$t]
+					$NetworkAdapterIp=$ipdetails[1][$t]
 
-			   EndIf
+				Else
+
+					$VirtualAdapterName=$ipdetails[0][$t]
+					$NetworkVirtualAdapterIp=$ipdetails[1][$t]
+
+				EndIf
 	EndIf
 	$t+=1
 
@@ -75,19 +79,38 @@ If $adapters==0 Then
 	MsgBox(0, "Warning!", "Network adapters not found! Enable them and run this script again.")
 	history ("Network adapters not found! Enable them and run this script again.")
 	Exit
+ElseIf $PhyAdapters==0 Then
+	$NetworkAdapterIp=$NetworkVirtualAdapterIp
+	history ("No physical network adapters found. Using virtual " & $VirtualAdapterName & " (" & $NetworkAdapterIp &")")
+Else
+	history ("Using physical network adapter " & $PhyAdapterName & " (" & $NetworkAdapterIp &")")
+EndIf
+
+If $ScriptInstalled==1 Then
+Local $NAS_NET = StringSplit($NAS_IP, '.', 1)
+
+MsgBox(4096,$NAS_NET[0], $NAS_NET[4])
+MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.")
+	$t=0
+		While $t <= UBound($AdapterIPs)-1
+
+		MsgBox(0,UBound($AdapterIPs),StringInStr($AdapterIPs[$t], $NAS_IP))
+		$t+=1
+		WEnd
+$NetworkAdapterIp=$NAS_IP
 EndIf
 
 
 ;;; Create main GUI
-Local $mainGui = GuiCreate("Settings for Nas Test Script (NTS)", $NTS_SettingsFormWidth, $NTS_SettingsFormHeight)
-
+$mainGui = GuiCreate("Settings for Nas Test Script (NTS)", $NTS_SettingsFormWidth, $NTS_SettingsFormHeight)
+GUISetFont($Current_DPI[1], $Current_DPI[2], 1, $NTS_SettingsFormMainFont,$mainGui)
 ;If @DesktopWidth>=1900 Then
 	;GUISetFont (8.5)
 ;ElseIf 	@DesktopWidth<1900 Then
 	;GUISetFont (6)
 ;EndIf
 
-GUISetBkColor($NTS_SettingsFormBackgroundColor)
+GUISetBkColor($NTS_SettingsFormBackgroundColor) ; Set background color of GUI
 
 GUISwitch($mainGui)
 GUISetStyle($WS_POPUP, -1, $mainGui)
@@ -96,23 +119,32 @@ GUICtrlCreateLabel(" ", 0, 0, $NTS_SettingsFormWidth+20, $NTS_SettingsFormHeight
 
 GUISetState ()
 
-Local $Group1 = GUICtrlCreateGroup("FTP", 10, 10, 140, 90)
-DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($Group1), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 
-GUICtrlSetFont(-1, $Current_DPI[1], $Current_DPI[2], 0, "System")
-
-
-	GUICtrlCreateRadio("Radio 1", 20, 30, 50, 20)
-	GUICtrlSetFont(-1, 6, 800, 0, "System")
+	GUICtrlCreateLabel("Port ", 20, 156, 50, 20)
+	$NAS_IP_ctrl=GUICtrlCreateInput($NetworkAdapterIp, 20, 55, 150, 25, $SS_RIGHT)
 	GUICtrlSetState(-1, $GUI_ONTOP)
 
-	GUICtrlCreateRadio("Radio 2", 20, 50, 60, 50)
+	$FTP_Group = GUICtrlCreateGroup("FTP", 10, 110, 140, 90)
+	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($FTP_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
+	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
+
+	$FTP_PassiveMode_ctrl=GUICtrlCreateCheckbox("Passive Mode", 20, 130, 100, 20)
 	GUICtrlSetState(-1, $GUI_ONTOP)
-GUICtrlCreateGroup("", -99, -99, 1, 1) ;close group
+	GUICtrlSetState(-1, $GUI_CHECKED)
+
+	GUICtrlCreateLabel("Port ", 20, 156, 50, 20)
+
+	GUICtrlCreateInput(21, 70, 155, 50, 20, $SS_RIGHT)
+
+	GUICtrlSetState(-1, $GUI_ONTOP)
+
+
+	GUICtrlCreateGroup("", -99, -99, 1, 1) ;close group
 
 GUICtrlSetState(-1, $GUI_ONTOP)
 
 
+;;GUICtrlCreateRadio("Radio 2", 20, 50, 60, 20)
 ;$Button_1 = GUICtrlCreateButton("Start Client", 80, 30, 150, 40)
 ;GUICtrlSetState(-1, $GUI_ONTOP)
 ;$Button_2 = GUICtrlCreateButton("Start Server",  80, 80, 150, 40)
@@ -133,7 +165,7 @@ While 1
 
 	  Local $destr=GUIDelete($mainGui)
 	  history ("Main GUI destroyed — " & $destr)
-	  history ("Start canceled")
+	  history ("Setting the parms canceled")
 	  ExitLoop
 
 	EndSelect
