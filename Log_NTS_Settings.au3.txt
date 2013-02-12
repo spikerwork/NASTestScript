@@ -1,0 +1,686 @@
+(14:20:20:229) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360678820
+(14:20:20:230) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(14:20:20:230) --- Script use different directory, not default — C:\NasTestScript
+(14:20:20:233) --- Admin check passed
+(14:20:20:233) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(14:20:20:234) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(14:20:20:234) --- INI file not found, use default vars
+(14:20:21:351) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(14:20:21:944) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(14:20:22:531) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(14:20:22:532) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(14:20:32:075) --- Main GUI destroyed — 1
+(14:20:32:075) --- Start canceled
+(14:20:32:076) --- Errors 0
+(14:20:32:076) --- Program halted. Worktime - 12 seconds.
+(14:20:32:076) --- ------------------------------------------------------------------------
+(15:09:10:780) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360681750
+(15:09:10:781) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:09:10:781) --- Script use different directory, not default — C:\NasTestScript
+(15:09:10:782) --- Admin check passed
+(15:09:10:782) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:09:10:782) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:09:10:783) --- INI file not found, use default vars
+(15:09:11:611) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:09:12:185) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:09:12:691) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:09:12:692) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:09:19:155) --- Log file C:\Users\afanasmax\Documents\GitHub\NASTestScript\Log_NTS_Settings.au3.txt opened
+(15:10:51:126) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360681851
+(15:10:51:126) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:10:51:126) --- Script use different directory, not default — C:\NasTestScript
+(15:10:51:127) --- Admin check passed
+(15:10:51:127) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:10:51:127) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:10:51:128) --- INI file not found, use default vars
+(15:10:51:916) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:10:52:382) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:10:52:877) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:10:52:877) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:10:55:661) --- Main GUI destroyed — 1
+(15:10:55:661) --- Start canceled
+(15:10:55:662) --- Errors 0
+(15:10:55:662) --- Program halted. Worktime - 4 seconds.
+(15:10:55:662) --- ------------------------------------------------------------------------
+(15:10:57:854) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360681857
+(15:10:57:854) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:10:57:854) --- Script use different directory, not default — C:\NasTestScript
+(15:10:57:855) --- Admin check passed
+(15:10:57:855) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:10:57:855) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:10:57:856) --- INI file not found, use default vars
+(15:10:58:710) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:10:59:252) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:10:59:824) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:10:59:824) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:11:03:466) --- Main GUI destroyed — 1
+(15:11:03:466) --- Start canceled
+(15:11:03:467) --- Errors 0
+(15:11:03:467) --- Program halted. Worktime - 6 seconds.
+(15:11:03:467) --- ------------------------------------------------------------------------
+(15:11:15:959) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360681875
+(15:11:15:959) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:11:15:959) --- Script use different directory, not default — C:\NasTestScript
+(15:11:15:960) --- Admin check passed
+(15:11:15:960) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:11:15:961) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:11:15:961) --- INI file not found, use default vars
+(15:11:16:798) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:11:17:326) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:11:17:852) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:11:17:852) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:11:21:440) --- Main GUI destroyed — 1
+(15:11:21:441) --- Start canceled
+(15:11:21:441) --- Errors 0
+(15:11:21:441) --- Program halted. Worktime - 6 seconds.
+(15:11:21:442) --- ------------------------------------------------------------------------
+(15:13:14:287) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360681994
+(15:13:14:287) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:13:14:287) --- Script use different directory, not default — C:\NasTestScript
+(15:13:14:288) --- Admin check passed
+(15:13:14:288) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:13:14:289) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:13:14:289) --- INI file not found, use default vars
+(15:13:15:166) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:13:15:739) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:13:16:319) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:13:16:319) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:13:30:979) --- Main GUI destroyed — 1
+(15:13:30:979) --- Start canceled
+(15:13:30:980) --- Errors 0
+(15:13:30:980) --- Program halted. Worktime - 16 seconds.
+(15:13:30:981) --- ------------------------------------------------------------------------
+(15:13:40:999) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360682020
+(15:13:40:999) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:13:40:999) --- Script use different directory, not default — C:\NasTestScript
+(15:13:41:000) --- Admin check passed
+(15:13:41:001) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:13:41:001) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:13:41:002) --- INI file not found, use default vars
+(15:13:41:906) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:13:42:498) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:13:43:066) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:13:43:066) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:13:51:326) --- Main GUI destroyed — 1
+(15:13:51:327) --- Start canceled
+(15:13:51:327) --- Errors 0
+(15:13:51:327) --- Program halted. Worktime - 11 seconds.
+(15:13:51:328) --- ------------------------------------------------------------------------
+(15:13:59:250) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360682039
+(15:13:59:251) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:13:59:251) --- Script use different directory, not default — C:\NasTestScript
+(15:13:59:251) --- Admin check passed
+(15:13:59:252) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:13:59:252) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:13:59:253) --- INI file not found, use default vars
+(15:14:00:075) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:14:00:580) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:14:01:111) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:14:01:112) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:14:03:656) --- Main GUI destroyed — 1
+(15:14:03:657) --- Start canceled
+(15:14:03:657) --- Errors 0
+(15:14:03:657) --- Program halted. Worktime - 4 seconds.
+(15:14:03:658) --- ------------------------------------------------------------------------
+(15:17:06:272) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360682226
+(15:17:06:273) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:17:06:273) --- Script use different directory, not default — C:\NasTestScript
+(15:17:06:274) --- Admin check passed
+(15:17:06:274) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:17:06:274) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:17:06:274) --- INI file not found, use default vars
+(15:17:07:146) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:17:07:706) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:17:08:269) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:17:08:269) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:17:12:340) --- Main GUI destroyed — 1
+(15:17:12:341) --- Start canceled
+(15:17:12:342) --- Errors 0
+(15:17:12:342) --- Program halted. Worktime - 6 seconds.
+(15:17:12:343) --- ------------------------------------------------------------------------
+(15:17:19:493) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360682239
+(15:17:19:493) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:17:19:493) --- Script use different directory, not default — C:\NasTestScript
+(15:17:19:494) --- Admin check passed
+(15:17:19:494) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:17:19:494) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:17:19:495) --- INI file not found, use default vars
+(15:17:20:366) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:17:20:910) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:17:21:454) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:17:21:454) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:17:45:507) --- Main GUI destroyed — 1
+(15:17:45:507) --- Start canceled
+(15:17:45:508) --- Errors 0
+(15:17:45:508) --- Program halted. Worktime - 26 seconds.
+(15:17:45:508) --- ------------------------------------------------------------------------
+(15:30:41:438) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683041
+(15:30:41:438) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:30:41:438) --- Script use different directory, not default — C:\NasTestScript
+(15:30:41:439) --- Admin check passed
+(15:30:41:439) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:30:41:440) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:30:41:440) --- INI file not found, use default vars
+(15:30:42:308) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:30:42:848) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:30:43:401) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:30:43:402) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:30:54:297) --- Main GUI destroyed — 1
+(15:30:54:298) --- Start canceled
+(15:30:54:298) --- Errors 0
+(15:30:54:298) --- Program halted. Worktime - 13 seconds.
+(15:30:54:299) --- ------------------------------------------------------------------------
+(15:31:07:324) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683067
+(15:31:07:324) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:31:07:324) --- Script use different directory, not default — C:\NasTestScript
+(15:31:07:325) --- Admin check passed
+(15:31:07:325) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:31:07:326) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:31:07:326) --- INI file not found, use default vars
+(15:31:08:223) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:31:08:808) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:31:09:400) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:31:09:401) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:31:11:075) --- Main GUI destroyed — 1
+(15:31:11:075) --- Start canceled
+(15:31:11:076) --- Errors 0
+(15:31:11:076) --- Program halted. Worktime - 4 seconds.
+(15:31:11:076) --- ------------------------------------------------------------------------
+(15:32:02:311) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683122
+(15:32:02:311) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:32:02:312) --- Script use different directory, not default — C:\NasTestScript
+(15:32:02:312) --- Admin check passed
+(15:32:02:313) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:32:02:313) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:32:02:314) --- INI file not found, use default vars
+(15:32:03:199) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:32:03:748) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:32:04:304) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:32:04:304) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:32:25:500) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683145
+(15:32:25:500) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:32:25:501) --- Script use different directory, not default — C:\NasTestScript
+(15:32:25:501) --- Admin check passed
+(15:32:25:502) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:32:25:502) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:32:25:503) --- INI file not found, use default vars
+(15:32:26:385) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:32:26:936) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:32:27:513) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:32:27:513) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:32:29:264) --- Main GUI destroyed — 1
+(15:32:29:265) --- Start canceled
+(15:32:29:265) --- Errors 0
+(15:32:29:265) --- Program halted. Worktime - 4 seconds.
+(15:32:29:265) --- ------------------------------------------------------------------------
+(15:32:32:385) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683152
+(15:32:32:385) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:32:32:385) --- Script use different directory, not default — C:\NasTestScript
+(15:32:32:386) --- Admin check passed
+(15:32:32:387) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:32:32:387) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:32:32:388) --- INI file not found, use default vars
+(15:32:33:327) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:32:33:954) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:32:34:557) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:32:34:557) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:32:37:692) --- Main GUI destroyed — 1
+(15:32:37:692) --- Start canceled
+(15:32:37:693) --- Errors 0
+(15:32:37:693) --- Program halted. Worktime - 5 seconds.
+(15:32:37:694) --- ------------------------------------------------------------------------
+(15:33:41:311) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683221
+(15:33:41:311) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:33:41:311) --- Script use different directory, not default — C:\NasTestScript
+(15:33:41:312) --- Admin check passed
+(15:33:41:313) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:33:41:313) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:33:41:313) --- INI file not found, use default vars
+(15:33:42:441) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:33:42:994) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:33:43:570) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:33:43:571) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:33:46:645) --- Main GUI destroyed — 1
+(15:33:46:645) --- Start canceled
+(15:33:46:646) --- Errors 0
+(15:33:46:647) --- Program halted. Worktime - 5 seconds.
+(15:33:46:648) --- ------------------------------------------------------------------------
+(15:37:13:249) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683433
+(15:37:13:250) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:37:13:250) --- Script use different directory, not default — C:\NasTestScript
+(15:37:13:251) --- Admin check passed
+(15:37:13:251) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:37:13:252) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:37:13:252) --- INI file not found, use default vars
+(15:37:14:157) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:37:14:757) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:37:15:356) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:37:15:356) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:37:18:297) --- Main GUI destroyed — 1
+(15:37:18:297) --- Start canceled
+(15:37:18:298) --- Errors 0
+(15:37:18:300) --- Program halted. Worktime - 5 seconds.
+(15:37:18:300) --- ------------------------------------------------------------------------
+(15:46:09:081) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360683969
+(15:46:09:081) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:46:09:081) --- Script use different directory, not default — C:\NasTestScript
+(15:46:09:082) --- Admin check passed
+(15:46:09:082) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:46:09:083) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:46:09:083) --- INI file not found, use default vars
+(15:46:10:041) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:46:10:670) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:46:11:269) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:46:11:270) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:46:13:048) --- Main GUI destroyed — 1
+(15:46:13:049) --- Start canceled
+(15:46:13:049) --- Errors 0
+(15:46:13:050) --- Program halted. Worktime - 4 seconds.
+(15:46:13:050) --- ------------------------------------------------------------------------
+(15:51:20:263) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360684280
+(15:51:20:265) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:51:20:265) --- Script use different directory, not default — C:\NasTestScript
+(15:51:20:266) --- Admin check passed
+(15:51:20:267) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:51:20:267) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:51:20:267) --- INI file not found, use default vars
+(15:51:21:181) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:51:21:760) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:51:22:348) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:51:22:348) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:51:24:873) --- Main GUI destroyed — 1
+(15:51:24:874) --- Start canceled
+(15:51:24:875) --- Errors 0
+(15:51:24:875) --- Program halted. Worktime - 4 seconds.
+(15:51:24:875) --- ------------------------------------------------------------------------
+(15:52:14:520) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360684334
+(15:52:14:521) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:14:521) --- Script use different directory, not default — C:\NasTestScript
+(15:52:14:521) --- Admin check passed
+(15:52:14:522) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:14:522) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:14:522) --- INI file not found, use default vars
+(15:52:15:383) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:52:15:920) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:52:16:486) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:52:16:486) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:52:29:779) --- Main GUI destroyed — 1
+(15:52:29:779) --- Start canceled
+(15:52:29:780) --- Errors 0
+(15:52:29:780) --- Program halted. Worktime - 15 seconds.
+(15:52:29:780) --- ------------------------------------------------------------------------
+(15:52:35:662) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360684355
+(15:52:35:662) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:35:662) --- Script use different directory, not default — C:\NasTestScript
+(15:52:35:663) --- Admin check passed
+(15:52:35:663) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:35:664) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:35:664) --- INI file not found, use default vars
+(15:52:36:601) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:52:37:180) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:52:37:787) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:52:37:787) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:52:40:452) --- Main GUI destroyed — 1
+(15:52:40:452) --- Start canceled
+(15:52:40:454) --- Errors 0
+(15:52:40:454) --- Program halted. Worktime - 5 seconds.
+(15:52:40:455) --- ------------------------------------------------------------------------
+(15:52:57:206) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360684377
+(15:52:57:206) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:57:206) --- Script use different directory, not default — C:\NasTestScript
+(15:52:57:207) --- Admin check passed
+(15:52:57:207) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:57:208) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:57:208) --- INI file not found, use default vars
+(15:52:58:130) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:52:58:726) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:52:59:341) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:52:59:341) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:53:01:326) --- Main GUI destroyed — 1
+(15:53:01:326) --- Start canceled
+(15:53:01:327) --- Errors 0
+(15:53:01:327) --- Program halted. Worktime - 4 seconds.
+(15:53:01:327) --- ------------------------------------------------------------------------
+(15:53:37:836) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360684417
+(15:53:37:836) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:53:37:837) --- Script use different directory, not default — C:\NasTestScript
+(15:53:37:837) --- Admin check passed
+(15:53:37:838) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:53:37:838) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:53:37:838) --- INI file not found, use default vars
+(15:53:38:760) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(15:53:39:362) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(15:53:39:976) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(15:53:39:976) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(15:53:45:361) --- Main GUI destroyed — 1
+(15:53:45:362) --- Start canceled
+(15:53:45:363) --- Errors 0
+(15:53:45:363) --- Program halted. Worktime - 8 seconds.
+(15:53:45:364) --- ------------------------------------------------------------------------
+(16:01:48:644) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360684908
+(16:01:48:644) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:01:48:645) --- Script use different directory, not default — C:\NasTestScript
+(16:01:48:646) --- Admin check passed
+(16:01:48:646) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:01:48:647) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:01:48:647) --- INI file not found, use default vars
+(16:01:49:474) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:01:50:010) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:01:50:525) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:01:50:525) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:01:59:249) --- Main GUI destroyed — 1
+(16:01:59:250) --- Start canceled
+(16:01:59:250) --- Errors 0
+(16:01:59:251) --- Program halted. Worktime - 11 seconds.
+(16:01:59:251) --- ------------------------------------------------------------------------
+(16:02:36:184) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360684956
+(16:02:36:184) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:02:36:185) --- Script use different directory, not default — C:\NasTestScript
+(16:02:36:186) --- Admin check passed
+(16:02:36:187) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:02:36:187) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:02:36:188) --- INI file not found, use default vars
+(16:02:37:068) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:02:37:611) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:02:38:181) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:02:38:182) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:03:15:589) --- Main GUI destroyed — 1
+(16:03:15:589) --- Start canceled
+(16:03:15:590) --- Errors 0
+(16:03:15:590) --- Program halted. Worktime - 39 seconds.
+(16:03:15:591) --- ------------------------------------------------------------------------
+(16:03:21:178) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685001
+(16:03:21:178) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:03:21:178) --- Script use different directory, not default — C:\NasTestScript
+(16:03:21:179) --- Admin check passed
+(16:03:21:179) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:03:21:180) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:03:21:180) --- INI file not found, use default vars
+(16:03:22:089) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:03:22:654) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:03:23:231) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:03:23:231) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:04:38:582) --- Main GUI destroyed — 1
+(16:04:38:583) --- Start canceled
+(16:04:38:583) --- Errors 0
+(16:04:38:584) --- Program halted. Worktime - 77 seconds.
+(16:04:38:584) --- ------------------------------------------------------------------------
+(16:04:41:445) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685081
+(16:04:41:445) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:04:41:446) --- Script use different directory, not default — C:\NasTestScript
+(16:04:41:447) --- Admin check passed
+(16:04:41:447) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:04:41:448) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:04:41:448) --- INI file not found, use default vars
+(16:04:42:320) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:04:42:863) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:04:43:418) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:04:43:419) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:05:00:592) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685100
+(16:05:00:592) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:05:00:593) --- Script use different directory, not default — C:\NasTestScript
+(16:05:00:593) --- Admin check passed
+(16:05:00:593) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:05:00:594) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:05:00:594) --- INI file not found, use default vars
+(16:05:01:397) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:05:01:902) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:05:02:416) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:05:02:417) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:05:18:477) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685118
+(16:05:18:477) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:05:18:478) --- Script use different directory, not default — C:\NasTestScript
+(16:05:18:479) --- Admin check passed
+(16:05:18:479) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:05:18:479) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:05:18:480) --- INI file not found, use default vars
+(16:05:19:300) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:05:19:841) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:05:20:353) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:05:20:353) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:06:10:186) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685170
+(16:06:10:186) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:06:10:187) --- Script use different directory, not default — C:\NasTestScript
+(16:06:10:187) --- Admin check passed
+(16:06:10:188) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:06:10:188) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:06:10:189) --- INI file not found, use default vars
+(16:06:11:041) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:06:11:544) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:06:12:102) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:06:12:102) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:06:28:577) --- Main GUI destroyed — 1
+(16:06:28:578) --- Start canceled
+(16:06:28:578) --- Errors 0
+(16:06:28:579) --- Program halted. Worktime - 18 seconds.
+(16:06:28:579) --- ------------------------------------------------------------------------
+(16:06:43:198) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685203
+(16:06:43:198) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:06:43:198) --- Script use different directory, not default — C:\NasTestScript
+(16:06:43:199) --- Admin check passed
+(16:06:43:200) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:06:43:200) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:06:43:201) --- INI file not found, use default vars
+(16:06:44:060) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:06:44:619) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:06:45:176) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:06:45:177) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:06:50:463) --- Main GUI destroyed — 1
+(16:06:50:463) --- Start canceled
+(16:06:50:464) --- Errors 0
+(16:06:50:464) --- Program halted. Worktime - 7 seconds.
+(16:06:50:464) --- ------------------------------------------------------------------------
+(16:07:55:596) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685275
+(16:07:55:597) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:07:55:597) --- Script use different directory, not default — C:\NasTestScript
+(16:07:55:598) --- Admin check passed
+(16:07:55:598) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:07:55:599) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:07:55:599) --- INI file not found, use default vars
+(16:07:56:441) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:07:56:978) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:07:57:537) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:07:57:537) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:08:02:384) --- Main GUI destroyed — 1
+(16:08:02:384) --- Start canceled
+(16:08:02:385) --- Errors 0
+(16:08:02:386) --- Program halted. Worktime - 7 seconds.
+(16:08:02:386) --- ------------------------------------------------------------------------
+(16:09:29:082) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685369
+(16:09:29:083) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:09:29:083) --- Script use different directory, not default — C:\NasTestScript
+(16:09:29:084) --- Admin check passed
+(16:09:29:084) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:09:29:085) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:09:29:085) --- INI file not found, use default vars
+(16:09:29:916) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:09:30:422) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:09:30:925) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:09:30:926) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:09:35:627) --- Main GUI destroyed — 1
+(16:09:35:628) --- Start canceled
+(16:09:35:628) --- Errors 0
+(16:09:35:629) --- Program halted. Worktime - 6 seconds.
+(16:09:35:629) --- ------------------------------------------------------------------------
+(16:09:46:292) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685386
+(16:09:46:293) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:09:46:293) --- Script use different directory, not default — C:\NasTestScript
+(16:09:46:295) --- Admin check passed
+(16:09:46:295) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:09:46:296) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:09:46:296) --- INI file not found, use default vars
+(16:09:47:094) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:09:47:595) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:09:48:095) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:09:48:096) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:09:53:155) --- Main GUI destroyed — 1
+(16:09:53:155) --- Start canceled
+(16:09:53:156) --- Errors 0
+(16:09:53:156) --- Program halted. Worktime - 7 seconds.
+(16:09:53:157) --- ------------------------------------------------------------------------
+(16:10:12:201) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685412
+(16:10:12:201) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:10:12:202) --- Script use different directory, not default — C:\NasTestScript
+(16:10:12:202) --- Admin check passed
+(16:10:12:203) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:10:12:203) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:10:12:204) --- INI file not found, use default vars
+(16:10:12:993) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:10:13:466) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:10:13:964) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:10:13:965) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:10:28:921) --- Main GUI destroyed — 1
+(16:10:28:921) --- Start canceled
+(16:10:28:922) --- Errors 0
+(16:10:28:923) --- Program halted. Worktime - 16 seconds.
+(16:10:28:923) --- ------------------------------------------------------------------------
+(16:11:02:147) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685462
+(16:11:02:148) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:11:02:148) --- Script use different directory, not default — C:\NasTestScript
+(16:11:02:149) --- Admin check passed
+(16:11:02:149) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:11:02:150) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:11:02:150) --- INI file not found, use default vars
+(16:11:02:997) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:11:03:503) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:11:04:021) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:11:04:021) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:11:07:138) --- Main GUI destroyed — 1
+(16:11:07:138) --- Start canceled
+(16:11:07:139) --- Errors 0
+(16:11:07:139) --- Program halted. Worktime - 5 seconds.
+(16:11:07:140) --- ------------------------------------------------------------------------
+(16:11:21:752) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685481
+(16:11:21:753) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:11:21:753) --- Script use different directory, not default — C:\NasTestScript
+(16:11:21:754) --- Admin check passed
+(16:11:21:754) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:11:21:755) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:11:21:755) --- INI file not found, use default vars
+(16:11:22:572) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:11:23:108) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:11:23:618) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:11:23:618) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:13:10:563) --- Main GUI destroyed — 1
+(16:13:10:563) --- Start canceled
+(16:13:10:564) --- Errors 0
+(16:13:10:564) --- Program halted. Worktime - 109 seconds.
+(16:13:10:565) --- ------------------------------------------------------------------------
+(16:13:19:143) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685599
+(16:13:19:143) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:13:19:143) --- Script use different directory, not default — C:\NasTestScript
+(16:13:19:144) --- Admin check passed
+(16:13:19:145) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:13:19:145) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:13:19:145) --- INI file not found, use default vars
+(16:13:19:981) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:13:20:537) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:13:21:116) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:13:21:116) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:13:47:529) --- Main GUI destroyed — 1
+(16:13:47:530) --- Start canceled
+(16:13:47:531) --- Errors 0
+(16:13:47:531) --- Program halted. Worktime - 28 seconds.
+(16:13:47:531) --- ------------------------------------------------------------------------
+(16:16:48:365) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360685808
+(16:16:48:387) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:16:48:394) --- Script use different directory, not default — C:\NasTestScript
+(16:16:48:400) --- Admin check passed
+(16:16:48:405) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:16:48:413) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:16:48:420) --- INI file not found, use default vars
+(16:16:49:307) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:16:49:879) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:16:50:479) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:16:50:487) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:17:00:344) --- Main GUI destroyed — 1
+(16:17:00:351) --- Start canceled
+(16:17:00:357) --- Errors 0
+(16:17:00:361) --- Program halted. Worktime - 12 seconds.
+(16:17:00:368) --- ------------------------------------------------------------------------
+(16:29:11:872) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360686551
+(16:29:11:892) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:29:11:901) --- Script use different directory, not default — C:\NasTestScript
+(16:29:11:907) --- Admin check passed
+(16:29:11:913) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:29:11:921) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:29:11:929) --- INI file not found, use default vars
+(16:29:12:739) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:29:13:274) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:29:13:825) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:29:13:831) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:29:19:257) --- Main GUI destroyed — 1
+(16:29:19:262) --- Start canceled
+(16:29:19:268) --- Errors 0
+(16:29:19:273) --- Program halted. Worktime - 8 seconds.
+(16:29:19:278) --- ------------------------------------------------------------------------
+(16:35:38:226) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360686938
+(16:35:38:250) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:35:38:259) --- Script use different directory, not default — C:\NasTestScript
+(16:35:38:266) --- Admin check passed
+(16:35:38:273) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:35:38:282) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:35:38:292) --- INI file not found, use default vars
+(16:35:39:193) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:35:39:782) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:35:40:356) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:35:40:363) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:36:52:781) --- Main GUI destroyed — 1
+(16:36:52:789) --- Start canceled
+(16:36:52:797) --- Errors 0
+(16:36:52:802) --- Program halted. Worktime - 74 seconds.
+(16:36:52:809) --- ------------------------------------------------------------------------
+(16:37:12:086) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360687032
+(16:37:12:108) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:37:12:117) --- Script use different directory, not default — C:\NasTestScript
+(16:37:12:129) --- Admin check passed
+(16:37:12:136) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:37:12:149) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:37:12:158) --- INI file not found, use default vars
+(16:37:12:978) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:37:13:517) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:37:14:053) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:37:14:063) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:44:01:049) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360687441
+(16:44:01:082) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:44:01:089) --- Script use different directory, not default — C:\NasTestScript
+(16:44:01:096) --- Admin check passed
+(16:44:01:102) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:44:01:110) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:44:01:117) --- INI file not found, use default vars
+(16:44:01:982) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:44:02:504) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:44:03:041) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:44:03:048) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:45:34:435) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360687534
+(16:45:34:457) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:45:34:464) --- Script use different directory, not default — C:\NasTestScript
+(16:45:34:472) --- Admin check passed
+(16:45:34:481) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:45:34:490) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:45:34:496) --- INI file not found, use default vars
+(16:45:35:345) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:45:35:901) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:45:36:474) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:45:36:482) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:45:43:723) --- Main GUI destroyed — 1
+(16:45:43:728) --- Start canceled
+(16:45:43:734) --- Errors 0
+(16:45:43:740) --- Program halted. Worktime - 9 seconds.
+(16:45:43:746) --- ------------------------------------------------------------------------
+(16:52:45:582) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360687965
+(16:52:45:600) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:52:45:607) --- Script use different directory, not default — C:\NasTestScript
+(16:52:45:613) --- Admin check passed
+(16:52:45:619) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:52:45:627) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:52:45:633) --- INI file not found, use default vars
+(16:52:46:407) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:52:46:891) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:52:47:392) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:52:47:399) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)
+(16:53:08:846) --- Main GUI destroyed — 1
+(16:53:08:852) --- Start canceled
+(16:53:08:857) --- Errors 0
+(16:53:08:861) --- Program halted. Worktime - 23 seconds.
+(16:53:08:867) --- ------------------------------------------------------------------------

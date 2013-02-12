@@ -23,8 +23,8 @@
 
 
 ; Folder for script
-Global $ScriptName = "NasTestScript" ; Name
-Global $DefaultScriptFolder=@HomeDrive & "\" & $ScriptName ; Script directory
+Global $ScriptName = "NasTestScript" ; Name of script
+Global $DefaultScriptFolder=@HomeDrive & "\" & $ScriptName ; Default script directory
 Global $ScriptFolder=@ScriptDir ; Script directory
 
 ; Ini files
@@ -35,19 +35,18 @@ Global $resultini = $ScriptFolder & "\" & "result.ini" ; Results
 Global $tempfile=_TempFile($ScriptFolder, "tst_", ".txt", 7) ; Temp file
 
 ; Log files
-Global $logfile = "Log_" & @ScriptName & ".txt" ; Generate log file for current script
-$logfile = $ScriptFolder & "\" & $logfile
+Global $logfile = $ScriptFolder & "\" & "Log_" & @ScriptName & ".txt" ; Generate log file for current script
 
-; Program timer
-Global $ScriptStartTime ; Script start time (head.au3)
-Global $ScriptEndTime ; Script end time (foot.au3)
+; Program timer in Unix time Format
+Global $ScriptStartTime ; Script start time (used in head.au3)
+Global $ScriptEndTime ; Script end time (used in foot.au3)
 
 ; Icon | used only for build.exe script
 Global $icon="nas.ico"
 
 ; Names of scripts
 Global  $NTS="NasTestScript.exe"
-Global  $NTS_Settings="NTS_Settings.exe"
+Global  $NTS_Settings="NTS_Settings.exe" ;
 
 Global 	$FilesArray[2]=[$NTS, $NTS_Settings]
 
@@ -60,6 +59,7 @@ Global $ScriptInstalled
 Global $filesinfolder=0
 Global $F_arra ; Array of detected files
 
+Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 
 	;;;
 	;;; Vars may store in ini files
@@ -76,7 +76,16 @@ Global $F_arra ; Array of detected files
 
 	; Main settings
 	Global $log = IniRead($inifile, "All", "Log", 1 ) ; Log on/off. Always on.
-	Global $linedebug = IniRead($inifile, "All", "LineDebug", 0 )  ; Enables trayicondebug mode + traytip func. Always off.
+	Global $linedebug
+		If @compiled==1 Then
+		$linedebug=0
+		Else
+		$linedebug=1
+		EndIf
+		$linedebug = IniRead($inifile, "All", "LineDebug", $linedebug )  ; Enables trayicondebug mode + traytip func. Always off.
+	Global $NTS_SettingsFormWidth=IniRead($inifile, "All", "SettingsFormWidth", 700)
+	Global $NTS_SettingsFormHeight=IniRead($inifile, "All", "SettingsFormHeight", 500)
+	Global $NTS_SettingsFormBackgroundColor=IniRead($inifile, "All", "FormBackgroundColor", 0xE2EEEF)
 
 	; Client settings
 	Global $TestRepeats = IniRead($inifile, "Client", "TestRepeat", 5) ; Default test repeat

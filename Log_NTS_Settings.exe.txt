@@ -1,0 +1,11 @@
+(16:44:20:112) --- Program started (NTS_Settings.exe). UnixTimeStamp 1360687460
+(16:44:20:112) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:44:20:112) --- Script use different directory, not default — C:\NasTestScript
+(16:44:20:113) --- Admin check passed
+(16:44:20:114) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:44:20:115) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:44:20:115) --- INI file not found, use default vars
+(16:44:21:086) --- This is physical adapter (IP: 10.0.0.118) - Realtek PCIe GBE Family Controller. Using for it #0
+(16:44:21:635) --- VMware Virtual Ethernet Adapter for VMnet1 this is virtual adapter (IP: 192.168.111.1)
+(16:44:22:199) --- VMware Virtual Ethernet Adapter for VMnet8 this is virtual adapter (IP: 192.168.139.1)
+(16:44:22:199) --- At least found 3 active network adapters and 1 of them is physical (PCI or USB)

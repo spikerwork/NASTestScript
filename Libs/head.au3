@@ -18,7 +18,7 @@ EndIf
 ;;;;
 
 ;;;; System information ;;;;
-Local $Current_DPI=CheckDPI()
+$Current_DPI=CheckDPI()
 history ("Run on system: " & @OSVersion & "(" & @OSBuild & ") " & @OSArch & " " & "Language" & " (" & @MUILang & ") [0419=Rus 0409=En]"  & " autoitX64 - " & @AutoItX64 )
 history ("Desktop settings: " & @DesktopWidth & "x" & @DesktopHeight & " : " & @DesktopDepth & "Bit @ " & @DesktopRefresh & "Hz. DPI " & $Current_DPI[0] )
 ;;;;

@@ -7,7 +7,7 @@
 
  Script Function:
 
-   Set parms for Nas Test Script
+   Set parameters for Nas Test Script
 
 #ce ----------------------------------------------------------------------------
 
@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.3
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.4
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -33,12 +33,21 @@
 #include "Libs\head.au3"
 
 
-; Local vars
+;;; Local vars
+
+; GUI
+Local $Button_1
+Local $Button_2
+Local $Button_3
+
+; Other
 Local $adapters=0
 Local $PhyAdapters=0, $MainAdapter, $MainAdapter_ip, $MainAdapter_MAC, $MainAdapter_netmask, $Adapter_GUID
 Local $t=0
 
-If $ScriptInstalled==1 Then MsgBox(0,"Important!","INI file found. Existing vars will be overwriten.")
+; Main frame
+
+If $ScriptInstalled==1 Then MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.")
 
 Local $ipdetails=_IPDetail() ; Gather information about network adapters
 
@@ -68,40 +77,48 @@ If $adapters==0 Then
 	Exit
 EndIf
 
-If @DesktopWidth>=1900 Then
-	GUISetFont (8.5)
-ElseIf 	@DesktopWidth<1900 Then
-	GUISetFont (6)
-EndIf
 
-Local $Button_1
-Local $Button_2
-Local $Button_3
-Local $SettingsFormWidth=300
-Local $SettingsFormHeight=300
+;;; Create main GUI
+Local $mainGui = GuiCreate("Settings for Nas Test Script (NTS)", $NTS_SettingsFormWidth, $NTS_SettingsFormHeight)
 
-; Creating main GUI
-Local $mainGui=GuiCreate("Settings for Nas Test Script (NTS)", $SettingsFormWidth, $SettingsFormHeight)
-GUISetBkColor(0xABCDEF)
+;If @DesktopWidth>=1900 Then
+	;GUISetFont (8.5)
+;ElseIf 	@DesktopWidth<1900 Then
+	;GUISetFont (6)
+;EndIf
+
+GUISetBkColor($NTS_SettingsFormBackgroundColor)
+
 GUISwitch($mainGui)
 GUISetStyle($WS_POPUP, -1, $mainGui)
 
-;GuiCtrlCreateLabel("Press F1 for help", 145, 0, 150, 15, $SS_RIGHT)
-local $lll=GUICtrlCreateLabel("A ", 0, 0, $SettingsFormWidth+20, $SettingsFormHeight+30, $SS_CENTER, $GUI_WS_EX_PARENTDRAG)
-GUICtrlSetBkColor($lll, 0xABCDEF)
-_WinAPI_SetLayeredWindowAttributes($lll, 0xABCDEF, 100)
-
-;GUICtrlSetFont(-1, 20, 1000)
-;GUICtrlSetColor(-1, 0xc03d3a)
+GUICtrlCreateLabel(" ", 0, 0, $NTS_SettingsFormWidth+20, $NTS_SettingsFormHeight+30, $SS_CENTER, $GUI_WS_EX_PARENTDRAG)
 
 GUISetState ()
 
-$Button_1 = GUICtrlCreateButton("Start Client", 80, 30, 150, 40)
+Local $Group1 = GUICtrlCreateGroup("FTP", 10, 10, 140, 90)
+DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($Group1), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
+
+GUICtrlSetFont(-1, $Current_DPI[1], $Current_DPI[2], 0, "System")
+
+
+	GUICtrlCreateRadio("Radio 1", 20, 30, 50, 20)
+	GUICtrlSetFont(-1, 6, 800, 0, "System")
+	GUICtrlSetState(-1, $GUI_ONTOP)
+
+	GUICtrlCreateRadio("Radio 2", 20, 50, 60, 50)
+	GUICtrlSetState(-1, $GUI_ONTOP)
+GUICtrlCreateGroup("", -99, -99, 1, 1) ;close group
+
 GUICtrlSetState(-1, $GUI_ONTOP)
-$Button_2 = GUICtrlCreateButton("Start Server",  80, 80, 150, 40)
-GUICtrlSetState(-1, $GUI_ONTOP)
-$Button_3 = GUICtrlCreateButton("Uninstall Script",  80, 130, 150, 40)
-GUICtrlSetState(-1, $GUI_ONTOP)
+
+
+;$Button_1 = GUICtrlCreateButton("Start Client", 80, 30, 150, 40)
+;GUICtrlSetState(-1, $GUI_ONTOP)
+;$Button_2 = GUICtrlCreateButton("Start Server",  80, 80, 150, 40)
+;GUICtrlSetState(-1, $GUI_ONTOP)
+;$Button_3 = GUICtrlCreateButton("Uninstall Script",  80, 130, 150, 40)
+;GUICtrlSetState(-1, $GUI_ONTOP)
 
 
 
