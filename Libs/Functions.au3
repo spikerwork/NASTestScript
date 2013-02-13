@@ -211,76 +211,47 @@
 	; Parameters ....: $hWnd                - A handle of the GUI.
 	; Return values .: Success - RGB value
 	;                  Failure - 0
-	; Author ........: guinness
+	; Author ........: noone
 	; Remarks .......: WinAPIEx is required.
 	; Example .......: Yes
 	; ===============================================================================================================================
-	Func GUIGetBkColor($hWnd)
-		;MsgBox(0,"",$hWnd)
-		If IsHWnd($hWnd) = 0 Then
-			Return 0
-		EndIf
 
-		Local $hDC = _WinAPI_GetDC($hWnd)
-		Local $iColor = _WinAPI_GetBkColor($hDC)
+
+	Func _GetGuiBkColor($hWnd)
+		Local $hDC, $aBGR
+		$hDC = _WinAPI_GetDC($hWnd)
+		$aBGR = DllCall('gdi32.dll', 'int', 'GetBkColor', 'hwnd', $hDC)
 		_WinAPI_ReleaseDC($hWnd, $hDC)
-		Return $iColor
-	EndFunc   ;==>GUIGetBkColor
+		Return BitOR(BitAND($aBGR[0], 0x00FF00), BitShift(BitAND($aBGR[0], 0x0000FF), -16), BitShift(BitAND($aBGR[0], 0xFF0000), 16))
+	EndFunc   ;==>_GetGuiBkColor
 
+	; Dragging GUI offscreen
+	; from http://www.autoitscript.com/forum/topic/96281-solved-dragging-gui-offscreen-with-gui-ws-ex-parentdrag-works-fine/
 
-	; #FUNCTION# ====================================================================================================================
-	; Name...........: _WinAPI_GetBkColor
-	; Description....: Retrieves the current background color for the specified device context.
-	; Syntax.........: _WinAPI_GetBkColor ( $hDC )
-	; Parameters.....: $hDC    - Handle to the device context.
-	; Return values..: Success - The value of the current background color, in RGB.
-	;                  Failure - (-1) and sets the @error flag to non-zero.
-	; Author.........: Yashied
-	; Modified.......:
-	; Remarks........: None
-	; Related........:
-	; Link...........: @@MsdnLink@@ GetBkColor
-	; Example........: Yes
-	; ===============================================================================================================================
+	Func WM_WINDOWPOSCHANGING($hWnd, $Msg, $wParam, $lParam)
+		Local $stWinPos = DllStructCreate("uint;uint;int;int;int;int;uint", $lParam)
 
-	Func _WinAPI_GetBkColor($hDC)
+		Local $iLeft = DllStructGetData($stWinPos, 3)
+		Local $iTop = DllStructGetData($stWinPos, 4)
+		Local $iWidth = DllStructGetData($stWinPos, 5)
+		Local $iHeight = DllStructGetData($stWinPos, 6)
 
-		Local $Ret = DllCall('gdi32.dll', 'int', 'GetBkColor', 'hwnd', $hDC)
+		Local $aGUI_Pos = WinGetPos($hWnd)
 
-		If (@error) Or ($Ret[0] = -1) Then
-			Return SetError(1, 0, -1)
+		If $iHeight < $aGUI_Pos[3] Then
+			Local $iNew_Top = -($aGUI_Pos[3]-$iHeight)-18 ;I am not sure that 18 will fit for all
+			DllStructSetData($stWinPos, 4, $iNew_Top)
 		EndIf
-		Return __RGB($Ret[0])
-	EndFunc   ;==>_WinAPI_GetBkColor
+	EndFunc
 
+	; Dragging GUI offscreen addon
+	; from http://www.autoitscript.com/forum/topic/96281-solved-dragging-gui-offscreen-with-gui-ws-ex-parentdrag-works-fine/
 
-	Func __RGB($iColor)
-		Local $__Var[9] = [0, 0, 0, 0, 16385, 8388608, 1, 0, 0]
-	If $__Var[6] Then
-		$iColor = _WinAPI_SwitchColor($iColor)
-	EndIf
-	Return $iColor
-	EndFunc   ;==>__RGB
+	Func WM_NCHITTEST($hWnd, $iMsg, $wParam, $lParam)
+		If $hWnd <> $hGUI Or $iMsg <> $WM_NCHITTEST Then Return $GUI_RUNDEFMSG
 
-	; #FUNCTION# ====================================================================================================================
-	; Name...........: _WinAPI_SwitchColor
-	; Description....: Converts a color from BGR to RGB and vice versa.
-	; Syntax.........: _WinAPI_SwitchColor ( $iColor )
-	; Parameters.....: $iColor - The color to conversion.
-	; Return values..: The converted color (RGB or BGR - depends on the $iColor value, BGR > RGB > BGR etc).
-	; Author.........: Yashied
-	; Modified.......:
-	; Remarks........: None
-	; Related........:
-	; Link...........: None
-	; Example........: Yes
-	; ===============================================================================================================================
+		Local $iRet = _WinAPI_DefWindowProc($hWnd, $iMsg, $wParam, $lParam)
+		If $iRet = 1 Then Return 2
 
-	Func _WinAPI_SwitchColor($iColor)
-		Return BitOR(BitAND($iColor, 0x00FF00), BitShift(BitAND($iColor, 0x0000FF), -16), BitShift(BitAND($iColor, 0xFF0000), 16))
-	EndFunc   ;==>_WinAPI_SwitchColor
-
-
-
-
-
+		Return $iRet
+	EndFunc

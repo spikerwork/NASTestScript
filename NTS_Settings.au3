@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.5
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.6
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -92,14 +92,14 @@ EndIf
 
 
 ;;; Create main GUI
-$mainGui = GuiCreate("Settings for Nas Test Script (NTS)", $NTS_SettingsFormWidth, $NTS_SettingsFormHeight)
-GUISetFont($Current_DPI[1], $Current_DPI[2], 1, $NTS_SettingsFormMainFont,$mainGui)
+Local $hGUI = GuiCreate("Settings for Nas Test Script (NTS)", $NTS_SettingsFormWidth, $NTS_SettingsFormHeight)
+GUISetFont($Current_DPI[1], $Current_DPI[2], 1, $NTS_SettingsFormMainFont, $hGUI) ; Add font settings
 GUISetBkColor($NTS_SettingsFormBackgroundColor) ; Set background color of GUI
-GUISetStyle($WS_POPUP, -1, $mainGui)
+GUISetStyle($WS_POPUP, -1, $hGUI) ; Remove border
 
-GUISwitch($mainGui)
-
-GUICtrlCreateLabel(" ", 0, 0, $NTS_SettingsFormWidth, $NTS_SettingsFormHeight, $SS_CENTER, $GUI_WS_EX_PARENTDRAG)
+; apply to WM_WINDOWPOSCHANGING and WM_NCHITTEST functions
+GUIRegisterMsg($WM_NCHITTEST, "WM_NCHITTEST")
+GUIRegisterMsg($WM_WINDOWPOSCHANGING, "WM_WINDOWPOSCHANGING")
 
 GUISetState ()
 
@@ -112,14 +112,14 @@ GUISetState ()
 		GUICtrlSetBkColor(-1, $NTS_SettingsFormBadBackgroundColor)
 		GUICtrlSetTip(-1, "NAS IP address not in home network")
 	EndIf
-	GUICtrlSetState(-1, $GUI_ONTOP)
+
 
 	$FTP_Group = GUICtrlCreateGroup("FTP", 10, 50, 250, 200)
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($FTP_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
 
 	$FTP_Passive_ctrl=GUICtrlCreateCheckbox("Passive Mode", 20, 80, 100, 20)
-	GUICtrlSetState(-1, $GUI_ONTOP)
+
 
 		If $FTP_Passive==1 Then
 		GUICtrlSetState(-1, $GUI_CHECKED)
@@ -127,67 +127,71 @@ GUISetState ()
 		GUICtrlSetState(-1, $GUI_UNCHECKED)
 		EndIf
 
-	$FTP_Port_ctrl=GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
-	GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
-	GUICtrlSetState(-1, $GUI_ONTOP)
+	GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
+	$FTP_Port_ctrl=GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
 
-	$FTP_Folder_ctrl=GUICtrlCreateLabel("FTP Folder", 20, 136, 100, 20)
-	GUICtrlCreateInput($FTP_Folder, 100, 135, 150, 20, $SS_LEFT)
-	GUICtrlSetState(-1, $GUI_ONTOP)
 
-	$FTP_Login_ctrl=GUICtrlCreateLabel("Login", 20, 166, 100, 20)
-	GUICtrlCreateInput($FTP_Login, 100, 165, 100, 20, $SS_CENTER)
-	GUICtrlSetState(-1, $GUI_ONTOP)
+	GUICtrlCreateLabel("FTP Folder", 20, 136, 100, 20)
+	$FTP_Folder_ctrl=GUICtrlCreateInput($FTP_Folder, 100, 135, 150, 20, $SS_LEFT)
 
-	$FTP_Password_ctrl=GUICtrlCreateLabel("Password", 20, 196, 100, 20)
-	GUICtrlCreateInput($FTP_Password, 100, 195, 100, 20, $SS_CENTER)
-	GUICtrlSetState(-1, $GUI_ONTOP)
+
+	GUICtrlCreateLabel("Login", 20, 166, 100, 20)
+	$FTP_Login_ctrl=GUICtrlCreateInput($FTP_Login, 100, 165, 100, 20, $SS_CENTER)
+
+
+	GUICtrlCreateLabel("Password", 20, 196, 100, 20)
+	$FTP_Password_ctrl=GUICtrlCreateInput($FTP_Password, 100, 195, 100, 20, $SS_CENTER)
+
 
 	GUICtrlCreateGroup("", -99, -99, 1, 1) ;close group
-
-	GUICtrlSetState(-1, $GUI_ONTOP)
-
 
 
 
 	$SetButton = GUICtrlCreateButton("Set", $NTS_SettingsFormWidth*0.33, $NTS_SettingsFormWidth*0.8, 100, 30)
-	GUICtrlSetState(-1, $GUI_ONTOP)
+
 	$CancelButton = GUICtrlCreateButton("Cancel", $NTS_SettingsFormWidth*0.55, $NTS_SettingsFormWidth*0.8, 100, 30)
-	GUICtrlSetState(-1, $GUI_ONTOP)
+
 
 
 
 While 1
 
-   Local $msg = GUIGetMsg()
-
-   Select
+   Switch GUIGetMsg()
 
 	; Changing NAS IP
-	Case $msg == $NAS_IP_ctrl
+	Case $NAS_IP_ctrl
 
-	If GUICtrlRead ($NAS_IP_ctrl)<>"" Then
-		$NetworkAdapterIp=GUICtrlRead ($NAS_IP_ctrl)
+	; Need check IP address to letters and numbers
+
+	If StringStripWS(GUICtrlRead ($NAS_IP_ctrl),8)<>"" Then
+		$NetworkAdapterIp=StringStripWS(GUICtrlRead ($NAS_IP_ctrl),8)
 		history ("NAS IP changed to " & $NetworkAdapterIp)
+		GUICtrlSetColor($NAS_IP_ctrl, 0x000000)
+		GUICtrlSetBkColor($NAS_IP_ctrl, 0xFFFFFF)
 	Else
 		GUICtrlSetColor($NAS_IP_ctrl, $NTS_SettingsFormBadFontColor)
 		GUICtrlSetBkColor($NAS_IP_ctrl, $NTS_SettingsFormBadBackgroundColor)
 		GUICtrlSetTip($NAS_IP_ctrl, "NAS IP address must be set!")
-		GUICtrlSetState($NAS_IP_ctrl, $GUI_ONTOP)
-		local $lol=GUICtrlGetHandle($NAS_IP_ctrl)
-		Local $iColor = GUIGetBkColor($lol)
-		 MsgBox(0,"",$iColor)
 	EndIf
 
-	; Exit installer
-	Case $msg == $GUI_EVENT_CLOSE
+
+	Case $FTP_Passive_ctrl
+
+	Local $iColor =  _GetGuiBkColor(GUICtrlGetHandle($FTP_Login_ctrl))
+		 MsgBox(0,"",$iColor)
+
+
+
+	; Exit settings (Close window)
+	Case $GUI_EVENT_CLOSE, $CancelButton
 
 	Local $destr=GUIDelete($mainGui)
 	history ("Main GUI destroyed — " & $destr)
 	history ("Setting the parms canceled")
 	ExitLoop
 
-	EndSelect
+	EndSwitch
+
 WEnd
 
 ;MsgBox(0, $MainAdapter, $MainAdapter_ip & "|" & $MainAdapter_netmask & "|" & $MainAdapter_MAC & "|" & $Adapter_GUID)
