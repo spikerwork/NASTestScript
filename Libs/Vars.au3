@@ -66,11 +66,17 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	;;;
 
 	; NAS default settings
-	Global $NAS_IP = IniRead($inifile, "Network", "NAS_IP", "192.168.1.1") ; NAS IP
-	Global $FTPport = IniRead($inifile, "Network", "FTPport", 21 ) ; NAS FTP port
-	Global $FTPFolder = IniRead($inifile, "Network", "FTPFolder", "ftpfolder" ) ; FTP folder/path
+	Global $NAS_IP = IniRead($inifile, "Network", "NAS_IP", "192.168.0.1") ; NAS IP
+
+	Global $FTP_Port = IniRead($inifile, "Network", "FTPport", 21 ) ; NAS FTP port
+	Global $FTP_Login = IniRead($inifile, "Network", "FTPLogin", "admin" ) ; NAS FTP Login
+	Global $FTP_Password = IniRead($inifile, "Network", "FTPPassword", "password" ) ; NAS FTP Password
+	Global $FTP_Folder = IniRead($inifile, "Network", "FTPFolder", "ftpfolder" ) ; FTP folder/path
+	Global $FTP_Passive = IniRead($inifile, "Network", "FTPPassive", 1 ) ; FTP passive mode, default on
+
 	Global $HTTPport = IniRead($inifile, "Network", "HTTPport", 8080 ) ; NAS HTTP port
 	Global $HTTPFolder = IniRead($inifile, "Network", "HTTPPath", "pathname" ) ; HTTP folder/path
+
 	Global $SMBLetter = IniRead($inifile, "Network", "SMBLetter", "Z:\" ) ; NAS samba share mount point
 	Global $SMBFolder = IniRead($inifile, "Network", "SMBFolder", "foldername" ) ; NAS FTP port
 
@@ -85,9 +91,13 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 		$linedebug = IniRead($inifile, "All", "LineDebug", $linedebug )  ; Enables trayicondebug mode + traytip func. Always off.
 
 	; NTS_Settings vars
-	Global $NTS_SettingsFormWidth=IniRead($inifile, "All", "SettingsFormWidth", 700)
+	Global $NTS_SettingsFormWidth=IniRead($inifile, "All", "SettingsFormWidth", 600)
 	Global $NTS_SettingsFormHeight=IniRead($inifile, "All", "SettingsFormHeight", 500)
-	Global $NTS_SettingsFormBackgroundColor=IniRead($inifile, "All", "FormBackgroundColor", 0xE2EEEF)
+	Global $NTS_SettingsFormBackgroundColor=IniRead($inifile, "All", "SettingsFormBackgroundColor", 0xE2EEEF)
+	Global $NTS_SettingsFormBadBackgroundColor=IniRead($inifile, "All", "SettingsFormBadBackgroundColor", 0xeac4c4)
+	Global $NTS_SettingsFormBadFontColor=IniRead($inifile, "All", "SettingsFormBadFontColor", 0x000000)
+
+
 	Global $NTS_SettingsFormGroupFont=IniRead($inifile, "All", "FormGroupFont", "Tahoma")
 	Global $NTS_SettingsFormMainFont=IniRead($inifile, "All", "FormMainFont", "Tahoma")
 

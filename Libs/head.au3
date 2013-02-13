@@ -31,7 +31,7 @@ If FileExists($inifile)==1 Then
 
 Else
 
-   $ScriptInstalled=1
+   $ScriptInstalled=0
    history ("INI file not found, use default vars")
 
 EndIf
@@ -41,7 +41,8 @@ EndIf
 ;;; Tray settings
 ;;;
 
-WinMinimizeAll()
+;!!!! Enable it in production
+;WinMinimizeAll()
 #NoTrayIcon
 Opt("TrayIconDebug",$linedebug)
 Opt("TrayOnEventMode", 1)

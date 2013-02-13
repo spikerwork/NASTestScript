@@ -162,101 +162,6 @@
 	EndFunc
 
 
-;
-   ; Work with computer IP settings
-   ;
-
-    ; Get the Hardware IDs and GUID of current network adapter. Addon for IPDetail()
-   Func _GetPNPDeviceID($sAdapter)
-	  Local $arra[2]
-
-	  ;history ("Call to GetPNPDeviceID(). Get the Hardware ID of network adapter")
-	   Local $oWMIService = ObjGet("winmgmts:{impersonationLevel = impersonate}!\\" & "." & "\root\cimv2")
-	   Local $oColItems = $oWMIService.ExecQuery('Select * From Win32_NetworkAdapter Where Name = "' & $sAdapter & '"', "WQL", 0x30)
-	   If IsObj($oColItems) Then
-		   For $oObjectItem In $oColItems
-			   $arra[0]=$oObjectItem.PNPDeviceID
-			   $arra[1]=$oObjectItem.GUID
-
-			   ;history ("Found Hardware ID " & $oObjectItem.PNPDeviceID & " for device " & $sAdapter)
-			   ;history ("Found Hardware GUID " & $oObjectItem.GUID & " for device " & $sAdapter)
-
-			   Return $arra
-		   Next
-	   EndIf
-	   Return SetError(1, 0, "Unknown")
-	EndFunc
-
-   ; Get main information of network adapters
-   ; Returns:
-   ;
-   ; $avArray[0][$iCount] — Description
-   ; $avArray[1][$iCount] — IPAddress(0)
-   ; $avArray[2][$iCount] — MACAddress
-   ; $avArray[3][$iCount] — IPSubnet(0)
-   ; $avArray[4][$iCount] — Ven/Dev info
-   ; $avArray[5][$iCount] — Physic (1 or 0)
-   ; $avArray[6][$iCount] — GUID of adapter
-   ;
-   ; This function from http://www.autoitscript.com/forum/topic/128276-display-ip-address-default-gateway-dns-servers/
-
-   Func _IPDetail()
-    history ("Call to network function IPDetail(). Get main information of network adapters")
-	Local $iCount = 0
-    Local $oWMIService = ObjGet("winmgmts:{impersonationLevel = impersonate}!\\" & "." & "\root\cimv2")
-    Local $oColItems = $oWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration Where IPEnabled = True", "WQL", 0x30)
-	Local $avArray[7][10]
-	Local $physic
-	Local $descibe[2]
-
-    If IsObj($oColItems) Then
-        For $oObjectItem In $oColItems
-
-		   Local $desc = $oObjectItem.Description
-		   $descibe = _GetPNPDeviceID($desc)
-
-
-			   $avArray[0][$iCount] = _IsString($oObjectItem.Description)
-			   $avArray[1][$iCount] = _IsString($oObjectItem.IPAddress(0))
-			   $avArray[2][$iCount] = _IsString($oObjectItem.MACAddress)
-			   $avArray[3][$iCount] = _IsString($oObjectItem.IPSubnet(0))
-			   $avArray[4][$iCount] = $descibe[0]
-			   $avArray[6][$iCount] = $descibe[1]
-
-
-			If StringInStr($descibe[0], "Ven_") Or StringInStr($descibe[0], "usb") Then
-			$avArray[5][$iCount] = 1
-			$physic += 1
-
-			history ($avArray[0][$iCount] & " this is physical adapter (IP: " & $avArray[1][$iCount] & "). Using for it #" & $iCount)
-
-			Else
-
-			history ($avArray[0][$iCount] & " this is virtual adapter (IP: " & $avArray[1][$iCount] & ")")
-
-			$avArray[5][$iCount] = 0
-			EndIf
-
-
-			$iCount += 1
-
-		 Next
-
-		history ("At least found " & $iCount & " active network adapters and " & $physic & " of them is physical (PCI or USB)")
-
-		Return $avArray
-    EndIf
-    Return SetError(1, 0, $aReturn)
-   EndFunc
-
-   ; Check string function for IPDetail()
-   Func _IsString($sString)
-    If IsString($sString) Then
-        Return $sString
-    EndIf
-    Return "Not Available"
-   EndFunc
-
 	; #FUNCTION# ====================================================================================================================
 	; Name ..........: CheckDPI
 	; Description ...: Determine Font DPI in Windows Vista/7/8
@@ -282,14 +187,14 @@
 					$Fontsize=10
 					$Fontweight=400
 				case $DPI==120
-					$Fontsize=8.5
-					$Fontweight=800 ;400 = normal
+					$Fontsize=8
+					$Fontweight=400 ;400 = normal
 				case $DPI=144
-					$Fontsize=9
-					$Fontweight=800 ;400 = normal
+					$Fontsize=6
+					$Fontweight=400 ;400 = normal
 				case else
-					$Fontsize=8.5
-					$Fontweight =800 ;400 = normal
+					$Fontsize=8
+					$Fontweight =400 ;400 = normal
 			EndSelect
 
 		Local $DPI_array[3]=[$DPI, $Fontsize, $Fontweight]

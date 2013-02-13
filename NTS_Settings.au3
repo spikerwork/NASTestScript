@@ -45,97 +45,95 @@ Local $FTP_Group
 
 
 ; Other
-Local $ipdetails, $adapters=0, $PhyAdapters=0, $PhyAdapterName, $NetworkAdapterIp, $NetworkVirtualAdapterIp, $VirtualAdapterName
-Local $AdapterIPs[6] ; Maximum network adapters in system? if not script fails
+Local $NetworkAdapterIp, $Adapter_NET
+Local $AdapterIPs[4]=[@IPAddress1,@IPAddress2,@IPAddress3,@IPAddress4] ; Maximum network adapters in system?
 Local $t=0 ; Used for cycles
+Local $NET_diff=1 ; Different between local network and $nas_ip. Default yes
 
 ; Main frame
 
-$ipdetails=_IPDetail() ; Gather information about network adapters
+; Adapters discovery
 
-While $t <= UBound($ipdetails, 2)-1
 
-	If $ipdetails[0][$t]<>"" Then
-	$adapters+=1
-	$AdapterIPs[$t]=$ipdetails[1][$t]
-				If $ipdetails[5][$t]==1 Then
+; Compare networks
+; In future must rebuild this to analise full network range with different netmask, such as 192.168.0.0/255.255.0.0
 
-					$PhyAdapters +=1
-					$PhyAdapterName=$ipdetails[0][$t]
-					$NetworkAdapterIp=$ipdetails[1][$t]
-
-				Else
-
-					$VirtualAdapterName=$ipdetails[0][$t]
-					$NetworkVirtualAdapterIp=$ipdetails[1][$t]
-
-				EndIf
-	EndIf
-	$t+=1
-
-WEnd
-
-If $adapters==0 Then
-	MsgBox(0, "Warning!", "Network adapters not found! Enable them and run this script again.")
-	history ("Network adapters not found! Enable them and run this script again.")
-	Exit
-ElseIf $PhyAdapters==0 Then
-	$NetworkAdapterIp=$NetworkVirtualAdapterIp
-	history ("No physical network adapters found. Using virtual " & $VirtualAdapterName & " (" & $NetworkAdapterIp &")")
-Else
-	history ("Using physical network adapter " & $PhyAdapterName & " (" & $NetworkAdapterIp &")")
-EndIf
 
 If $ScriptInstalled==1 Then
-Local $NAS_NET = StringSplit($NAS_IP, '.', 1)
+	Local $NAS_NET = StringLeft($NAS_IP, StringInStr($NAS_IP, ".", 0, 3)-1)
+	$NetworkAdapterIp=$NAS_NET & ".10"
 
-MsgBox(4096,$NAS_NET[0], $NAS_NET[4])
-MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.")
+	MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.", 5)
+
 	$t=0
 		While $t <= UBound($AdapterIPs)-1
 
-		MsgBox(0,UBound($AdapterIPs),StringInStr($AdapterIPs[$t], $NAS_IP))
-		$t+=1
+			$Adapter_NET=StringLeft($AdapterIPs[$t], StringInStr($AdapterIPs[$t], ".", 0, 3)-1)
+			If $Adapter_NET==$NAS_NET Then
+				$NetworkAdapterIp=$NAS_NET & ".10"
+				history ("Found network conformity " & $Adapter_NET & " and " & $NAS_NET )
+				$NET_diff=0
+			EndIf
+			$t+=1
+
 		WEnd
-$NetworkAdapterIp=$NAS_IP
+	If $NET_diff==1 Then history ("Network conformity not found. NAS network is different to real network")
+
+Else
+
+	$NET_diff=0
+	Local $NAS_NET = StringLeft($AdapterIPs[0], StringInStr($AdapterIPs[0], ".", 0, 3)-1)
+	$NetworkAdapterIp=$NAS_NET & ".10"
+
+
 EndIf
 
 
 ;;; Create main GUI
 $mainGui = GuiCreate("Settings for Nas Test Script (NTS)", $NTS_SettingsFormWidth, $NTS_SettingsFormHeight)
 GUISetFont($Current_DPI[1], $Current_DPI[2], 1, $NTS_SettingsFormMainFont,$mainGui)
-;If @DesktopWidth>=1900 Then
-	;GUISetFont (8.5)
-;ElseIf 	@DesktopWidth<1900 Then
-	;GUISetFont (6)
-;EndIf
-
 GUISetBkColor($NTS_SettingsFormBackgroundColor) ; Set background color of GUI
-
-GUISwitch($mainGui)
 GUISetStyle($WS_POPUP, -1, $mainGui)
 
-GUICtrlCreateLabel(" ", 0, 0, $NTS_SettingsFormWidth+20, $NTS_SettingsFormHeight+30, $SS_CENTER, $GUI_WS_EX_PARENTDRAG)
+GUISwitch($mainGui)
+
+GUICtrlCreateLabel(" ", 0, 0, $NTS_SettingsFormWidth, $NTS_SettingsFormHeight, $SS_CENTER, $GUI_WS_EX_PARENTDRAG)
 
 GUISetState ()
 
+	GUICtrlCreateLabel("NAS IP Address:", $NTS_SettingsFormWidth/12, 23, 150, 25, $SS_CENTER)
+	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
 
-	GUICtrlCreateLabel("Port ", 20, 156, 50, 20)
-	$NAS_IP_ctrl=GUICtrlCreateInput($NetworkAdapterIp, 20, 55, 150, 25, $SS_RIGHT)
+	$NAS_IP_ctrl=GUICtrlCreateInput($NetworkAdapterIp, $NTS_SettingsFormWidth/3, 20, $NTS_SettingsFormWidth/3, 25, $SS_CENTER)
+	If $NET_diff==1 Then
+		GUICtrlSetColor(-1, $NTS_SettingsFormBadFontColor)
+		GUICtrlSetBkColor(-1, $NTS_SettingsFormBadBackgroundColor)
+		GUICtrlSetTip(-1, "NAS IP address not in home network")
+	EndIf
 	GUICtrlSetState(-1, $GUI_ONTOP)
 
-	$FTP_Group = GUICtrlCreateGroup("FTP", 10, 110, 140, 90)
+	$FTP_Group = GUICtrlCreateGroup("FTP", 10, 50, 250, 200)
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($FTP_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
 
-	$FTP_PassiveMode_ctrl=GUICtrlCreateCheckbox("Passive Mode", 20, 130, 100, 20)
+	$FTP_PassiveMode_ctrl=GUICtrlCreateCheckbox("Passive Mode", 20, 80, 100, 20)
 	GUICtrlSetState(-1, $GUI_ONTOP)
 	GUICtrlSetState(-1, $GUI_CHECKED)
 
-	GUICtrlCreateLabel("Port ", 20, 156, 50, 20)
+	GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
+	GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
+	GUICtrlSetState(-1, $GUI_ONTOP)
 
-	GUICtrlCreateInput(21, 70, 155, 50, 20, $SS_RIGHT)
+	GUICtrlCreateLabel("FTP Folder", 20, 136, 100, 20)
+	GUICtrlCreateInput($FTP_Folder, 100, 135, 150, 20, $SS_LEFT)
+	GUICtrlSetState(-1, $GUI_ONTOP)
 
+	GUICtrlCreateLabel("Login", 20, 166, 100, 20)
+	GUICtrlCreateInput($FTP_Login, 100, 165, 100, 20, $SS_CENTER)
+	GUICtrlSetState(-1, $GUI_ONTOP)
+
+	GUICtrlCreateLabel("Password", 20, 196, 100, 20)
+	GUICtrlCreateInput($FTP_Password, 100, 195, 100, 20, $SS_CENTER)
 	GUICtrlSetState(-1, $GUI_ONTOP)
 
 
