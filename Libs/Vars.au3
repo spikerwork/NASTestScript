@@ -71,7 +71,7 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $FTP_Port = IniRead($inifile, "Network", "FTPport", 21 ) ; NAS FTP port
 	Global $FTP_Login = IniRead($inifile, "Network", "FTPLogin", "admin" ) ; NAS FTP Login
 	Global $FTP_Password = IniRead($inifile, "Network", "FTPPassword", "password" ) ; NAS FTP Password
-	Global $FTP_Folder = IniRead($inifile, "Network", "FTPFolder", "ftpfolder" ) ; FTP folder/path
+	Global $FTP_Folder = IniRead($inifile, "Network", "FTPFolder", "/ftpfolder" ) ; FTP folder/path
 	Global $FTP_Passive = IniRead($inifile, "Network", "FTPPassive", 1 ) ; FTP passive mode, default on
 
 	Global $HTTPport = IniRead($inifile, "Network", "HTTPport", 8080 ) ; NAS HTTP port
@@ -82,13 +82,9 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 
 	; Main settings
 	Global $log = IniRead($inifile, "All", "Log", 1 ) ; Log on/off. Always on.
-	Global $linedebug
-		If @compiled==1 Then
-		$linedebug=0
-		Else
-		$linedebug=1
-		EndIf
-		$linedebug = IniRead($inifile, "All", "LineDebug", $linedebug )  ; Enables trayicondebug mode + traytip func. Always off.
+	Global $linedebug=1 ; Enables trayicondebug mode + traytip func. For exe files — off.
+		If @compiled==1 Then $linedebug=0
+		$linedebug = IniRead($inifile, "All", "LineDebug", $linedebug )
 
 	; NTS_Settings vars
 	Global $NTS_SettingsFormWidth=IniRead($inifile, "All", "SettingsFormWidth", 600)

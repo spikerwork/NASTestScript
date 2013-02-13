@@ -41,8 +41,10 @@ EndIf
 ;;; Tray settings
 ;;;
 
-;!!!! Enable it in production
+;!!!! Enable it in production !!!!
 ;WinMinimizeAll()
+;!!!! Enable it in production !!!!
+
 #NoTrayIcon
 Opt("TrayIconDebug",$linedebug)
 Opt("TrayOnEventMode", 1)

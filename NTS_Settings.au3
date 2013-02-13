@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.4
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.5
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -38,11 +38,16 @@
 ; GUI
 
 Local $mainGui
-Local $FTP_PassiveMode_ctrl
+
 Local $NAS_IP_ctrl
+Local $FTP_Passive_ctrl
 Local $FTP_Group
-
-
+Local $FTP_Port_ctrl
+Local $FTP_Folder_ctrl
+Local $FTP_Login_ctrl
+Local $FTP_Password_ctrl
+Local $SetButton
+Local $CancelButton
 
 ; Other
 Local $NetworkAdapterIp, $Adapter_NET
@@ -52,11 +57,8 @@ Local $NET_diff=1 ; Different between local network and $nas_ip. Default yes
 
 ; Main frame
 
-; Adapters discovery
-
-
 ; Compare networks
-; In future must rebuild this to analise full network range with different netmask, such as 192.168.0.0/255.255.0.0
+; In future must rebuild this, to analise full network range with different netmask, such as 192.168.0.0/255.255.0.0
 
 
 If $ScriptInstalled==1 Then
@@ -101,10 +103,10 @@ GUICtrlCreateLabel(" ", 0, 0, $NTS_SettingsFormWidth, $NTS_SettingsFormHeight, $
 
 GUISetState ()
 
-	GUICtrlCreateLabel("NAS IP Address:", $NTS_SettingsFormWidth/12, 23, 150, 25, $SS_CENTER)
+	GUICtrlCreateLabel("NAS IP Address:", $NTS_SettingsFormWidth*0.2, 23, 150, 25, $SS_CENTER)
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
 
-	$NAS_IP_ctrl=GUICtrlCreateInput($NetworkAdapterIp, $NTS_SettingsFormWidth/3, 20, $NTS_SettingsFormWidth/3, 25, $SS_CENTER)
+	$NAS_IP_ctrl=GUICtrlCreateInput($NetworkAdapterIp, $NTS_SettingsFormWidth*0.5, 20, $NTS_SettingsFormHeight*0.3, 25, $SS_CENTER)
 	If $NET_diff==1 Then
 		GUICtrlSetColor(-1, $NTS_SettingsFormBadFontColor)
 		GUICtrlSetBkColor(-1, $NTS_SettingsFormBadBackgroundColor)
@@ -116,39 +118,42 @@ GUISetState ()
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($FTP_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
 
-	$FTP_PassiveMode_ctrl=GUICtrlCreateCheckbox("Passive Mode", 20, 80, 100, 20)
+	$FTP_Passive_ctrl=GUICtrlCreateCheckbox("Passive Mode", 20, 80, 100, 20)
 	GUICtrlSetState(-1, $GUI_ONTOP)
-	GUICtrlSetState(-1, $GUI_CHECKED)
 
-	GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
+		If $FTP_Passive==1 Then
+		GUICtrlSetState(-1, $GUI_CHECKED)
+		Else
+		GUICtrlSetState(-1, $GUI_UNCHECKED)
+		EndIf
+
+	$FTP_Port_ctrl=GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
 	GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
 	GUICtrlSetState(-1, $GUI_ONTOP)
 
-	GUICtrlCreateLabel("FTP Folder", 20, 136, 100, 20)
+	$FTP_Folder_ctrl=GUICtrlCreateLabel("FTP Folder", 20, 136, 100, 20)
 	GUICtrlCreateInput($FTP_Folder, 100, 135, 150, 20, $SS_LEFT)
 	GUICtrlSetState(-1, $GUI_ONTOP)
 
-	GUICtrlCreateLabel("Login", 20, 166, 100, 20)
+	$FTP_Login_ctrl=GUICtrlCreateLabel("Login", 20, 166, 100, 20)
 	GUICtrlCreateInput($FTP_Login, 100, 165, 100, 20, $SS_CENTER)
 	GUICtrlSetState(-1, $GUI_ONTOP)
 
-	GUICtrlCreateLabel("Password", 20, 196, 100, 20)
+	$FTP_Password_ctrl=GUICtrlCreateLabel("Password", 20, 196, 100, 20)
 	GUICtrlCreateInput($FTP_Password, 100, 195, 100, 20, $SS_CENTER)
 	GUICtrlSetState(-1, $GUI_ONTOP)
 
-
 	GUICtrlCreateGroup("", -99, -99, 1, 1) ;close group
 
-GUICtrlSetState(-1, $GUI_ONTOP)
+	GUICtrlSetState(-1, $GUI_ONTOP)
 
 
-;;GUICtrlCreateRadio("Radio 2", 20, 50, 60, 20)
-;$Button_1 = GUICtrlCreateButton("Start Client", 80, 30, 150, 40)
-;GUICtrlSetState(-1, $GUI_ONTOP)
-;$Button_2 = GUICtrlCreateButton("Start Server",  80, 80, 150, 40)
-;GUICtrlSetState(-1, $GUI_ONTOP)
-;$Button_3 = GUICtrlCreateButton("Uninstall Script",  80, 130, 150, 40)
-;GUICtrlSetState(-1, $GUI_ONTOP)
+
+
+	$SetButton = GUICtrlCreateButton("Set", $NTS_SettingsFormWidth*0.33, $NTS_SettingsFormWidth*0.8, 100, 30)
+	GUICtrlSetState(-1, $GUI_ONTOP)
+	$CancelButton = GUICtrlCreateButton("Cancel", $NTS_SettingsFormWidth*0.55, $NTS_SettingsFormWidth*0.8, 100, 30)
+	GUICtrlSetState(-1, $GUI_ONTOP)
 
 
 
@@ -158,13 +163,29 @@ While 1
 
    Select
 
-	Case $msg == $GUI_EVENT_CLOSE
-	; Exit installer
+	; Changing NAS IP
+	Case $msg == $NAS_IP_ctrl
 
-	  Local $destr=GUIDelete($mainGui)
-	  history ("Main GUI destroyed — " & $destr)
-	  history ("Setting the parms canceled")
-	  ExitLoop
+	If GUICtrlRead ($NAS_IP_ctrl)<>"" Then
+		$NetworkAdapterIp=GUICtrlRead ($NAS_IP_ctrl)
+		history ("NAS IP changed to " & $NetworkAdapterIp)
+	Else
+		GUICtrlSetColor($NAS_IP_ctrl, $NTS_SettingsFormBadFontColor)
+		GUICtrlSetBkColor($NAS_IP_ctrl, $NTS_SettingsFormBadBackgroundColor)
+		GUICtrlSetTip($NAS_IP_ctrl, "NAS IP address must be set!")
+		GUICtrlSetState($NAS_IP_ctrl, $GUI_ONTOP)
+		local $lol=GUICtrlGetHandle($NAS_IP_ctrl)
+		Local $iColor = GUIGetBkColor($lol)
+		 MsgBox(0,"",$iColor)
+	EndIf
+
+	; Exit installer
+	Case $msg == $GUI_EVENT_CLOSE
+
+	Local $destr=GUIDelete($mainGui)
+	history ("Main GUI destroyed — " & $destr)
+	history ("Setting the parms canceled")
+	ExitLoop
 
 	EndSelect
 WEnd

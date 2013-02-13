@@ -1,0 +1,12 @@
+(18:31:34:827) --- Program started (NTS_Settings.exe). UnixTimeStamp 1360780294
+(18:31:34:827) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:31:34:827) --- Script use different directory, not default Ч C:\NasTestScript
+(18:31:34:827) --- Admin check passed
+(18:31:34:827) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:31:34:827) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:31:34:827) --- INI file not found, use default vars
+(18:31:38:259) --- Main GUI destroyed Ч 1
+(18:31:38:259) --- Setting the parms canceled
+(18:31:38:259) --- Errors 0
+(18:31:38:259) --- Program halted. Worktime - 4 seconds.
+(18:31:38:259) --- ------------------------------------------------------------------------

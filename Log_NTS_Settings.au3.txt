@@ -841,3 +841,813 @@
 (16:33:16:851) --- Errors 0
 (16:33:16:857) --- Program halted. Worktime - 3 seconds.
 (16:33:16:864) --- ------------------------------------------------------------------------
+(18:16:10:627) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360779370
+(18:16:10:643) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:16:10:658) --- Script use different directory, not default Ч C:\NasTestScript
+(18:16:10:674) --- Admin check passed
+(18:16:10:690) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:16:10:690) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:16:10:705) --- INI file not found, use default vars
+(18:17:33:011) --- Main GUI destroyed Ч 1
+(18:17:33:027) --- Setting the parms canceled
+(18:17:33:042) --- Errors 0
+(18:17:33:058) --- Program halted. Worktime - 83 seconds.
+(18:17:33:073) --- ------------------------------------------------------------------------
+(18:17:48:642) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360779468
+(18:17:48:658) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:17:48:673) --- Script use different directory, not default Ч C:\NasTestScript
+(18:17:48:673) --- Admin check passed
+(18:17:48:689) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:17:48:705) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:17:48:705) --- INI file not found, use default vars
+(18:17:50:639) --- Network conformity not found. NAS network is different to real network
+(18:18:06:551) --- Main GUI destroyed Ч 1
+(18:18:06:567) --- Setting the parms canceled
+(18:18:06:582) --- Errors 0
+(18:18:06:598) --- Program halted. Worktime - 18 seconds.
+(18:18:06:598) --- ------------------------------------------------------------------------
+(18:24:58:626) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360779898
+(18:24:58:641) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:24:58:657) --- Script use different directory, not default Ч C:\NasTestScript
+(18:24:58:657) --- Admin check passed
+(18:24:58:673) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:24:58:688) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:24:58:704) --- INI file not found, use default vars
+(18:25:16:035) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360779916
+(18:25:16:051) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:25:16:067) --- Script use different directory, not default Ч C:\NasTestScript
+(18:25:16:082) --- Admin check passed
+(18:25:16:082) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:25:16:098) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:25:16:113) --- INI file not found, use default vars
+(18:26:10:245) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360779970
+(18:26:10:261) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:26:10:277) --- Script use different directory, not default Ч C:\NasTestScript
+(18:26:10:292) --- Admin check passed
+(18:26:10:292) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:26:10:308) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:26:10:323) --- INI file not found, use default vars
+(18:26:22:632) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360779982
+(18:26:22:648) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:26:22:663) --- Script use different directory, not default Ч C:\NasTestScript
+(18:26:22:679) --- Admin check passed
+(18:26:22:679) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:26:22:694) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:26:22:710) --- INI file not found, use default vars
+(18:26:27:203) --- Main GUI destroyed Ч 1
+(18:26:27:218) --- Setting the parms canceled
+(18:26:27:234) --- Errors 0
+(18:26:27:250) --- Program halted. Worktime - 5 seconds.
+(18:26:27:250) --- ------------------------------------------------------------------------
+(18:26:45:914) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780005
+(18:26:45:929) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:26:45:929) --- Script use different directory, not default Ч C:\NasTestScript
+(18:26:45:945) --- Admin check passed
+(18:26:45:960) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:26:45:976) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:26:45:992) --- INI file not found, use default vars
+(18:26:47:567) --- Main GUI destroyed Ч 1
+(18:26:47:598) --- Setting the parms canceled
+(18:26:47:614) --- Errors 0
+(18:26:47:630) --- Program halted. Worktime - 2 seconds.
+(18:26:47:661) --- ------------------------------------------------------------------------
+(18:27:02:715) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780022
+(18:27:02:730) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:27:02:762) --- Script use different directory, not default Ч C:\NasTestScript
+(18:27:02:777) --- Admin check passed
+(18:27:02:793) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:27:02:840) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:27:02:902) --- INI file not found, use default vars
+(18:27:09:470) --- Main GUI destroyed Ч 1
+(18:27:09:532) --- Setting the parms canceled
+(18:27:09:579) --- Errors 0
+(18:27:09:626) --- Program halted. Worktime - 7 seconds.
+(18:27:09:688) --- ------------------------------------------------------------------------
+(18:28:30:137) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780110
+(18:28:30:184) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:28:30:231) --- Script use different directory, not default Ч C:\NasTestScript
+(18:28:30:278) --- Admin check passed
+(18:28:30:309) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:28:30:356) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:28:30:403) --- INI file not found, use default vars
+(18:28:35:691) --- Main GUI destroyed Ч 1
+(18:28:35:738) --- Setting the parms canceled
+(18:28:35:785) --- Errors 0
+(18:28:35:831) --- Program halted. Worktime - 5 seconds.
+(18:28:35:878) --- ------------------------------------------------------------------------
+(18:29:03:475) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780143
+(18:29:03:521) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:29:03:568) --- Script use different directory, not default Ч C:\NasTestScript
+(18:29:03:615) --- Admin check passed
+(18:29:03:662) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:29:03:709) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:29:03:755) --- INI file not found, use default vars
+(18:29:09:356) --- Main GUI destroyed Ч 1
+(18:29:09:403) --- Setting the parms canceled
+(18:29:09:449) --- Errors 0
+(18:29:09:496) --- Program halted. Worktime - 6 seconds.
+(18:29:09:543) --- ------------------------------------------------------------------------
+(18:29:19:605) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780159
+(18:29:19:652) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:29:19:714) --- Script use different directory, not default Ч C:\NasTestScript
+(18:29:19:761) --- Admin check passed
+(18:29:19:808) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:29:19:870) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:29:19:917) --- INI file not found, use default vars
+(18:29:20:962) --- Main GUI destroyed Ч 1
+(18:29:21:025) --- Setting the parms canceled
+(18:29:21:071) --- Errors 0
+(18:29:21:087) --- Program halted. Worktime - 2 seconds.
+(18:29:21:087) --- ------------------------------------------------------------------------
+(18:29:47:814) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780187
+(18:29:47:814) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:29:47:830) --- Script use different directory, not default Ч C:\NasTestScript
+(18:29:47:845) --- Admin check passed
+(18:29:47:845) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:29:47:861) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:29:47:877) --- INI file not found, use default vars
+(18:29:49:764) --- Main GUI destroyed Ч 1
+(18:29:49:780) --- Setting the parms canceled
+(18:29:49:795) --- Errors 0
+(18:29:49:795) --- Program halted. Worktime - 2 seconds.
+(18:29:49:811) --- ------------------------------------------------------------------------
+(18:31:03:334) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780263
+(18:31:03:350) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:31:03:365) --- Script use different directory, not default Ч C:\NasTestScript
+(18:31:03:365) --- Admin check passed
+(18:31:03:381) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:31:03:396) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:31:03:396) --- INI file not found, use default vars
+(18:31:04:956) --- Main GUI destroyed Ч 1
+(18:31:04:972) --- Setting the parms canceled
+(18:31:04:988) --- Errors 0
+(18:31:05:003) --- Program halted. Worktime - 1 seconds.
+(18:31:05:003) --- ------------------------------------------------------------------------
+(18:37:37:730) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780657
+(18:37:37:746) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:37:37:746) --- Script use different directory, not default Ч C:\NasTestScript
+(18:37:37:761) --- Admin check passed
+(18:37:37:777) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:37:37:793) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:37:37:793) --- INI file not found, use default vars
+(18:37:40:133) --- Main GUI destroyed Ч 1
+(18:37:40:148) --- Setting the parms canceled
+(18:37:40:164) --- Errors 0
+(18:37:40:164) --- Program halted. Worktime - 3 seconds.
+(18:37:40:179) --- ------------------------------------------------------------------------
+(18:37:43:502) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780663
+(18:37:43:518) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:37:43:534) --- Script use different directory, not default Ч C:\NasTestScript
+(18:37:43:549) --- Admin check passed
+(18:37:43:549) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:37:43:565) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:37:43:580) --- INI file not found, use default vars
+(18:37:47:028) --- Main GUI destroyed Ч 1
+(18:37:47:044) --- Setting the parms canceled
+(18:37:47:059) --- Errors 0
+(18:37:47:059) --- Program halted. Worktime - 4 seconds.
+(18:37:47:075) --- ------------------------------------------------------------------------
+(18:38:01:474) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780681
+(18:38:01:489) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:38:01:505) --- Script use different directory, not default Ч C:\NasTestScript
+(18:38:01:505) --- Admin check passed
+(18:38:01:520) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:38:01:536) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:38:01:536) --- INI file not found, use default vars
+(18:38:02:534) --- Main GUI destroyed Ч 1
+(18:38:02:550) --- Setting the parms canceled
+(18:38:02:566) --- Errors 0
+(18:38:02:581) --- Program halted. Worktime - 1 seconds.
+(18:38:02:581) --- ------------------------------------------------------------------------
+(18:38:25:437) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780705
+(18:38:25:453) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:38:25:468) --- Script use different directory, not default Ч C:\NasTestScript
+(18:38:25:484) --- Admin check passed
+(18:38:25:484) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:38:25:500) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:38:25:500) --- INI file not found, use default vars
+(18:38:32:052) --- Main GUI destroyed Ч 1
+(18:38:32:067) --- Setting the parms canceled
+(18:38:32:083) --- Errors 0
+(18:38:32:098) --- Program halted. Worktime - 7 seconds.
+(18:38:32:098) --- ------------------------------------------------------------------------
+(18:39:01:036) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780741
+(18:39:01:052) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:39:01:068) --- Script use different directory, not default Ч C:\NasTestScript
+(18:39:01:083) --- Admin check passed
+(18:39:01:099) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:39:01:099) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:39:01:114) --- INI file not found, use default vars
+(18:39:13:048) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780753
+(18:39:13:064) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:39:13:080) --- Script use different directory, not default Ч C:\NasTestScript
+(18:39:13:080) --- Admin check passed
+(18:39:13:095) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:39:13:111) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:39:13:111) --- INI file not found, use default vars
+(18:39:14:686) --- Main GUI destroyed Ч 1
+(18:39:14:702) --- Setting the parms canceled
+(18:39:14:718) --- Errors 0
+(18:39:14:733) --- Program halted. Worktime - 1 seconds.
+(18:39:14:733) --- ------------------------------------------------------------------------
+(18:39:24:109) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780764
+(18:39:24:124) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:39:24:140) --- Script use different directory, not default Ч C:\NasTestScript
+(18:39:24:140) --- Admin check passed
+(18:39:24:156) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:39:24:171) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:39:24:171) --- INI file not found, use default vars
+(18:39:25:138) --- Main GUI destroyed Ч 1
+(18:39:25:154) --- Setting the parms canceled
+(18:39:25:170) --- Errors 0
+(18:39:25:170) --- Program halted. Worktime - 1 seconds.
+(18:39:25:185) --- ------------------------------------------------------------------------
+(18:39:28:773) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780768
+(18:39:28:789) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:39:28:804) --- Script use different directory, not default Ч C:\NasTestScript
+(18:39:28:820) --- Admin check passed
+(18:39:28:820) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:39:28:836) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:39:28:851) --- INI file not found, use default vars
+(18:39:29:725) --- Main GUI destroyed Ч 1
+(18:39:29:740) --- Setting the parms canceled
+(18:39:29:756) --- Errors 0
+(18:39:29:772) --- Program halted. Worktime - 1 seconds.
+(18:39:29:772) --- ------------------------------------------------------------------------
+(18:39:41:831) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780781
+(18:39:41:831) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:39:41:846) --- Script use different directory, not default Ч C:\NasTestScript
+(18:39:41:862) --- Admin check passed
+(18:39:41:862) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:39:41:877) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:39:41:893) --- INI file not found, use default vars
+(18:39:42:845) --- Main GUI destroyed Ч 1
+(18:39:42:860) --- Setting the parms canceled
+(18:39:42:860) --- Errors 0
+(18:39:42:876) --- Program halted. Worktime - 1 seconds.
+(18:39:42:876) --- ------------------------------------------------------------------------
+(18:39:50:801) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780790
+(18:39:50:816) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:39:50:816) --- Script use different directory, not default Ч C:\NasTestScript
+(18:39:50:832) --- Admin check passed
+(18:39:50:847) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:39:50:847) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:39:50:863) --- INI file not found, use default vars
+(18:39:53:983) --- Main GUI destroyed Ч 1
+(18:39:53:999) --- Setting the parms canceled
+(18:39:54:014) --- Errors 0
+(18:39:54:030) --- Program halted. Worktime - 4 seconds.
+(18:39:54:030) --- ------------------------------------------------------------------------
+(18:40:00:597) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780800
+(18:40:00:613) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:40:00:629) --- Script use different directory, not default Ч C:\NasTestScript
+(18:40:00:629) --- Admin check passed
+(18:40:00:644) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:40:00:660) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:40:00:660) --- INI file not found, use default vars
+(18:40:01:596) --- Main GUI destroyed Ч 1
+(18:40:01:611) --- Setting the parms canceled
+(18:40:01:627) --- Errors 0
+(18:40:01:643) --- Program halted. Worktime - 1 seconds.
+(18:40:01:658) --- ------------------------------------------------------------------------
+(18:40:07:290) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780807
+(18:40:07:305) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:40:07:305) --- Script use different directory, not default Ч C:\NasTestScript
+(18:40:07:321) --- Admin check passed
+(18:40:07:337) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:40:07:337) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:40:07:352) --- INI file not found, use default vars
+(18:40:09:287) --- Main GUI destroyed Ч 1
+(18:40:09:302) --- Setting the parms canceled
+(18:40:09:302) --- Errors 0
+(18:40:09:318) --- Program halted. Worktime - 2 seconds.
+(18:40:09:333) --- ------------------------------------------------------------------------
+(18:40:16:837) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780816
+(18:40:16:837) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:40:16:853) --- Script use different directory, not default Ч C:\NasTestScript
+(18:40:16:868) --- Admin check passed
+(18:40:16:868) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:40:16:884) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:40:16:899) --- INI file not found, use default vars
+(18:40:27:632) --- Main GUI destroyed Ч 1
+(18:40:27:648) --- Setting the parms canceled
+(18:40:27:663) --- Errors 0
+(18:40:27:663) --- Program halted. Worktime - 11 seconds.
+(18:40:27:679) --- ------------------------------------------------------------------------
+(18:40:37:554) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780837
+(18:40:37:569) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:40:37:585) --- Script use different directory, not default Ч C:\NasTestScript
+(18:40:37:601) --- Admin check passed
+(18:40:37:601) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:40:37:616) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:40:37:632) --- INI file not found, use default vars
+(18:40:45:681) --- Main GUI destroyed Ч 1
+(18:40:45:697) --- Setting the parms canceled
+(18:40:45:713) --- Errors 0
+(18:40:45:713) --- Program halted. Worktime - 8 seconds.
+(18:40:45:728) --- ------------------------------------------------------------------------
+(18:40:51:329) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780851
+(18:40:51:344) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:40:51:360) --- Script use different directory, not default Ч C:\NasTestScript
+(18:40:51:360) --- Admin check passed
+(18:40:51:375) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:40:51:391) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:40:51:391) --- INI file not found, use default vars
+(18:40:55:088) --- Main GUI destroyed Ч 1
+(18:40:55:104) --- Setting the parms canceled
+(18:40:55:119) --- Errors 0
+(18:40:55:135) --- Program halted. Worktime - 4 seconds.
+(18:40:55:135) --- ------------------------------------------------------------------------
+(18:41:11:219) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780871
+(18:41:11:234) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:41:11:250) --- Script use different directory, not default Ч C:\NasTestScript
+(18:41:11:265) --- Admin check passed
+(18:41:11:265) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:41:11:281) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:41:11:297) --- INI file not found, use default vars
+(18:41:12:451) --- Main GUI destroyed Ч 1
+(18:41:12:467) --- Setting the parms canceled
+(18:41:12:482) --- Errors 0
+(18:41:12:482) --- Program halted. Worktime - 1 seconds.
+(18:41:12:498) --- ------------------------------------------------------------------------
+(18:41:35:711) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780895
+(18:41:35:726) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:41:35:742) --- Script use different directory, not default Ч C:\NasTestScript
+(18:41:35:758) --- Admin check passed
+(18:41:35:758) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:41:35:773) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:41:35:789) --- INI file not found, use default vars
+(18:41:37:630) --- Main GUI destroyed Ч 1
+(18:41:37:645) --- Setting the parms canceled
+(18:41:37:661) --- Errors 0
+(18:41:37:676) --- Program halted. Worktime - 2 seconds.
+(18:41:37:676) --- ------------------------------------------------------------------------
+(18:41:45:788) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780905
+(18:41:45:804) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:41:45:820) --- Script use different directory, not default Ч C:\NasTestScript
+(18:41:45:820) --- Admin check passed
+(18:41:45:835) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:41:45:851) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:41:45:851) --- INI file not found, use default vars
+(18:42:07:847) --- Main GUI destroyed Ч 1
+(18:42:07:862) --- Setting the parms canceled
+(18:42:07:878) --- Errors 0
+(18:42:07:894) --- Program halted. Worktime - 22 seconds.
+(18:42:07:894) --- ------------------------------------------------------------------------
+(18:42:37:768) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780957
+(18:42:37:783) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:42:37:783) --- Script use different directory, not default Ч C:\NasTestScript
+(18:42:37:799) --- Admin check passed
+(18:42:37:814) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:42:37:814) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:42:37:830) --- INI file not found, use default vars
+(18:42:40:778) --- Main GUI destroyed Ч 1
+(18:42:40:794) --- Setting the parms canceled
+(18:42:40:810) --- Errors 0
+(18:42:40:825) --- Program halted. Worktime - 3 seconds.
+(18:42:40:825) --- ------------------------------------------------------------------------
+(18:42:45:568) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780965
+(18:42:45:583) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:42:45:599) --- Script use different directory, not default Ч C:\NasTestScript
+(18:42:45:599) --- Admin check passed
+(18:42:45:614) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:42:45:630) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:42:45:630) --- INI file not found, use default vars
+(18:42:46:597) --- Main GUI destroyed Ч 1
+(18:42:46:613) --- Setting the parms canceled
+(18:42:46:628) --- Errors 0
+(18:42:46:644) --- Program halted. Worktime - 1 seconds.
+(18:42:46:644) --- ------------------------------------------------------------------------
+(18:42:54:132) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780974
+(18:42:54:148) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:42:54:163) --- Script use different directory, not default Ч C:\NasTestScript
+(18:42:54:179) --- Admin check passed
+(18:42:54:179) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:42:54:194) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:42:54:210) --- INI file not found, use default vars
+(18:42:56:378) --- Main GUI destroyed Ч 1
+(18:42:56:394) --- Setting the parms canceled
+(18:42:56:410) --- Errors 0
+(18:42:56:425) --- Program halted. Worktime - 2 seconds.
+(18:42:56:425) --- ------------------------------------------------------------------------
+(18:43:01:292) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780981
+(18:43:01:292) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:43:01:308) --- Script use different directory, not default Ч C:\NasTestScript
+(18:43:01:324) --- Admin check passed
+(18:43:01:324) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:43:01:339) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:43:01:355) --- INI file not found, use default vars
+(18:43:10:013) --- Main GUI destroyed Ч 1
+(18:43:10:028) --- Setting the parms canceled
+(18:43:10:044) --- Errors 0
+(18:43:10:044) --- Program halted. Worktime - 9 seconds.
+(18:43:10:060) --- ------------------------------------------------------------------------
+(18:43:11:916) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360780991
+(18:43:11:932) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:43:11:947) --- Script use different directory, not default Ч C:\NasTestScript
+(18:43:11:947) --- Admin check passed
+(18:43:11:963) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:43:11:978) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:43:11:978) --- INI file not found, use default vars
+(18:43:13:601) --- Main GUI destroyed Ч 1
+(18:43:13:616) --- Setting the parms canceled
+(18:43:13:632) --- Errors 0
+(18:43:13:648) --- Program halted. Worktime - 2 seconds.
+(18:43:13:648) --- ------------------------------------------------------------------------
+(18:43:34:099) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781014
+(18:43:34:115) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:43:34:131) --- Script use different directory, not default Ч C:\NasTestScript
+(18:43:34:146) --- Admin check passed
+(18:43:34:146) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:43:34:162) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:43:34:177) --- INI file not found, use default vars
+(18:43:34:911) --- Main GUI destroyed Ч 1
+(18:43:34:926) --- Setting the parms canceled
+(18:43:34:942) --- Errors 0
+(18:43:34:942) --- Program halted. Worktime - 0 seconds.
+(18:43:34:957) --- ------------------------------------------------------------------------
+(18:43:38:795) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781018
+(18:43:38:811) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:43:38:811) --- Script use different directory, not default Ч C:\NasTestScript
+(18:43:38:826) --- Admin check passed
+(18:43:38:842) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:43:38:842) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:43:38:857) --- INI file not found, use default vars
+(18:43:46:923) --- Main GUI destroyed Ч 1
+(18:43:46:938) --- Setting the parms canceled
+(18:43:46:954) --- Errors 0
+(18:43:46:954) --- Program halted. Worktime - 8 seconds.
+(18:43:46:969) --- ------------------------------------------------------------------------
+(18:43:49:387) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781029
+(18:43:49:403) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:43:49:419) --- Script use different directory, not default Ч C:\NasTestScript
+(18:43:49:434) --- Admin check passed
+(18:43:49:434) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:43:49:450) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:43:49:465) --- INI file not found, use default vars
+(18:43:57:063) --- Main GUI destroyed Ч 1
+(18:43:57:078) --- Setting the parms canceled
+(18:43:57:094) --- Errors 0
+(18:43:57:094) --- Program halted. Worktime - 8 seconds.
+(18:43:57:109) --- ------------------------------------------------------------------------
+(18:44:02:601) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781042
+(18:44:02:616) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:44:02:632) --- Script use different directory, not default Ч C:\NasTestScript
+(18:44:02:632) --- Admin check passed
+(18:44:02:647) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:44:02:663) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:44:02:663) --- INI file not found, use default vars
+(18:44:04:317) --- Main GUI destroyed Ч 1
+(18:44:04:332) --- Setting the parms canceled
+(18:44:04:348) --- Errors 0
+(18:44:04:348) --- Program halted. Worktime - 2 seconds.
+(18:44:04:363) --- ------------------------------------------------------------------------
+(18:44:11:165) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781051
+(18:44:11:181) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:44:11:196) --- Script use different directory, not default Ч C:\NasTestScript
+(18:44:11:196) --- Admin check passed
+(18:44:11:212) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:44:11:227) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:44:11:227) --- INI file not found, use default vars
+(18:44:14:769) --- Main GUI destroyed Ч 1
+(18:44:14:784) --- Setting the parms canceled
+(18:44:14:800) --- Errors 0
+(18:44:14:815) --- Program halted. Worktime - 3 seconds.
+(18:44:14:815) --- ------------------------------------------------------------------------
+(18:44:25:876) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781065
+(18:44:25:891) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:44:25:907) --- Script use different directory, not default Ч C:\NasTestScript
+(18:44:25:923) --- Admin check passed
+(18:44:25:923) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:44:25:938) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:44:25:954) --- INI file not found, use default vars
+(18:44:29:121) --- Main GUI destroyed Ч 1
+(18:44:29:136) --- Setting the parms canceled
+(18:44:29:152) --- Errors 0
+(18:44:29:152) --- Program halted. Worktime - 4 seconds.
+(18:44:29:167) --- ------------------------------------------------------------------------
+(18:44:31:367) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781071
+(18:44:31:367) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:44:31:383) --- Script use different directory, not default Ч C:\NasTestScript
+(18:44:31:398) --- Admin check passed
+(18:44:31:398) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:44:31:414) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:44:31:429) --- INI file not found, use default vars
+(18:44:33:348) --- Main GUI destroyed Ч 1
+(18:44:33:364) --- Setting the parms canceled
+(18:44:33:379) --- Errors 0
+(18:44:33:379) --- Program halted. Worktime - 2 seconds.
+(18:44:33:395) --- ------------------------------------------------------------------------
+(18:44:36:297) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781076
+(18:44:36:312) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:44:36:328) --- Script use different directory, not default Ч C:\NasTestScript
+(18:44:36:343) --- Admin check passed
+(18:44:36:343) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:44:36:359) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:44:36:375) --- INI file not found, use default vars
+(18:44:39:885) --- Main GUI destroyed Ч 1
+(18:44:39:900) --- Setting the parms canceled
+(18:44:39:916) --- Errors 0
+(18:44:39:931) --- Program halted. Worktime - 3 seconds.
+(18:44:39:931) --- ------------------------------------------------------------------------
+(18:44:41:881) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781081
+(18:44:41:897) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:44:41:913) --- Script use different directory, not default Ч C:\NasTestScript
+(18:44:41:928) --- Admin check passed
+(18:44:41:928) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:44:41:944) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:44:41:944) --- INI file not found, use default vars
+(18:44:44:081) --- Main GUI destroyed Ч 1
+(18:44:44:097) --- Setting the parms canceled
+(18:44:44:112) --- Errors 0
+(18:44:44:128) --- Program halted. Worktime - 3 seconds.
+(18:44:44:128) --- ------------------------------------------------------------------------
+(18:45:35:635) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781135
+(18:45:35:650) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:45:35:666) --- Script use different directory, not default Ч C:\NasTestScript
+(18:45:35:666) --- Admin check passed
+(18:45:35:682) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:45:35:697) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:45:35:697) --- INI file not found, use default vars
+(18:45:37:444) --- Main GUI destroyed Ч 1
+(18:45:37:460) --- Setting the parms canceled
+(18:45:37:460) --- Errors 0
+(18:45:37:476) --- Program halted. Worktime - 2 seconds.
+(18:45:37:491) --- ------------------------------------------------------------------------
+(18:45:42:842) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781142
+(18:45:42:858) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:45:42:873) --- Script use different directory, not default Ч C:\NasTestScript
+(18:45:42:889) --- Admin check passed
+(18:45:42:889) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:45:42:904) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:45:42:920) --- INI file not found, use default vars
+(18:45:46:664) --- Main GUI destroyed Ч 1
+(18:45:46:680) --- Setting the parms canceled
+(18:45:46:695) --- Errors 0
+(18:45:46:711) --- Program halted. Worktime - 4 seconds.
+(18:45:46:711) --- ------------------------------------------------------------------------
+(18:46:00:392) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781160
+(18:46:00:408) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:46:00:423) --- Script use different directory, not default Ч C:\NasTestScript
+(18:46:00:439) --- Admin check passed
+(18:46:00:439) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:46:00:454) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:46:00:470) --- INI file not found, use default vars
+(18:46:03:840) --- Main GUI destroyed Ч 1
+(18:46:03:855) --- Setting the parms canceled
+(18:46:03:871) --- Errors 0
+(18:46:03:871) --- Program halted. Worktime - 3 seconds.
+(18:46:03:886) --- ------------------------------------------------------------------------
+(18:46:05:727) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781165
+(18:46:05:743) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:46:05:758) --- Script use different directory, not default Ч C:\NasTestScript
+(18:46:05:758) --- Admin check passed
+(18:46:05:774) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:46:05:790) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:46:05:790) --- INI file not found, use default vars
+(18:46:09:144) --- Main GUI destroyed Ч 1
+(18:46:09:159) --- Setting the parms canceled
+(18:46:09:175) --- Errors 0
+(18:46:09:175) --- Program halted. Worktime - 4 seconds.
+(18:46:09:190) --- ------------------------------------------------------------------------
+(18:46:16:491) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781176
+(18:46:16:507) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:46:16:522) --- Script use different directory, not default Ч C:\NasTestScript
+(18:46:16:522) --- Admin check passed
+(18:46:16:538) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:46:16:554) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:46:16:554) --- INI file not found, use default vars
+(18:46:21:062) --- Main GUI destroyed Ч 1
+(18:46:21:078) --- Setting the parms canceled
+(18:46:21:093) --- Errors 0
+(18:46:21:093) --- Program halted. Worktime - 5 seconds.
+(18:46:21:109) --- ------------------------------------------------------------------------
+(18:46:28:254) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781188
+(18:46:28:269) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:46:28:285) --- Script use different directory, not default Ч C:\NasTestScript
+(18:46:28:300) --- Admin check passed
+(18:46:28:300) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:46:28:316) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:46:28:332) --- INI file not found, use default vars
+(18:46:30:781) --- Main GUI destroyed Ч 1
+(18:46:30:796) --- Setting the parms canceled
+(18:46:30:812) --- Errors 0
+(18:46:30:812) --- Program halted. Worktime - 2 seconds.
+(18:46:30:828) --- ------------------------------------------------------------------------
+(18:46:45:242) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781205
+(18:46:45:258) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:46:45:273) --- Script use different directory, not default Ч C:\NasTestScript
+(18:46:45:273) --- Admin check passed
+(18:46:45:289) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:46:45:304) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:46:45:304) --- INI file not found, use default vars
+(18:46:48:066) --- Main GUI destroyed Ч 1
+(18:46:48:081) --- Setting the parms canceled
+(18:46:48:097) --- Errors 0
+(18:46:48:112) --- Program halted. Worktime - 3 seconds.
+(18:46:48:112) --- ------------------------------------------------------------------------
+(18:47:20:951) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781240
+(18:47:20:966) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:47:20:982) --- Script use different directory, not default Ч C:\NasTestScript
+(18:47:20:997) --- Admin check passed
+(18:47:20:997) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:47:21:013) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:47:21:029) --- INI file not found, use default vars
+(18:47:23:166) --- Main GUI destroyed Ч 1
+(18:47:23:181) --- Setting the parms canceled
+(18:47:23:197) --- Errors 0
+(18:47:23:213) --- Program halted. Worktime - 3 seconds.
+(18:47:23:213) --- ------------------------------------------------------------------------
+(18:47:53:180) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781273
+(18:47:53:196) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:47:53:211) --- Script use different directory, not default Ч C:\NasTestScript
+(18:47:53:227) --- Admin check passed
+(18:47:53:227) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:47:53:243) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:47:53:258) --- INI file not found, use default vars
+(18:47:56:721) --- Main GUI destroyed Ч 1
+(18:47:56:737) --- Setting the parms canceled
+(18:47:56:753) --- Errors 0
+(18:47:56:753) --- Program halted. Worktime - 3 seconds.
+(18:47:56:768) --- ------------------------------------------------------------------------
+(18:48:01:464) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781281
+(18:48:01:479) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:48:01:479) --- Script use different directory, not default Ч C:\NasTestScript
+(18:48:01:495) --- Admin check passed
+(18:48:01:511) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:48:01:511) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:48:01:526) --- INI file not found, use default vars
+(18:48:14:599) --- Main GUI destroyed Ч 1
+(18:48:14:615) --- Setting the parms canceled
+(18:48:14:630) --- Errors 0
+(18:48:14:630) --- Program halted. Worktime - 13 seconds.
+(18:48:14:646) --- ------------------------------------------------------------------------
+(18:53:14:993) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781594
+(18:53:15:009) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:53:15:024) --- Script use different directory, not default Ч C:\NasTestScript
+(18:53:15:024) --- Admin check passed
+(18:53:15:040) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:53:15:056) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:53:15:056) --- INI file not found, use default vars
+(18:53:22:294) --- NAS IP changed Ч d.2
+(18:53:23:901) --- Log file C:\Users\¬ладимир\Documents\GitHub\NASTestScript\Log_NTS_Settings.au3.txt opened
+(18:53:43:229) --- Main GUI destroyed Ч 1
+(18:53:43:245) --- Setting the parms canceled
+(18:53:43:260) --- Errors 0
+(18:53:43:260) --- Program halted. Worktime - 29 seconds.
+(18:53:43:276) --- ------------------------------------------------------------------------
+(18:54:03:416) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781643
+(18:54:03:431) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:54:03:447) --- Script use different directory, not default Ч C:\NasTestScript
+(18:54:03:462) --- Admin check passed
+(18:54:03:462) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:54:03:478) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:54:03:494) --- INI file not found, use default vars
+(18:54:14:398) --- Main GUI destroyed Ч 1
+(18:54:14:414) --- Setting the parms canceled
+(18:54:14:429) --- Errors 0
+(18:54:14:429) --- Program halted. Worktime - 11 seconds.
+(18:54:14:445) --- ------------------------------------------------------------------------
+(18:55:12:103) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781712
+(18:55:12:118) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:55:12:134) --- Script use different directory, not default Ч C:\NasTestScript
+(18:55:12:149) --- Admin check passed
+(18:55:12:149) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:55:12:165) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:55:12:181) --- INI file not found, use default vars
+(18:55:21:104) --- Main GUI destroyed Ч 1
+(18:55:21:119) --- Setting the parms canceled
+(18:55:21:135) --- Errors 0
+(18:55:21:151) --- Program halted. Worktime - 9 seconds.
+(18:55:21:151) --- ------------------------------------------------------------------------
+(18:55:44:067) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781744
+(18:55:44:083) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:55:44:098) --- Script use different directory, not default Ч C:\NasTestScript
+(18:55:44:114) --- Admin check passed
+(18:55:44:114) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:55:44:129) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:55:44:145) --- INI file not found, use default vars
+(18:55:49:418) --- Main GUI destroyed Ч 1
+(18:55:49:433) --- Setting the parms canceled
+(18:55:49:449) --- Errors 0
+(18:55:49:465) --- Program halted. Worktime - 5 seconds.
+(18:55:49:465) --- ------------------------------------------------------------------------
+(18:57:07:263) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360781827
+(18:57:07:279) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(18:57:07:279) --- Script use different directory, not default Ч C:\NasTestScript
+(18:57:07:294) --- Admin check passed
+(18:57:07:310) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(18:57:07:310) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(18:57:07:325) --- INI file not found, use default vars
+(18:57:10:679) --- NAS IP changed Ч 192.168.sdsd
+(18:57:15:250) --- NAS IP changed Ч 192.168.sdsdsd 
+(18:57:25:546) --- NAS IP changed Ч dff
+(18:57:30:585) --- Main GUI destroyed Ч 1
+(18:57:30:601) --- Setting the parms canceled
+(18:57:30:616) --- Errors 0
+(18:57:30:632) --- Program halted. Worktime - 23 seconds.
+(18:57:30:632) --- ------------------------------------------------------------------------
+(19:06:38:385) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360782398
+(19:06:38:405) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:06:38:415) --- Script use different directory, not default Ч C:\NasTestScript
+(19:06:38:435) --- Admin check passed
+(19:06:38:445) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:06:38:455) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:06:38:465) --- INI file not found, use default vars
+(19:07:01:714) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360782421
+(19:07:01:734) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:07:01:744) --- Script use different directory, not default Ч C:\NasTestScript
+(19:07:01:754) --- Admin check passed
+(19:07:01:764) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:07:01:774) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:07:01:784) --- INI file not found, use default vars
+(19:07:11:780) --- NAS IP changed to dffd
+(19:07:17:095) --- Main GUI destroyed Ч 1
+(19:07:17:115) --- Setting the parms canceled
+(19:07:17:125) --- Errors 0
+(19:07:17:135) --- Program halted. Worktime - 16 seconds.
+(19:07:17:145) --- ------------------------------------------------------------------------
+(19:09:59:451) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360782599
+(19:09:59:461) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:09:59:471) --- Script use different directory, not default Ч C:\NasTestScript
+(19:09:59:491) --- Admin check passed
+(19:09:59:501) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:09:59:511) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:09:59:521) --- INI file not found, use default vars
+(19:10:10:849) --- Main GUI destroyed Ч 1
+(19:10:10:865) --- Setting the parms canceled
+(19:10:10:880) --- Errors 0
+(19:10:10:880) --- Program halted. Worktime - 11 seconds.
+(19:10:10:896) --- ------------------------------------------------------------------------
+(19:12:25:086) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360782745
+(19:12:25:096) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:12:25:106) --- Script use different directory, not default Ч C:\NasTestScript
+(19:12:25:126) --- Admin check passed
+(19:12:25:136) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:12:25:146) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:12:25:156) --- INI file not found, use default vars
+(19:12:30:999) --- Main GUI destroyed Ч 1
+(19:12:31:015) --- Setting the parms canceled
+(19:12:31:015) --- Errors 0
+(19:12:31:031) --- Program halted. Worktime - 6 seconds.
+(19:12:31:046) --- ------------------------------------------------------------------------
+(19:13:57:367) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360782837
+(19:13:57:377) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:13:57:387) --- Script use different directory, not default Ч C:\NasTestScript
+(19:13:57:407) --- Admin check passed
+(19:13:57:417) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:13:57:427) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:13:57:437) --- INI file not found, use default vars
+(19:14:09:906) --- Main GUI destroyed Ч 1
+(19:14:09:926) --- Setting the parms canceled
+(19:14:09:936) --- Errors 0
+(19:14:09:946) --- Program halted. Worktime - 12 seconds.
+(19:14:09:956) --- ------------------------------------------------------------------------
+(19:28:54:715) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360783734
+(19:28:54:725) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:28:54:745) --- Script use different directory, not default Ч C:\NasTestScript
+(19:28:54:755) --- Admin check passed
+(19:28:54:765) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:28:54:775) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:28:54:785) --- INI file not found, use default vars
+(19:29:00:871) --- Main GUI destroyed Ч 1
+(19:29:00:886) --- Setting the parms canceled
+(19:29:00:902) --- Errors 0
+(19:29:00:902) --- Program halted. Worktime - 6 seconds.
+(19:29:00:917) --- ------------------------------------------------------------------------
+(19:29:57:399) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360783797
+(19:29:57:409) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:29:57:419) --- Script use different directory, not default Ч C:\NasTestScript
+(19:29:57:439) --- Admin check passed
+(19:29:57:439) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:29:57:459) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:29:57:469) --- INI file not found, use default vars
+(19:30:03:275) --- Main GUI destroyed Ч 1
+(19:30:03:290) --- Setting the parms canceled
+(19:30:03:290) --- Errors 0
+(19:30:03:306) --- Program halted. Worktime - 6 seconds.
+(19:30:03:321) --- ------------------------------------------------------------------------
+(19:30:37:001) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360783837
+(19:30:37:011) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:30:37:021) --- Script use different directory, not default Ч C:\NasTestScript
+(19:30:37:031) --- Admin check passed
+(19:30:37:041) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:30:37:061) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:30:37:071) --- INI file not found, use default vars
+(19:30:43:429) --- Main GUI destroyed Ч 1
+(19:30:43:444) --- Setting the parms canceled
+(19:30:43:460) --- Errors 0
+(19:30:43:460) --- Program halted. Worktime - 6 seconds.
+(19:30:43:476) --- ------------------------------------------------------------------------
+(19:35:07:576) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360784107
+(19:35:07:591) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:35:07:607) --- Script use different directory, not default Ч C:\NasTestScript
+(19:35:07:617) --- Admin check passed
+(19:35:07:627) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:35:07:637) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:35:07:647) --- INI file not found, use default vars
+(19:35:28:448) --- Main GUI destroyed Ч 1
+(19:35:28:463) --- Setting the parms canceled
+(19:35:28:479) --- Errors 0
+(19:35:28:494) --- Program halted. Worktime - 21 seconds.
+(19:35:28:504) --- ------------------------------------------------------------------------

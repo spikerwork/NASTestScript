@@ -202,3 +202,85 @@
 	Return $DPI_array
 
 	EndFunc
+
+
+	; #FUNCTION# ====================================================================================================================
+	; Name ..........: GUIGetBkColor
+	; Description ...: Retrieves the RGB value of the GUI background.
+	; Syntax ........: GUIGetBkColor($hWnd)
+	; Parameters ....: $hWnd                - A handle of the GUI.
+	; Return values .: Success - RGB value
+	;                  Failure - 0
+	; Author ........: guinness
+	; Remarks .......: WinAPIEx is required.
+	; Example .......: Yes
+	; ===============================================================================================================================
+	Func GUIGetBkColor($hWnd)
+		;MsgBox(0,"",$hWnd)
+		If IsHWnd($hWnd) = 0 Then
+			Return 0
+		EndIf
+
+		Local $hDC = _WinAPI_GetDC($hWnd)
+		Local $iColor = _WinAPI_GetBkColor($hDC)
+		_WinAPI_ReleaseDC($hWnd, $hDC)
+		Return $iColor
+	EndFunc   ;==>GUIGetBkColor
+
+
+	; #FUNCTION# ====================================================================================================================
+	; Name...........: _WinAPI_GetBkColor
+	; Description....: Retrieves the current background color for the specified device context.
+	; Syntax.........: _WinAPI_GetBkColor ( $hDC )
+	; Parameters.....: $hDC    - Handle to the device context.
+	; Return values..: Success - The value of the current background color, in RGB.
+	;                  Failure - (-1) and sets the @error flag to non-zero.
+	; Author.........: Yashied
+	; Modified.......:
+	; Remarks........: None
+	; Related........:
+	; Link...........: @@MsdnLink@@ GetBkColor
+	; Example........: Yes
+	; ===============================================================================================================================
+
+	Func _WinAPI_GetBkColor($hDC)
+
+		Local $Ret = DllCall('gdi32.dll', 'int', 'GetBkColor', 'hwnd', $hDC)
+
+		If (@error) Or ($Ret[0] = -1) Then
+			Return SetError(1, 0, -1)
+		EndIf
+		Return __RGB($Ret[0])
+	EndFunc   ;==>_WinAPI_GetBkColor
+
+
+	Func __RGB($iColor)
+		Local $__Var[9] = [0, 0, 0, 0, 16385, 8388608, 1, 0, 0]
+	If $__Var[6] Then
+		$iColor = _WinAPI_SwitchColor($iColor)
+	EndIf
+	Return $iColor
+	EndFunc   ;==>__RGB
+
+	; #FUNCTION# ====================================================================================================================
+	; Name...........: _WinAPI_SwitchColor
+	; Description....: Converts a color from BGR to RGB and vice versa.
+	; Syntax.........: _WinAPI_SwitchColor ( $iColor )
+	; Parameters.....: $iColor - The color to conversion.
+	; Return values..: The converted color (RGB or BGR - depends on the $iColor value, BGR > RGB > BGR etc).
+	; Author.........: Yashied
+	; Modified.......:
+	; Remarks........: None
+	; Related........:
+	; Link...........: None
+	; Example........: Yes
+	; ===============================================================================================================================
+
+	Func _WinAPI_SwitchColor($iColor)
+		Return BitOR(BitAND($iColor, 0x00FF00), BitShift(BitAND($iColor, 0x0000FF), -16), BitShift(BitAND($iColor, 0xFF0000), 16))
+	EndFunc   ;==>_WinAPI_SwitchColor
+
+
+
+
+
