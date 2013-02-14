@@ -1,0 +1,25 @@
+(10:22:11:665) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360837331
+(10:22:11:693) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(10:22:11:699) --- Script use different directory, not default — C:\NasTestScript
+(10:22:11:706) --- Admin check passed
+(10:22:11:716) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(10:22:11:724) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(10:22:11:730) --- INI file not found, use default vars
+(10:22:14:136) --- Main GUI destroyed — 1
+(10:22:14:142) --- Setting the parms canceled
+(10:22:14:148) --- Errors 0
+(10:22:14:154) --- Program halted. Worktime - 3 seconds.
+(10:22:14:161) --- ------------------------------------------------------------------------
+(12:41:27:752) --- Program started (NTS_Settings.au3). UnixTimeStamp 1360845687
+(12:41:27:780) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(12:41:27:786) --- Script use different directory, not default — C:\NasTestScript
+(12:41:27:792) --- Admin check passed
+(12:41:27:811) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(12:41:27:817) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(12:41:27:822) --- INI file not found, use default vars
+(12:41:39:949) --- NAS IP changed to 192.168.1.1
+(12:41:43:363) --- Main GUI destroyed — 1
+(12:41:43:369) --- Setting the parms canceled
+(12:41:43:375) --- Errors 0
+(12:41:43:381) --- Program halted. Worktime - 16 seconds.
+(12:41:43:387) --- ------------------------------------------------------------------------
