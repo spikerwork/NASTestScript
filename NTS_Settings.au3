@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.6
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.8
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -62,10 +62,11 @@ Local $NET_diff=1 ; Different between local network and $nas_ip. Default yes
 
 
 If $ScriptInstalled==1 Then
+	MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.", 5)
+
 	Local $NAS_NET = StringLeft($NAS_IP, StringInStr($NAS_IP, ".", 0, 3)-1)
 	$NetworkAdapterIp=$NAS_NET & ".10"
 
-	MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.", 5)
 
 	$t=0
 		While $t <= UBound($AdapterIPs)-1
