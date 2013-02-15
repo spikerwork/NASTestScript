@@ -1,27 +1,7 @@
-#NoTrayIcon
+#include <Array.au3>
 
-Opt("TrayMenuMode", 1) ; Default tray menu items (Script Paused/Exit) will not be shown.
+Local $avArray[5] = [0, 1, 2, 1, 0]
+Local $aiResult = _ArrayFindAll($avArray, 0)
+_ArrayDisplay($avArray, "$avArray")
+_ArrayDisplay($aiResult, "Results of searching for 0 in $avArray")
 
-Local $settingsitem = TrayCreateMenu("Settings")
-TrayCreateItem("Display", $settingsitem)
-TrayCreateItem("Printer", $settingsitem)
-TrayCreateItem("")
-Local $aboutitem = TrayCreateItem("About")
-TrayCreateItem("")
-Local $exititem = TrayCreateItem("Exit")
-
-TraySetState()
-
-While 1
-    Local $msg = TrayGetMsg()
-    Select
-        Case $msg = 0
-            ContinueLoop
-        Case $msg = $aboutitem
-            MsgBox(64, "About:", "AutoIt3-Tray-sample")
-        Case $msg = $exititem
-            ExitLoop
-    EndSelect
-WEnd
-
-Exit

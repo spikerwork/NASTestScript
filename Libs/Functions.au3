@@ -204,6 +204,26 @@
 	EndFunc
 
 
+Func Network_check($network_old, $IPs)
+
+		$network_old=StringLeft($network_old, StringInStr($network_old, ".", 0, 3)-1)
+
+
+		Local $t=0
+		Local $network_new
+		While $t <= UBound($IPs)-1
+
+			$network_new=StringLeft($IPs[$t], StringInStr($IPs[$t], ".", 0, 3)-1)
+			If $network_new==$network_old Then Return 0
+			$t+=1
+
+		WEnd
+
+		Return 1
+
+EndFunc
+
+
 	; #FUNCTION# ====================================================================================================================
 	; Name ..........: GUIGetBkColor
 	; Description ...: Retrieves the RGB value of the GUI background.
@@ -255,3 +275,5 @@
 
 		Return $iRet
 	EndFunc
+
+
