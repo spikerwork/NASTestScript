@@ -47,8 +47,9 @@ Global $icon="nas.ico"
 ; Names of scripts
 Global  $NTS="NasTestScript.exe"
 Global  $NTS_Settings="NTS_Settings.exe" ;
+Global  $NTS_Ftp="NTS_Ftp.exe" ;
 
-Global 	$FilesArray[2]=[$NTS, $NTS_Settings]
+Global 	$FilesArray[3]=[$NTS, $NTS_Settings, $NTS_Ftp]
 
 	;;;
 	;;; Other global vars ;;;
@@ -73,13 +74,13 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $FTP_Port = IniRead($inifile, "Network", "FTP_Port", 21 ) ; NAS FTP port
 	Global $FTP_Login = IniRead($inifile, "Network", "FTP_Login", $FTP_Default_login ) ; NAS FTP Login
 	Global $FTP_Password = IniRead($inifile, "Network", "FTP_Password", $FTP_Default_pass ) ; NAS FTP Password
-	Global $FTP_Folder = IniRead($inifile, "Network", "FTP_Folder", "/ftpfolder" ) ; FTP folder/path
+	Global $FTP_Folder = IniRead($inifile, "Network", "FTP_Folder", "ftpfolder" ) ; FTP folder/path
 	Global $FTP_Passive = IniRead($inifile, "Network", "FTP_Passive", 1 ) ; FTP passive mode, default on
 
 	Global $HTTP_Default_login="admin"
 	Global $HTTP_Default_pass="admin"
 	Global $HTTP_Port = IniRead($inifile, "Network", "HTTP_Port", 8080 ) ; NAS HTTP port
-	Global $HTTP_Address = IniRead($inifile, "Network", "HTTP_Address", "pathname" ) ; HTTP folder/path
+	Global $HTTP_Address = IniRead($inifile, "Network", "HTTP_Address", "") ; HTTP folder/path
 	Global $HTTP_Login = IniRead($inifile, "Network", "HTTP_Login", $HTTP_Default_login ) ; NAS HTTP Login
 	Global $HTTP_Password = IniRead($inifile, "Network", "HTTP_Password", $HTTP_Default_pass ) ; NAS HTTP Password
 
@@ -91,6 +92,10 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $SAMBA_Login = IniRead($inifile, "Network", "SMB_Login", $SAMBA_Default_login ) ; NAS Samba Login
 	Global $SAMBA_Password = IniRead($inifile, "Network", "SMB_Password", $SAMBA_Default_pass ) ; NAS Samba Password
 
+	Global $App_FTP = IniRead($inifile, "Application", "FTP_Tool", "/Apps/curl/curl.exe" ) ; FTP Tool for test FTP Download/Upload
+	Global $App_FTP_putlog = IniRead($inifile, "Application", "FTP_Tool_putlog", "FTP_put.txt" ) ; FTP put log
+	Global $App_FTP_getlog = IniRead($inifile, "Application", "FTP_Tool_getlog", "FTP_get.txt" ) ; FTP get log
+	Global $App_FTP_File = IniRead($inifile, "Application", "FTP_Tool_File", "/Apps/curl/UploadDownload.rar" ) ; FTP transfer file
 
 	; Main settings
 	Global $log = IniRead($inifile, "All", "Log", 1 ) ; Log on/off. Always on.

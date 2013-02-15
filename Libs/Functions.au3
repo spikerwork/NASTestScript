@@ -190,7 +190,7 @@
 					$Fontsize=8
 					$Fontweight=400 ;400 = normal
 				case $DPI=144
-					$Fontsize=6
+					$Fontsize=10
 					$Fontweight=400 ;400 = normal
 				case else
 					$Fontsize=8
@@ -203,25 +203,25 @@
 
 	EndFunc
 
+	; Some network check. Not build full
+	Func Network_check($network_old, $IPs)
 
-Func Network_check($network_old, $IPs)
-
-		$network_old=StringLeft($network_old, StringInStr($network_old, ".", 0, 3)-1)
+			$network_old=StringLeft($network_old, StringInStr($network_old, ".", 0, 3)-1)
 
 
-		Local $t=0
-		Local $network_new
-		While $t <= UBound($IPs)-1
+			Local $t=0
+			Local $network_new
+			While $t <= UBound($IPs)-1
 
-			$network_new=StringLeft($IPs[$t], StringInStr($IPs[$t], ".", 0, 3)-1)
-			If $network_new==$network_old Then Return 0
-			$t+=1
+				$network_new=StringLeft($IPs[$t], StringInStr($IPs[$t], ".", 0, 3)-1)
+				If $network_new==$network_old Then Return 0
+				$t+=1
 
-		WEnd
+			WEnd
 
-		Return 1
+			Return 1
 
-EndFunc
+	EndFunc
 
 
 	; #FUNCTION# ====================================================================================================================
@@ -277,3 +277,25 @@ EndFunc
 	EndFunc
 
 
+	; FTP_tool results parser
+	Func SearchLog($log)
+
+		Local $file = FileOpen($log, 0)
+		Local $line, $lastline, $text, $gettext
+
+			While 1
+				$line = FileReadLine($file)
+				If @error = -1 Then
+				$lastline=$line-1
+				ExitLoop
+				EndIf
+			Wend
+
+		$gettext=FileReadLine($file,$lastline)
+		FileClose($file)
+
+		$text = StringLeft(StringTrimLeft($gettext, StringInStr ($gettext, "M", 0, 3)-6), 5)
+
+		Return $text
+
+	EndFunc

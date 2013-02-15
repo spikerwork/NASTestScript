@@ -1,0 +1,55 @@
+(15:45:40:664) --- Program started (NTS_Ftp.au3). UnixTimeStamp 1360943140
+(15:45:40:682) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:45:40:688) --- Script use different directory, not default — C:\NasTestScript
+(15:45:40:694) --- Admin check passed
+(15:45:40:698) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:45:40:705) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:45:40:710) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:46:05:988) --- Pause func triggered. Pause time - 30
+(15:46:36:557) --- Pause ended.
+(15:47:14:070) --- Pause func triggered. Pause time - 5
+(15:47:19:600) --- Pause ended.
+(15:47:50:183) --- Pause func triggered. Pause time - 30
+(15:52:28:372) --- Program started (NTS_Ftp.au3). UnixTimeStamp 1360943548
+(15:52:28:398) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:28:405) --- Script use different directory, not default — C:\NasTestScript
+(15:52:28:411) --- Admin check passed
+(15:52:28:416) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:28:424) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:28:430) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:54:30:469) --- Program started (NTS_Ftp.au3). UnixTimeStamp 1360943670
+(15:54:30:485) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:54:30:490) --- Script use different directory, not default — C:\NasTestScript
+(15:54:30:496) --- Admin check passed
+(15:54:30:501) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:54:30:508) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:54:30:513) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:54:55:394) --- Pause func triggered. Pause time - 30
+(15:55:25:937) --- Pause ended.
+(15:56:03:230) --- Pause func triggered. Pause time - 5
+(15:56:08:757) --- Pause ended.
+(15:56:08:878) --- Pause func triggered. Pause time - 30
+(15:56:39:424) --- Pause ended.
+(15:57:13:484) --- Pause func triggered. Pause time - 5
+(15:57:19:007) --- Pause ended.
+(16:03:25:914) --- Errors 0
+(16:03:25:919) --- Program halted. Worktime - 535 seconds.
+(16:03:25:923) --- ------------------------------------------------------------------------
+(16:59:27:833) --- Program started (NTS_Ftp.au3). UnixTimeStamp 1360947567
+(16:59:27:853) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:59:27:858) --- Script use different directory, not default — C:\NasTestScript
+(16:59:27:864) --- Admin check passed
+(16:59:27:869) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:59:27:876) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:59:27:881) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:59:53:299) --- Pause func triggered. Pause time - 30
+(17:00:23:836) --- Pause ended.
+(17:01:00:426) --- Pause func triggered. Pause time - 5
+(17:01:05:950) --- Pause ended.
+(17:01:06:065) --- Pause func triggered. Pause time - 30
+(17:01:36:601) --- Pause ended.
+(17:02:12:114) --- Pause func triggered. Pause time - 5
+(17:02:17:638) --- Pause ended.
+(17:05:39:719) --- Errors 0
+(17:05:39:723) --- Program halted. Worktime - 372 seconds.
+(17:05:39:727) --- ------------------------------------------------------------------------

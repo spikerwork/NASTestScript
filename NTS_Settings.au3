@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.8
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.15
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -64,7 +64,7 @@ Local $HTTP_Login_ctrl
 Local $HTTP_NoAnon_ctrl
 
 Local $SetButton
-Local $CancelButton
+Local $ExitButton
 
 ; Other
 Local $NetworkAdapterIp, $Adapter_NET
@@ -104,7 +104,7 @@ EndIf
 
 If $ScriptInstalled==1 Then
 
-	MsgBox(4096,"Important!","INI file found. Existing vars will be overwriten.", 5)
+	history ("Important! INI file found. Existing vars will be overwriten.")
 
 	; Compare networks
 	;In future must rebuild this, to analise full network range with different netmask, such as 192.168.0.0/255.255.0.0 - function Network_check()
@@ -136,7 +136,7 @@ If $ScriptInstalled==1 Then
 
 	Else
 
-		If StringInStr(DriveMapGet($SAMBA_DiskLetter), $NetworkAdapterIp)<>0 Then $NAS_SMB_Disk=1
+		If StringInStr(DriveMapGet($SAMBA_DiskLetter), $NetworkAdapterIp)<>0 Then $NAS_SMB_Disk=1 ; Need rebuild. 10.0.0.9 same as 10.0.0.99!
 		history("Network disk " & $SAMBA_DiskLetter & " matches NAS IP - " & $NAS_SMB_Disk)
 
 	EndIf
@@ -167,7 +167,7 @@ GUIRegisterMsg($WM_WINDOWPOSCHANGING, "WM_WINDOWPOSCHANGING")
 
 GUISetState ()
 
-	;
+	; NAS IP Address
 
 	GUICtrlCreateLabel("NAS IP Address:", $NTS_SettingsFormWidth*0.2, 23, 150, 25, $SS_CENTER)
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
@@ -238,14 +238,14 @@ GUISetState ()
 	GUICtrlCreateLabel("SAMBA Folder", $NTS_SettingsFormWidth*0.52, 136, 100, 20)
 	$SAMBA_Folder_ctrl=GUICtrlCreateInput($SAMBA_Folder, $NTS_SettingsFormWidth*0.7, 135, 150, 20, $SS_LEFT)
 
-	$SAMBA_Anon_ctrl=GUICtrlCreateCheckbox("Login anonymously (in develop)", $NTS_SettingsFormWidth*0.52, 107, 200, 20)
+	$SAMBA_Anon_ctrl=GUICtrlCreateCheckbox("Login anonymously ", $NTS_SettingsFormWidth*0.52, 107, 150, 20)
 	;GUICtrlSetState ($SAMBA_Anon_ctrl, $GUI_DISABLE)
 
-	GUICtrlCreateLabel("Login", $NTS_SettingsFormWidth*0.52, 166, 100, 20)
+	GUICtrlCreateLabel("Login (in dev)", $NTS_SettingsFormWidth*0.52, 166, 140, 20)
 	$SAMBA_Login_ctrl=GUICtrlCreateInput($SAMBA_Login, $NTS_SettingsFormWidth*0.7, 165, 100, 20, $SS_CENTER)
 
 
-	GUICtrlCreateLabel("Password", $NTS_SettingsFormWidth*0.52, 196, 100, 20)
+	GUICtrlCreateLabel("Password (in dev)", $NTS_SettingsFormWidth*0.52, 196, 140, 20)
 	$SAMBA_Password_ctrl=GUICtrlCreateInput($SAMBA_Password, $NTS_SettingsFormWidth*0.7, 195, 100, 20, $SS_CENTER)
 
 	; Pass the checkbox of samba
@@ -266,12 +266,22 @@ GUISetState ()
 
 	; HTTP/WebDav Group
 
-	$HTTP_Group = GUICtrlCreateGroup("HTTP/WebDav", 10, $NTS_SettingsFormHeight*0.50, $NTS_SettingsFormWidth*0.96, $NTS_SettingsFormHeight*0.35)
+	$HTTP_Group = GUICtrlCreateGroup("HTTP/WebDav", 10, $NTS_SettingsFormHeight*0.50, $NTS_SettingsFormWidth*0.96, $NTS_SettingsFormHeight*0.37)
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($HTTP_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
 
 	GUICtrlCreateLabel("HTTP address", 20, $NTS_SettingsFormHeight*0.55, 100, 20)
-	$HTTP_Address_Full="http://" & $NetworkAdapterIp & ":" & $HTTP_Port & "/"
+
+		If $HTTP_Address<>"" Then
+			If $HTTP_Port=="80" Or $HTTP_Port=="" Then
+				$HTTP_Address_Full="http://" & $NetworkAdapterIp & "/"
+			Else
+				$HTTP_Address_Full="http://" & $NetworkAdapterIp & ":" & $HTTP_Port & "/"
+			EndIf
+		Else
+			$HTTP_Address_Full=$HTTP_Address
+		EndIf
+
 	$HTTP_Address_ctrl=GUICtrlCreateInput($HTTP_Address_Full, 20, $NTS_SettingsFormHeight*0.60, $NTS_SettingsFormWidth*0.87, 20, $SS_LEFT)
 
 	GUICtrlCreateLabel("Port", 20, $NTS_SettingsFormHeight*0.65, 100, 20)
@@ -295,7 +305,7 @@ GUISetState ()
 
 		Else
 
-		GUICtrlSetState($HTTP_Anon_ctrl, $GUI_CHECKED)
+		GUICtrlSetState($HTTP_NoAnon_ctrl, $GUI_CHECKED)
 
 
 	EndIf
@@ -303,7 +313,7 @@ GUISetState ()
 	; Main buttons
 
 	$SetButton = GUICtrlCreateButton("Set", $NTS_SettingsFormWidth*0.33, $NTS_SettingsFormHeight*0.95, 100, 30)
-	$CancelButton = GUICtrlCreateButton("Cancel", $NTS_SettingsFormWidth*0.55, $NTS_SettingsFormHeight*0.95, 100, 30)
+	$ExitButton = GUICtrlCreateButton("Exit", $NTS_SettingsFormWidth*0.55, $NTS_SettingsFormHeight*0.95, 100, 30)
 
 ;
 ; GUI messages loop
@@ -337,11 +347,12 @@ While 1
 				GUICtrlSetData($HTTP_Port_ctrl, StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8))
 
 
-
+			GUICtrlSetState($SetButton,$GUI_ENABLE)
 		Else
 			GUICtrlSetColor($NAS_IP_ctrl, $NTS_SettingsFormBadFontColor)
 			GUICtrlSetBkColor($NAS_IP_ctrl, $NTS_SettingsFormBadBackgroundColor)
 			GUICtrlSetTip($NAS_IP_ctrl, "NAS IP address must be set!")
+			GUICtrlSetState($SetButton,$GUI_DISABLE)
 		EndIf
 
 	; Changing Samba drive letter
@@ -385,17 +396,18 @@ While 1
 			history ("HTTP login with credits disabled")
 			GUICtrlSetState($HTTP_Login_ctrl, $GUI_DISABLE)
 			GUICtrlSetState($HTTP_Password_ctrl, $GUI_DISABLE)
-			GUICtrlSetData($HTTP_Login_ctrl, $HTTP_Login)
-			GUICtrlSetData($HTTP_Password_ctrl, $HTTP_Password)
+			GUICtrlSetData($HTTP_Login_ctrl, $HTTP_Default_login)
+			GUICtrlSetData($HTTP_Password_ctrl, $HTTP_Default_Pass)
 		EndIf
 
 	; Changing HTTP port
 	Case $HTTP_Port_ctrl
 
-		If Number(GUICtrlRead($HTTP_Port_ctrl))<>0 Then ; Need more correct check, "8080s" working...
+		;If Number(GUICtrlRead($HTTP_Port_ctrl))<>0 Then ; Need more correct check, "8080s" working...
 
 			If StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8)=="" or StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8)=="80" Then
 				$HTTP_Address_Full="http://" & $NetworkAdapterIp & "/"
+
 			Else
 				$HTTP_Address_Full="http://" & $NetworkAdapterIp & ":" & StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8) & "/"
 			EndIf
@@ -403,10 +415,38 @@ While 1
 			GUICtrlSetData($HTTP_Address_ctrl, $HTTP_Address_Full)
 			GUICtrlSetData($HTTP_Port_ctrl, StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8))
 
-		EndIf
+		;EndIf
+
+	; Apply changes to ini file
+
+	Case $SetButton
+
+		; NAS IP
+		IniWrite($inifile, "Network", "NAS_IP", GUICtrlRead($NAS_IP_ctrl) )
+
+		; FTP settings
+		IniWrite($inifile, "Network", "FTP_Port", GUICtrlRead($FTP_Port_ctrl) )
+		IniWrite($inifile, "Network", "FTP_Folder", GUICtrlRead($FTP_Folder_ctrl) )
+		IniWrite($inifile, "Network", "FTP_Login", GUICtrlRead($FTP_Login_ctrl) )
+		IniWrite($inifile, "Network", "FTP_Password", GUICtrlRead($FTP_Password_ctrl) )
+		IniWrite($inifile, "Network", "FTP_Passive", GUICtrlRead($FTP_Passive_ctrl) )
+
+		; Samba settings
+		IniWrite($inifile, "Network", "SMB_Letter", GUICtrlRead($SAMBA_DiskLetter_ctrl) )
+		IniWrite($inifile, "Network", "SMB_Folder", GUICtrlRead($SAMBA_Folder_ctrl) )
+		IniWrite($inifile, "Network", "SMB_Login", GUICtrlRead($SAMBA_Login_ctrl) )
+		IniWrite($inifile, "Network", "SMB_Password", GUICtrlRead($SAMBA_Password_ctrl) )
+
+		; HTTP settings
+		IniWrite($inifile, "Network", "HTTP_Login", GUICtrlRead($HTTP_Login_ctrl) )
+		IniWrite($inifile, "Network", "HTTP_Password", GUICtrlRead($HTTP_Password_ctrl) )
+		IniWrite($inifile, "Network", "HTTP_Port", GUICtrlRead($HTTP_Port_ctrl) )
+		IniWrite($inifile, "Network", "HTTP_Address", GUICtrlRead($HTTP_Address_ctrl) )
+
+
 
 	; Cancel settings or close window
-	Case $GUI_EVENT_CLOSE, $CancelButton
+	Case $GUI_EVENT_CLOSE, $ExitButton
 
 		history ("Main GUI destroyed — " & GUIDelete($mainGui) & ". Settings not applied.")
 
