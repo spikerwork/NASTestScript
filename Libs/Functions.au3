@@ -293,7 +293,9 @@
 
 		$gettext=FileReadLine($file,$lastline)
 		FileClose($file)
-
+		history ("Log file " & $log & " opened")
+		history ("Last Line " & $gettext)
+		history ("TrimLeft " & StringTrimLeft($gettext, StringInStr ($gettext, "k", 0, 3)-6))
 		$text = StringLeft(StringTrimLeft($gettext, StringInStr ($gettext, "M", 0, 3)-6), 5)
 
 		Return $text

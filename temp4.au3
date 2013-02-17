@@ -48,51 +48,8 @@ $App_FTP_putlog = $ScriptFolder & "\" & $App_FTP_putlog
 $App_FTP = $ScriptFolder & "\" & $App_FTP
 Local $Temp_log = @HomeDrive & "\" & "log.txt"
 
-$Firstrun= $App_FTP & " -T " & $App_FTP_File & " ftp://" & $NAS_IP & "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $Temp_log
-history("First run exe - " & $Firstrun & " ")
-RunWait($Firstrun)
-
-PauseTime(30)
-
-
-$Putrun= $App_FTP & " -T " & $App_FTP_File & " ftp://" & $NAS_IP & "/" & $FTP_Folder & "/" & $App_FTP_UploadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_putlog
-history("Put run exe - " & $Putrun & " ")
-RunWait($Putrun)
-
-$Getrun= $App_FTP & " ftp://" & $NAS_IP & "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_getlog & " -o " & $App_FTP_DownloadFile
-history("Get run exe - " & $Getrun & " ")
-RunWait($Getrun)
-
-PauseTime(5)
-
-FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
-
-$Resultput=SearchLog($App_FTP_putlog)
-$Resultget=SearchLog($App_FTP_getlog)
-
-FileDelete($App_FTP_getlog)
-FileDelete($App_FTP_putlog)
-
-;MsgBox(0, "Results", "Upload " & $Resultput & @CRLF & "Download " &  $Resultget)
-
-PauseTime(30)
-
-; Simultaneously Upload and Download File
-Run($Putrun)
-Run($Getrun)
-
-While 1
-If ProcessExists("curl.exe")=0 Then
-	ExitLoop
-EndIf
-Wend
-
-PauseTime(5)
-
-FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
-
-$Resultput=$Resultput & " |S " & SearchLog($App_FTP_putlog)
-$Resultget=$Resultget & " |S " & SearchLog($App_FTP_getlog)
+$Resultput = $Resultput & " |S " & SearchLog($App_FTP_putlog)
+$Resultget = $Resultget & " |S " & SearchLog($App_FTP_getlog)
 
 ;FileDelete($App_FTP_getlog)
 ;FileDelete($App_FTP_putlog)

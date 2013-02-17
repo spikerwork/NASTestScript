@@ -92,10 +92,10 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $SAMBA_Login = IniRead($inifile, "Network", "SMB_Login", $SAMBA_Default_login ) ; NAS Samba Login
 	Global $SAMBA_Password = IniRead($inifile, "Network", "SMB_Password", $SAMBA_Default_pass ) ; NAS Samba Password
 
-	Global $App_FTP = IniRead($inifile, "Application", "FTP_Tool", "/Apps/curl/curl.exe" ) ; FTP Tool for test FTP Download/Upload
+	Global $App_FTP = IniRead($inifile, "Application", "FTP_Tool", "Apps\curl\curl.exe" ) ; FTP Tool for test FTP Download/Upload
 	Global $App_FTP_putlog = IniRead($inifile, "Application", "FTP_Tool_putlog", "FTP_put.txt" ) ; FTP put log
 	Global $App_FTP_getlog = IniRead($inifile, "Application", "FTP_Tool_getlog", "FTP_get.txt" ) ; FTP get log
-	Global $App_FTP_File = IniRead($inifile, "Application", "FTP_Tool_File", "/Apps/curl/UploadDownload.rar" ) ; FTP transfer file
+	Global $App_FTP_File = IniRead($inifile, "Application", "FTP_Tool_File", "Apps\curl\UploadDownload.rar" ) ; FTP transfer file
 
 	; Main settings
 	Global $log = IniRead($inifile, "All", "Log", 1 ) ; Log on/off. Always on.
