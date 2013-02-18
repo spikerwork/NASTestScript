@@ -24,6 +24,8 @@
 #include <GUIConstantsEx.au3>
 #include <WindowsConstants.au3>
 #include <ButtonConstants.au3>
+#include <String.au3>
+
 
 ; External lib - WinAPIEx
 #include "APIConstants.au3"

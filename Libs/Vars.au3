@@ -55,7 +55,7 @@ Global $NTS_Test="NTS_Test.exe" ;
 Global $FilesArray[5]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test]
 
 ; Tests
-Global $NTS_Tests[6]=["FTP", "HTTP", "Samba", "Samba_NASPT", "Samba_IO", "iSCSI_IO"]
+Global $NTS_Tests[6]=["FTP", "Samba", "HTTP", "Samba_NASPT", "Samba_IO", "iSCSI_IO"]
 
 	;;;
 	;;; Other global vars ;;;
@@ -124,10 +124,10 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 
 	; Run settings
 	Global $ClientPause = IniRead($testsini, "Runs", "ClientPause", 10 ) ; Default pause between actions
-	Global $ClearCache = IniRead($testsini, "Runs", "ClearCache", 1 ) ; Default clear cache (Prefetch) before each test
+	Global $ClearCache = IniRead($testsini, "Runs", "ClearCache", 0 ) ; Default clear cache (Prefetch) before each test
 	Global $Current_Loop=IniRead($testsini, "Runs", "LoopNumber", 0) ; Current loop number, refers to $Number_of_loops
 	Global $Number_of_loops=IniRead($testsini, "Runs", "Loops", 5) ; Number of total loops of each test
-	Global $Current_Tests=IniRead($testsini, "Runs", "Tests", "FTP|HTTP|Samba|Samba_NASPT|Samba_IO|iSCSI_IO") ; List of current tests to run
+	Global $Current_Tests=IniRead($testsini, "Runs", "Tests", _ArrayToString($NTS_Tests, "|")) ; List of current tests to run
 
 	; Powerplan changes
 	Global $OldGUID=IniRead($inifile, "PowerPlan", "Old", "")

@@ -313,3 +313,26 @@
 		Return $text
 
 	EndFunc
+
+	; Prepare for file testing. Clear cache and prefetch
+	Func Prepare($PrPmode)
+
+		If $PrPmode==1 Then
+			history("Prepare for test. Clear cache and prefetch")
+
+			FileDelete("C:\Windows\Prefetch\*.*")
+			FileDelete("C:\Windows\Prefetch\ReadyBoot\*.*")
+			RunWait("rundll32.exe advapi32.dll, ProcessIdleTasks")
+			RegWrite("HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters", "EnablePrefetcher", "REG_DWORD", 0)
+			RegWrite("HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters", "EnableSuperfetch", "REG_DWORD", 0)
+			RegWrite("HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer", "NoRecycleFiles", "REG_DWORD", 1)
+
+		ElseIf $PrPmode==0 Then
+
+			history("Test done. Enable cache and prefetch")
+			RegWrite("HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters", "EnablePrefetcher", "REG_DWORD", 3)
+			RegWrite("HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters", "EnableSuperfetch", "REG_DWORD", 3)
+
+		EndIf
+
+	EndFunc

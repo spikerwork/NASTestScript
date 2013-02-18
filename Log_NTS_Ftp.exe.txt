@@ -1,0 +1,18 @@
+(02:47:09:893) --- Program started (NTS_Ftp.exe). UnixTimeStamp 1361242029
+(02:47:09:895) --- Working directory — C:\Users\Spiker\Documents\GitHub\NASTestScript
+(02:47:09:896) --- Script use different directory, not default — C:\NasTestScript
+(02:47:09:898) --- Admin check passed
+(02:47:09:929) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(02:47:09:930) --- Desktop settings: 1366x768 : 32Bit @ 60Hz. DPI 96
+(02:47:09:932) --- INI file found — C:\Users\Spiker\Documents\GitHub\NASTestScript\settings.ini
+(02:47:09:942) --- From CMD recieved parameters for test: FTP, Prepare, 0
+(02:47:09:944) --- FTP Passive mode on
+(02:47:09:945) --- First run exe - C:/Users/Spiker/Documents/GitHub/NASTestScript/Apps/curl/curl.exe -T C:/Users/Spiker/Documents/GitHub/NASTestScript/Content/UpDo.rar ftp://192.168.1.1:21/shares/USB_Storage/downdown.down --user anonymous:test@test.com --stderr C:/Users/Spiker/Documents/GitHub/NASTestScript/tst_eroaxzl.txt --ftp-pasv
+Log file - C:\Users\Spiker\Documents\GitHub\NASTestScript\tst_eroaxzl.txt
+(02:47:09:947) --- FTPPut run exe - C:/Users/Spiker/Documents/GitHub/NASTestScript/Apps/curl/curl.exe -T C:/Users/Spiker/Documents/GitHub/NASTestScript/Content/UpDo.rar ftp://192.168.1.1:21/shares/USB_Storage/upload.upload --user anonymous:test@test.com --stderr C:/Users/Spiker/Documents/GitHub/NASTestScript/FTP_put.txt --ftp-pasv
+(02:47:09:949) --- FTPGet run exe - C:/Users/Spiker/Documents/GitHub/NASTestScript/Apps/curl/curl.exe ftp://192.168.1.1:21/shares/USB_Storage/downdown.down --user anonymous:test@test.com --stderr C:/Users/Spiker/Documents/GitHub/NASTestScript/FTP_get.txt -o downdown.down --ftp-pasv
+(02:47:09:950) --- Start First FTP Run
+(02:48:08:493) --- Pause func triggered. Pause time - 10
+(02:48:19:018) --- Errors 0
+(02:48:19:019) --- Program halted. Worktime - 70 seconds.
+(02:48:19:022) --- ------------------------------------------------------------------------

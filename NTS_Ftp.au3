@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.6
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.21
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -42,6 +42,8 @@ $App_FTP_File = $ScriptFolder & "\" & $Content_Folder & "\" & $App_FTP_File ; Fi
 $App_FTP_getlog = $ScriptFolder & "\" & $App_FTP_getlog ; Log FTP Get file
 $App_FTP_putlog = $ScriptFolder & "\" & $App_FTP_putlog ; Log FTP Put file
 $App_FTP = $ScriptFolder & "\" & $App_FTP ; Path to FTP Tool
+
+If $CmdLine[0]>=3 Then history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 
 	; Choose FTP Mode
 	If $FTP_Passive==1 Then
@@ -71,67 +73,94 @@ $Getrun = StringReplace($Getrun, "ftp:/", "ftp://")
 history("FTPGet run exe - " & $Getrun)
 
 
-; Start first run. Put nessasary file to ftp
-history("Start First FTP Run")
+If $CmdLine[0]>=3 Then
 
-RunWait($Firstrun)
+	Switch $CmdLine[2]
 
-PauseTime(10)
-FileDelete($tempfile)
+	Case "Prepare"
 
-; Start FTP put run
+		; Start first run. Put nessasary file to ftp
 
-history("Start FTP Put Run")
+		history("Start First FTP Run")
 
-RunWait($Putrun)
+		RunWait($Firstrun)
 
-$Resultput=SearchLog($App_FTP_putlog)
-FileDelete($App_FTP_putlog)
-history("FTPPut Result - " & $Resultput)
+		PauseTime($ClientPause)
 
-PauseTime(10)
+		;FileDelete($tempfile)
 
-; Start FTP get run
 
-history("Start FTP Get Run")
+	Case "Put"
 
-RunWait($Getrun)
+		; Start FTP put run
 
-$Resultget=SearchLog($App_FTP_getlog)
-FileDelete($App_FTP_getlog)
-history("FTPGet Result - " & $Resultget)
+		history("Start FTP Put Run")
 
-FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
+		RunWait($Putrun)
 
-PauseTime(10)
+		PauseTime($ClientPause)
 
-; Simultaneously Upload and Download File
+		$Resultput=SearchLog($App_FTP_putlog)
 
-history("Simultaneously Upload and Download File")
+		FileDelete($App_FTP_putlog)
 
-Run($Putrun)
-Run($Getrun)
+		history("FTPPut Result - " & $Resultput)
 
-; Wait for finish all runs
-While 1
-	If ProcessExists("curl.exe")=0 Then
-		ExitLoop
-	EndIf
-Wend
+	Case "Get"
 
-PauseTime(10)
+		; Start FTP get run
 
-FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
+		history("Start FTP Get Run")
 
-$Resultput=$Resultput & " |S " & SearchLog($App_FTP_putlog)
-$Resultget=$Resultget & " |S " & SearchLog($App_FTP_getlog)
+		RunWait($Getrun)
 
-history("FTPPut 2 Result - " & $Resultput)
-history("FTPGet 2 Result - " & $Resultget)
+		$Resultget=SearchLog($App_FTP_getlog)
 
-FileDelete($App_FTP_getlog)
-FileDelete($App_FTP_putlog)
+		PauseTime($ClientPause)
 
-MsgBox(0, "Results", "Upload " & $Resultput & @CRLF & "Download " &  $Resultget)
+		FileDelete($App_FTP_getlog)
+
+		history("FTPGet Result - " & $Resultget)
+
+		FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
+
+	Case "PutGet"
+
+		; Simultaneously Upload and Download File
+
+		history("Simultaneously Upload and Download File")
+
+		Run($Putrun)
+		Run($Getrun)
+
+		; Wait for finish all runs
+		While 1
+			If ProcessExists("curl.exe")=0 Then
+				ExitLoop
+			EndIf
+		Wend
+
+		PauseTime($ClientPause)
+
+		FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
+
+		$Resultput = SearchLog($App_FTP_putlog)
+		$Resultget = SearchLog($App_FTP_getlog)
+
+		history("FTPPut 2 Result - " & $Resultput)
+		history("FTPGet 2 Result - " & $Resultget)
+
+		FileDelete($App_FTP_getlog)
+		FileDelete($App_FTP_putlog)
+
+
+	EndSwitch
+
+IniWrite($testsini,$CmdLine[1], $CmdLine[2], 1)
+
+;halt("reboot")
+
+EndIf
+
 
 #include "Libs\foot.au3"

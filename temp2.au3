@@ -1,33 +1,13 @@
-#cs ----------------------------------------------------------------------------
 
- AutoIt Version: 3.3.8.1
- Author: Sp1ker (spiker@pmpc.ru)
- Program: Nas Test Script
- Site: https://github.com/spikerwork/NasTestScript
+#include <Array.au3>
 
- Script Function:
+Local $avArray[20]
 
-   FTP test for Nas Test Script
+; Populate test array.
+For $i = 0 To UBound($avArray) - 1
+    $avArray[$i] = Random(-20000, 20000, 1)
+Next
 
-#ce ----------------------------------------------------------------------------
+_ArrayDisplay($avArray, "$avArray")
 
-#Region AutoIt3Wrapper directives section
-
-#AutoIt3Wrapper_Compile_both=n
-#AutoIt3Wrapper_Icon=nas.ico
-#AutoIt3Wrapper_Res_Comment="Nas Test Script"
-#AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.15
-#AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
-#AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
-#AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
-#AutoIt3Wrapper_Res_Field=OriginalFilename|Settings.au3
-#AutoIt3Wrapper_Run_AU3Check=n
-#AutoIt3Wrapper_Res_Language=2057
-#AutoIt3Wrapper_Res_LegalCopyright=Sp1ker (spiker@pmpc.ru)
-#AutoIt3Wrapper_Res_requestedExecutionLevel=requireAdministrator
-
-#Endregion
-
-#include "Libs\libs.au3"
-#include "Libs\head.au3"
+MsgBox(0, "_ArrayToString() getting $avArray items 1 to 7", _ArrayToString($avArray, @TAB, 1, 7))
