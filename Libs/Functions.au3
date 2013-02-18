@@ -36,7 +36,7 @@
 	ProgressSet(100 , "Done", "Complete")
 	Sleep(500)
 	ProgressOff()
-	history ("Pause ended.")
+	;history ("Pause ended.")
 
 	EndFunc
 
@@ -276,27 +276,39 @@
 		Return $iRet
 	EndFunc
 
-
 	; FTP_tool results parser
 	Func SearchLog($log)
 
-		Local $file = FileOpen($log, 0)
 		Local $line, $lastline, $text, $gettext
+		Local $file = FileOpen($log, 0)
+
+			If $file = -1 Then
+				history("Error! Unable to open file " & $log)
+				Exit
+			EndIf
+
+		history ("Parse FTP log file " & $log)
 
 			While 1
+
 				$line = FileReadLine($file)
+
 				If @error = -1 Then
-				$lastline=$line-1
-				ExitLoop
+					$lastline=$line-1
+					ExitLoop
 				EndIf
+
 			Wend
 
 		$gettext=FileReadLine($file,$lastline)
 		FileClose($file)
-		history ("Log file " & $log & " opened")
-		history ("Last Line " & $gettext)
-		history ("TrimLeft " & StringTrimLeft($gettext, StringInStr ($gettext, "k", 0, 3)-6))
-		$text = StringLeft(StringTrimLeft($gettext, StringInStr ($gettext, "M", 0, 3)-6), 5)
+		history ("Last line in ftp log file " & $gettext)
+
+		; Parse line
+		$text=StringInStr($gettext, "--")
+		$text=StringMid($gettext,$text)
+		$text=StringMid($text,StringInStr($text, " "))
+		$text=StringReplace($text," ", "",0,2)
 
 		Return $text
 

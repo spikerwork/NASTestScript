@@ -1,45 +1,34 @@
-#include <GuiConstantsEx.au3>
-#include <WindowsConstants.au3>
-#include <WinAPI.au3>
-;
 
-Global $hGUI = GUICreate("Drag GUI Demo", 400, 330, -1, -1, -1, $WS_EX_CLIENTEDGE)
+#include <GUIConstantsEx.au3>
+#include <EventLog.au3>
 
-GUIRegisterMsg($WM_NCHITTEST, "WM_NCHITTEST")
-GUIRegisterMsg($WM_WINDOWPOSCHANGING, "WM_WINDOWPOSCHANGING")
+Global $iMemo
 
-GUISetState()
+_Main()
 
-GUICtrlCreateCheckbox("Passive Mode", 20, 80, 100, 20)
+Func _Main()
+    Local $hEventLog
 
-While 1
-    Switch GUIGetMsg()
-        Case $GUI_EVENT_CLOSE
-            Exit
-    EndSwitch
-WEnd
+    ; Create GUI
+    GUICreate("EventLog", 400, 300)
+    $iMemo = GUICtrlCreateEdit("", 2, 2, 396, 300, 0)
+    GUICtrlSetFont($iMemo, 9, 400, 0, "Courier New")
+    GUISetState()
 
-Func WM_WINDOWPOSCHANGING($hWnd, $Msg, $wParam, $lParam)
-    Local $stWinPos = DllStructCreate("uint;uint;int;int;int;int;uint", $lParam)
+    $hEventLog = _EventLog__Open("", "Application")
+    MemoWrite("Log full ........: " & _EventLog__Full($hEventLog))
+    MemoWrite("Log record count : " & _EventLog__Count($hEventLog))
+    MemoWrite("Log oldest record: " & _EventLog__Oldest($hEventLog))
+    _EventLog__Close($hEventLog)
 
-    Local $iLeft = DllStructGetData($stWinPos, 3)
-    Local $iTop = DllStructGetData($stWinPos, 4)
-    Local $iWidth = DllStructGetData($stWinPos, 5)
-    Local $iHeight = DllStructGetData($stWinPos, 6)
+    ; Loop until user exits
+    Do
+    Until GUIGetMsg() = $GUI_EVENT_CLOSE
 
-    Local $aGUI_Pos = WinGetPos($hWnd)
+EndFunc   ;==>_Main
 
-    If $iHeight < $aGUI_Pos[3] Then
-        $iNew_Top = -($aGUI_Pos[3]-$iHeight)-18 ;I am not sure that 18 will fit for all
-        DllStructSetData($stWinPos, 4, $iNew_Top)
-    EndIf
-EndFunc
+; Write a line to the memo control
+Func MemoWrite($sMessage)
+    GUICtrlSetData($iMemo, $sMessage & @CRLF, 1)
+EndFunc   ;==>MemoWrite
 
-Func WM_NCHITTEST($hWnd, $iMsg, $wParam, $lParam)
-    If $hWnd <> $hGUI Or $iMsg <> $WM_NCHITTEST Then Return $GUI_RUNDEFMSG
-
-    Local $iRet = _WinAPI_DefWindowProc($hWnd, $iMsg, $wParam, $lParam)
-    If $iRet = 1 Then Return 2
-
-    Return $iRet
-EndFunc

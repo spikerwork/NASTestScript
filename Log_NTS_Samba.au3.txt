@@ -1,0 +1,64 @@
+(15:36:00:153) --- Program started (NTS_Samba.au3). UnixTimeStamp 1361201760
+(15:36:00:170) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:36:00:175) --- Script use different directory, not default — C:\NasTestScript
+(15:36:00:187) --- Admin check passed
+(15:36:00:194) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:36:00:201) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:36:00:208) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:36:00:227) --- PathToSambaFolder - Y:\ADDD
+(15:36:00:233) --- SambaFiles - C:\Users\afanasmax\Documents\GitHub\NASTestScript\Content\Test
+(15:36:00:240) --- Folder to delete - Y:\ADDD\Test
+(15:36:00:563) --- Pause func triggered. Pause time - 5
+(15:37:24:076) --- Pause func triggered. Pause time - 5
+(15:37:29:590) --- Errors 0
+(15:37:29:595) --- Program halted. Worktime - 89 seconds.
+(15:37:29:602) --- ------------------------------------------------------------------------
+(15:37:34:661) --- Program started (NTS_Samba.au3). UnixTimeStamp 1361201854
+(15:37:34:681) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:37:34:692) --- Script use different directory, not default — C:\NasTestScript
+(15:37:34:702) --- Admin check passed
+(15:37:34:709) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:37:34:718) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:37:34:726) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:37:34:750) --- PathToSambaFolder - Y:\ADDD
+(15:37:34:757) --- SambaFiles - C:\Users\afanasmax\Documents\GitHub\NASTestScript\Content\Test
+(15:37:34:764) --- Folder to delete - Y:\ADDD\Test
+(15:37:36:024) --- Pause func triggered. Pause time - 5
+(15:38:59:128) --- Pause func triggered. Pause time - 5
+(15:39:04:641) --- Errors 0
+(15:39:04:645) --- Program halted. Worktime - 90 seconds.
+(15:39:04:651) --- ------------------------------------------------------------------------
+(15:47:41:131) --- Program started (NTS_Samba.au3). UnixTimeStamp 1361202461
+(15:47:41:151) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:47:41:158) --- Script use different directory, not default — C:\NasTestScript
+(15:47:41:165) --- Admin check passed
+(15:47:41:170) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:47:41:177) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:47:41:185) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:47:41:206) --- PathToSambaFolder - Y:\ADDD
+(15:47:41:212) --- SambaFiles - C:\Users\afanasmax\Documents\GitHub\NASTestScript\Content\Test
+(15:47:41:220) --- Folder to delete - Y:\ADDD\Test
+(15:47:43:124) --- Pause func triggered. Pause time - 5
+(15:49:06:194) --- Pause func triggered. Pause time - 5
+(15:49:11:716) --- Time - 78
+(15:49:11:721) --- Speed - 28.504419754713
+(15:49:11:727) --- Errors 0
+(15:49:11:732) --- Program halted. Worktime - 90 seconds.
+(15:49:11:738) --- ------------------------------------------------------------------------
+(15:58:27:216) --- Program started (NTS_Samba.au3). UnixTimeStamp 1361203107
+(15:58:27:232) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:58:27:238) --- Script use different directory, not default — C:\NasTestScript
+(15:58:27:243) --- Admin check passed
+(15:58:27:248) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:58:27:255) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:58:27:260) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:58:27:595) --- PathToSambaFolder - Y:\ADDD
+(15:58:27:601) --- SambaFiles - C:\Users\afanasmax\Documents\GitHub\NASTestScript\Content\Test
+(15:58:27:607) --- Folder to delete - Y:\ADDD\Test
+(15:58:30:173) --- Pause func triggered. Pause time - 5
+(15:59:53:306) --- Pause func triggered. Pause time - 5
+(15:59:58:831) --- Time - 78
+(15:59:58:839) --- Speed - 28.504419754713
+(15:59:58:845) --- Errors 0
+(15:59:58:852) --- Program halted. Worktime - 91 seconds.
+(15:59:58:858) --- ------------------------------------------------------------------------

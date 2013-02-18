@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.16
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.19
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -47,6 +47,7 @@ Local $FTP_Folder_ctrl
 Local $FTP_Login_ctrl
 Local $FTP_Password_ctrl
 Local $FTP_Passive_ctrl
+Local $FTP_Anon_ctrl
 
 Local $SAMBA_Group
 Local $SAMBA_DiskLetter_ctrl
@@ -193,11 +194,27 @@ GUISetState ()
 			GUICtrlSetState(-1, $GUI_UNCHECKED)
 		EndIf
 
+	$FTP_Anon_ctrl=GUICtrlCreateCheckbox("Anonymous login", $NTS_SettingsFormWidth*0.24, 80, 120, 20)
+
+		If $FTP_Login==$FTP_Anon_login and $FTP_Password==$FTP_Anon_pass Then
+
+			GUICtrlSetState($FTP_Anon_ctrl, $GUI_CHECKED)
+			GUICtrlSetState($FTP_Login_ctrl, $GUI_DISABLE)
+			GUICtrlSetState($FTP_Password_ctrl, $GUI_DISABLE)
+
+		Else
+
+			GUICtrlSetState($FTP_Anon_ctrl, $GUI_UNCHECKED)
+
+		EndIf
+
+
+
 	GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
 	$FTP_Port_ctrl=GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
 
 
-	GUICtrlCreateLabel("FTP Folder", 20, 136, 100, 20)
+	GUICtrlCreateLabel("FTP Folder", 20, 136, 70, 20)
 	$FTP_Folder_ctrl=GUICtrlCreateInput($FTP_Folder, 100, 135, 150, 20, $SS_LEFT)
 
 
@@ -263,6 +280,7 @@ GUISetState ()
 
 	GUICtrlCreateGroup("", -99, -99, 1, 1)
 
+	; Close samba group
 
 	; HTTP/WebDav Group
 
@@ -309,6 +327,8 @@ GUISetState ()
 
 
 	EndIf
+
+	; Close HTTP group
 
 	; Main buttons
 
@@ -417,6 +437,28 @@ While 1
 
 		;EndIf
 
+	; Anon FTP settings
+	Case $FTP_Anon_ctrl
+
+		If (BitAnd(GUICtrlRead($FTP_Anon_ctrl), $GUI_CHECKED)) = $GUI_CHECKED Then
+
+			history ("FTP login without credits enabled")
+			GUICtrlSetState($FTP_Login_ctrl, $GUI_DISABLE)
+			GUICtrlSetState($FTP_Password_ctrl, $GUI_DISABLE)
+			GUICtrlSetData($FTP_Login_ctrl, $FTP_Anon_login)
+			GUICtrlSetData($FTP_Password_ctrl, $FTP_Anon_pass)
+
+		Elseif (BitAnd(GUICtrlRead($FTP_Anon_ctrl), $GUI_UNCHECKED)) = $GUI_UNCHECKED Then
+
+			history ("FTP login with credits enable")
+			GUICtrlSetState($FTP_Login_ctrl, $GUI_ENABLE)
+			GUICtrlSetState($FTP_Password_ctrl, $GUI_ENABLE)
+			GUICtrlSetData($FTP_Login_ctrl, $FTP_Login)
+			GUICtrlSetData($FTP_Password_ctrl, $FTP_Password)
+
+		EndIf
+
+
 	; Apply changes to ini file
 
 	Case $SetButton
@@ -429,7 +471,12 @@ While 1
 		IniWrite($inifile, "Network", "FTP_Folder", GUICtrlRead($FTP_Folder_ctrl) )
 		IniWrite($inifile, "Network", "FTP_Login", GUICtrlRead($FTP_Login_ctrl) )
 		IniWrite($inifile, "Network", "FTP_Password", GUICtrlRead($FTP_Password_ctrl) )
-		IniWrite($inifile, "Network", "FTP_Passive", GUICtrlRead($FTP_Passive_ctrl) )
+
+		If (BitAnd(GUICtrlRead($FTP_Passive_ctrl), $GUI_CHECKED)) = $GUI_CHECKED Then
+			IniWrite($inifile, "Network", "FTP_Passive", 1)
+		Else
+			IniWrite($inifile, "Network", "FTP_Passive", 0)
+		EndIf
 
 		; Samba settings
 		IniWrite($inifile, "Network", "SMB_Letter", GUICtrlRead($SAMBA_DiskLetter_ctrl) )

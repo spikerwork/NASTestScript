@@ -25,7 +25,13 @@
 #include <WindowsConstants.au3>
 #include <ButtonConstants.au3>
 
+; External lib - WinAPIEx
+#include "APIConstants.au3"
+;#include "APIErrors.au3"
+#include "WinAPIEx.au3"
+
+
 ; My external libs
-#include "Vars.au3" ; Vars functions
+#include "Vars.au3" ; Vars
 #include "Functions.au3" ; Main functions
 #include "AzUnixTime.au3" ; Unix timestamp

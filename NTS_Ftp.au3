@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.2
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.6
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -32,72 +32,106 @@
 #include "Libs\libs.au3"
 #include "Libs\head.au3"
 
+; Vars
+Local $Getrun, $Putrun, $Firstrun, $Resultput, $Resultget, $FTP_Mode
 
-Local $Getrun
-Local $Putrun
-Local $Firstrun
-Local $Resultput
-Local $Resultget
+Local $App_FTP_DownloadFile = "downdown.down" ; File
+Local $App_FTP_UploadFile = "upload.upload" ; File
 
-Local $App_FTP_DownloadFile = "downdown.down"
-Local $App_FTP_UploadFile = "upload.upload"
+$App_FTP_File = $ScriptFolder & "\" & $Content_Folder & "\" & $App_FTP_File ; File to transfer
+$App_FTP_getlog = $ScriptFolder & "\" & $App_FTP_getlog ; Log FTP Get file
+$App_FTP_putlog = $ScriptFolder & "\" & $App_FTP_putlog ; Log FTP Put file
+$App_FTP = $ScriptFolder & "\" & $App_FTP ; Path to FTP Tool
 
-$App_FTP_File = $ScriptFolder & "\" & $App_FTP_File
-$App_FTP_getlog = $ScriptFolder & "\" & $App_FTP_getlog
-$App_FTP_putlog = $ScriptFolder & "\" & $App_FTP_putlog
-$App_FTP = $ScriptFolder & "\" & $App_FTP
-Local $Temp_log = @HomeDrive & "\" & "log.txt"
+	; Choose FTP Mode
+	If $FTP_Passive==1 Then
+		history("FTP Passive mode on")
+		$FTP_Mode = " --ftp-pasv"
+	ElseIf $FTP_Passive==0 Then
+		history("FTP Passive mode off")
+		$FTP_Mode = " --ftp-skip-pasv-ip"
+	EndIf
 
-$Firstrun= $App_FTP & " -T " & $App_FTP_File & " ftp://" & $NAS_IP & "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $Temp_log
-history("First run exe - " & $Firstrun & " ")
+$FTP_Folder=StringReplace($FTP_Folder," ", "") ; Clear spaces
+
+; Clear double //
+$Firstrun = StringReplace($App_FTP & " -T " & $App_FTP_File & " ftp://" & $NAS_IP & ":" & $FTP_Port &  "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $tempfile & $FTP_Mode, "//", "/")
+$Firstrun = StringReplace($Firstrun, "\", "/")
+$Firstrun = StringReplace($Firstrun, "ftp:/", "ftp://")
+history("First run exe - " & $Firstrun & @CRLF & "Log file - " & $tempfile)
+
+$Putrun= StringReplace($App_FTP & " -T " & $App_FTP_File & " ftp://" & $NAS_IP & ":" & $FTP_Port & "/" & $FTP_Folder & "/" & $App_FTP_UploadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_putlog & $FTP_Mode, "//", "/")
+$Putrun = StringReplace($Putrun, "\", "/")
+$Putrun = StringReplace($Putrun, "ftp:/", "ftp://")
+history("FTPPut run exe - " & $Putrun)
+
+$Getrun= StringReplace($App_FTP & " ftp://" & $NAS_IP & ":" & $FTP_Port & "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_getlog & " -o " & $App_FTP_DownloadFile & $FTP_Mode, "//", "/")
+$Getrun = StringReplace($Getrun, "\", "/")
+$Getrun = StringReplace($Getrun, "ftp:/", "ftp://")
+history("FTPGet run exe - " & $Getrun)
+
+
+; Start first run. Put nessasary file to ftp
+history("Start First FTP Run")
+
 RunWait($Firstrun)
 
-PauseTime(30)
+PauseTime(10)
+FileDelete($tempfile)
 
+; Start FTP put run
 
-$Putrun= $App_FTP & " -T " & $App_FTP_File & " ftp://" & $NAS_IP & "/" & $FTP_Folder & "/" & $App_FTP_UploadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_putlog
-history("Put run exe - " & $Putrun & " ")
+history("Start FTP Put Run")
+
 RunWait($Putrun)
 
-$Getrun= $App_FTP & " ftp://" & $NAS_IP & "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_getlog & " -o " & $App_FTP_DownloadFile
-history("Get run exe - " & $Getrun & " ")
+$Resultput=SearchLog($App_FTP_putlog)
+FileDelete($App_FTP_putlog)
+history("FTPPut Result - " & $Resultput)
+
+PauseTime(10)
+
+; Start FTP get run
+
+history("Start FTP Get Run")
+
 RunWait($Getrun)
 
-PauseTime(5)
+$Resultget=SearchLog($App_FTP_getlog)
+FileDelete($App_FTP_getlog)
+history("FTPGet Result - " & $Resultget)
 
 FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
 
-$Resultput=SearchLog($App_FTP_putlog)
-$Resultget=SearchLog($App_FTP_getlog)
-
-FileDelete($App_FTP_getlog)
-FileDelete($App_FTP_putlog)
-
-;MsgBox(0, "Results", "Upload " & $Resultput & @CRLF & "Download " &  $Resultget)
-
-PauseTime(30)
+PauseTime(10)
 
 ; Simultaneously Upload and Download File
+
+history("Simultaneously Upload and Download File")
+
 Run($Putrun)
 Run($Getrun)
 
+; Wait for finish all runs
 While 1
-If ProcessExists("curl.exe")=0 Then
-	ExitLoop
-EndIf
+	If ProcessExists("curl.exe")=0 Then
+		ExitLoop
+	EndIf
 Wend
 
-PauseTime(5)
+PauseTime(10)
 
 FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
 
 $Resultput=$Resultput & " |S " & SearchLog($App_FTP_putlog)
 $Resultget=$Resultget & " |S " & SearchLog($App_FTP_getlog)
 
-;FileDelete($App_FTP_getlog)
-;FileDelete($App_FTP_putlog)
+history("FTPPut 2 Result - " & $Resultput)
+history("FTPGet 2 Result - " & $Resultget)
+
+FileDelete($App_FTP_getlog)
+FileDelete($App_FTP_putlog)
 
 MsgBox(0, "Results", "Upload " & $Resultput & @CRLF & "Download " &  $Resultget)
-
 
 #include "Libs\foot.au3"
