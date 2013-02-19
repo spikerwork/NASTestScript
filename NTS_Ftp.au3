@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.21
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.26
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -33,7 +33,7 @@
 #include "Libs\head.au3"
 
 ; Vars
-Local $Getrun, $Putrun, $Firstrun, $Resultput, $Resultget, $FTP_Mode
+Local $Getrun, $Putrun, $Firstrun, $Resultput, $Resultget, $FTP_Mode, $TestResult
 
 Local $App_FTP_DownloadFile = "downdown.down" ; File
 Local $App_FTP_UploadFile = "upload.upload" ; File
@@ -88,6 +88,7 @@ If $CmdLine[0]>=3 Then
 		PauseTime($ClientPause)
 
 		;FileDelete($tempfile)
+		$TestResult="Pass"
 
 
 	Case "Put"
@@ -105,6 +106,7 @@ If $CmdLine[0]>=3 Then
 		FileDelete($App_FTP_putlog)
 
 		history("FTPPut Result - " & $Resultput)
+		$TestResult=$Resultput
 
 	Case "Get"
 
@@ -121,6 +123,8 @@ If $CmdLine[0]>=3 Then
 		FileDelete($App_FTP_getlog)
 
 		history("FTPGet Result - " & $Resultget)
+
+		$TestResult=$Resultget
 
 		FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
 
@@ -150,6 +154,8 @@ If $CmdLine[0]>=3 Then
 		history("FTPPut 2 Result - " & $Resultput)
 		history("FTPGet 2 Result - " & $Resultget)
 
+		$TestResult=$Resultput & "|" & $Resultget
+
 		FileDelete($App_FTP_getlog)
 		FileDelete($App_FTP_putlog)
 
@@ -157,7 +163,7 @@ If $CmdLine[0]>=3 Then
 	EndSwitch
 
 IniWrite($testsini,$CmdLine[1], $CmdLine[2], 1)
-
+IniWrite($resultini, $CmdLine[1], $CmdLine[2] & "#" & $CmdLine[3], $TestResult)
 ;halt("reboot")
 
 EndIf

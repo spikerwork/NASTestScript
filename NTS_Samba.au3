@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.3
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.14
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -35,38 +35,100 @@
 EnvSet("SEE_MASK_NOZONECHECKS", "1")
 EnvUpdate ( )
 
-
-Local $PathToSambaFolder
-Local $SambaFiles = @ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files
+Local $TestResult
+Local $SambaFiles = @ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files ; Destination of files to test
+Local $PathToSambaFolder ; Path to folder on NAS (with addition directory)
 $PathToSambaFolder=$SAMBA_DiskLetter & "\" & $SAMBA_Folder
 $PathToSambaFolder=StringReplace($PathToSambaFolder, "\\", "\")
 $PathToSambaFolder=StringReplace($PathToSambaFolder, "/", "\")
+Local $PathToCompFolder=@ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files & "_Temp" ; Path to temp directory on computer
+Local $CopyStartTime, $CopyStopTime, $CopyTime, $Speed ; Start Stop and other vars
 
-Local $SourceSize=DirGetSize($SambaFiles)
+Local $SourceSize=DirGetSize($SambaFiles) ; Size of test files
 
 history("PathToSambaFolder - " & $PathToSambaFolder)
 history("SambaFiles - " & $SambaFiles)
-history("Folder to delete - " & $PathToSambaFolder & "\" & $App_Samba_Files)
+history("Folder on nas, to delete - " & $PathToSambaFolder & "\" & $App_Samba_Files)
 
-If DirGetSize($PathToSambaFolder)<>-1 Then _WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+If $CmdLine[0]>=3 Then history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 
 ShellExecute($PathToSambaFolder)
-PauseTime(5)
+PauseTime($ClientPause)
+Send("!{F4}")
 
+If $CmdLine[0]>=3 Then
 
-; Copy nessasary files to folder
-Local $CopyStartTime=GetUnixTimeStamp()
+	Switch $CmdLine[2]
 
-_WinAPI_ShellFileOperation($SambaFiles, $PathToSambaFolder, $FO_COPY, $FOF_SIMPLEPROGRESS)
+		Case "Prepare"
 
-Local $CopyStopTime=GetUnixTimeStamp()
-Local $CopyTime=$CopyStopTime-$CopyStartTime
+			; Copy nessasary files to folder
 
-Local $Speed=$SourceSize/1024/1024/$CopyTime
+			history("Start Prepare Run")
 
-PauseTime(5)
-history("Time - " & $CopyTime)
-history("Speed - " & $Speed)
+			_WinAPI_ShellFileOperation($SambaFiles, $PathToSambaFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
+
+			$TestResult="Pass"
+
+		Case "FromNas"
+
+			history("Copy files from nas")
+
+			$CopyStartTime=GetUnixTimeStamp()
+
+			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, $PathToCompFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
+
+			$CopyStopTime=GetUnixTimeStamp()
+
+			$CopyTime=$CopyStopTime-$CopyStartTime
+			$Speed=$SourceSize/1024/1024/$CopyTime
+
+			PauseTime($ClientPause)
+
+			history("Time - " & $CopyTime)
+			history("Speed - " & $Speed)
+
+			$TestResult=$Speed
+
+			_WinAPI_ShellFileOperation($PathToCompFolder, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+
+		Case "CopyToNas"
+
+			history("Copy files to nas")
+
+			$CopyStartTime=GetUnixTimeStamp()
+
+			_WinAPI_ShellFileOperation($SambaFiles, $PathToSambaFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
+
+			$CopyStopTime=GetUnixTimeStamp()
+
+			$CopyTime=$CopyStopTime-$CopyStartTime
+			$Speed=$SourceSize/1024/1024/$CopyTime
+
+			PauseTime($ClientPause)
+
+			history("Time - " & $CopyTime)
+			history("Speed - " & $Speed)
+
+			$TestResult=$Speed
+
+			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+
+		Case "CopyFromAndTo"
+
+			history("Copy and copy. Not yet")
+
+			$TestResult="Not yet"
+
+	EndSwitch
+
+IniWrite($testsini, $CmdLine[1], $CmdLine[2], 1)
+IniWrite($resultini, $CmdLine[1], $CmdLine[2] & "#" & $CmdLine[3], $TestResult)
+
+;halt("reboot")
+
+EndIf
 
 
 #include "Libs\foot.au3"

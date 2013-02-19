@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.1
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.6
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -31,6 +31,10 @@
 
 #include "Libs\libs.au3"
 #include "Libs\head.au3"
+
+EnvSet("SEE_MASK_NOZONECHECKS", "1")
+EnvUpdate ( )
+
 
 Dim $Current_Tests_array ; Array with tests
 Local $t=0, $i, $Current_Test_to_Run, $TestsUnDone=0
@@ -75,9 +79,9 @@ Else
 
 						$TestsUnDone=1
 						If $ClearCache==1 Then Prepare(1) ; If ClearCache enabled, run this function before test prepare
+						history("Test to run " & $Current_Tests_array[$t] & ". Mode " & $var[$i][0])
 						PauseTime($ClientPause)
 						$Current_Test_to_Run=$Current_Tests_array[$t] & " " & $var[$i][0] & " " & $Current_Loop
-						history("Test to run " & $Current_Tests_array[$t] & ". Mode " & $var[$i][0])
 						ShellExecute($ScriptFolder & "\" & "NTS_" & $Current_Tests_array[$t] & ".exe", $Current_Test_to_Run, $ScriptFolder)
 						ExitLoop(2)
 
@@ -86,9 +90,8 @@ Else
 						$TestsUnDone=1
 						$Current_Test_to_Run=$Current_Tests_array[$t] & " " & $var[$i][0] & " " & $Current_Loop
 						history("Test to run " & $Current_Tests_array[$t] & ". Mode " & $var[$i][0])
-						;ExitLoop(2) ; Exit this and first loop
 						ShellExecute($ScriptFolder & "\" & "NTS_" & $Current_Tests_array[$t] & ".exe", $Current_Test_to_Run, $ScriptFolder) ; Run test with parameters
-						ExitLoop(2)
+						ExitLoop(2) ; Exit this and first loop
 
 					EndIf
 
@@ -104,10 +107,37 @@ Else
 
 EndIf
 
+	; All tests finished?
 	If $TestsUnDone==0 Then
 		history("Tests finished. Increasing LoopNumber ")
 		IniWrite($testsini,"Runs","LoopNumber",$Current_Loop+1)
+		$t=0
+		$i=0
+
+		While $t <= UBound($Current_Tests_array)-1
+
+			Local $var = IniReadSection($testsini, $Current_Tests_array[$t])
+			history("Section to empty " & $Current_Tests_array[$t])
+
+			If @error Then
+				history("Problem with ini-file " & $testsini)
+			Else
+
+				For $i = 1 To $var[0][0]
+
+
+				IniWrite($testsini, $Current_Tests_array[$t], $var[$i][0], 0) ; Empty all tests
+
+				Next
+
+			EndIf
+
+		$var=0 ; Clear array
+		$t+=1 ; Raise loop
+		WEnd
+		history("Ini-file " & $testsini & " reconstructed")
 		halt("lol")
+
 	EndIf
 
 #include "Libs\foot.au3"
