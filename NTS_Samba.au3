@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.14
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.17
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -41,7 +41,7 @@ Local $PathToSambaFolder ; Path to folder on NAS (with addition directory)
 $PathToSambaFolder=$SAMBA_DiskLetter & "\" & $SAMBA_Folder
 $PathToSambaFolder=StringReplace($PathToSambaFolder, "\\", "\")
 $PathToSambaFolder=StringReplace($PathToSambaFolder, "/", "\")
-Local $PathToCompFolder=@ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files & "_Temp" ; Path to temp directory on computer
+Local $PathToCompFolder=@ScriptDir & "\" & $Temp_Folder & "\" & $App_Samba_Files & "_Temp" ; Path to temp directory on computer
 Local $CopyStartTime, $CopyStopTime, $CopyTime, $Speed ; Start Stop and other vars
 
 Local $SourceSize=DirGetSize($SambaFiles) ; Size of test files
@@ -49,6 +49,7 @@ Local $SourceSize=DirGetSize($SambaFiles) ; Size of test files
 history("PathToSambaFolder - " & $PathToSambaFolder)
 history("SambaFiles - " & $SambaFiles)
 history("Folder on nas, to delete - " & $PathToSambaFolder & "\" & $App_Samba_Files)
+history("Folder on computer, to delete - " & $PathToCompFolder)
 
 If $CmdLine[0]>=3 Then history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 

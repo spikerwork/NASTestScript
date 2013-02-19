@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.23
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.25
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -214,15 +214,15 @@ GUISetState ()
 	$FTP_Port_ctrl=GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
 
 
-	GUICtrlCreateLabel("FTP Folder", 20, 136, 70, 20)
-	$FTP_Folder_ctrl=GUICtrlCreateInput($FTP_Folder, 100, 135, 150, 20, $SS_LEFT)
+	GUICtrlCreateLabel("FTP Folder", 20, 136, 80, 20)
+	$FTP_Folder_ctrl=GUICtrlCreateInput($FTP_Folder, 100, 135, 170, 20, $SS_LEFT)
 
 
-	GUICtrlCreateLabel("Login", 20, 166, 100, 20)
+	GUICtrlCreateLabel("Login", 20, 166, 80, 20)
 	$FTP_Login_ctrl=GUICtrlCreateInput($FTP_Login, 100, 165, 100, 20, $SS_CENTER)
 
 
-	GUICtrlCreateLabel("Password", 20, 196, 100, 20)
+	GUICtrlCreateLabel("Password", 20, 196, 80, 20)
 	$FTP_Password_ctrl=GUICtrlCreateInput($FTP_Password, 100, 195, 100, 20, $SS_CENTER)
 
 
@@ -253,17 +253,17 @@ GUISetState ()
 	GUICtrlSetData(-1, $Local_Disks_List, StringUpper($SAMBA_DiskLetter))
 
 	GUICtrlCreateLabel("SAMBA Folder", $NTS_SettingsFormWidth*0.52, 136, 100, 20)
-	$SAMBA_Folder_ctrl=GUICtrlCreateInput($SAMBA_Folder, $NTS_SettingsFormWidth*0.7, 135, 150, 20, $SS_LEFT)
+	$SAMBA_Folder_ctrl=GUICtrlCreateInput($SAMBA_Folder, $NTS_SettingsFormWidth*0.72, 135, 150, 20, $SS_LEFT)
 
 	$SAMBA_Anon_ctrl=GUICtrlCreateCheckbox("Login anonymously ", $NTS_SettingsFormWidth*0.52, 107, 150, 20)
 	;GUICtrlSetState ($SAMBA_Anon_ctrl, $GUI_DISABLE)
 
-	GUICtrlCreateLabel("Login (in dev)", $NTS_SettingsFormWidth*0.52, 166, 140, 20)
-	$SAMBA_Login_ctrl=GUICtrlCreateInput($SAMBA_Login, $NTS_SettingsFormWidth*0.7, 165, 100, 20, $SS_CENTER)
+	GUICtrlCreateLabel("Login (in dev)", $NTS_SettingsFormWidth*0.52, 166, 120, 20)
+	$SAMBA_Login_ctrl=GUICtrlCreateInput($SAMBA_Login, $NTS_SettingsFormWidth*0.72, 165, 100, 20, $SS_CENTER)
 
 
-	GUICtrlCreateLabel("Password (in dev)", $NTS_SettingsFormWidth*0.52, 196, 140, 20)
-	$SAMBA_Password_ctrl=GUICtrlCreateInput($SAMBA_Password, $NTS_SettingsFormWidth*0.7, 195, 100, 20, $SS_CENTER)
+	GUICtrlCreateLabel("Password (in dev)", $NTS_SettingsFormWidth*0.52, 196, 120, 20)
+	$SAMBA_Password_ctrl=GUICtrlCreateInput($SAMBA_Password, $NTS_SettingsFormWidth*0.72, 195, 100, 20, $SS_CENTER)
 
 	; Pass the checkbox of samba
 	If $SAMBA_Login==$SAMBA_Default_login and $SAMBA_Password==$SAMBA_Default_pass Then

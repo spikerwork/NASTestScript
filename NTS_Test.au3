@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.6
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.8
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -88,8 +88,9 @@ Else
 					Else ; Main test starts
 
 						$TestsUnDone=1
-						$Current_Test_to_Run=$Current_Tests_array[$t] & " " & $var[$i][0] & " " & $Current_Loop
 						history("Test to run " & $Current_Tests_array[$t] & ". Mode " & $var[$i][0])
+						$Current_Test_to_Run=$Current_Tests_array[$t] & " " & $var[$i][0] & " " & $Current_Loop
+						PauseTime($ClientPause)
 						ShellExecute($ScriptFolder & "\" & "NTS_" & $Current_Tests_array[$t] & ".exe", $Current_Test_to_Run, $ScriptFolder) ; Run test with parameters
 						ExitLoop(2) ; Exit this and first loop
 

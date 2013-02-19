@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.3
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.4
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -42,3 +42,6 @@ WEnd
 
 RunWait(@ProgramFilesDir & '\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe /in "' & @ScriptDir & '\NasTestScript.au3" /out "' & @ScriptDir & '\' & $NTS & '" /comp 4 /x86 /icon ' & $icon & ' /NoStatus')
 RunWait(@ProgramFilesDir & "\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe /in " & @ScriptDir & "\NTS_Settings.au3 /out " & @ScriptDir & "\" & $NTS_Settings & " /comp 4 /x86 /icon " & $icon & " /NoStatus")
+RunWait(@ProgramFilesDir & "\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe /in " & @ScriptDir & "\NTS_FTP.au3 /out " & @ScriptDir & "\" & $NTS_Ftp & " /comp 4 /x86 /icon " & $icon & " /NoStatus")
+RunWait(@ProgramFilesDir & "\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe /in " & @ScriptDir & "\NTS_Samba.au3 /out " & @ScriptDir & "\" & $NTS_Samba & " /comp 4 /x86 /icon " & $icon & " /NoStatus")
+RunWait(@ProgramFilesDir & "\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe /in " & @ScriptDir & "\NTS_Test.au3 /out " & @ScriptDir & "\" & $NTS_Test & " /comp 4 /x86 /icon " & $icon & " /NoStatus")

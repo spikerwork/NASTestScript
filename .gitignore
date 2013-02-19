@@ -131,7 +131,7 @@ Desktop.ini
 *.EXE
 !WakeInstall.exe
 UpDo.rar
-*Content/Test*
+*Content*
 #############
 ## Python
 #############

@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.26
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.32
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -39,9 +39,10 @@ Local $App_FTP_DownloadFile = "downdown.down" ; File
 Local $App_FTP_UploadFile = "upload.upload" ; File
 
 $App_FTP_File = $ScriptFolder & "\" & $Content_Folder & "\" & $App_FTP_File ; File to transfer
-$App_FTP_getlog = $ScriptFolder & "\" & $App_FTP_getlog ; Log FTP Get file
-$App_FTP_putlog = $ScriptFolder & "\" & $App_FTP_putlog ; Log FTP Put file
+$App_FTP_getlog = $ScriptFolder & "\" & $Temp_Folder & "\" & $App_FTP_getlog ; Log FTP Get file
+$App_FTP_putlog = $ScriptFolder & "\" & $Temp_Folder & "\" & $App_FTP_putlog ; Log FTP Put file
 $App_FTP = $ScriptFolder & "\" & $App_FTP ; Path to FTP Tool
+
 
 If $CmdLine[0]>=3 Then history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 
@@ -67,7 +68,7 @@ $Putrun = StringReplace($Putrun, "\", "/")
 $Putrun = StringReplace($Putrun, "ftp:/", "ftp://")
 history("FTPPut run exe - " & $Putrun)
 
-$Getrun= StringReplace($App_FTP & " ftp://" & $NAS_IP & ":" & $FTP_Port & "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_getlog & " -o " & $App_FTP_DownloadFile & $FTP_Mode, "//", "/")
+$Getrun= StringReplace($App_FTP & " ftp://" & $NAS_IP & ":" & $FTP_Port & "/" & $FTP_Folder & "/" & $App_FTP_DownloadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $App_FTP_getlog & " -o " & $Temp_Folder & "\" & $App_FTP_DownloadFile & $FTP_Mode, "//", "/")
 $Getrun = StringReplace($Getrun, "\", "/")
 $Getrun = StringReplace($Getrun, "ftp:/", "ftp://")
 history("FTPGet run exe - " & $Getrun)
@@ -128,14 +129,15 @@ If $CmdLine[0]>=3 Then
 
 		FileDelete($ScriptFolder & "\" & $App_FTP_DownloadFile)
 
-	Case "PutGet"
+	Case "GetPut"
 
 		; Simultaneously Upload and Download File
 
-		history("Simultaneously Upload and Download File")
+		history("Simultaneously Download and Upload File")
 
-		Run($Putrun)
 		Run($Getrun)
+		Sleep(4000)
+		Run($Putrun)
 
 		; Wait for finish all runs
 		While 1
@@ -154,7 +156,7 @@ If $CmdLine[0]>=3 Then
 		history("FTPPut 2 Result - " & $Resultput)
 		history("FTPGet 2 Result - " & $Resultget)
 
-		$TestResult=$Resultput & "|" & $Resultget
+		$TestResult=$Resultget & "|" & $Resultput
 
 		FileDelete($App_FTP_getlog)
 		FileDelete($App_FTP_putlog)
