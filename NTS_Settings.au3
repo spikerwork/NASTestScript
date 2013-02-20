@@ -55,6 +55,7 @@ Local $SAMBA_Folder_ctrl
 Local $SAMBA_Login_ctrl
 Local $SAMBA_Password_ctrl
 Local $SAMBA_Anon_ctrl
+Local $SAMBA_Share_ctrl
 
 Local $HTTP_Group
 Local $HTTP_Address_ctrl
@@ -70,37 +71,16 @@ Local $ExitButton
 ; Other
 Local $NetworkAdapterIp, $Adapter_NET
 Local $AdapterIPs[4]=[@IPAddress1,@IPAddress2,@IPAddress3,@IPAddress4] ; Maximum network adapters in system?
-Local $t=0 ; Used for cycles
+Local $t=0, $it=0 ; Used for cycles
 Local $NET_diff=1 ; Different between local network and $nas_ip. Default yes
 Local $NAS_SMB_Disk=0 ; Network disk present or not
-Local $NAS_SMB_Disk_check
+Local $NAS_SMB_Disk_check=0
 Local $NAS_SMB_Disk_Found=0
 Local $Local_Disks ; Array with all disk in system
 Local $Local_Disks_List ; Special array with disk for combo control
+Local $alphabet = "abcdefghijklmnopqrstuvwxyz" ; All disk letters
 
 ; Main frame
-
-$Local_Disks=DriveGetDrive("ALL")
-
-If @error Then
-    ; An error occurred when retrieving the drives.
-    MsgBox(4096, "DriveGetDrive", "How can it be?")
-	Exit
-Else
-    For $t = 1 To $Local_Disks[0]
-		If StringUpper($SAMBA_DiskLetter)== StringUpper($Local_Disks[$t]) Then $NAS_SMB_Disk_Found=1
-		$Local_Disks_List= $Local_Disks_List & "|" & StringUpper($Local_Disks[$t])
-		history("Found drive " & $t & " of " & $Local_Disks[0] & ". Path — " & StringUpper($Local_Disks[$t]) & "\")
-    Next
-
-	If $NAS_SMB_Disk_Found==1 Then
-		history("Disk from ini (" & $SAMBA_DiskLetter & ") present in system")
-	Else
-		history("Disk from ini (" & $SAMBA_DiskLetter & ") not present in system. Adding to array in GUI")
-		$Local_Disks_List= $Local_Disks_List & "|" & $SAMBA_DiskLetter
-	EndIf
-
-EndIf
 
 
 If $ScriptInstalled==1 Then
@@ -121,39 +101,75 @@ If $ScriptInstalled==1 Then
 	$NetworkAdapterIp=$NAS_IP
 
 
-	; Samba disk checks
-
-	$NAS_SMB_Disk_check = DriveGetType($SAMBA_DiskLetter)
-
-	If @error Then
-
-		history("Mapped NAS not found with letter " & $SAMBA_DiskLetter & "\")
-		$NAS_SMB_Disk=0
-
-	ElseIf $NAS_SMB_Disk_check<>"Network" Then
-
-		$NAS_SMB_Disk=0
-		history("Disk " & $SAMBA_DiskLetter & " found, but seems not to be network share..." )
-
-	Else
-
-		If StringInStr(DriveMapGet($SAMBA_DiskLetter), $NetworkAdapterIp)<>0 Then $NAS_SMB_Disk=1 ; Need rebuild. 10.0.0.9 same as 10.0.0.99!
-		history("Network disk " & $SAMBA_DiskLetter & " matches NAS IP - " & $NAS_SMB_Disk)
-
-	EndIf
-
-
 Else
 
 	$NET_diff=0
-	$NAS_SMB_Disk=1
 	$NetworkAdapterIp=StringLeft($AdapterIPs[0], StringInStr($AdapterIPs[0], ".", 0, 3)-1) & ".10"
+	$NAS_SMB_Disk_Found=0
+
 
 EndIf
 
+; Create list of available disk letters
 
+$Local_Disks=DriveGetDrive("ALL")
+If @error Then
+    history ("An error occurred when retrieving the drives.")
+    MsgBox(4096, "DriveGetDrive", "How can it be?")
+	Exit
+EndIf
 
+	For $t = 1 To $Local_Disks[0]
 
+		history("Found drive " & $t & " of " & $Local_Disks[0] & ". Path — " & StringUpper($Local_Disks[$t]) & "\")
+
+		$alphabet= StringReplace($alphabet, StringReplace($Local_Disks[$t], ":", ""), "")
+
+    Next
+
+	Local $aLeters = StringSplit($alphabet,"")
+
+	history("Letters " & $alphabet & " free")
+
+	For $iT = 1 to $aLeters[0]
+
+		If $SAMBA_DiskLetter==StringUpper($aLeters[$iT]) & ":" Then
+		$NAS_SMB_Disk_check=1 ; SAMBA letter free!
+		history("Samba letter " & $SAMBA_DiskLetter & " free!")
+		EndIf
+		$Local_Disks_List= $Local_Disks_List & "|" & StringUpper($aLeters[$iT]) & ":" ; Create list of disk letters
+
+	Next
+
+	If $NAS_SMB_Disk_check<>1 Then
+
+		$Local_Disks_List= $Local_Disks_List & "|" & $SAMBA_DiskLetter ; Add SAMBA letter to list
+
+		$NAS_SMB_Disk_check = DriveGetType($SAMBA_DiskLetter)
+
+		If @error Then
+
+			history("Mapped NAS not found with letter " & $SAMBA_DiskLetter & "\")
+			$NAS_SMB_Disk_check=0
+
+		ElseIf $NAS_SMB_Disk_check<>"Network" Then
+
+			$NAS_SMB_Disk_check=0
+			history("Samba disk letter " & $SAMBA_DiskLetter & " found, but seems not to be network share..." )
+
+		Else
+
+			If StringInStr(DriveMapGet($SAMBA_DiskLetter), $NAS_IP)==0 Then
+				$NAS_SMB_Disk_check=0 ; Need rebuild. 10.0.0.9 same as 10.0.0.99!
+				history("Network disk " & $SAMBA_DiskLetter & " not matches NAS IP")
+			Else
+				$NAS_SMB_Disk_check=1
+				history("Network disk " & $SAMBA_DiskLetter & " matches NAS IP")
+			EndIf
+
+		EndIf
+
+	EndIf
 
 ;;; Create main GUI
 
@@ -208,23 +224,17 @@ GUISetState ()
 
 		EndIf
 
-
-
 	GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
 	$FTP_Port_ctrl=GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
-
 
 	GUICtrlCreateLabel("FTP Folder", 20, 136, 80, 20)
 	$FTP_Folder_ctrl=GUICtrlCreateInput($FTP_Folder, 100, 135, 170, 20, $SS_LEFT)
 
-
 	GUICtrlCreateLabel("Login", 20, 166, 80, 20)
 	$FTP_Login_ctrl=GUICtrlCreateInput($FTP_Login, 100, 165, 100, 20, $SS_CENTER)
 
-
 	GUICtrlCreateLabel("Password", 20, 196, 80, 20)
 	$FTP_Password_ctrl=GUICtrlCreateInput($FTP_Password, 100, 195, 100, 20, $SS_CENTER)
-
 
 	GUICtrlCreateGroup("", -99, -99, 1, 1)
 
@@ -236,15 +246,15 @@ GUISetState ()
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($SAMBA_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_SettingsFormGroupFont)
 
-	GUICtrlCreateLabel("Disk letter ", $NTS_SettingsFormWidth*0.52, 83, 150, 20)
+	GUICtrlCreateLabel("Assign to ", $NTS_SettingsFormWidth*0.52, 83, 150, 20)
 	$SAMBA_DiskLetter_ctrl=GUICtrlCreateCombo(StringUpper($SAMBA_DiskLetter), $NTS_SettingsFormWidth*0.7, 80, 100, 30, $SS_RIGHT)
 
 	; Check problems
-	If $NAS_SMB_Disk<>1 Then
+	If $NAS_SMB_Disk_check==0 Then
 		GUICtrlSetColor(-1, $NTS_SettingsFormBadFontColor)
 		GUICtrlSetBkColor(-1, $NTS_SettingsFormBadBackgroundColor)
-		GUICtrlSetTip(-1, "Problem with this disk") ; Need more info
-	Elseif $NAS_SMB_Disk_Found<>1 Then
+		GUICtrlSetTip(-1, "This letter is unavaible") ; Need more info
+	Elseif $NAS_SMB_Disk_Found==1 Then
 		GUICtrlSetColor(-1, $NTS_SettingsFormBadFontColor)
 		GUICtrlSetBkColor(-1, $NTS_SettingsFormBadBackgroundColor)
 		GUICtrlSetTip(-1, "This disk not present in system!")
@@ -252,7 +262,7 @@ GUISetState ()
 
 	GUICtrlSetData(-1, $Local_Disks_List, StringUpper($SAMBA_DiskLetter))
 
-	GUICtrlCreateLabel("SAMBA Folder", $NTS_SettingsFormWidth*0.52, 136, 100, 20)
+	GUICtrlCreateLabel("SAMBA Share", $NTS_SettingsFormWidth*0.52, 136, 100, 20)
 	$SAMBA_Folder_ctrl=GUICtrlCreateInput($SAMBA_Folder, $NTS_SettingsFormWidth*0.72, 135, 150, 20, $SS_LEFT)
 
 	$SAMBA_Anon_ctrl=GUICtrlCreateCheckbox("Login anonymously ", $NTS_SettingsFormWidth*0.52, 107, 150, 20)
@@ -478,6 +488,7 @@ While 1
 		; Samba settings
 		IniWrite($inifile, "Network", "SMB_Letter", GUICtrlRead($SAMBA_DiskLetter_ctrl) )
 		IniWrite($inifile, "Network", "SMB_Folder", GUICtrlRead($SAMBA_Folder_ctrl) )
+		IniWrite($inifile, "Network", "SMB_Share", GUICtrlRead($SAMBA_Share_ctrl) )
 		IniWrite($inifile, "Network", "SMB_Login", GUICtrlRead($SAMBA_Login_ctrl) )
 		IniWrite($inifile, "Network", "SMB_Password", GUICtrlRead($SAMBA_Password_ctrl) )
 

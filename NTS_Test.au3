@@ -59,7 +59,7 @@ EnvUpdate ( )
 
 
 Dim $Current_Tests_array ; Array with tests
-Local $t=0, $i, $Current_Test_to_Run, $TestsUnDone=0
+Local $t=0, $i, $l=0, $Current_Test_to_Run, $TestsUnDone=0
 $Current_Tests_array = _StringExplode($Current_Tests, "|", 0)
 
 ;Global Vars $Current_Loop, $Number_of_loops, $Current_Tests, $ClientPause, $ClearCache
@@ -69,7 +69,24 @@ history("Total loops " & $Number_of_loops)
 history("Choosen tests " & $Current_Tests)
 history("Pause between each action " & $ClientPause)
 
-PauseTime($ClientPause+30)
+PauseTime($ClientPause)
+
+While 1
+	; Check server availability
+	$l+=1
+	If $l>40 Then MsgBox(0, "Warning!", "Smth wrong with network. Can`t reach " & $NAS_IP)
+	Sleep(3000)
+	If Ping($NAS_IP, 2500)<>0 Then
+		ExitLoop
+	Else
+		history("Check failed on - " & $l & ". Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - " & @error )
+	EndIf
+
+WEnd
+
+history("Check NAS availability pass on checkrun - " & $l)
+
+
 
 If $Current_Loop>=$Number_of_loops Then
 

@@ -94,21 +94,21 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $SAMBA_Default_login="guest"
 	Global $SAMBA_Default_pass="guest"
 	Global $SAMBA_DiskLetter = IniRead($inifile, "Network", "SMB_Letter", "Z:" ) ; NAS samba share mount point
-	Global $SAMBA_Folder = IniRead($inifile, "Network", "SMB_Folder", "\sambafolder" ) ; NAS Samba folder
+	Global $SAMBA_Folder = IniRead($inifile, "Network", "SMB_Folder", "SambaTest" ) ; NAS Samba folder
+	Global $SAMBA_Share = IniRead($inifile, "Network", "SMB_Share", "\sambafolder" ) ; NAS Samba folder
 	Global $SAMBA_Login = IniRead($inifile, "Network", "SMB_Login", $SAMBA_Default_login ) ; NAS Samba Login
 	Global $SAMBA_Password = IniRead($inifile, "Network", "SMB_Password", $SAMBA_Default_pass ) ; NAS Samba Password
 
 	; Application settings
 	Global $Content_Folder =  IniRead($inifile, "Application", "Content_Folder", "Content" ) ; Folder wich store files to run tests
-	Global $Temp_Folder =  IniRead($inifile, "Application", "Temp_Folder", "Temp" ) ; Folder wich store files to run tests
+	Global $Temp_Folder =  IniRead($inifile, "Application", "Temp_Folder", "Temp" ) ; Folder wich stores temporary data
 	Global $App_FTP = IniRead($inifile, "Application", "FTP_Tool", "Apps\curl\curl.exe" ) ; FTP Tool for test FTP Download/Upload
 	Global $App_HTTP = IniRead($inifile, "Application", "HTTP_Tool", "Apps\curl\curl.exe" ) ; HTTP Tool for test HTTP Download
 	Global $App_FTP_putlog = IniRead($inifile, "Application", "FTP_Tool_putlog", "FTP_put.txt" ) ; FTP put log
 	Global $App_FTP_getlog = IniRead($inifile, "Application", "FTP_Tool_getlog", "FTP_get.txt" ) ; FTP get log
 	Global $App_FTP_File = IniRead($inifile, "Application", "FTP_Tool_File", "UpDo.rar" ) ; FTP transfer file
-	Global $App_Samba_Files = IniRead($inifile, "Application", "SAMBA_Files", "Test" ) ; FTP transfer file
+	Global $App_Samba_Files = IniRead($inifile, "Application", "SAMBA_Files", "Test" ) ; Samba folder to transfer
 	Global $App_HTTP_File = IniRead($inifile, "Application", "HTTP_Tool_File", "HTTPUpDo.rar" ) ; HTTP transfer file
-	Global $App_HTTP_putlog = IniRead($inifile, "Application", "HTTP_Tool_putlog", "HTTP_put.txt" ) ; HTTP put log
 	Global $App_HTTP_getlog = IniRead($inifile, "Application", "HTTP_Tool_getlog", "HTTP_get.txt" ) ; HTTP get log
 
 	; Tempfile
