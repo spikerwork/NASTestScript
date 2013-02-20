@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.2
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.10
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -37,16 +37,30 @@ Local $Resultget, $Putrun, $Getrun, $TestResult
 Local $App_HTTP_DownloadFile= $ScriptFolder & "\" & $Temp_Folder & "\" & $App_HTTP_UploadFile
 
 $App_HTTP_File = $ScriptFolder & "\" & $Content_Folder & "\" & $App_HTTP_File ; File to transfer
-$App_HTTP_getlog = $ScriptFolder & "\" & $Temp_Folder & "\" & $App_HTTP_getlog ; Log FTP Get file
-;$App_HTTP_putlog = $ScriptFolder & "\" & $Temp_Folder & "\" & $App_HTTP_putlog ; Log FTP Put file
+$App_HTTP_getlog = $ScriptFolder & "\" & $Temp_Folder & "\" & $App_HTTP_getlog ; Log HTTP Get file
 $App_HTTP = $ScriptFolder & "\" & $App_HTTP ; Path to FTP Tool
 
+history("Downloaded file " & $App_HTTP_DownloadFile)
+history("Uploading file " & $App_HTTP_UploadFile)
+
 If $CmdLine[0]>=3 Then history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
+
+If StringMid($HTTP_Address,StringLen($HTTP_Address))=="/" Then
+$HTTP_Address = $HTTP_Address & $App_HTTP_UploadFile ; Link to file or to directory
+
 
 $Putrun = StringReplace($App_HTTP & " -T " & $App_HTTP_File & " ftp://" & $NAS_IP & ":" & $FTP_Port &  "/" & $FTP_Folder & "/" & $App_HTTP_UploadFile & " --user " & $FTP_Login & ":" & $FTP_Password & " --stderr " & $tempfile, "//", "/")
 $Putrun = StringReplace($Putrun, "\", "/")
 $Putrun = StringReplace($Putrun, "ftp:/", "ftp://")
 history("Put run exe - " & $Putrun & @CRLF & "Log file - " & $tempfile)
+
+Else
+
+	$Putrun=0
+	history("Put run skipped. HTTP address " & $HTTP_Address)
+
+EndIf
+
 
 $Getrun = StringReplace($App_HTTP & " -o " & $App_HTTP_DownloadFile & " " & $HTTP_Address & " --user " & $HTTP_Login & ":" & $HTTP_Password & " --stderr " & $App_HTTP_getlog, "//", "/")
 $Getrun = StringReplace($Getrun, "\", "/")
@@ -60,9 +74,9 @@ If $CmdLine[0]>=3 Then
 
 		Case "Prepare"
 
-		history("Put file run")
+		history("Put HTTP file to FTP")
 
-		RunWait($Putrun)
+		If $Putrun<>0 Then RunWait($Putrun)
 
 		PauseTime($ClientPause)
 
@@ -72,7 +86,7 @@ If $CmdLine[0]>=3 Then
 
 		; Start HTTP get run
 
-		history("Start FTP Get Run")
+		history("Start HTTP Get from NAS")
 
 		RunWait($Getrun)
 
@@ -90,7 +104,8 @@ If $CmdLine[0]>=3 Then
 
 IniWrite($testsini,$CmdLine[1], $CmdLine[2], 1)
 IniWrite($resultini, $CmdLine[1], $CmdLine[2] & "#" & $CmdLine[3], $TestResult)
-;halt("reboot")
+
+halt("reboot")
 
 EndIf
 

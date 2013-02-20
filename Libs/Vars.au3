@@ -47,9 +47,11 @@ Global $NTS="NasTestScript.exe"
 Global $NTS_Settings="NTS_Settings.exe" ;
 Global $NTS_Ftp="NTS_Ftp.exe" ;
 Global $NTS_Samba="NTS_Samba.exe" ;
+Global $NTS_Samba_UD="NTS_Samba_UD.exe" ; Addon for NTS_Samba
 Global $NTS_Test="NTS_Test.exe" ;
+Global $NTS_HTTP="NTS_HTTP.exe" ;
 
-Global $FilesArray[5]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test]
+Global $FilesArray[7]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test, $NTS_HTTP, $NTS_Samba_UD]
 
 ; Tests
 Global $NTS_Tests[6]=["FTP", "Samba", "HTTP", "Samba_NASPT", "Samba_IO", "iSCSI_IO"]

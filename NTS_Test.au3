@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.8
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.16
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -31,6 +31,28 @@
 
 #include "Libs\libs.au3"
 #include "Libs\head.au3"
+
+#cs
+
+Можно попробовать в политиках (gpedit.msc):
+Конфигурация компьютера -> Административные шаблоны -> Система -> Вход в систему
+Включить "Всегда ожидать инициализации сети при загрузке и входе в систему".
+
+
+@Echo Off
+SetLocal EnableExtensions EnableDelayedExpansion
+
+Rem Цикл до тех пор, пока не станет доступен сервер
+:Loop
+Ping -n 1 -l 1 -w 750 Имя_или_IP_сервера
+If Not "!ErrorLevel!"=="0" GoTo :Loop
+
+Rem Здесь подключение сетевых дисков
+NET USE Y: \\Имя_или_IP_сервера\Имя_шары /PERSISTENT:NO
+
+Exit
+#ce
+
 
 EnvSet("SEE_MASK_NOZONECHECKS", "1")
 EnvUpdate ( )
@@ -46,6 +68,8 @@ history("Current loop " & $Current_Loop)
 history("Total loops " & $Number_of_loops)
 history("Choosen tests " & $Current_Tests)
 history("Pause between each action " & $ClientPause)
+
+PauseTime($ClientPause+30)
 
 If $Current_Loop>=$Number_of_loops Then
 
@@ -70,9 +94,11 @@ Else
 
 						Prepare(0)
 						IniWrite($testsini,$Current_Tests_array[$t],$var[$i][0],1)
+						DirRemove ( $ScriptFolder & "\" & $Temp_Folder, 1)
 						PauseTime($ClientPause)
 						$TestsUnDone=1
-						halt("lol")
+						DirCreate ( $ScriptFolder & "\" & $Temp_Folder)
+						halt("reboot")
 						ExitLoop()
 
 					ElseIf $var[$i][0]=="Prepare" Then
@@ -136,8 +162,10 @@ EndIf
 		$var=0 ; Clear array
 		$t+=1 ; Raise loop
 		WEnd
+
 		history("Ini-file " & $testsini & " reconstructed")
-		halt("lol")
+
+		halt("reboot")
 
 	EndIf
 

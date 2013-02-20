@@ -17,11 +17,11 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.25
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.32
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
-#AutoIt3Wrapper_Res_Field=OriginalFilename|Settings.au3
+#AutoIt3Wrapper_Res_Field=OriginalFilename|NTS_Settings.au3
 #AutoIt3Wrapper_Run_AU3Check=n
 #AutoIt3Wrapper_Res_Language=2057
 #AutoIt3Wrapper_Res_LegalCopyright=Sp1ker (spiker@pmpc.ru)
@@ -290,12 +290,8 @@ GUISetState ()
 
 	GUICtrlCreateLabel("HTTP address", 20, $NTS_SettingsFormHeight*0.55, 100, 20)
 
-		If $HTTP_Address<>"" Then
-			If $HTTP_Port=="80" Or $HTTP_Port=="" Then
-				$HTTP_Address_Full="http://" & $NetworkAdapterIp & "/"
-			Else
-				$HTTP_Address_Full="http://" & $NetworkAdapterIp & ":" & $HTTP_Port & "/"
-			EndIf
+		If $HTTP_Address=="" Then
+			$HTTP_Address_Full="http://" & $NetworkAdapterIp & ":" & $HTTP_Port & "/"
 		Else
 			$HTTP_Address_Full=$HTTP_Address
 		EndIf
@@ -424,17 +420,18 @@ While 1
 	Case $HTTP_Port_ctrl
 
 		;If Number(GUICtrlRead($HTTP_Port_ctrl))<>0 Then ; Need more correct check, "8080s" working...
+			if $HTTP_Address=="" or StringMid(GUICtrlRead($HTTP_Address_ctrl),StringLen(GUICtrlRead($HTTP_Address_ctrl)))=="/" Then
 
-			If StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8)=="" or StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8)=="80" Then
-				$HTTP_Address_Full="http://" & $NetworkAdapterIp & "/"
+				If StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8)=="" or StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8)=="80" Then
+					$HTTP_Address_Full="http://" & $NetworkAdapterIp & "/"
 
-			Else
-				$HTTP_Address_Full="http://" & $NetworkAdapterIp & ":" & StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8) & "/"
+				Else
+					$HTTP_Address_Full="http://" & $NetworkAdapterIp & ":" & StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8) & "/"
+				EndIf
+
+				GUICtrlSetData($HTTP_Address_ctrl, $HTTP_Address_Full)
+				GUICtrlSetData($HTTP_Port_ctrl, StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8))
 			EndIf
-
-			GUICtrlSetData($HTTP_Address_ctrl, $HTTP_Address_Full)
-			GUICtrlSetData($HTTP_Port_ctrl, StringStripWS(GUICtrlRead($HTTP_Port_ctrl),8))
-
 		;EndIf
 
 	; Anon FTP settings

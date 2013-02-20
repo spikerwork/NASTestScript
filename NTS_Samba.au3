@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.17
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.23
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -36,28 +36,28 @@ EnvSet("SEE_MASK_NOZONECHECKS", "1")
 EnvUpdate ( )
 
 Local $TestResult
-Local $SambaFiles = @ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files ; Destination of files to test
-Local $PathToSambaFolder ; Path to folder on NAS (with addition directory)
-$PathToSambaFolder=$SAMBA_DiskLetter & "\" & $SAMBA_Folder
-$PathToSambaFolder=StringReplace($PathToSambaFolder, "\\", "\")
-$PathToSambaFolder=StringReplace($PathToSambaFolder, "/", "\")
-Local $PathToCompFolder=@ScriptDir & "\" & $Temp_Folder & "\" & $App_Samba_Files & "_Temp" ; Path to temp directory on computer
 Local $CopyStartTime, $CopyStopTime, $CopyTime, $Speed ; Start Stop and other vars
+Local $SambaFiles = @ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files ; Destination of files to test
+
+Local $PathToSambaFolder = $SAMBA_DiskLetter & "\" & $SAMBA_Folder ; Path to folder on NAS (with addition directory)
+$PathToSambaFolder =StringReplace($PathToSambaFolder, "\\", "\")
+$PathToSambaFolder = StringReplace($PathToSambaFolder, "/", "\")
+
+Local $PathToCompFolder=@ScriptDir & "\" & $Temp_Folder ; Path to temp directory on computer
 
 Local $SourceSize=DirGetSize($SambaFiles) ; Size of test files
 
 history("PathToSambaFolder - " & $PathToSambaFolder)
 history("SambaFiles - " & $SambaFiles)
-history("Folder on nas, to delete - " & $PathToSambaFolder & "\" & $App_Samba_Files)
 history("Folder on computer, to delete - " & $PathToCompFolder)
 
-If $CmdLine[0]>=3 Then history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
+If $CmdLine[0]>=3 Then
+
+history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 
 ShellExecute($PathToSambaFolder)
 PauseTime($ClientPause)
 Send("!{F4}")
-
-If $CmdLine[0]>=3 Then
 
 	Switch $CmdLine[2]
 
@@ -91,8 +91,8 @@ If $CmdLine[0]>=3 Then
 
 			$TestResult=$Speed
 
-			_WinAPI_ShellFileOperation($PathToCompFolder, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
-			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+			;_WinAPI_ShellFileOperation($PathToCompFolder, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+			;_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
 
 		Case "CopyToNas"
 
@@ -114,22 +114,46 @@ If $CmdLine[0]>=3 Then
 
 			$TestResult=$Speed
 
-			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+			;_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
 
 		Case "CopyFromAndTo"
 
-			history("Copy and copy. Not yet")
+			history("Simultaneously copy to nas and from nas.")
+			history("This daemon copy files from nas.")
 
-			$TestResult="Not yet"
+			ShellExecute($ScriptFolder & "\" & $NTS_Samba_UD, $CmdLine[1] & " " & $CmdLine[2] & " " & $CmdLine[3], $ScriptFolder)
+
+			$CopyStartTime=GetUnixTimeStamp()
+
+			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, $PathToCompFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
+
+			$CopyStopTime=GetUnixTimeStamp()
+
+			$CopyTime=$CopyStopTime-$CopyStartTime
+			$Speed=$SourceSize/1024/1024/$CopyTime
+
+			PauseTime($ClientPause)
+
+			history("Total time - " & $CopyTime)
+			history("Average speed - " & $Speed)
+
+			$TestResult=$Speed
+
+			While 1
+			If ProcessExists("NTS_Samba_UD.exe")=0 Then
+				ExitLoop
+			EndIf
+			Wend
+
+			history("Upload daemon exit")
 
 	EndSwitch
 
 IniWrite($testsini, $CmdLine[1], $CmdLine[2], 1)
 IniWrite($resultini, $CmdLine[1], $CmdLine[2] & "#" & $CmdLine[3], $TestResult)
 
-;halt("reboot")
+halt("reboot")
 
 EndIf
-
 
 #include "Libs\foot.au3"

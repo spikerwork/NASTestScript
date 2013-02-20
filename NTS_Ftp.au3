@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.32
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.35
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
@@ -141,7 +141,7 @@ If $CmdLine[0]>=3 Then
 
 		; Wait for finish all runs
 		While 1
-			If ProcessExists("curl.exe")=0 Then
+			If ProcessExists("curl.exe")=0 Then ; Need to add this to vars!
 				ExitLoop
 			EndIf
 		Wend
@@ -166,7 +166,8 @@ If $CmdLine[0]>=3 Then
 
 IniWrite($testsini,$CmdLine[1], $CmdLine[2], 1)
 IniWrite($resultini, $CmdLine[1], $CmdLine[2] & "#" & $CmdLine[3], $TestResult)
-;halt("reboot")
+
+halt("reboot")
 
 EndIf
 
