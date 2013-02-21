@@ -336,3 +336,23 @@
 		EndIf
 
 	EndFunc
+
+	; NAS mount as network drive NASMount (1)
+	Func NASMount ($nasmount)
+
+		Local $MapNetworkDrive
+		If $nasmount==1 Then
+			If $SAMBA_Login==$SAMBA_Default_login and $SAMBA_Password==$SAMBA_Default_pass Then
+			$MapNetworkDrive=DriveMapAdd ($SAMBA_DiskLetter, "\\" & $NAS_IP & "\" & $SAMBA_Share)
+			Else
+			$MapNetworkDrive=DriveMapAdd ($SAMBA_DiskLetter, "\\" & $NAS_IP & "\" & $SAMBA_Share, 0, $SAMBA_Login, $SAMBA_Password)
+			EndIf
+
+			history("Network drive " & $SAMBA_DiskLetter & " mapped - " & $MapNetworkDrive & " Error " & @error)
+		ElseIf $nasmount==0 Then
+
+			$MapNetworkDrive=DriveMapDel($SAMBA_DiskLetter)
+			history("Network drive " & $SAMBA_DiskLetter & " unmapped - " & $MapNetworkDrive & " Error " & @error)
+		EndIf
+
+	EndFunc

@@ -17,10 +17,10 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.32
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.2
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
-#AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
+#AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
 #AutoIt3Wrapper_Res_Field=OriginalFilename|NTS_Settings.au3
 #AutoIt3Wrapper_Run_AU3Check=n
 #AutoIt3Wrapper_Res_Language=2057
@@ -51,7 +51,7 @@ Local $FTP_Anon_ctrl
 
 Local $SAMBA_Group
 Local $SAMBA_DiskLetter_ctrl
-Local $SAMBA_Folder_ctrl
+Local $SAMBA_Share_ctrl
 Local $SAMBA_Login_ctrl
 Local $SAMBA_Password_ctrl
 Local $SAMBA_Anon_ctrl
@@ -262,8 +262,8 @@ GUISetState ()
 
 	GUICtrlSetData(-1, $Local_Disks_List, StringUpper($SAMBA_DiskLetter))
 
-	GUICtrlCreateLabel("SAMBA Share", $NTS_SettingsFormWidth*0.52, 136, 100, 20)
-	$SAMBA_Folder_ctrl=GUICtrlCreateInput($SAMBA_Folder, $NTS_SettingsFormWidth*0.72, 135, 150, 20, $SS_LEFT)
+	GUICtrlCreateLabel("Share (without IP)", $NTS_SettingsFormWidth*0.52, 136, 120, 20)
+	$SAMBA_Share_ctrl=GUICtrlCreateInput($SAMBA_Share & "\" & $SAMBA_Folder, $NTS_SettingsFormWidth*0.72, 135, 150, 20, $SS_LEFT)
 
 	$SAMBA_Anon_ctrl=GUICtrlCreateCheckbox("Login anonymously ", $NTS_SettingsFormWidth*0.52, 107, 150, 20)
 	;GUICtrlSetState ($SAMBA_Anon_ctrl, $GUI_DISABLE)
@@ -485,10 +485,33 @@ While 1
 			IniWrite($inifile, "Network", "FTP_Passive", 0)
 		EndIf
 
+
+		$SAMBA_Share=GUICtrlRead($SAMBA_Share_ctrl)
+
+		Dim $Share_array ; Array of share folders
+
+		If StringMid($SAMBA_Share, 1, 1)=="\" Then
+			If StringMid($SAMBA_Share, 2, 1)=="\" Then
+				$SAMBA_Share=StringTrimLeft($SAMBA_Share,2)
+			Else
+				$SAMBA_Share=StringTrimLeft($SAMBA_Share,1)
+			Endif
+		EndIf
+
+		If StringMid($SAMBA_Share, StringLen($SAMBA_Share), 1)=="\" Then $SAMBA_Share=StringTrimRight($SAMBA_Share,1)
+
+		If StringInStr($SAMBA_Share, "\")<>0 Then
+			$Share_array = _StringExplode($SAMBA_Share, "\", 1)
+			$SAMBA_Folder=$Share_array[1]
+			$SAMBA_Share=$Share_array[0]
+		Else
+			$SAMBA_Folder=""
+		EndIf
+
 		; Samba settings
 		IniWrite($inifile, "Network", "SMB_Letter", GUICtrlRead($SAMBA_DiskLetter_ctrl) )
-		IniWrite($inifile, "Network", "SMB_Folder", GUICtrlRead($SAMBA_Folder_ctrl) )
-		IniWrite($inifile, "Network", "SMB_Share", GUICtrlRead($SAMBA_Share_ctrl) )
+		IniWrite($inifile, "Network", "SMB_Folder", $SAMBA_Folder )
+		IniWrite($inifile, "Network", "SMB_Share", $SAMBA_Share )
 		IniWrite($inifile, "Network", "SMB_Login", GUICtrlRead($SAMBA_Login_ctrl) )
 		IniWrite($inifile, "Network", "SMB_Password", GUICtrlRead($SAMBA_Password_ctrl) )
 

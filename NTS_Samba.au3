@@ -17,10 +17,10 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.23
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.2
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
-#AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
+#AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
 #AutoIt3Wrapper_Res_Field=OriginalFilename|NTS_Samba.au3
 #AutoIt3Wrapper_Run_AU3Check=n
 #AutoIt3Wrapper_Res_Language=2057
@@ -35,13 +35,17 @@
 EnvSet("SEE_MASK_NOZONECHECKS", "1")
 EnvUpdate ( )
 
-Local $TestResult
+Local $TestResult ; Result of test
 Local $CopyStartTime, $CopyStopTime, $CopyTime, $Speed ; Start Stop and other vars
+Local $PathToSambaFolder
+
 Local $SambaFiles = @ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files ; Destination of files to test
 
-Local $PathToSambaFolder = $SAMBA_DiskLetter & "\" & $SAMBA_Folder ; Path to folder on NAS (with addition directory)
-$PathToSambaFolder =StringReplace($PathToSambaFolder, "\\", "\")
-$PathToSambaFolder = StringReplace($PathToSambaFolder, "/", "\")
+If $SAMBA_Folder=="" Then
+	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $Temp_Folder ; Path to folder on NAS (without addition directory)
+Else
+	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $SAMBA_Folder & "\" & $Temp_Folder ; Path to folder on NAS (with addition directory)
+EndIf
 
 Local $PathToCompFolder=@ScriptDir & "\" & $Temp_Folder ; Path to temp directory on computer
 
@@ -55,9 +59,10 @@ If $CmdLine[0]>=3 Then
 
 history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 
-ShellExecute($PathToSambaFolder)
-PauseTime($ClientPause)
-Send("!{F4}")
+NASMount (1)
+;ShellExecute($PathToSambaFolder)
+;PauseTime($ClientPause)
+;Send("!{F4}")
 
 	Switch $CmdLine[2]
 
@@ -66,6 +71,7 @@ Send("!{F4}")
 			; Copy nessasary files to folder
 
 			history("Start Prepare Run")
+			DirCreate ($PathToSambaFolder)
 
 			_WinAPI_ShellFileOperation($SambaFiles, $PathToSambaFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
 
@@ -92,7 +98,7 @@ Send("!{F4}")
 			$TestResult=$Speed
 
 			;_WinAPI_ShellFileOperation($PathToCompFolder, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
-			;_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+
 
 		Case "CopyToNas"
 
@@ -147,11 +153,14 @@ Send("!{F4}")
 
 			history("Upload daemon exit")
 
+
+
 	EndSwitch
 
 IniWrite($testsini, $CmdLine[1], $CmdLine[2], 1)
 IniWrite($resultini, $CmdLine[1], $CmdLine[2] & "#" & $CmdLine[3], $TestResult)
 
+NASMount (0)
 halt("reboot")
 
 EndIf

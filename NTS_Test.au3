@@ -17,10 +17,10 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.0.1.16
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.2
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
-#AutoIt3Wrapper_Res_Field=ProductVersion|0.0.1.x
+#AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
 #AutoIt3Wrapper_Res_Field=OriginalFilename|NTS_Test.au3
 #AutoIt3Wrapper_Run_AU3Check=n
 #AutoIt3Wrapper_Res_Language=2057
@@ -32,47 +32,24 @@
 #include "Libs\libs.au3"
 #include "Libs\head.au3"
 
-#cs
-
-Можно попробовать в политиках (gpedit.msc):
-Конфигурация компьютера -> Административные шаблоны -> Система -> Вход в систему
-Включить "Всегда ожидать инициализации сети при загрузке и входе в систему".
-
-
-@Echo Off
-SetLocal EnableExtensions EnableDelayedExpansion
-
-Rem Цикл до тех пор, пока не станет доступен сервер
-:Loop
-Ping -n 1 -l 1 -w 750 Имя_или_IP_сервера
-If Not "!ErrorLevel!"=="0" GoTo :Loop
-
-Rem Здесь подключение сетевых дисков
-NET USE Y: \\Имя_или_IP_сервера\Имя_шары /PERSISTENT:NO
-
-Exit
-#ce
-
-
 EnvSet("SEE_MASK_NOZONECHECKS", "1")
 EnvUpdate ( )
 
-
 Dim $Current_Tests_array ; Array with tests
-Local $t=0, $i, $l=0, $Current_Test_to_Run, $TestsUnDone=0
-$Current_Tests_array = _StringExplode($Current_Tests, "|", 0)
-
-;Global Vars $Current_Loop, $Number_of_loops, $Current_Tests, $ClientPause, $ClearCache
+Local $t=0, $i, $l=0, $Current_Test_to_Run, $TestsUnDone=0, $MapNetworkDrive, $PathToSambaFolder
+$Current_Tests_array = _StringExplode($Current_Tests, "|", 0) ; Tests to run
 
 history("Current loop " & $Current_Loop)
 history("Total loops " & $Number_of_loops)
 history("Choosen tests " & $Current_Tests)
 history("Pause between each action " & $ClientPause)
 
-PauseTime($ClientPause)
+PauseTime($ClientPause+30)
+
+; Check server availability
 
 While 1
-	; Check server availability
+
 	$l+=1
 	If $l>40 Then MsgBox(0, "Warning!", "Smth wrong with network. Can`t reach " & $NAS_IP)
 	Sleep(3000)
@@ -87,10 +64,10 @@ WEnd
 history("Check NAS availability pass on checkrun - " & $l)
 
 
-
 If $Current_Loop>=$Number_of_loops Then
 
 	history("Test finished. Run results ")
+	MsgBox(0, "Finish", "All tests done.")
 
 Else
 
@@ -115,8 +92,25 @@ Else
 						PauseTime($ClientPause)
 						$TestsUnDone=1
 						DirCreate ( $ScriptFolder & "\" & $Temp_Folder)
+
+							If $Current_Tests_array[$t]=="Samba" Then
+
+								NASMount (1)
+								history($ScriptFolder & "\" & $Temp_Folder & " cleared")
+								If $SAMBA_Folder=="" Then
+									$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $Temp_Folder ; Path to folder on NAS (without addition directory)
+								Else
+									$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $SAMBA_Folder & "\" & $Temp_Folder ; Path to folder on NAS (with addition directory)
+								EndIf
+								_WinAPI_ShellFileOperation($PathToSambaFolder, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
+								history($PathToSambaFolder & " cleared")
+								PauseTime($ClientPause)
+								NASMount (0)
+
+							EndIf
+
 						halt("reboot")
-						ExitLoop()
+						Exit
 
 					ElseIf $var[$i][0]=="Prepare" Then
 
@@ -183,6 +177,7 @@ EndIf
 		history("Ini-file " & $testsini & " reconstructed")
 
 		halt("reboot")
+
 
 	EndIf
 
