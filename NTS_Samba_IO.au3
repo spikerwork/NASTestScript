@@ -7,7 +7,7 @@
 
  Script Function:
 
-   Samba test for Nas Test Script
+   IOmeter Samba test for Nas Test Script
 
 #ce ----------------------------------------------------------------------------
 
@@ -36,24 +36,12 @@ EnvSet("SEE_MASK_NOZONECHECKS", "1")
 EnvUpdate ( )
 
 Local $TestResult ; Result of test
-Local $CopyStartTime, $CopyStopTime, $CopyTime, $Speed ; Start Stop and other vars
-Local $PathToSambaFolder
+Local $PathToSamba = $SAMBA_DiskLetter & "\\" & $NAS_IP & "\" & $SAMBA_Share ; Special line for IOmeter
+Local $szFile, $szText
+Local $IO_Folder=$ScriptFolder & "\Apps\iometer"
+$szFile = $ScriptFolder & "\Apps\iometer\iometer_SAMBA.icf"
 
-Local $SambaFiles = @ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files ; Destination of files to test
-
-If $SAMBA_Folder=="" Then
-	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $Temp_Folder ; Path to folder on NAS (without addition directory)
-Else
-	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $SAMBA_Folder & "\" & $Temp_Folder ; Path to folder on NAS (with addition directory)
-EndIf
-
-Local $PathToCompFolder=@ScriptDir & "\" & $Temp_Folder ; Path to temp directory on computer
-
-Local $SourceSize=DirGetSize($SambaFiles) ; Size of test files
-
-history("PathToSambaFolder - " & $PathToSambaFolder)
-history("SambaFiles - " & $SambaFiles)
-history("Folder on computer, to delete - " & $PathToCompFolder)
+history("Path to Samba share - " & $PathToSamba)
 
 If $CmdLine[0]>=3 Then
 
@@ -68,87 +56,27 @@ NASMount (1)
 			; Copy nessasary files to folder
 
 			history("Start Prepare Run")
-			DirCreate ($PathToSambaFolder)
 
-			_WinAPI_ShellFileOperation($SambaFiles, $PathToSambaFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
+
+
+
+			$szText = FileRead($szFile,FileGetSize($szFile))
+			$szText = StringReplace($szText, "K:\\10.0.0.99\IxiaChariot", $PathToSamba)
+			FileDelete($szFile)
+			FileWrite($szFile,$szText)
+			Sleep(2000)
+			ShellExecuteWait($IO_Folder & "\" &"IOMETER.exe", "iometer_SAMBA.icf results.csv",$IO_Folder)
+
 
 			$TestResult="Pass"
 
-		Case "FromNas"
+		Case "IOTest"
 
-			history("Copy files from nas")
+			history("IOmeter test")
 
-			$CopyStartTime=GetUnixTimeStamp()
-
-			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, $PathToCompFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
-
-			$CopyStopTime=GetUnixTimeStamp()
-
-			$CopyTime=$CopyStopTime-$CopyStartTime
-			$Speed=$SourceSize/1024/1024/$CopyTime
-
-			PauseTime($ClientPause)
-
-			history("Time - " & $CopyTime)
-			history("Speed - " & $Speed)
 
 			$TestResult=$Speed
 
-			;_WinAPI_ShellFileOperation($PathToCompFolder, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
-
-
-		Case "CopyToNas"
-
-			history("Copy files to nas")
-
-			$CopyStartTime=GetUnixTimeStamp()
-
-			_WinAPI_ShellFileOperation($SambaFiles, $PathToSambaFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
-
-			$CopyStopTime=GetUnixTimeStamp()
-
-			$CopyTime=$CopyStopTime-$CopyStartTime
-			$Speed=$SourceSize/1024/1024/$CopyTime
-
-			PauseTime($ClientPause)
-
-			history("Time - " & $CopyTime)
-			history("Speed - " & $Speed)
-
-			$TestResult=$Speed
-
-			;_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
-
-		Case "CopyFromAndTo"
-
-			history("Simultaneously copy to nas and from nas.")
-			history("This daemon copy files from nas.")
-
-			ShellExecute($ScriptFolder & "\" & $NTS_Samba_UD, $CmdLine[1] & " " & $CmdLine[2] & " " & $CmdLine[3], $ScriptFolder)
-
-			$CopyStartTime=GetUnixTimeStamp()
-
-			_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, $PathToCompFolder, $FO_COPY, BitOR($FOF_NOCONFIRMATION, $FOF_NOCONFIRMMKDIR, $FOF_RENAMEONCOLLISION, $FOF_SIMPLEPROGRESS))
-
-			$CopyStopTime=GetUnixTimeStamp()
-
-			$CopyTime=$CopyStopTime-$CopyStartTime
-			$Speed=$SourceSize/1024/1024/$CopyTime
-
-			PauseTime($ClientPause)
-
-			history("Total time - " & $CopyTime)
-			history("Average speed - " & $Speed)
-
-			$TestResult=$Speed
-
-			While 1
-			If ProcessExists("NTS_Samba_UD.exe")=0 Then
-				ExitLoop
-			EndIf
-			Wend
-
-			history("Upload daemon exit")
 
 
 

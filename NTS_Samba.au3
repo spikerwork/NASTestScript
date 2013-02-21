@@ -39,7 +39,7 @@ Local $TestResult ; Result of test
 Local $CopyStartTime, $CopyStopTime, $CopyTime, $Speed ; Start Stop and other vars
 Local $PathToSambaFolder
 
-Local $SambaFiles = @ScriptDir & "\" & $Content_Folder & "\" & $App_Samba_Files ; Destination of files to test
+Local $SambaFiles = $ScriptFolder & "\" & $Content_Folder & "\" & $App_Samba_Files ; Destination of files to test
 
 If $SAMBA_Folder=="" Then
 	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $Temp_Folder ; Path to folder on NAS (without addition directory)
@@ -47,7 +47,7 @@ Else
 	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $SAMBA_Folder & "\" & $Temp_Folder ; Path to folder on NAS (with addition directory)
 EndIf
 
-Local $PathToCompFolder=@ScriptDir & "\" & $Temp_Folder ; Path to temp directory on computer
+Local $PathToCompFolder=$ScriptFolder & "\" & $Temp_Folder ; Path to temp directory on computer
 
 Local $SourceSize=DirGetSize($SambaFiles) ; Size of test files
 
@@ -97,8 +97,6 @@ NASMount (1)
 
 			$TestResult=$Speed
 
-			;_WinAPI_ShellFileOperation($PathToCompFolder, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
-
 
 		Case "CopyToNas"
 
@@ -120,7 +118,6 @@ NASMount (1)
 
 			$TestResult=$Speed
 
-			;_WinAPI_ShellFileOperation($PathToSambaFolder & "\" & $App_Samba_Files, "",  $FO_DELETE, BitOR($FOF_NOCONFIRMATION, $FOF_SIMPLEPROGRESS))
 
 		Case "CopyFromAndTo"
 
@@ -152,8 +149,6 @@ NASMount (1)
 			Wend
 
 			history("Upload daemon exit")
-
-
 
 	EndSwitch
 

@@ -1,0 +1,11 @@
+(19:09:20:372) --- Program started (NTS_Samba_IO.au3). UnixTimeStamp 1361473760
+(19:09:20:387) --- Working directory Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript
+(19:09:20:403) --- Script use different directory, not default Ч C:\NasTestScript
+(19:09:20:403) --- Admin check passed
+(19:09:20:419) --- Run on system: WIN_7(7600) X86 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(19:09:20:434) --- Desktop settings: 1280x1024 : 32Bit @ 60Hz. DPI 96
+(19:09:20:434) --- INI file found Ч C:\Users\¬ладимир\Documents\GitHub\NASTestScript\settings.ini
+(19:09:20:621) --- PathToSamba share - Z:\\10.0.0.10\SAMBATEST
+(19:09:20:637) --- Errors 0
+(19:09:20:637) --- Program halted. Worktime - 0 seconds.
+(19:09:20:637) --- ------------------------------------------------------------------------

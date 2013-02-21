@@ -104,6 +104,8 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $Temp_Folder =  IniRead($inifile, "Application", "Temp_Folder", "Temp" ) ; Folder wich stores temporary data
 	Global $App_FTP = IniRead($inifile, "Application", "FTP_Tool", "Apps\curl\curl.exe" ) ; FTP Tool for test FTP Download/Upload
 	Global $App_HTTP = IniRead($inifile, "Application", "HTTP_Tool", "Apps\curl\curl.exe" ) ; HTTP Tool for test HTTP Download
+	Global $App_IOmeter = IniRead($inifile, "Application", "IOmeter_Tool", "Apps\iometer\iometer.exe" ) ; IOmeter for test Samba/iSCSI
+	Global $App_IOmeter_conf = IniRead($inifile, "Application", "IOmeter_conf", "Apps\iometer\iometer_SAMBA.icf" ) ; IOmeter configuration file for test Samba/iSCSI
 	Global $App_FTP_putlog = IniRead($inifile, "Application", "FTP_Tool_putlog", "FTP_put.txt" ) ; FTP put log
 	Global $App_FTP_getlog = IniRead($inifile, "Application", "FTP_Tool_getlog", "FTP_get.txt" ) ; FTP get log
 	Global $App_FTP_File = IniRead($inifile, "Application", "FTP_Tool_File", "UpDo.rar" ) ; FTP transfer file
