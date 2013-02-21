@@ -1,0 +1,29 @@
+'Test Type,Test Description
+0,SAMBA Test
+'Version
+1.1.0
+'Time Stamp
+2013-02-22 00:25:41:944
+'Access specifications
+'Access specification name,default assignment
+Seq Read 512,0
+'size,% of size,% reads,% random,delay,burst,align,reply
+512,100,100,0,0,1,0,0
+'End access specifications
+'Results
+'Target Type,Target Name,Access Specification Name,# Managers,# Workers,# Disks,IOps,Read IOps,Write IOps,MBps (Binary),Read MBps (Binary),Write MBps (Binary),MBps (Decimal),Read MBps (Decimal),Write MBps (Decimal),Transactions per Second,Connections per Second,Average Response Time,Average Read Response Time,Average Write Response Time,Average Transaction Time,Average Connection Time,Maximum Response Time,Maximum Read Response Time,Maximum Write Response Time,Maximum Transaction Time,Maximum Connection Time,Errors,Read Errors,Write Errors,Bytes Read,Bytes Written,Read I/Os,Write I/Os,Connections,Transactions per Connection,Total Raw Read Response Time,Total Raw Write Response Time,Total Raw Transaction Time,Total Raw Connection Time,Maximum Raw Read Response Time,Maximum Raw Write Response Time,Maximum Raw Transaction Time,Maximum Raw Connection Time,Total Raw Run Time,Starting Sector,Maximum Size,Queue Depth,% CPU Utilization,% User Time,% Privileged Time,% DPC Time,% Interrupt Time,Processor Speed,Interrupts per Second,CPU Effectiveness,Packets/Second,Packet Errors,Segments Retransmitted/Second
+ALL,All,Seq Read 512,1,1,1,464.724692,464.724692,0.000000,0.226916,0.226916,0.000000,0.237939,0.237939,0.000000,464.724692,0.000000,8.606172,8.606172,0.000000,8.606172,0.000000,108.122684,108.122684,0.000000,108.122684,0.000000,0,0,0,62302720,0,121685,0,0,-1,,,,,,,,,,0,83886080,4,1.727720,0.149706,1.581964,0.048412,0.190670,,8866.807636,268.981419,1163.838494,0.000000,0.019097
+MANAGER,SPIKER-NOTE,Seq Read 512,,1,1,464.724692,464.724692,0.000000,0.226916,0.226916,0.000000,0.237939,0.237939,0.000000,464.724692,0.000000,8.606172,8.606172,0.000000,8.606172,0.000000,108.122684,108.122684,0.000000,108.122684,0.000000,0,0,0,62302720,0,121685,0,0,-1,2040802425,0,2040802425,0,210703,0,210703,0,510264316,0,83886080,4,1.727720,0.149706,1.581964,0.048412,0.190670,1948740.000000,8866.807636,268.981419,1163.838494,0.000000,0.019097
+PROCESSOR,CPU 0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.556824,0.518384,3.044759,0.387298,1.418107,1948740.000000,2509.705911,,,,
+PROCESSOR,CPU 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.000000,0.000000,0.000000,0.000000,0.000000,1948740.000000,544.639183,,,,
+PROCESSOR,CPU 2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.093083,0.143002,3.956399,0.000000,0.047667,1948740.000000,1361.382157,,,,
+PROCESSOR,CPU 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.000000,0.000000,0.000000,0.000000,0.000000,1948740.000000,633.621679,,,,
+PROCESSOR,CPU 4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.908372,0.250254,3.664436,0.000000,0.011917,1948740.000000,1352.498039,,,,
+PROCESSOR,CPU 5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.000000,0.000000,0.000000,0.000000,0.000000,1948740.000000,560.131006,,,,
+PROCESSOR,CPU 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.245969,0.286005,1.966282,0.000000,0.047667,1948740.000000,1329.420723,,,,
+PROCESSOR,CPU 7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.017516,0.000000,0.023834,0.000000,0.000000,1948740.000000,575.408938,,,,
+WORKER,Worker 1,Seq Read 512,,,1,464.724692,464.724692,0.000000,0.226916,0.226916,0.000000,0.237939,0.237939,0.000000,464.724692,0.000000,8.606172,8.606172,0.000000,8.606172,0.000000,108.122684,108.122684,0.000000,108.122684,0.000000,0,0,0,62302720,0,121685,0,0,-1,2040802425,0,2040802425,0,210703,0,210703,0,510264316,0,83886080,4,,,,,,1948740.000000,,,,,
+DISK,Z:\\192.168.1.1\USB_Storage,,,,,464.724692,464.724692,0.000000,0.226916,0.226916,0.000000,0.237939,0.237939,0.000000,464.724692,0.000000,8.606172,8.606172,0.000000,8.606172,0.000000,108.122684,108.122684,0.000000,108.122684,0.000000,0,0,0,62302720,0,121685,0,0,-1,2040802425,0,2040802425,0,210703,0,210703,0,510264316,0,83886080,4,,,,,,1948740.000000,,,,,
+'Time Stamp
+2013-02-22 00:30:13:854
+Aborted test

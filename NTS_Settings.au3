@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.4
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.8
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
@@ -263,8 +263,8 @@ GUISetState ()
 	GUICtrlSetData(-1, $Local_Disks_List, StringUpper($SAMBA_DiskLetter))
 
 	GUICtrlCreateLabel("Share (without IP)", $NTS_SettingsFormWidth*0.52, 136, 120, 20)
-	$SAMBA_Share_ctrl=GUICtrlCreateInput($SAMBA_Share & "\" & $SAMBA_Folder, $NTS_SettingsFormWidth*0.72, 135, 150, 20, $SS_LEFT)
-
+	If $SAMBA_Folder<>"" Then $SAMBA_Share_ctrl=GUICtrlCreateInput($SAMBA_Share & "\" & $SAMBA_Folder, $NTS_SettingsFormWidth*0.72, 135, 150, 20, $SS_LEFT)
+	If $SAMBA_Folder=="" Then $SAMBA_Share_ctrl=GUICtrlCreateInput($SAMBA_Share, $NTS_SettingsFormWidth*0.72, 135, 150, 20, $SS_LEFT)
 	$SAMBA_Anon_ctrl=GUICtrlCreateCheckbox("Login anonymously ", $NTS_SettingsFormWidth*0.52, 107, 150, 20)
 	;GUICtrlSetState ($SAMBA_Anon_ctrl, $GUI_DISABLE)
 

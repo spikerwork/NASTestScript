@@ -1,0 +1,44 @@
+(00:21:35:874) --- Program started (NTS_Test.exe). UnixTimeStamp 1361492495
+(00:21:35:878) --- Working directory — C:\Users\Spiker\Documents\GitHub\NASTestScript
+(00:21:35:880) --- Script use different directory, not default — C:\NasTestScript
+(00:21:35:881) --- Admin check passed
+(00:21:35:883) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(00:21:35:884) --- Desktop settings: 1366x768 : 32Bit @ 60Hz. DPI 96
+(00:21:35:886) --- INI file found — C:\Users\Spiker\Documents\GitHub\NASTestScript\settings.ini
+(00:21:35:980) --- Current loop 3
+(00:21:35:982) --- Total loops 5
+(00:21:35:983) --- Choosen tests FTP|Samba|HTTP|Samba_IO
+(00:21:35:984) --- Pause between each action 10
+(00:21:35:986) --- Pause func triggered. Pause time - 13
+(00:21:52:519) --- Check NAS availability pass on checkrun - 1
+(00:21:52:521) --- Read test parameters from section FTP
+(00:21:52:522) --- Read test parameters from section Samba
+(00:21:52:524) --- Read test parameters from section HTTP
+(00:21:52:525) --- Read test parameters from section Samba_IO
+(00:21:52:527) --- Test to run Samba_IO. Mode Prepare
+(00:21:52:528) --- Pause func triggered. Pause time - 10
+(00:22:03:070) --- Errors 0
+(00:22:03:072) --- Program halted. Worktime - 28 seconds.
+(00:22:03:073) --- ------------------------------------------------------------------------
+(00:25:11:363) --- Program started (NTS_Test.exe). UnixTimeStamp 1361492711
+(00:25:11:365) --- Working directory — C:\Users\Spiker\Documents\GitHub\NASTestScript
+(00:25:11:366) --- Script use different directory, not default — C:\NasTestScript
+(00:25:11:368) --- Admin check passed
+(00:25:11:370) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(00:25:11:372) --- Desktop settings: 1366x768 : 32Bit @ 60Hz. DPI 96
+(00:25:11:373) --- INI file found — C:\Users\Spiker\Documents\GitHub\NASTestScript\settings.ini
+(00:25:11:468) --- Current loop 3
+(00:25:11:471) --- Total loops 5
+(00:25:11:473) --- Choosen tests FTP|Samba|HTTP|Samba_IO
+(00:25:11:475) --- Pause between each action 10
+(00:25:11:477) --- Pause func triggered. Pause time - 13
+(00:25:28:006) --- Check NAS availability pass on checkrun - 1
+(00:25:28:010) --- Read test parameters from section FTP
+(00:25:28:012) --- Read test parameters from section Samba
+(00:25:28:014) --- Read test parameters from section HTTP
+(00:25:28:016) --- Read test parameters from section Samba_IO
+(00:25:28:018) --- Test to run Samba_IO. Mode IOTest
+(00:25:28:020) --- Pause func triggered. Pause time - 10
+(00:25:38:560) --- Errors 0
+(00:25:38:562) --- Program halted. Worktime - 27 seconds.
+(00:25:38:564) --- ------------------------------------------------------------------------

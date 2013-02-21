@@ -29,11 +29,13 @@ Global $ScriptFolder=@ScriptDir ; Script directory
 
 ; Ini files
 Global $inifile = $ScriptFolder & "\" & "settings.ini" ; Main settings of scipt
-Global $resultini = $ScriptFolder & "\" & "result.ini" ; Results
-Global $testsini = $ScriptFolder & "\" & "tests.ini" ; Tests setup
+Global $resultfolder = "Results"
+Global $resultini = $ScriptFolder & "\" & $resultfolder & "\" & "result.ini" ; Results
+Global $testsini = $ScriptFolder & "\" & $resultfolder & "\" & "tests.ini" ; Tests setup
 
 ; Log files
-Global $logfile = $ScriptFolder & "\" & "Log_" & @ScriptName & ".txt" ; Generate log file for current script
+Global $logfolder="Logs"
+Global $logfile = $ScriptFolder & "\" & $logfolder & "\" & "Log_" & @ScriptName & ".txt" ; Generate log file for current script
 
 ; Icon | used only for build.exe script
 Global $icon="nas.ico"
@@ -43,11 +45,12 @@ Global $NTS="NasTestScript.exe"
 Global $NTS_Settings="NTS_Settings.exe" ;
 Global $NTS_Ftp="NTS_Ftp.exe" ;
 Global $NTS_Samba="NTS_Samba.exe" ;
+Global $NTS_Samba_IO="NTS_Samba_IO.exe" ;
 Global $NTS_Samba_UD="NTS_Samba_UD.exe" ; Addon for NTS_Samba
 Global $NTS_Test="NTS_Test.exe" ;
 Global $NTS_HTTP="NTS_HTTP.exe" ;
 
-Global $FilesArray[7]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test, $NTS_HTTP, $NTS_Samba_UD]
+Global $FilesArray[8]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test, $NTS_HTTP, $NTS_Samba_UD, $NTS_Samba_IO]
 
 ; Tests
 Global $NTS_Tests[6]=["FTP", "Samba", "HTTP", "Samba_NASPT", "Samba_IO", "iSCSI_IO"]
@@ -104,8 +107,10 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $Temp_Folder =  IniRead($inifile, "Application", "Temp_Folder", "Temp" ) ; Folder wich stores temporary data
 	Global $App_FTP = IniRead($inifile, "Application", "FTP_Tool", "Apps\curl\curl.exe" ) ; FTP Tool for test FTP Download/Upload
 	Global $App_HTTP = IniRead($inifile, "Application", "HTTP_Tool", "Apps\curl\curl.exe" ) ; HTTP Tool for test HTTP Download
-	Global $App_IOmeter = IniRead($inifile, "Application", "IOmeter_Tool", "Apps\iometer\iometer.exe" ) ; IOmeter for test Samba/iSCSI
-	Global $App_IOmeter_conf = IniRead($inifile, "Application", "IOmeter_conf", "Apps\iometer\iometer_SAMBA.icf" ) ; IOmeter configuration file for test Samba/iSCSI
+	Global $App_IOmeter = IniRead($inifile, "Application", "IOmeter_Tool", "IOMETER.exe" ) ; IOmeter for test Samba/iSCSI
+	Global $App_IOmeter_folder = IniRead($inifile, "Application", "IOmeter_Tool_folder", "Apps\iometer" ) ; Folder with IOmeter for test Samba/iSCSI
+	Global $App_IOmeter_conf = IniRead($inifile, "Application", "IOmeter_conf", "iometer_SAMBA.icf" ) ; IOmeter configuration file for test Samba/iSCSI
+	Global $App_IOmeter_defconf = IniRead($inifile, "Application", "IOmeter_defconf", "iometer_SAMBA_default.icf" ) ; Default IOmeter configuration file for test Samba/iSCSI
 	Global $App_FTP_putlog = IniRead($inifile, "Application", "FTP_Tool_putlog", "FTP_put.txt" ) ; FTP put log
 	Global $App_FTP_getlog = IniRead($inifile, "Application", "FTP_Tool_getlog", "FTP_get.txt" ) ; FTP get log
 	Global $App_FTP_File = IniRead($inifile, "Application", "FTP_Tool_File", "UpDo.rar" ) ; FTP transfer file

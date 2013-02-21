@@ -398,7 +398,7 @@ Version 2006.07.27
 'End assigned access specs
 'Target assignments
 'Target
-	Y:\\10.0.0.83\VideoCam
+	Z:\\192.168.1.1\USB_Storage
 'Target type
 	DISK
 'End target
