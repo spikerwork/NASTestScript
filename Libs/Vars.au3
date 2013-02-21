@@ -35,10 +35,6 @@ Global $testsini = $ScriptFolder & "\" & "tests.ini" ; Tests setup
 ; Log files
 Global $logfile = $ScriptFolder & "\" & "Log_" & @ScriptName & ".txt" ; Generate log file for current script
 
-; Program timer in Unix time Format
-Global $ScriptStartTime ; Script start time (used in head.au3)
-Global $ScriptEndTime ; Script end time (used in foot.au3)
-
 ; Icon | used only for build.exe script
 Global $icon="nas.ico"
 
@@ -64,6 +60,10 @@ Global $NTS_Tests[6]=["FTP", "Samba", "HTTP", "Samba_NASPT", "Samba_IO", "iSCSI_
 Global $ScriptInstalled
 Global $filesinfolder=0
 Global $F_arra ; Array of detected files
+
+; Program timer in Unix time Format
+Global $ScriptStartTime ; Script start time (used in head.au3)
+Global $ScriptEndTime ; Script end time (used in foot.au3)
 
 Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 
@@ -94,8 +94,8 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $SAMBA_Default_login="guest"
 	Global $SAMBA_Default_pass="guest"
 	Global $SAMBA_DiskLetter = IniRead($inifile, "Network", "SMB_Letter", "Z:" ) ; NAS samba share mount point
-	Global $SAMBA_Folder = IniRead($inifile, "Network", "SMB_Folder", "SambaTest" ) ; NAS Samba folder
-	Global $SAMBA_Share = IniRead($inifile, "Network", "SMB_Share", "\sambafolder" ) ; NAS Samba folder
+	Global $SAMBA_Folder = IniRead($inifile, "Network", "SMB_Folder", "" ) ; NAS Samba folder
+	Global $SAMBA_Share = IniRead($inifile, "Network", "SMB_Share", "\SAMBATEST" ) ; NAS Samba folder
 	Global $SAMBA_Login = IniRead($inifile, "Network", "SMB_Login", $SAMBA_Default_login ) ; NAS Samba Login
 	Global $SAMBA_Password = IniRead($inifile, "Network", "SMB_Password", $SAMBA_Default_pass ) ; NAS Samba Password
 

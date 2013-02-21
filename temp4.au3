@@ -32,33 +32,19 @@
 #include "Libs\libs.au3"
 #include "Libs\head.au3"
 
+Local $szFile, $szText
 
+$szFile = $ScriptFolder & "\Apps\iometer\iometer_SAMBA.icf"
+Local $IO_Folder=$ScriptFolder & "\Apps\iometer"
 
+$szText = FileRead($szFile,FileGetSize($szFile))
+$szText = StringReplace($szText, "K:\\10.0.0.99\IxiaChariot", "Y:\\10.0.0.83\VideoCam")
+FileDelete($szFile)
+FileWrite($szFile,$szText)
+Sleep(2000)
+ShellExecuteWait($IO_Folder & "\" &"IOMETER.exe", "iometer_SAMBA.icf results.csv",$IO_Folder)
 
-
-
-Local $Getrun
-Local $Putrun
-Local $Firstrun
-Local $Resultput
-Local $Resultget
-
-Local $App_FTP_DownloadFile = "downdown.down"
-Local $App_FTP_UploadFile = "upload.upload"
-
-$App_FTP_File = $ScriptFolder & "\" & $App_FTP_File
-$App_FTP_getlog = $ScriptFolder & "\" & $App_FTP_getlog
-$App_FTP_putlog = $ScriptFolder & "\" & $App_FTP_putlog
-$App_FTP = $ScriptFolder & "\" & $App_FTP
-Local $Temp_log = @HomeDrive & "\" & "log.txt"
-
-$Resultput = $Resultput & " |S " & SearchLog($App_FTP_putlog)
-$Resultget = $Resultget & " |S " & SearchLog($App_FTP_getlog)
-
-;FileDelete($App_FTP_getlog)
-;FileDelete($App_FTP_putlog)
-
-MsgBox(0, "Results", "Upload " & $Resultput & @CRLF & "Download " &  $Resultget)
+;MsgBox(0, "Results", "Upload " & $Resultput & @CRLF & "Download " &  $Resultget)
 
 
 #include "Libs\foot.au3"

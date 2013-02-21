@@ -1,0 +1,48 @@
+'Test Type,Test Description
+0,SAMBA Test
+'Version
+1.1.0
+'Time Stamp
+2013-02-21 16:49:14:076
+'Test Type,Test Description
+0,SAMBA Test
+'Version
+1.1.0
+'Time Stamp
+2013-02-21 16:53:12:690
+'Access specifications
+'Access specification name,default assignment
+Seq Read 512,0
+'size,% of size,% reads,% random,delay,burst,align,reply
+512,100,100,0,0,1,0,0
+'End access specifications
+'Results
+'Target Type,Target Name,Access Specification Name,# Managers,# Workers,# Disks,IOps,Read IOps,Write IOps,MBps (Binary),Read MBps (Binary),Write MBps (Binary),MBps (Decimal),Read MBps (Decimal),Write MBps (Decimal),Transactions per Second,Connections per Second,Average Response Time,Average Read Response Time,Average Write Response Time,Average Transaction Time,Average Connection Time,Maximum Response Time,Maximum Read Response Time,Maximum Write Response Time,Maximum Transaction Time,Maximum Connection Time,Errors,Read Errors,Write Errors,Bytes Read,Bytes Written,Read I/Os,Write I/Os,Connections,Transactions per Connection,Total Raw Read Response Time,Total Raw Write Response Time,Total Raw Transaction Time,Total Raw Connection Time,Maximum Raw Read Response Time,Maximum Raw Write Response Time,Maximum Raw Transaction Time,Maximum Raw Connection Time,Total Raw Run Time,Starting Sector,Maximum Size,Queue Depth,% CPU Utilization,% User Time,% Privileged Time,% DPC Time,% Interrupt Time,Processor Speed,Interrupts per Second,CPU Effectiveness,Packets/Second,Packet Errors,Segments Retransmitted/Second
+ALL,All,Seq Read 512,1,1,1,7806.409763,7806.409763,0.000000,3.811724,3.811724,0.000000,3.996882,3.996882,0.000000,7806.409763,0.000000,0.511574,0.511574,0.000000,0.511574,0.000000,2.798963,2.798963,0.000000,2.798963,0.000000,0,0,0,42122752,0,82271,0,0,-1,,,,,,,,,,0,83886080,4,9.872120,0.500335,9.413719,0.722707,0.426212,,67172.244781,790.753142,18540.517987,0.000000,0.380119
+MANAGER,SPIKERT-PC,Seq Read 512,,1,1,7806.409763,7806.409763,0.000000,3.811724,3.811724,0.000000,3.996882,3.996882,0.000000,7806.409763,0.000000,0.511574,0.511574,0.000000,0.511574,0.000000,2.798963,2.798963,0.000000,2.798963,0.000000,0,0,0,42122752,0,82271,0,0,-1,120941762,0,120941762,0,8043,0,8043,0,30284214,0,83886080,4,9.872120,0.500335,9.413719,0.722707,0.426212,2873564.000000,67172.244781,790.753142,18540.517987,0.000000,0.380119
+PROCESSOR,CPU 0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,23.356017,0.296495,23.126618,5.336912,3.261446,2873564.000000,13527.027057,,,,
+PROCESSOR,CPU 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.000000,0.000000,0.000000,0.000000,0.000000,2873564.000000,8004.461105,,,,
+PROCESSOR,CPU 2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15.350649,0.592990,14.824755,0.000000,0.148248,2873564.000000,7791.879283,,,,
+PROCESSOR,CPU 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.377647,0.000000,0.444743,0.444743,0.000000,2873564.000000,8061.764118,,,,
+PROCESSOR,CPU 4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15.350649,1.630723,13.787022,0.000000,0.000000,2873564.000000,7830.841530,,,,
+PROCESSOR,CPU 5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.000000,0.000000,0.000000,0.000000,0.000000,2873564.000000,7982.034056,,,,
+PROCESSOR,CPU 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,24.541997,1.482475,23.126618,0.000000,0.000000,2873564.000000,5980.609932,,,,
+PROCESSOR,CPU 7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.000000,0.000000,0.000000,0.000000,0.000000,2873564.000000,7993.627700,,,,
+WORKER,Worker 1,Seq Read 512,,,1,7806.409763,7806.409763,0.000000,3.811724,3.811724,0.000000,3.996882,3.996882,0.000000,7806.409763,0.000000,0.511574,0.511574,0.000000,0.511574,0.000000,2.798963,2.798963,0.000000,2.798963,0.000000,0,0,0,42122752,0,82271,0,0,-1,120941762,0,120941762,0,8043,0,8043,0,30284214,0,83886080,4,,,,,,2873564.000000,,,,,
+DISK,Y:\\10.0.0.83\VideoCam,,,,,7806.409763,7806.409763,0.000000,3.811724,3.811724,0.000000,3.996882,3.996882,0.000000,7806.409763,0.000000,0.511574,0.511574,0.000000,0.511574,0.000000,2.798963,2.798963,0.000000,2.798963,0.000000,0,0,0,42122752,0,82271,0,0,-1,120941762,0,120941762,0,8043,0,8043,0,30284214,0,83886080,4,,,,,,2873564.000000,,,,,
+'Time Stamp
+2013-02-21 16:53:33:252
+Aborted test
+'Test Type,Test Description
+0,SAMBA Test
+'Version
+1.1.0
+'Time Stamp
+2013-02-21 16:54:24:978
+'Access specifications
+'Access specification name,default assignment
+Seq Read 512,0
+'size,% of size,% reads,% random,delay,burst,align,reply
+512,100,100,0,0,1,0,0
+'End access specifications
+Aborted test

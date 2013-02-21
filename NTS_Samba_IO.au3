@@ -21,7 +21,7 @@
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
-#AutoIt3Wrapper_Res_Field=OriginalFilename|NTS_Samba.au3
+#AutoIt3Wrapper_Res_Field=OriginalFilename|NTS_Samba_IO.au3
 #AutoIt3Wrapper_Run_AU3Check=n
 #AutoIt3Wrapper_Res_Language=2057
 #AutoIt3Wrapper_Res_LegalCopyright=Sp1ker (spiker@pmpc.ru)
@@ -60,9 +60,6 @@ If $CmdLine[0]>=3 Then
 history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 
 NASMount (1)
-;ShellExecute($PathToSambaFolder)
-;PauseTime($ClientPause)
-;Send("!{F4}")
 
 	Switch $CmdLine[2]
 
