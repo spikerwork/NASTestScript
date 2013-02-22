@@ -1,4 +1,0 @@
-NASPerf Test Results
-( HDVideo_1Play )
-FS_replay.exe "C:\Program Files (x86)\Intel\NASPT\app_traces\HDVideo_1Play.xml" "B:\Temp\HDVideo_1Play" "C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\NASPT\Model\February 22, 2013, 16 22 31" -prep
-Restored file: video.dvr-ms
