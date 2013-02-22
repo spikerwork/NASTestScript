@@ -46,11 +46,12 @@ Global $NTS_Settings="NTS_Settings.exe" ;
 Global $NTS_Ftp="NTS_Ftp.exe" ;
 Global $NTS_Samba="NTS_Samba.exe" ;
 Global $NTS_Samba_IO="NTS_Samba_IO.exe" ;
+Global $NTS_Samba_NASPT="NTS_Samba_NASPT.exe" ;
 Global $NTS_Samba_UD="NTS_Samba_UD.exe" ; Addon for NTS_Samba
 Global $NTS_Test="NTS_Test.exe" ;
 Global $NTS_HTTP="NTS_HTTP.exe" ;
 
-Global $FilesArray[8]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test, $NTS_HTTP, $NTS_Samba_UD, $NTS_Samba_IO]
+Global $FilesArray[9]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test, $NTS_HTTP, $NTS_Samba_UD, $NTS_Samba_IO, $NTS_Samba_NASPT]
 
 ; Tests
 Global $NTS_Tests[6]=["FTP", "Samba", "HTTP", "Samba_NASPT", "Samba_IO", "iSCSI_IO"]
@@ -117,7 +118,9 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $App_Samba_Files = IniRead($inifile, "Application", "SAMBA_Files", "Test" ) ; Samba folder to transfer
 	Global $App_HTTP_File = IniRead($inifile, "Application", "HTTP_Tool_File", "HTTPUpDo.rar" ) ; HTTP transfer file
 	Global $App_HTTP_getlog = IniRead($inifile, "Application", "HTTP_Tool_getlog", "HTTP_get.txt" ) ; HTTP get log
-
+	Global $App_NASPT = IniRead($inifile, "Application", "NASPT_Tool", "NASPerf.exe" ) ; NASPT exe for test Samba
+	If @OSArch=="X64" then Global $App_NASPT_folder = IniRead($inifile, "Application", "NASPT_Tool_folder", "C:\Program Files (x86)\Intel\NASPT" ) ; Folder with IOmeter for test Samba/iSCSI
+	If @OSArch=="X86" then Global $App_NASPT_folder = IniRead($inifile, "Application", "NASPT_Tool_folder", "C:\Program Files\Intel\NASPT" ) ; Folder with IOmeter for test Samba/iSCSI
 	; Tempfile
 	Global $tempfile=_TempFile($ScriptFolder & "\" & $Temp_Folder, "tst_", ".txt", 7) ; Temp file
 

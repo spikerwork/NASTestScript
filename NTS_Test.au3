@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.9
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.12
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
@@ -44,7 +44,7 @@ history("Total loops " & $Number_of_loops)
 history("Choosen tests " & $Current_Tests)
 history("Pause between each action " & $ClientPause)
 
-PauseTime($ClientPause+30)
+PauseTime($ClientPause+3)
 
 ; Check server availability
 
@@ -93,7 +93,7 @@ Else
 						$TestsUnDone=1
 						DirCreate ( $ScriptFolder & "\" & $Temp_Folder)
 
-							If $Current_Tests_array[$t]=="Samba" Then
+							If $Current_Tests_array[$t]=="Samba" or $Current_Tests_array[$t]=="Samba_NASPT" Then
 
 								NASMount (1)
 								history($ScriptFolder & "\" & $Temp_Folder & " cleared")

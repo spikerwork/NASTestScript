@@ -1,0 +1,28 @@
+(12:09:59:035) --- Program started (temp4.au3). UnixTimeStamp 1361534999
+(12:09:59:056) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(12:09:59:061) --- Script use different directory, not default — C:\NasTestScript
+(12:09:59:066) --- Admin check passed
+(12:09:59:071) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(12:09:59:077) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(12:09:59:083) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(12:10:49:291) --- Program started (temp4.au3). UnixTimeStamp 1361535049
+(12:10:49:305) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(12:10:49:311) --- Script use different directory, not default — C:\NasTestScript
+(12:10:49:316) --- Admin check passed
+(12:10:49:321) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(12:10:49:327) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(12:10:49:332) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(12:11:37:386) --- Program started (temp4.au3). UnixTimeStamp 1361535097
+(12:11:37:400) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(12:11:37:405) --- Script use different directory, not default — C:\NasTestScript
+(12:11:37:411) --- Admin check passed
+(12:11:37:426) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(12:11:37:432) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(12:11:37:438) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(12:14:35:010) --- Program started (temp4.au3). UnixTimeStamp 1361535275
+(12:14:35:030) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(12:14:35:038) --- Script use different directory, not default — C:\NasTestScript
+(12:14:35:044) --- Admin check passed
+(12:14:35:050) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(12:14:35:057) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(12:14:35:063) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini

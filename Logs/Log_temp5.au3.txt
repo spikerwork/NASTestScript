@@ -1,0 +1,54 @@
+(11:17:44:318) --- Program started (temp5.au3). UnixTimeStamp 1361531864
+(11:17:44:339) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(11:17:44:346) --- Script use different directory, not default — C:\NasTestScript
+(11:17:44:352) --- Admin check passed
+(11:17:44:357) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(11:17:44:364) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(11:17:44:371) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(11:18:25:355) --- Program started (temp5.au3). UnixTimeStamp 1361531905
+(11:18:25:369) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(11:18:25:374) --- Script use different directory, not default — C:\NasTestScript
+(11:18:25:379) --- Admin check passed
+(11:18:25:384) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(11:18:25:390) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(11:18:25:396) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(11:18:25:413) --- Errors 0
+(11:18:25:418) --- Program halted. Worktime - 0 seconds.
+(11:18:25:423) --- ------------------------------------------------------------------------
+(11:19:22:668) --- Program started (temp5.au3). UnixTimeStamp 1361531962
+(11:19:22:682) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(11:19:22:689) --- Script use different directory, not default — C:\NasTestScript
+(11:19:22:695) --- Admin check passed
+(11:19:22:699) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(11:19:22:705) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(11:19:22:711) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(11:19:31:375) --- Errors 0
+(11:19:31:380) --- Program halted. Worktime - 9 seconds.
+(11:19:31:385) --- ------------------------------------------------------------------------
+(11:20:07:218) --- Program started (temp5.au3). UnixTimeStamp 1361532007
+(11:20:07:232) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(11:20:07:237) --- Script use different directory, not default — C:\NasTestScript
+(11:20:07:242) --- Admin check passed
+(11:20:07:247) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(11:20:07:253) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(11:20:07:260) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(11:20:11:935) --- Errors 0
+(11:20:11:940) --- Program halted. Worktime - 4 seconds.
+(11:20:11:949) --- ------------------------------------------------------------------------
+(11:20:24:272) --- Program started (temp5.au3). UnixTimeStamp 1361532024
+(11:20:24:287) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(11:20:24:292) --- Script use different directory, not default — C:\NasTestScript
+(11:20:24:298) --- Admin check passed
+(11:20:24:302) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(11:20:24:309) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(11:20:24:315) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(11:20:52:834) --- Program started (temp5.au3). UnixTimeStamp 1361532052
+(11:20:52:849) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(11:20:52:855) --- Script use different directory, not default — C:\NasTestScript
+(11:20:52:860) --- Admin check passed
+(11:20:52:864) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(11:20:52:871) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(11:20:52:875) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(11:20:52:895) --- Errors 0
+(11:20:52:899) --- Program halted. Worktime - 0 seconds.
+(11:20:52:904) --- ------------------------------------------------------------------------

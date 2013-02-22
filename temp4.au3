@@ -32,19 +32,45 @@
 #include "Libs\libs.au3"
 #include "Libs\head.au3"
 
-Local $szFile, $szText
+Global $intelname="NAStest"
+Global $inteltestname="Test"
 
-$szFile = $ScriptFolder & "\Apps\iometer\iometer_SAMBA.icf"
-Local $IO_Folder=$ScriptFolder & "\Apps\iometer"
-
-$szText = FileRead($szFile,FileGetSize($szFile))
-$szText = StringReplace($szText, "K:\\10.0.0.99\IxiaChariot", "Y:\\10.0.0.83\VideoCam")
-FileDelete($szFile)
-FileWrite($szFile,$szText)
+Run("C:\Program Files (x86)\Intel\NASPT\NASPerf.exe", "C:\Program Files (x86)\Intel\NASPT")
 Sleep(2000)
-ShellExecuteWait($IO_Folder & "\" &"IOMETER.exe", "iometer_SAMBA.icf results.csv",$IO_Folder)
+Send("{ENTER}")
+Sleep(2000)
+Send("{ENTER}")
 
-;MsgBox(0, "Results", "Upload " & $Resultput & @CRLF & "Download " &  $Resultget)
+Sleep(20000)
+Send("{RIGHT 6}")
+Send("{ENTER}")
+Sleep(2000)
+Send("{Z}")
+Send("{:}")
+Send("{ENTER}")
+Sleep(2000)
+Send("{TAB}")
+Send($intelname)
+Sleep(2000)
+Send("{TAB}")
+Send($inteltestname)
+Sleep(2000)
+Send("{TAB 21}")
+Send("{ENTER}")
+Sleep(1000)
+Send("{TAB}")
+Send("{ENTER}")
+Sleep(1000)
+Send("{ENTER}")
 
+;pause(3000)
+WinWaitActive("Application Test Result")
+Send("{ENTER}")
+Sleep(1500)
+Send("{ENTER}")
+Sleep(500)
+
+$PID = ProcessExists("NASPerf.exe")
+If $PID Then ProcessClose($PID)
 
 #include "Libs\foot.au3"

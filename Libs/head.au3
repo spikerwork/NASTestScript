@@ -57,7 +57,7 @@ TraySetState()
 ;;;
 ;;; Opt settings
 ;;;
-
+Opt("WinWaitDelay", 2000)
 Opt("MustDeclareVars", 1) ; All vars must set
 Opt("WinTitleMatchMode", 2) ; 2 = Match any substring in the title
 Opt("GUICoordMode", 1)    ;1=absolute, 0=relative, 2=cell

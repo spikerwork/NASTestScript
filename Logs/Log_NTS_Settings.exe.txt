@@ -1,0 +1,29 @@
+(13:06:59:643) --- Program started (NTS_Settings.exe). UnixTimeStamp 1361538419
+(13:06:59:643) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:06:59:643) --- Script use different directory, not default — C:\NasTestScript
+(13:06:59:644) --- Admin check passed
+(13:06:59:646) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:06:59:646) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:06:59:646) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:06:59:669) --- Important! INI file found. Existing vars will be overwriten.
+(13:06:59:670) --- Network conformity not found. NAS network is different to real network
+(13:06:59:670) --- Found drive 1 of 7. Path — C:\
+(13:06:59:670) --- Found drive 2 of 7. Path — D:\
+(13:06:59:670) --- Found drive 3 of 7. Path — E:\
+(13:06:59:671) --- Found drive 4 of 7. Path — F:\
+(13:06:59:671) --- Found drive 5 of 7. Path — G:\
+(13:06:59:671) --- Found drive 6 of 7. Path — K:\
+(13:06:59:671) --- Found drive 7 of 7. Path — Y:\
+(13:06:59:671) --- Letters abhijlmnopqrstuvwxz free
+(13:06:59:672) --- Samba letter Z: free!
+(13:07:06:469) --- NAS IP changed to 10.0.0.99
+(13:07:18:687) --- Disk changed to B:
+(13:07:27:112) --- FTP login with credits enable
+(13:07:27:766) --- FTP login without credits enabled
+(13:07:29:090) --- FTP login with credits enable
+(13:07:31:302) --- FTP login without credits enabled
+(13:07:31:977) --- FTP login with credits enable
+(13:07:41:448) --- Main GUI destroyed — 1. Settings not applied.
+(13:07:41:448) --- Errors 0
+(13:07:41:448) --- Program halted. Worktime - 42 seconds.
+(13:07:41:449) --- ------------------------------------------------------------------------

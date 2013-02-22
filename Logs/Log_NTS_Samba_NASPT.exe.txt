@@ -1,0 +1,244 @@
+(13:09:53:962) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361538593
+(13:09:53:962) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:09:53:963) --- Script use different directory, not default — C:\NasTestScript
+(13:09:53:963) --- Admin check passed
+(13:09:53:964) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:09:53:964) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:09:53:965) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:09:54:089) --- Path to Samba - B:\Temp
+(13:09:54:089) --- Application - NASPerf.exe
+(13:09:54:089) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:09:54:089) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:09:54:089) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:09:54:132) --- Network drive B: mapped - 1 Error 0
+(13:09:54:133) --- Start Prepare Run
+(13:09:54:133) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(13:24:46:625) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361539486
+(13:24:46:626) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:24:46:626) --- Script use different directory, not default — C:\NasTestScript
+(13:24:46:627) --- Admin check passed
+(13:24:46:628) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:24:46:629) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:24:46:629) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:24:46:724) --- Path to Samba - B:\Temp
+(13:24:46:724) --- Application - NASPerf.exe
+(13:24:46:725) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:24:46:725) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:24:46:725) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:24:46:726) --- Network drive B: mapped - 0 Error 3
+(13:24:46:727) --- Start Prepare Run
+(13:24:46:727) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(13:25:14:884) --- Pause func triggered. Pause time - 50
+(13:26:37:635) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361539597
+(13:26:37:636) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:26:37:636) --- Script use different directory, not default — C:\NasTestScript
+(13:26:37:636) --- Admin check passed
+(13:26:37:638) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:26:37:638) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:26:37:639) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:26:37:731) --- Path to Samba - B:\Temp
+(13:26:37:731) --- Application - NASPerf.exe
+(13:26:37:731) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:26:37:731) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:26:37:732) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:26:37:733) --- Network drive B: mapped - 0 Error 3
+(13:26:37:734) --- Start Prepare Run
+(13:26:37:734) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(13:26:57:880) --- Pause func triggered. Pause time - 50
+(13:30:06:873) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361539806
+(13:30:06:873) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:30:06:873) --- Script use different directory, not default — C:\NasTestScript
+(13:30:06:874) --- Admin check passed
+(13:30:06:875) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:30:06:875) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:30:06:875) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:30:06:970) --- Path to Samba - B:\Temp
+(13:30:06:971) --- Application - NASPerf.exe
+(13:30:06:971) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:30:06:971) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:30:06:971) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:30:06:974) --- Network drive B: mapped - 1 Error 0
+(13:30:06:974) --- Start Prepare Run
+(13:30:06:974) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(13:30:36:254) --- Pause func triggered. Pause time - 50
+(13:32:40:069) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361539960
+(13:32:40:069) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:32:40:069) --- Script use different directory, not default — C:\NasTestScript
+(13:32:40:070) --- Admin check passed
+(13:32:40:070) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:32:40:070) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:32:40:071) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:32:40:160) --- Path to Samba - B:\Temp
+(13:32:40:160) --- Application - NASPerf.exe
+(13:32:40:160) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:32:40:161) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:32:40:161) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:32:40:162) --- Network drive B: mapped - 0 Error 3
+(13:32:40:162) --- Start Prepare Run
+(13:32:40:163) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(13:33:09:462) --- Pause func triggered. Pause time - 50
+(13:36:01:716) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361540161
+(13:36:01:716) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:36:01:716) --- Script use different directory, not default — C:\NasTestScript
+(13:36:01:717) --- Admin check passed
+(13:36:01:718) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:36:01:718) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:36:01:718) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:36:01:805) --- Path to Samba - B:\Temp
+(13:36:01:805) --- Application - NASPerf.exe
+(13:36:01:805) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:36:01:805) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:36:01:806) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:36:01:808) --- Network drive B: mapped - 0 Error 3
+(13:36:01:809) --- Start Prepare Run
+(13:36:01:809) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(13:36:39:189) --- Pause func triggered. Pause time - 50
+(13:38:49:948) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361540329
+(13:38:49:949) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:38:49:949) --- Script use different directory, not default — C:\NasTestScript
+(13:38:49:950) --- Admin check passed
+(13:38:49:951) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:38:49:951) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:38:49:952) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:38:50:068) --- Path to Samba - B:\Temp
+(13:38:50:068) --- Application - NASPerf.exe
+(13:38:50:068) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:38:50:069) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:38:50:069) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:38:50:071) --- Network drive B: mapped - 1 Error 0
+(13:38:50:072) --- Start Prepare Run
+(13:38:50:072) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(13:39:28:459) --- Pause func triggered. Pause time - 50
+(13:52:31:599) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361541151
+(13:52:31:599) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:52:31:600) --- Script use different directory, not default — C:\NasTestScript
+(13:52:31:600) --- Admin check passed
+(13:52:31:601) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:52:31:601) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:52:31:601) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:52:31:705) --- Path to Samba - B:\Temp
+(13:52:31:705) --- Application - NASPerf.exe
+(13:52:31:705) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(13:52:31:706) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(13:52:31:706) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(13:52:31:708) --- Network drive B: mapped - 0 Error 3
+(13:52:31:708) --- Start Prepare Run
+(13:52:31:708) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(14:13:38:447) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361542418
+(14:13:38:448) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(14:13:38:448) --- Script use different directory, not default — C:\NasTestScript
+(14:13:38:448) --- Admin check passed
+(14:13:38:449) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(14:13:38:449) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(14:13:38:449) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(14:13:38:518) --- Path to Samba - B:\Temp
+(14:13:38:519) --- Application - NASPerf.exe
+(14:13:38:519) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(14:13:38:519) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(14:13:38:519) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(14:13:38:522) --- Network drive B: mapped - 1 Error 0
+(14:13:38:522) --- Start Prepare Run
+(14:13:38:522) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(14:14:27:964) --- Pause func triggered. Pause time - 50
+(14:18:46:805) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361542726
+(14:18:46:805) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(14:18:46:805) --- Script use different directory, not default — C:\NasTestScript
+(14:18:46:806) --- Admin check passed
+(14:18:46:806) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(14:18:46:806) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(14:18:46:807) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(14:18:46:938) --- Path to Samba - B:\Temp
+(14:18:46:938) --- Application - NASPerf.exe
+(14:18:46:938) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(14:18:46:938) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(14:18:46:938) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(14:18:46:941) --- Network drive B: mapped - 1 Error 0
+(14:18:46:941) --- Start Prepare Run
+(14:18:46:941) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(14:19:19:490) --- Pause func triggered. Pause time - 50
+(14:30:11:366) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361543411
+(14:30:11:366) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(14:30:11:366) --- Script use different directory, not default — C:\NasTestScript
+(14:30:11:367) --- Admin check passed
+(14:30:11:367) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(14:30:11:368) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(14:30:11:368) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(14:30:11:501) --- Path to Samba - B:\Temp
+(14:30:11:501) --- Application - NASPerf.exe
+(14:30:11:502) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(14:30:11:502) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(14:30:11:502) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(14:30:11:505) --- Network drive B: mapped - 1 Error 0
+(14:30:11:505) --- Start Prepare Run
+(14:30:11:506) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(14:30:44:066) --- Pause func triggered. Pause time - 4010
+(15:02:38:770) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361545358
+(15:02:38:771) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:02:38:771) --- Script use different directory, not default — C:\NasTestScript
+(15:02:38:772) --- Admin check passed
+(15:02:38:773) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:02:38:773) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:02:38:773) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:02:39:887) --- Path to Samba - B:\Temp
+(15:02:39:887) --- Application - NASPerf.exe
+(15:02:39:887) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(15:02:39:888) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(15:02:39:888) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(15:02:39:892) --- Network drive B: mapped - 1 Error 0
+(15:02:39:893) --- Prepare Run
+(15:02:39:893) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(15:46:03:632) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361547963
+(15:46:03:633) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:46:03:633) --- Script use different directory, not default — C:\NasTestScript
+(15:46:03:634) --- Admin check passed
+(15:46:03:635) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:46:03:636) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:46:03:636) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:46:04:757) --- Path to Samba - B:\Temp
+(15:46:04:758) --- Application - NASPerf.exe
+(15:46:04:758) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(15:46:04:758) --- From CMD recieved parameters for test: Samba_NASPT, Prepare, 3
+(15:46:04:758) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(15:46:04:763) --- Network drive B: mapped - 1 Error 0
+(15:46:04:763) --- Prepare Run
+(15:46:04:764) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(16:08:21:644) --- Pause func triggered. Pause time - 4010
+(16:18:34:358) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361549914
+(16:18:34:358) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:18:34:358) --- Script use different directory, not default — C:\NasTestScript
+(16:18:34:359) --- Admin check passed
+(16:18:34:359) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:18:34:359) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:18:34:360) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:18:35:505) --- Path to Samba - B:\Temp
+(16:18:35:505) --- Application - NASPerf.exe
+(16:18:35:505) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(16:18:35:506) --- From CMD recieved parameters for test: Samba_NASPT, NASPTRun, 3
+(16:18:35:506) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(16:18:35:510) --- Network drive B: mapped - 0 Error 3
+(16:18:35:510) --- NASPT main test
+(16:18:35:510) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(16:18:41:727) --- Pause func triggered. Pause time - 60
+(16:20:37:723) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361550037
+(16:20:37:724) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:20:37:724) --- Script use different directory, not default — C:\NasTestScript
+(16:20:37:725) --- Admin check passed
+(16:20:37:727) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:20:37:727) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:20:37:727) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:22:02:265) --- Program started (NTS_Samba_NASPT.exe). UnixTimeStamp 1361550122
+(16:22:02:266) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:22:02:266) --- Script use different directory, not default — C:\NasTestScript
+(16:22:02:267) --- Admin check passed
+(16:22:02:267) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:22:02:268) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:22:02:268) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:22:02:410) --- Path to Samba - B:\Temp
+(16:22:02:410) --- Application - NASPerf.exe
+(16:22:02:411) --- Application folder - C:\Program Files (x86)\Intel\NASPT
+(16:22:02:411) --- From CMD recieved parameters for test: Samba_NASPT, NASPTRun, 3
+(16:22:02:411) --- Try to map network drive to share B:\\10.0.0.99\IxiaChariot
+(16:22:02:413) --- Network drive B: mapped - 0 Error 3
+(16:22:02:413) --- NASPT main test
+(16:22:02:413) --- Start NASPT - C:\Program Files (x86)\Intel\NASPT\NASPerf.exe
+(16:22:30:925) --- Pause func triggered. Pause time - 5010

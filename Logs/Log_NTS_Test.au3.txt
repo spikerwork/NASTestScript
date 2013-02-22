@@ -1,0 +1,395 @@
+(13:05:55:299) --- Program started (NTS_Test.au3). UnixTimeStamp 1361538355
+(13:05:55:317) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:05:55:323) --- Script use different directory, not default — C:\NasTestScript
+(13:05:55:329) --- Admin check passed
+(13:05:55:333) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:05:55:339) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:05:55:345) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:05:55:484) --- Current loop 3
+(13:05:55:489) --- Total loops 5
+(13:05:55:492) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:05:55:499) --- Pause between each action 10
+(13:05:55:504) --- Pause func triggered. Pause time - 40
+(13:06:02:419) --- Program started (NTS_Test.au3). UnixTimeStamp 1361538362
+(13:06:02:434) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:06:02:439) --- Script use different directory, not default — C:\NasTestScript
+(13:06:02:445) --- Admin check passed
+(13:06:02:449) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:06:02:455) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:06:02:461) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:06:02:588) --- Current loop 3
+(13:06:02:593) --- Total loops 5
+(13:06:02:598) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:06:02:603) --- Pause between each action 10
+(13:06:02:607) --- Pause func triggered. Pause time - 13
+(13:06:21:198) --- Check failed on - 1. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:06:26:698) --- Check failed on - 2. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:06:32:198) --- Check failed on - 3. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:09:26:469) --- Program started (NTS_Test.au3). UnixTimeStamp 1361538566
+(13:09:26:483) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:09:26:488) --- Script use different directory, not default — C:\NasTestScript
+(13:09:26:494) --- Admin check passed
+(13:09:26:499) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:09:26:506) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:09:26:511) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:09:26:635) --- Current loop 3
+(13:09:26:641) --- Total loops 5
+(13:09:26:647) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:09:26:653) --- Pause between each action 10
+(13:09:26:658) --- Pause func triggered. Pause time - 13
+(13:09:43:187) --- Check NAS availability pass on checkrun - 1
+(13:09:43:194) --- Read test parameters from section FTP
+(13:09:43:199) --- Read test parameters from section Samba
+(13:09:43:204) --- Read test parameters from section HTTP
+(13:09:43:209) --- Read test parameters from section Samba_IO
+(13:09:43:213) --- Read test parameters from section Samba_NASPT
+(13:09:43:217) --- Test to run Samba_NASPT. Mode Prepare
+(13:09:43:222) --- Pause func triggered. Pause time - 10
+(13:09:53:763) --- Errors 0
+(13:09:53:769) --- Program halted. Worktime - 27 seconds.
+(13:09:53:773) --- ------------------------------------------------------------------------
+(13:24:19:114) --- Program started (NTS_Test.au3). UnixTimeStamp 1361539459
+(13:24:19:134) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:24:19:140) --- Script use different directory, not default — C:\NasTestScript
+(13:24:19:146) --- Admin check passed
+(13:24:19:150) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:24:19:155) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:24:19:160) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:24:19:285) --- Current loop 3
+(13:24:19:291) --- Total loops 5
+(13:24:19:294) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:24:19:300) --- Pause between each action 10
+(13:24:19:304) --- Pause func triggered. Pause time - 13
+(13:24:35:848) --- Check NAS availability pass on checkrun - 1
+(13:24:35:855) --- Read test parameters from section FTP
+(13:24:35:860) --- Read test parameters from section Samba
+(13:24:35:865) --- Read test parameters from section HTTP
+(13:24:35:870) --- Read test parameters from section Samba_IO
+(13:24:35:874) --- Read test parameters from section Samba_NASPT
+(13:24:35:879) --- Test to run Samba_NASPT. Mode Prepare
+(13:24:35:883) --- Pause func triggered. Pause time - 10
+(13:24:46:421) --- Errors 0
+(13:24:46:427) --- Program halted. Worktime - 27 seconds.
+(13:24:46:432) --- ------------------------------------------------------------------------
+(13:26:10:122) --- Program started (NTS_Test.au3). UnixTimeStamp 1361539570
+(13:26:10:144) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:26:10:150) --- Script use different directory, not default — C:\NasTestScript
+(13:26:10:156) --- Admin check passed
+(13:26:10:160) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:26:10:166) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:26:10:171) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:26:10:291) --- Current loop 3
+(13:26:10:296) --- Total loops 5
+(13:26:10:302) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:26:10:309) --- Pause between each action 10
+(13:26:10:314) --- Pause func triggered. Pause time - 13
+(13:26:26:846) --- Check NAS availability pass on checkrun - 1
+(13:26:26:852) --- Read test parameters from section FTP
+(13:26:26:857) --- Read test parameters from section Samba
+(13:26:26:862) --- Read test parameters from section HTTP
+(13:26:26:866) --- Read test parameters from section Samba_IO
+(13:26:26:872) --- Read test parameters from section Samba_NASPT
+(13:26:26:876) --- Test to run Samba_NASPT. Mode Prepare
+(13:26:26:882) --- Pause func triggered. Pause time - 10
+(13:26:37:433) --- Errors 0
+(13:26:37:437) --- Program halted. Worktime - 27 seconds.
+(13:26:37:443) --- ------------------------------------------------------------------------
+(13:29:39:386) --- Program started (NTS_Test.au3). UnixTimeStamp 1361539779
+(13:29:39:406) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:29:39:411) --- Script use different directory, not default — C:\NasTestScript
+(13:29:39:417) --- Admin check passed
+(13:29:39:422) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:29:39:429) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:29:39:434) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:29:39:540) --- Current loop 3
+(13:29:39:544) --- Total loops 5
+(13:29:39:547) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:29:39:553) --- Pause between each action 10
+(13:29:39:558) --- Pause func triggered. Pause time - 13
+(13:29:56:094) --- Check NAS availability pass on checkrun - 1
+(13:29:56:100) --- Read test parameters from section FTP
+(13:29:56:106) --- Read test parameters from section Samba
+(13:29:56:111) --- Read test parameters from section HTTP
+(13:29:56:115) --- Read test parameters from section Samba_IO
+(13:29:56:120) --- Read test parameters from section Samba_NASPT
+(13:29:56:125) --- Test to run Samba_NASPT. Mode Prepare
+(13:29:56:130) --- Pause func triggered. Pause time - 10
+(13:30:06:672) --- Errors 0
+(13:30:06:677) --- Program halted. Worktime - 27 seconds.
+(13:30:06:682) --- ------------------------------------------------------------------------
+(13:32:12:593) --- Program started (NTS_Test.au3). UnixTimeStamp 1361539932
+(13:32:12:612) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:32:12:618) --- Script use different directory, not default — C:\NasTestScript
+(13:32:12:624) --- Admin check passed
+(13:32:12:628) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:32:12:635) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:32:12:641) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:32:12:733) --- Current loop 3
+(13:32:12:739) --- Total loops 5
+(13:32:12:743) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:32:12:748) --- Pause between each action 10
+(13:32:12:753) --- Pause func triggered. Pause time - 13
+(13:32:29:289) --- Check NAS availability pass on checkrun - 1
+(13:32:29:295) --- Read test parameters from section FTP
+(13:32:29:300) --- Read test parameters from section Samba
+(13:32:29:305) --- Read test parameters from section HTTP
+(13:32:29:310) --- Read test parameters from section Samba_IO
+(13:32:29:315) --- Read test parameters from section Samba_NASPT
+(13:32:29:321) --- Test to run Samba_NASPT. Mode Prepare
+(13:32:29:325) --- Pause func triggered. Pause time - 10
+(13:32:39:871) --- Errors 0
+(13:32:39:875) --- Program halted. Worktime - 27 seconds.
+(13:32:39:880) --- ------------------------------------------------------------------------
+(13:35:34:233) --- Program started (NTS_Test.au3). UnixTimeStamp 1361540134
+(13:35:34:251) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:35:34:257) --- Script use different directory, not default — C:\NasTestScript
+(13:35:34:263) --- Admin check passed
+(13:35:34:268) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:35:34:275) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:35:34:281) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:35:34:382) --- Current loop 3
+(13:35:34:389) --- Total loops 5
+(13:35:34:392) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:35:34:398) --- Pause between each action 10
+(13:35:34:402) --- Pause func triggered. Pause time - 13
+(13:35:50:932) --- Check NAS availability pass on checkrun - 1
+(13:35:50:939) --- Read test parameters from section FTP
+(13:35:50:944) --- Read test parameters from section Samba
+(13:35:50:949) --- Read test parameters from section HTTP
+(13:35:50:955) --- Read test parameters from section Samba_IO
+(13:35:50:960) --- Read test parameters from section Samba_NASPT
+(13:35:50:965) --- Test to run Samba_NASPT. Mode Prepare
+(13:35:50:970) --- Pause func triggered. Pause time - 10
+(13:36:01:515) --- Errors 0
+(13:36:01:519) --- Program halted. Worktime - 27 seconds.
+(13:36:01:525) --- ------------------------------------------------------------------------
+(13:38:22:460) --- Program started (NTS_Test.au3). UnixTimeStamp 1361540302
+(13:38:22:479) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:38:22:485) --- Script use different directory, not default — C:\NasTestScript
+(13:38:22:491) --- Admin check passed
+(13:38:22:496) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:38:22:502) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:38:22:508) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:38:22:624) --- Current loop 3
+(13:38:22:630) --- Total loops 5
+(13:38:22:634) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:38:22:640) --- Pause between each action 10
+(13:38:22:645) --- Pause func triggered. Pause time - 13
+(13:38:39:171) --- Check NAS availability pass on checkrun - 1
+(13:38:39:176) --- Read test parameters from section FTP
+(13:38:39:182) --- Read test parameters from section Samba
+(13:38:39:187) --- Read test parameters from section HTTP
+(13:38:39:192) --- Read test parameters from section Samba_IO
+(13:38:39:200) --- Read test parameters from section Samba_NASPT
+(13:38:39:206) --- Test to run Samba_NASPT. Mode Prepare
+(13:38:39:211) --- Pause func triggered. Pause time - 10
+(13:38:49:749) --- Errors 0
+(13:38:49:754) --- Program halted. Worktime - 27 seconds.
+(13:38:49:759) --- ------------------------------------------------------------------------
+(13:52:04:075) --- Program started (NTS_Test.au3). UnixTimeStamp 1361541124
+(13:52:04:095) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:52:04:101) --- Script use different directory, not default — C:\NasTestScript
+(13:52:04:106) --- Admin check passed
+(13:52:04:110) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:52:04:117) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:52:04:122) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(13:52:04:249) --- Current loop 3
+(13:52:04:254) --- Total loops 5
+(13:52:04:257) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(13:52:04:263) --- Pause between each action 10
+(13:52:04:268) --- Pause func triggered. Pause time - 13
+(13:52:20:804) --- Check NAS availability pass on checkrun - 1
+(13:52:20:810) --- Read test parameters from section FTP
+(13:52:20:815) --- Read test parameters from section Samba
+(13:52:20:819) --- Read test parameters from section HTTP
+(13:52:20:824) --- Read test parameters from section Samba_IO
+(13:52:20:829) --- Read test parameters from section Samba_NASPT
+(13:52:20:847) --- Test to run Samba_NASPT. Mode Prepare
+(13:52:20:852) --- Pause func triggered. Pause time - 10
+(13:52:31:401) --- Errors 0
+(13:52:31:405) --- Program halted. Worktime - 27 seconds.
+(13:52:31:410) --- ------------------------------------------------------------------------
+(14:13:10:985) --- Program started (NTS_Test.au3). UnixTimeStamp 1361542390
+(14:13:11:005) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(14:13:11:011) --- Script use different directory, not default — C:\NasTestScript
+(14:13:11:018) --- Admin check passed
+(14:13:11:022) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(14:13:11:028) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(14:13:11:033) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(14:13:11:118) --- Current loop 3
+(14:13:11:124) --- Total loops 5
+(14:13:11:127) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(14:13:11:133) --- Pause between each action 10
+(14:13:11:138) --- Pause func triggered. Pause time - 13
+(14:13:27:664) --- Check NAS availability pass on checkrun - 1
+(14:13:27:669) --- Read test parameters from section FTP
+(14:13:27:674) --- Read test parameters from section Samba
+(14:13:27:679) --- Read test parameters from section HTTP
+(14:13:27:684) --- Read test parameters from section Samba_IO
+(14:13:27:690) --- Read test parameters from section Samba_NASPT
+(14:13:27:695) --- Test to run Samba_NASPT. Mode Prepare
+(14:13:27:700) --- Pause func triggered. Pause time - 10
+(14:13:38:244) --- Errors 0
+(14:13:38:248) --- Program halted. Worktime - 28 seconds.
+(14:13:38:253) --- ------------------------------------------------------------------------
+(14:18:19:300) --- Program started (NTS_Test.au3). UnixTimeStamp 1361542699
+(14:18:19:321) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(14:18:19:328) --- Script use different directory, not default — C:\NasTestScript
+(14:18:19:334) --- Admin check passed
+(14:18:19:339) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(14:18:19:345) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(14:18:19:351) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(14:18:19:439) --- Current loop 3
+(14:18:19:445) --- Total loops 5
+(14:18:19:448) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(14:18:19:455) --- Pause between each action 10
+(14:18:19:459) --- Pause func triggered. Pause time - 13
+(14:18:35:988) --- Check NAS availability pass on checkrun - 1
+(14:18:35:994) --- Read test parameters from section FTP
+(14:18:35:999) --- Read test parameters from section Samba
+(14:18:36:004) --- Read test parameters from section HTTP
+(14:18:36:009) --- Read test parameters from section Samba_IO
+(14:18:36:014) --- Read test parameters from section Samba_NASPT
+(14:18:36:019) --- Test to run Samba_NASPT. Mode Prepare
+(14:18:36:024) --- Pause func triggered. Pause time - 10
+(14:18:46:573) --- Errors 0
+(14:18:46:577) --- Program halted. Worktime - 27 seconds.
+(14:18:46:581) --- ------------------------------------------------------------------------
+(14:29:43:868) --- Program started (NTS_Test.au3). UnixTimeStamp 1361543383
+(14:29:43:889) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(14:29:43:895) --- Script use different directory, not default — C:\NasTestScript
+(14:29:43:901) --- Admin check passed
+(14:29:43:905) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(14:29:43:912) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(14:29:43:917) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(14:29:44:045) --- Current loop 3
+(14:29:44:050) --- Total loops 5
+(14:29:44:053) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(14:29:44:059) --- Pause between each action 10
+(14:29:44:064) --- Pause func triggered. Pause time - 13
+(14:30:00:591) --- Check NAS availability pass on checkrun - 1
+(14:30:00:596) --- Read test parameters from section FTP
+(14:30:00:601) --- Read test parameters from section Samba
+(14:30:00:606) --- Read test parameters from section HTTP
+(14:30:00:611) --- Read test parameters from section Samba_IO
+(14:30:00:615) --- Read test parameters from section Samba_NASPT
+(14:30:00:620) --- Test to run Samba_NASPT. Mode Prepare
+(14:30:00:624) --- Pause func triggered. Pause time - 10
+(14:30:11:163) --- Errors 0
+(14:30:11:168) --- Program halted. Worktime - 28 seconds.
+(14:30:11:174) --- ------------------------------------------------------------------------
+(15:02:11:291) --- Program started (NTS_Test.au3). UnixTimeStamp 1361545331
+(15:02:11:313) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:02:11:319) --- Script use different directory, not default — C:\NasTestScript
+(15:02:11:325) --- Admin check passed
+(15:02:11:330) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:02:11:336) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:02:11:342) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:02:11:446) --- Current loop 3
+(15:02:11:452) --- Total loops 5
+(15:02:11:456) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(15:02:11:461) --- Pause between each action 10
+(15:02:11:466) --- Pause func triggered. Pause time - 13
+(15:02:27:989) --- Check NAS availability pass on checkrun - 1
+(15:02:27:996) --- Read test parameters from section FTP
+(15:02:28:000) --- Read test parameters from section Samba
+(15:02:28:005) --- Read test parameters from section HTTP
+(15:02:28:009) --- Read test parameters from section Samba_IO
+(15:02:28:015) --- Read test parameters from section Samba_NASPT
+(15:02:28:019) --- Test to run Samba_NASPT. Mode Prepare
+(15:02:28:024) --- Pause func triggered. Pause time - 10
+(15:02:38:564) --- Errors 0
+(15:02:38:568) --- Program halted. Worktime - 27 seconds.
+(15:02:38:573) --- ------------------------------------------------------------------------
+(15:45:35:067) --- Program started (NTS_Test.au3). UnixTimeStamp 1361547935
+(15:45:35:093) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:45:35:100) --- Script use different directory, not default — C:\NasTestScript
+(15:45:35:105) --- Admin check passed
+(15:45:35:109) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:45:35:116) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:45:35:121) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:45:36:301) --- Current loop 3
+(15:45:36:306) --- Total loops 5
+(15:45:36:309) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(15:45:36:316) --- Pause between each action 10
+(15:45:36:321) --- Pause func triggered. Pause time - 13
+(15:45:52:861) --- Check NAS availability pass on checkrun - 1
+(15:45:52:867) --- Read test parameters from section FTP
+(15:45:52:872) --- Read test parameters from section Samba
+(15:45:52:877) --- Read test parameters from section HTTP
+(15:45:52:883) --- Read test parameters from section Samba_IO
+(15:45:52:887) --- Read test parameters from section Samba_NASPT
+(15:45:52:892) --- Test to run Samba_NASPT. Mode Prepare
+(15:45:52:896) --- Pause func triggered. Pause time - 10
+(15:46:03:434) --- Errors 0
+(15:46:03:438) --- Program halted. Worktime - 28 seconds.
+(15:46:03:444) --- ------------------------------------------------------------------------
+(16:18:05:827) --- Program started (NTS_Test.au3). UnixTimeStamp 1361549885
+(16:18:05:850) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:18:05:856) --- Script use different directory, not default — C:\NasTestScript
+(16:18:05:861) --- Admin check passed
+(16:18:05:866) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:18:05:872) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:18:05:878) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:18:07:020) --- Current loop 3
+(16:18:07:026) --- Total loops 5
+(16:18:07:029) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:18:07:034) --- Pause between each action 10
+(16:18:07:039) --- Pause func triggered. Pause time - 13
+(16:18:23:580) --- Check NAS availability pass on checkrun - 1
+(16:18:23:585) --- Read test parameters from section FTP
+(16:18:23:591) --- Read test parameters from section Samba
+(16:18:23:597) --- Read test parameters from section HTTP
+(16:18:23:602) --- Read test parameters from section Samba_IO
+(16:18:23:608) --- Read test parameters from section Samba_NASPT
+(16:18:23:613) --- Test to run Samba_NASPT. Mode NASPTRun
+(16:18:23:618) --- Pause func triggered. Pause time - 10
+(16:18:34:161) --- Errors 0
+(16:18:34:166) --- Program halted. Worktime - 29 seconds.
+(16:18:34:171) --- ------------------------------------------------------------------------
+(16:20:09:216) --- Program started (NTS_Test.au3). UnixTimeStamp 1361550009
+(16:20:09:237) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:20:09:245) --- Script use different directory, not default — C:\NasTestScript
+(16:20:09:250) --- Admin check passed
+(16:20:09:254) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:20:09:261) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:20:09:266) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:20:10:408) --- Current loop 3
+(16:20:10:413) --- Total loops 5
+(16:20:10:417) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:20:10:423) --- Pause between each action 10
+(16:20:10:427) --- Pause func triggered. Pause time - 13
+(16:20:26:951) --- Check NAS availability pass on checkrun - 1
+(16:20:26:956) --- Read test parameters from section FTP
+(16:20:26:961) --- Read test parameters from section Samba
+(16:20:26:966) --- Read test parameters from section HTTP
+(16:20:26:971) --- Read test parameters from section Samba_IO
+(16:20:26:976) --- Read test parameters from section Samba_NASPT
+(16:20:26:981) --- Test to run Samba_NASPT. Mode NASPTRun
+(16:20:26:986) --- Pause func triggered. Pause time - 10
+(16:20:37:527) --- Errors 0
+(16:20:37:532) --- Program halted. Worktime - 28 seconds.
+(16:20:37:536) --- ------------------------------------------------------------------------
+(16:21:33:775) --- Program started (NTS_Test.au3). UnixTimeStamp 1361550093
+(16:21:33:789) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:21:33:794) --- Script use different directory, not default — C:\NasTestScript
+(16:21:33:800) --- Admin check passed
+(16:21:33:804) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:21:33:810) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:21:33:816) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:21:34:922) --- Current loop 3
+(16:21:34:927) --- Total loops 5
+(16:21:34:930) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:21:34:936) --- Pause between each action 10
+(16:21:34:940) --- Pause func triggered. Pause time - 13
+(16:21:51:482) --- Check NAS availability pass on checkrun - 1
+(16:21:51:487) --- Read test parameters from section FTP
+(16:21:51:492) --- Read test parameters from section Samba
+(16:21:51:497) --- Read test parameters from section HTTP
+(16:21:51:502) --- Read test parameters from section Samba_IO
+(16:21:51:507) --- Read test parameters from section Samba_NASPT
+(16:21:51:512) --- Test to run Samba_NASPT. Mode NASPTRun
+(16:21:51:517) --- Pause func triggered. Pause time - 10
+(16:22:02:069) --- Errors 0
+(16:22:02:074) --- Program halted. Worktime - 29 seconds.
+(16:22:02:079) --- ------------------------------------------------------------------------

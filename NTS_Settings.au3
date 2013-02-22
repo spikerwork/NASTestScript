@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.8
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.11
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
@@ -212,17 +212,6 @@ GUISetState ()
 
 	$FTP_Anon_ctrl=GUICtrlCreateCheckbox("Anonymous login", $NTS_SettingsFormWidth*0.24, 80, 120, 20)
 
-		If $FTP_Login==$FTP_Anon_login and $FTP_Password==$FTP_Anon_pass Then
-
-			GUICtrlSetState($FTP_Anon_ctrl, $GUI_CHECKED)
-			GUICtrlSetState($FTP_Login_ctrl, $GUI_DISABLE)
-			GUICtrlSetState($FTP_Password_ctrl, $GUI_DISABLE)
-
-		Else
-
-			GUICtrlSetState($FTP_Anon_ctrl, $GUI_UNCHECKED)
-
-		EndIf
 
 	GUICtrlCreateLabel("Port ", 20, 106, 50, 20)
 	$FTP_Port_ctrl=GUICtrlCreateInput($FTP_Port, 70, 105, 50, 20, $SS_RIGHT)
@@ -235,6 +224,18 @@ GUISetState ()
 
 	GUICtrlCreateLabel("Password", 20, 196, 80, 20)
 	$FTP_Password_ctrl=GUICtrlCreateInput($FTP_Password, 100, 195, 100, 20, $SS_CENTER)
+
+		If $FTP_Login==$FTP_Anon_login and $FTP_Password==$FTP_Anon_pass Then
+
+			GUICtrlSetState($FTP_Anon_ctrl, $GUI_CHECKED)
+			GUICtrlSetState($FTP_Login_ctrl, $GUI_DISABLE)
+			GUICtrlSetState($FTP_Password_ctrl, $GUI_DISABLE)
+
+		Else
+
+			GUICtrlSetState($FTP_Anon_ctrl, $GUI_UNCHECKED)
+
+		EndIf
 
 	GUICtrlCreateGroup("", -99, -99, 1, 1)
 
