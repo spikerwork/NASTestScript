@@ -58,7 +58,7 @@
       history ("The system is halting. Reason - " & $halt_option)
 	  Switch $halt_option
 	  Case "reboot"
-   		 Shutdown(6)
+   		 ;Shutdown(6)
 	  Case "sleep"
 		 Shutdown(32) ; 32+4 not working
 	  Case "hibernate"
@@ -358,5 +358,18 @@
 			history("Network drive " & $SAMBA_DiskLetter & " unmapped - " & $MapNetworkDrive & " Error " & @error)
 
 		EndIf
+
+	EndFunc
+
+
+	; Function to catch exeptions in NASPT (NTS_Samba_NASPT.au3)
+	Func NASPT_windows()
+
+		If WinActive("Large Memory Size") Then ControlClick("Large Memory Size", "", "[CLASS:Button; INSTANCE:1]")
+		If WinActive("NASPT support notice") Then ControlClick("NASPT support notice", "", "[CLASS:Button; INSTANCE:1]")
+		If WinActive("Prepare?") Then ControlClick("Prepare?", "", "[CLASS:Button; INSTANCE:1]")
+		If WinActive("NASPT Configuration") Then ControlClick("NASPT Configuration", "", "[CLASS:Button; INSTANCE:1]")
+		If WinActive("Invalid Directory") Then ControlClick("Invalid Directory", "", "[CLASS:Button; INSTANCE:1]")
+		If WinActive("NASPT Test Complete") Then ControlClick("NASPT Test Complete", "", "[CLASS:Button; INSTANCE:1]")
 
 	EndFunc

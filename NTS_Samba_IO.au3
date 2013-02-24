@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.17
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.22
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
@@ -65,6 +65,9 @@ NASMount (1)
 			$Resultfile=$ScriptFolder & "\" & $Temp_Folder & "\" & "result_" & $CmdLine[3] & ".csv"
 			$szText = FileRead($App_IOmeter_defconf,FileGetSize($App_IOmeter_defconf))
 			$szText = StringReplace($szText, "K:\\10.0.0.99\IxiaChariot", $PathToSamba)
+			$App_IOmeter_testsize=$App_IOmeter_testsize*1024*1024*2 ; Disk size to test
+			$szText = StringReplace($szText, "83886080", $App_IOmeter_testsize)
+			history("Set new testdisk to " & $PathToSamba & " and new testsize to " & $App_IOmeter_testsize)
 			FileWrite($App_IOmeter_conf,$szText)
 			Sleep(2000)
 			history("Start IOmeter - " & $App_IOmeter & " " & $App_IOmeter_conf & " " & $Resultfile & " in " & $App_IOmeter_folder)

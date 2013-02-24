@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.5
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.9
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
@@ -45,6 +45,7 @@ history("Uploading file " & $App_HTTP_UploadFile)
 
 If $CmdLine[0]>=3 Then history ("From CMD recieved parameters for test: " & $CmdLine[1] & ", " & $CmdLine[2] & ", " & $CmdLine[3])
 
+; Check http link. If file already exist, skip ftp put sector
 If StringMid($HTTP_Address,StringLen($HTTP_Address))=="/" Then
 $HTTP_Address = $HTTP_Address & $App_HTTP_UploadFile ; Link to file or to directory
 

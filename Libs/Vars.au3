@@ -85,7 +85,7 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $FTP_Port = IniRead($inifile, "Network", "FTP_Port", 21 ) ; NAS FTP port
 	Global $FTP_Login = IniRead($inifile, "Network", "FTP_Login", $FTP_Default_login ) ; NAS FTP Login
 	Global $FTP_Password = IniRead($inifile, "Network", "FTP_Password", $FTP_Default_pass ) ; NAS FTP Password
-	Global $FTP_Folder = IniRead($inifile, "Network", "FTP_Folder", "ftpfolder" ) ; FTP folder/path
+	Global $FTP_Folder = IniRead($inifile, "Network", "FTP_Folder", "/ftpfolder" ) ; FTP folder/path
 	Global $FTP_Passive = IniRead($inifile, "Network", "FTP_Passive", 1 ) ; FTP passive mode, default on
 
 	Global $HTTP_Default_login="admin"
@@ -112,6 +112,7 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $App_IOmeter_folder = IniRead($inifile, "Application", "IOmeter_Tool_folder", "Apps\iometer" ) ; Folder with IOmeter for test Samba/iSCSI
 	Global $App_IOmeter_conf = IniRead($inifile, "Application", "IOmeter_conf", "iometer_SAMBA.icf" ) ; IOmeter configuration file for test Samba/iSCSI
 	Global $App_IOmeter_defconf = IniRead($inifile, "Application", "IOmeter_defconf", "iometer_SAMBA_default.icf" ) ; Default IOmeter configuration file for test Samba/iSCSI
+	Global $App_IOmeter_testsize = IniRead($inifile, "Application", "IOmeter_testsize", 4 ) ; Test size for IOmeter. Default - 40, means 40 Gbytes (1024 õ 1024 õ 40)
 	Global $App_FTP_putlog = IniRead($inifile, "Application", "FTP_Tool_putlog", "FTP_put.txt" ) ; FTP put log
 	Global $App_FTP_getlog = IniRead($inifile, "Application", "FTP_Tool_getlog", "FTP_get.txt" ) ; FTP get log
 	Global $App_FTP_File = IniRead($inifile, "Application", "FTP_Tool_File", "UpDo.rar" ) ; FTP transfer file
@@ -119,8 +120,11 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $App_HTTP_File = IniRead($inifile, "Application", "HTTP_Tool_File", "HTTPUpDo.rar" ) ; HTTP transfer file
 	Global $App_HTTP_getlog = IniRead($inifile, "Application", "HTTP_Tool_getlog", "HTTP_get.txt" ) ; HTTP get log
 	Global $App_NASPT = IniRead($inifile, "Application", "NASPT_Tool", "NASPerf.exe" ) ; NASPT exe for test Samba
+	Global $App_NASPT_csv = IniRead($inifile, "Application", "NASPT_Tool_csv", "NASPerf-APP.csv" ) ; NASPT csv file with results
 	If @OSArch=="X64" then Global $App_NASPT_folder = IniRead($inifile, "Application", "NASPT_Tool_folder", "C:\Program Files (x86)\Intel\NASPT" ) ; Folder with IOmeter for test Samba/iSCSI
 	If @OSArch=="X86" then Global $App_NASPT_folder = IniRead($inifile, "Application", "NASPT_Tool_folder", "C:\Program Files\Intel\NASPT" ) ; Folder with IOmeter for test Samba/iSCSI
+
+
 	; Tempfile
 	Global $tempfile=_TempFile($ScriptFolder & "\" & $Temp_Folder, "tst_", ".txt", 7) ; Temp file
 
@@ -130,7 +134,7 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 		If @compiled==1 Then $linedebug=0
 		$linedebug = IniRead($inifile, "All", "LineDebug", $linedebug )
 
-	; NTS_Settings vars
+	; NTS_Settings GUI vars
 	Global $NTS_SettingsFormWidth=IniRead($inifile, "All", "SettingsFormWidth", 600)
 	Global $NTS_SettingsFormHeight=IniRead($inifile, "All", "SettingsFormHeight", 500)
 	Global $NTS_SettingsFormBackgroundColor=IniRead($inifile, "All", "SettingsFormBackgroundColor", 0xE2EEEF)
@@ -142,9 +146,9 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	; Run settings
 	Global $ClientPause = IniRead($testsini, "Runs", "ClientPause", 10 ) ; Default pause between actions
 	Global $ClearCache = IniRead($testsini, "Runs", "ClearCache", 0 ) ; Default clear cache (Prefetch) before each test
-	Global $Current_Loop=IniRead($testsini, "Runs", "LoopNumber", 0) ; Current loop number, refers to $Number_of_loops
-	Global $Number_of_loops=IniRead($testsini, "Runs", "Loops", 5) ; Number of total loops of each test
-	Global $Current_Tests=IniRead($testsini, "Runs", "Tests", _ArrayToString($NTS_Tests, "|")) ; List of current tests to run
+	Global $Current_Loop = IniRead($testsini, "Runs", "LoopNumber", 0) ; Current loop number, refers to $Number_of_loops
+	Global $Number_of_loops = IniRead($testsini, "Runs", "Loops", 5) ; Number of total loops of each test
+	Global $Current_Tests = IniRead($testsini, "Runs", "Tests", _ArrayToString($NTS_Tests, "|")) ; List of current tests to run
 
 	; Powerplan changes
 	Global $OldGUID=IniRead($inifile, "PowerPlan", "Old", "")

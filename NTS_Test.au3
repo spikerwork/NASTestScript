@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.12
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.17
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
@@ -44,7 +44,7 @@ history("Total loops " & $Number_of_loops)
 history("Choosen tests " & $Current_Tests)
 history("Pause between each action " & $ClientPause)
 
-PauseTime($ClientPause+3)
+PauseTime($ClientPause+20)
 
 ; Check server availability
 
@@ -91,7 +91,6 @@ Else
 						DirRemove ( $ScriptFolder & "\" & $Temp_Folder, 1)
 						PauseTime($ClientPause)
 						$TestsUnDone=1
-						DirCreate ( $ScriptFolder & "\" & $Temp_Folder)
 
 							If $Current_Tests_array[$t]=="Samba" or $Current_Tests_array[$t]=="Samba_NASPT" Then
 
@@ -116,6 +115,7 @@ Else
 
 						$TestsUnDone=1
 						If $ClearCache==1 Then Prepare(1) ; If ClearCache enabled, run this function before test prepare
+						If DirGetSize($ScriptFolder & "\" & $Temp_Folder) = -1 Then DirCreate ( $ScriptFolder & "\" & $Temp_Folder)
 						history("Test to run " & $Current_Tests_array[$t] & ". Mode " & $var[$i][0])
 						PauseTime($ClientPause)
 						$Current_Test_to_Run=$Current_Tests_array[$t] & " " & $var[$i][0] & " " & $Current_Loop

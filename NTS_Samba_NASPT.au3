@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.20
+#AutoIt3Wrapper_Res_Fileversion=0.1.2.31
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
@@ -35,17 +35,23 @@
 EnvSet("SEE_MASK_NOZONECHECKS", "1")
 EnvUpdate ( )
 
+AdlibRegister("NASPT_windows",1000) ; Catch emerging windows from NASPT
+
 Local $TestResult ; Result of test
-Local $NASPTRun=$App_NASPT_folder & "\" & $App_NASPT
-Local $PathToSambaFolder
-Local $NASName="NASPT"
+Local $NASPTRun=$App_NASPT_folder & "\" & $App_NASPT ; Exe file of NASPT
+Local $PathToSambaFolder ; Folder wich will contains test files on NAS
+Local $NASName="NASPT" ; Name of folder.. maybe enjoy it in future by adding name of wich test
+Dim $Folders_array ;
+
+Local $line, $result, $file ; Some local vars, needed to store results.
+Dim $array
 
 If $SAMBA_Folder=="" Then
 	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $Temp_Folder ; Path to folder on NAS (without addition directory)
 Else
 	$PathToSambaFolder = $SAMBA_DiskLetter & "\" & $SAMBA_Folder & "\" & $Temp_Folder ; Path to folder on NAS (with addition directory)
 EndIf
-Local $Resultfile, $filecsvdir,  $filecsv="NASPerf-APP.csv"
+Local $Resultfile, $filecsv = $App_NASPT_csv
 
 history("Path to Samba - " & $PathToSambaFolder)
 history("Application - " & $App_NASPT)
@@ -61,19 +67,13 @@ NASMount (1)
 
 		Case "Prepare"
 
-			; Copy nessasary files to folder
+			; Start prepare NASPT run
 
 			history("Prepare Run")
 
 			history("Start NASPT - " & $NASPTRun)
 
 			Run($NASPTRun, $App_NASPT_folder)
-
-			WinWaitActive("Large Memory Size")
-			ControlClick("Large Memory Size", "", "[CLASS:Button; INSTANCE:1]")
-
-			WinWaitActive("NASPT support notice")
-			ControlClick("NASPT support notice", "", "[CLASS:Button; INSTANCE:1]")
 
 			WinWaitActive("NAS Performance Toolkit - Exerciser")
 
@@ -101,17 +101,8 @@ NASMount (1)
 			Sleep(2000)
 			Send("{ENTER}")
 
-			WinWaitActive("Prepare?")
-			ControlClick("Prepare?", "", "[CLASS:Button; INSTANCE:1]")
-
-			WinWaitActive("NASPT Configuration")
-			ControlClick("NASPT Configuration", "", "[CLASS:Button; INSTANCE:1]")
-
-			WinWaitActive("Invalid Directory")
-			ControlClick("Invalid Directory", "", "[CLASS:Button; INSTANCE:1]")
-
-
 			WinWaitActive("Application Preparation Result")
+
 			Send("{ENTER}")
 
 			PauseTime($ClientPause)
@@ -124,21 +115,16 @@ NASMount (1)
 
 		Case "NASPTRun"
 
+			; Main test
+
 			history("NASPT main test")
 
 			history("Start NASPT - " & $NASPTRun)
 
 			Run($NASPTRun, $App_NASPT_folder)
 
-			WinWaitActive("Large Memory Size")
-			ControlClick("Large Memory Size", "", "[CLASS:Button; INSTANCE:1]")
-
-			WinWaitActive("NASPT support notice")
-			ControlClick("NASPT support notice", "", "[CLASS:Button; INSTANCE:1]")
-
 			WinWaitActive("NAS Performance Toolkit - Exerciser")
 
-			;PauseTime($ClientPause+50)
 			Sleep(2000)
 			Send("{RIGHT 6}")
 			Sleep(1000)
@@ -161,49 +147,40 @@ NASMount (1)
 			Sleep(2000)
 			Send("{ENTER}")
 
-			WinWaitActive("NASPT Configuration")
-			ControlClick("NASPT Configuration", "", "[CLASS:Button; INSTANCE:1]")
+			WinWaitActive("Application Test Result")
 
-			WinWaitActive("Prepare?")
-			ControlClick("Prepare?", "", "[CLASS:Button; INSTANCE:1]")
+			Send("{ENTER}")
 
-			;PauseTime($ClientPause+5000)
-
-			;WinWaitActive("Application Preparation Result")
-			;Send("{ENTER}")
-
-			$filecsvdir = $ScriptFolder & "\" & $resultfolder & "\" & $NASName & "\Model"
-
-			_FileListToArray($filecsvdir)
-
-
-			$Resultfile=$CmdLine[2] & "_" & $CmdLine[3] & ".ini"
-
-			Local $file = FileOpen($filecsv, 0)
-			Local $line, $result
-			Dim $array
-
-			For $i=3 to 14
-
-			$line = FileReadLine($file,$i)
-
-			$array = _StringExplode($line, ",", 0)
-			$result=StringReplace($array[1], ".", ",")
-			IniWrite($Resultfile, "Run3", $array[0], $result)
-			;MsgBox(0,"",$result)
-			Next
-
-
-
-
-
-			If ProcessExists($App_NASPT) Then ProcessClose($App_NASPT)
+			Sleep(5000) ; Time to catch window - "NASPT Test Complete" by NASPT_windows()
 
 			PauseTime($ClientPause)
 
+			If ProcessExists($App_NASPT) Then ProcessClose($App_NASPT)
+
+			history("NASPT closed, start to sort results.")
+
+			PauseTime($ClientPause)
+
+			$Folders_array=_FileListToArray($ScriptFolder & "\" & $resultfolder & "\" & $NASName & "\Model")
+			$filecsv = $ScriptFolder & "\" & $resultfolder & "\" & $NASName & "\Model\" & $Folders_array[1] & "\" & $filecsv
+			$Resultfile= $ScriptFolder & "\" & $resultfolder & "\" & $CmdLine[2] & ".ini"
+			history("CSV file contatins results - " & $filecsv)
+			history("INI-file to write results - " & $Resultfile)
+
+			$file = FileOpen($filecsv, 0)
+
+			For $i=3 to 14
+
+				$line = FileReadLine($file,$i)
+				$array = _StringExplode($line, ",", 0)
+				$result=StringReplace($array[1], ".", ",")
+				IniWrite($Resultfile, "Run" & $CmdLine[3], $array[0], $result)
+
+			Next
+
+			PauseTime($ClientPause)
 
 			$TestResult=$Resultfile
-
 
 	EndSwitch
 
