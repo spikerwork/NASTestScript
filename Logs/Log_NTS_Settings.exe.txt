@@ -1,0 +1,92 @@
+(15:21:07:936) --- Program started (NTS_Settings.exe). UnixTimeStamp 1361805667
+(15:21:07:936) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:21:07:937) --- Script use different directory, not default — C:\NasTestScript
+(15:21:07:937) --- Admin check passed
+(15:21:07:939) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:21:07:940) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:21:07:940) --- INI file not found, use default vars
+(15:21:07:963) --- Found drive 1 of 8. Path — B:\
+(15:21:07:963) --- Found drive 2 of 8. Path — C:\
+(15:21:07:964) --- Found drive 3 of 8. Path — D:\
+(15:21:07:964) --- Found drive 4 of 8. Path — E:\
+(15:21:07:964) --- Found drive 5 of 8. Path — F:\
+(15:21:07:964) --- Found drive 6 of 8. Path — G:\
+(15:21:07:964) --- Found drive 7 of 8. Path — K:\
+(15:21:07:964) --- Found drive 8 of 8. Path — Y:\
+(15:21:07:965) --- Letters ahijlmnopqrstuvwxz free
+(15:21:07:965) --- Samba letter Z: free!
+(15:21:09:326) --- Write settings to ini-file C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(15:21:09:715) --- Main GUI destroyed — 1. Settings not applied.
+(15:21:09:716) --- Errors 0
+(15:21:09:716) --- Program halted. Worktime - 2 seconds.
+(15:21:09:716) --- ------------------------------------------------------------------------
+(15:27:46:344) --- Program started (NTS_Settings.exe). UnixTimeStamp 1361806066
+(15:27:46:345) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:27:46:345) --- Script use different directory, not default — C:\NasTestScript
+(15:27:46:345) --- Admin check passed
+(15:27:46:346) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:27:46:346) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:27:46:347) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:27:46:367) --- Important! INI file found. Existing vars will be overwriten.
+(15:27:46:367) --- Found network conformity. NAS in home network
+(15:27:46:368) --- Found drive 1 of 8. Path — B:\
+(15:27:46:368) --- Found drive 2 of 8. Path — C:\
+(15:27:46:368) --- Found drive 3 of 8. Path — D:\
+(15:27:46:368) --- Found drive 4 of 8. Path — E:\
+(15:27:46:368) --- Found drive 5 of 8. Path — F:\
+(15:27:46:368) --- Found drive 6 of 8. Path — G:\
+(15:27:46:369) --- Found drive 7 of 8. Path — K:\
+(15:27:46:369) --- Found drive 8 of 8. Path — Y:\
+(15:27:46:369) --- Letters ahijlmnopqrstuvwxz free
+(15:27:46:370) --- Samba letter Z: free!
+(15:27:55:248) --- Main GUI destroyed — 1. Settings not applied.
+(15:27:55:248) --- Errors 0
+(15:27:55:248) --- Program halted. Worktime - 9 seconds.
+(15:27:55:249) --- ------------------------------------------------------------------------
+(16:03:31:791) --- Program started (NTS_Settings.exe). UnixTimeStamp 1361808211
+(16:03:31:791) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:03:31:792) --- Script use different directory, not default — C:\NasTestScript
+(16:03:31:792) --- Admin check passed
+(16:03:31:793) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:03:31:793) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:03:31:794) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:03:31:816) --- Important! INI file found. Existing vars will be overwriten.
+(16:03:31:816) --- Found network conformity. NAS in home network
+(16:03:31:817) --- Found drive 1 of 8. Path — B:\
+(16:03:31:817) --- Found drive 2 of 8. Path — C:\
+(16:03:31:817) --- Found drive 3 of 8. Path — D:\
+(16:03:31:817) --- Found drive 4 of 8. Path — E:\
+(16:03:31:818) --- Found drive 5 of 8. Path — F:\
+(16:03:31:818) --- Found drive 6 of 8. Path — G:\
+(16:03:31:818) --- Found drive 7 of 8. Path — K:\
+(16:03:31:818) --- Found drive 8 of 8. Path — Y:\
+(16:03:31:819) --- Letters ahijlmnopqrstuvwxz free
+(16:03:31:819) --- Samba letter Z: free!
+(16:03:32:785) --- Main GUI destroyed — 1. Settings not applied.
+(16:03:32:786) --- Errors 0
+(16:03:32:786) --- Program halted. Worktime - 1 seconds.
+(16:03:32:786) --- ------------------------------------------------------------------------
+(16:40:18:400) --- Program started (NTS_Settings.exe). UnixTimeStamp 1361810418
+(16:40:18:401) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:40:18:401) --- Script use different directory, not default — C:\NasTestScript
+(16:40:18:401) --- Admin check passed
+(16:40:18:402) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:40:18:402) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:40:18:402) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:40:18:423) --- Important! INI file found. Existing vars will be overwriten.
+(16:40:18:424) --- Found network conformity. NAS in home network
+(16:40:18:424) --- Found drive 1 of 9. Path — B:\
+(16:40:18:424) --- Found drive 2 of 9. Path — C:\
+(16:40:18:424) --- Found drive 3 of 9. Path — D:\
+(16:40:18:425) --- Found drive 4 of 9. Path — E:\
+(16:40:18:425) --- Found drive 5 of 9. Path — F:\
+(16:40:18:425) --- Found drive 6 of 9. Path — G:\
+(16:40:18:425) --- Found drive 7 of 9. Path — K:\
+(16:40:18:425) --- Found drive 8 of 9. Path — N:\
+(16:40:18:426) --- Found drive 9 of 9. Path — Y:\
+(16:40:18:426) --- Letters ahijlmopqrstuvwxz free
+(16:40:18:426) --- Samba letter Z: free!
+(16:40:19:640) --- Main GUI destroyed — 1. Settings not applied.
+(16:40:19:641) --- Errors 0
+(16:40:19:641) --- Program halted. Worktime - 1 seconds.
+(16:40:19:641) --- ------------------------------------------------------------------------

@@ -1,0 +1,1579 @@
+(15:20:57:855) --- Program started (NasTestScript.au3). UnixTimeStamp 1361805657
+(15:20:57:879) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:20:57:886) --- Script use different directory, not default — C:\NasTestScript
+(15:20:57:892) --- Admin check passed
+(15:20:57:897) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:20:57:903) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:20:57:909) --- INI file not found, use default vars
+(15:20:57:924) --- Current loop 0
+(15:20:57:932) --- Total loops 5
+(15:20:57:935) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:20:57:942) --- Pause between each action 10
+(15:20:57:946) --- ClearCache 0
+(15:20:59:736) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:20:59:744) --- Errors 0
+(15:20:59:749) --- Program halted. Worktime - 2 seconds.
+(15:20:59:753) --- ------------------------------------------------------------------------
+(15:21:06:266) --- Program started (NasTestScript.au3). UnixTimeStamp 1361805666
+(15:21:06:283) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:21:06:289) --- Script use different directory, not default — C:\NasTestScript
+(15:21:06:295) --- Admin check passed
+(15:21:06:300) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:21:06:308) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:21:06:314) --- INI file not found, use default vars
+(15:21:06:329) --- Current loop 0
+(15:21:06:335) --- Total loops 5
+(15:21:06:339) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:21:06:345) --- Pause between each action 10
+(15:21:06:350) --- ClearCache 0
+(15:21:07:723) --- Settings program started C:\Users\afanasmax\Documents\GitHub\NASTestScript\NTS_Settings.exe
+(15:21:11:901) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:21:11:909) --- Errors 0
+(15:21:11:915) --- Program halted. Worktime - 5 seconds.
+(15:21:11:920) --- ------------------------------------------------------------------------
+(15:24:35:185) --- Program started (NasTestScript.au3). UnixTimeStamp 1361805875
+(15:24:35:207) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:24:35:214) --- Script use different directory, not default — C:\NasTestScript
+(15:24:35:221) --- Admin check passed
+(15:24:35:225) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:24:35:232) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:24:35:240) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:24:35:258) --- Current loop 0
+(15:24:35:264) --- Total loops 5
+(15:24:35:268) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:24:35:274) --- Pause between each action 10
+(15:24:35:279) --- ClearCache 0
+(15:24:36:616) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:24:36:623) --- Errors 0
+(15:24:36:629) --- Program halted. Worktime - 1 seconds.
+(15:24:36:634) --- ------------------------------------------------------------------------
+(15:24:40:224) --- Program started (NasTestScript.au3). UnixTimeStamp 1361805880
+(15:24:40:241) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:24:40:247) --- Script use different directory, not default — C:\NasTestScript
+(15:24:40:252) --- Admin check passed
+(15:24:40:258) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:24:40:265) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:24:40:271) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:24:40:287) --- Current loop 0
+(15:24:40:292) --- Total loops 5
+(15:24:40:296) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:24:40:302) --- Pause between each action 10
+(15:24:40:306) --- ClearCache 0
+(15:24:41:475) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:24:41:482) --- Errors 0
+(15:24:41:488) --- Program halted. Worktime - 1 seconds.
+(15:24:41:493) --- ------------------------------------------------------------------------
+(15:24:44:025) --- Program started (NasTestScript.au3). UnixTimeStamp 1361805884
+(15:24:44:040) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:24:44:047) --- Script use different directory, not default — C:\NasTestScript
+(15:24:44:052) --- Admin check passed
+(15:24:44:057) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:24:44:064) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:24:44:070) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:24:44:086) --- Current loop 0
+(15:24:44:092) --- Total loops 5
+(15:24:44:097) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:24:44:102) --- Pause between each action 10
+(15:24:44:106) --- ClearCache 0
+(15:24:45:345) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:24:45:352) --- Errors 0
+(15:24:45:357) --- Program halted. Worktime - 1 seconds.
+(15:24:45:368) --- ------------------------------------------------------------------------
+(15:24:48:342) --- Program started (NasTestScript.au3). UnixTimeStamp 1361805888
+(15:24:48:359) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:24:48:365) --- Script use different directory, not default — C:\NasTestScript
+(15:24:48:370) --- Admin check passed
+(15:24:48:375) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:24:48:382) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:24:48:388) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:24:48:404) --- Current loop 0
+(15:24:48:409) --- Total loops 5
+(15:24:48:412) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:24:48:418) --- Pause between each action 10
+(15:24:48:423) --- ClearCache 0
+(15:24:52:539) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:24:52:545) --- Errors 0
+(15:24:52:549) --- Program halted. Worktime - 4 seconds.
+(15:24:52:554) --- ------------------------------------------------------------------------
+(15:24:57:381) --- Program started (NasTestScript.au3). UnixTimeStamp 1361805897
+(15:24:57:397) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:24:57:403) --- Script use different directory, not default — C:\NasTestScript
+(15:24:57:409) --- Admin check passed
+(15:24:57:414) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:24:57:420) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:24:57:426) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:24:57:448) --- Current loop 0
+(15:24:57:453) --- Total loops 5
+(15:24:57:457) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:24:57:463) --- Pause between each action 10
+(15:24:57:468) --- ClearCache 0
+(15:25:03:746) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:25:03:753) --- Errors 0
+(15:25:03:759) --- Program halted. Worktime - 6 seconds.
+(15:25:03:764) --- ------------------------------------------------------------------------
+(15:27:34:266) --- Program started (NasTestScript.au3). UnixTimeStamp 1361806054
+(15:27:34:283) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:27:34:288) --- Script use different directory, not default — C:\NasTestScript
+(15:27:34:294) --- Admin check passed
+(15:27:34:298) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:27:34:304) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:27:34:310) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:27:34:326) --- Current loop 0
+(15:27:34:332) --- Total loops 5
+(15:27:34:335) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:27:34:341) --- Pause between each action 10
+(15:27:34:346) --- ClearCache 0
+(15:27:39:000) --- Program started (NasTestScript.au3). UnixTimeStamp 1361806059
+(15:27:39:016) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:27:39:021) --- Script use different directory, not default — C:\NasTestScript
+(15:27:39:027) --- Admin check passed
+(15:27:39:032) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:27:39:038) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:27:39:044) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:27:39:060) --- Current loop 0
+(15:27:39:065) --- Total loops 5
+(15:27:39:070) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:27:39:075) --- Pause between each action 10
+(15:27:39:080) --- ClearCache 0
+(15:27:42:990) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:27:42:999) --- Errors 0
+(15:27:43:005) --- Program halted. Worktime - 3 seconds.
+(15:27:43:011) --- ------------------------------------------------------------------------
+(15:27:45:297) --- Program started (NasTestScript.au3). UnixTimeStamp 1361806065
+(15:27:45:312) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:27:45:318) --- Script use different directory, not default — C:\NasTestScript
+(15:27:45:324) --- Admin check passed
+(15:27:45:330) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:27:45:337) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:27:45:343) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:27:45:363) --- Current loop 0
+(15:27:45:368) --- Total loops 5
+(15:27:45:373) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:27:45:379) --- Pause between each action 10
+(15:27:45:385) --- ClearCache 0
+(15:27:46:134) --- Settings program started C:\Users\afanasmax\Documents\GitHub\NASTestScript\NTS_Settings.exe
+(15:27:56:893) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:27:56:902) --- Errors 0
+(15:27:56:908) --- Program halted. Worktime - 11 seconds.
+(15:27:56:914) --- ------------------------------------------------------------------------
+(15:29:48:977) --- Program started (NasTestScript.au3). UnixTimeStamp 1361806188
+(15:29:48:992) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:29:48:998) --- Script use different directory, not default — C:\NasTestScript
+(15:29:49:003) --- Admin check passed
+(15:29:49:007) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:29:49:014) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:29:49:020) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:29:49:038) --- Current loop 0
+(15:29:49:044) --- Total loops 5
+(15:29:49:047) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:29:49:052) --- Pause between each action 10
+(15:29:49:057) --- ClearCache 0
+(15:29:50:224) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:29:50:231) --- Errors 0
+(15:29:50:236) --- Program halted. Worktime - 2 seconds.
+(15:29:50:242) --- ------------------------------------------------------------------------
+(15:30:27:401) --- Program started (NasTestScript.au3). UnixTimeStamp 1361806227
+(15:30:27:416) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:30:27:422) --- Script use different directory, not default — C:\NasTestScript
+(15:30:27:428) --- Admin check passed
+(15:30:27:432) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:30:27:439) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:30:27:444) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:30:27:461) --- Current loop 0
+(15:30:27:466) --- Total loops 5
+(15:30:27:469) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:30:27:475) --- Pause between each action 10
+(15:30:27:479) --- ClearCache 0
+(15:30:33:925) --- Program started (NasTestScript.au3). UnixTimeStamp 1361806233
+(15:30:33:941) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:30:33:947) --- Script use different directory, not default — C:\NasTestScript
+(15:30:33:953) --- Admin check passed
+(15:30:33:958) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:30:33:965) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:30:33:971) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:30:33:988) --- Current loop 0
+(15:30:33:993) --- Total loops 5
+(15:30:33:997) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:30:34:004) --- Pause between each action 10
+(15:30:34:009) --- ClearCache 0
+(15:30:49:264) --- Program started (NasTestScript.au3). UnixTimeStamp 1361806249
+(15:30:49:279) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:30:49:285) --- Script use different directory, not default — C:\NasTestScript
+(15:30:49:290) --- Admin check passed
+(15:30:49:294) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:30:49:301) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:30:49:307) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:30:49:323) --- Current loop 0
+(15:30:49:328) --- Total loops 5
+(15:30:49:332) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:30:49:338) --- Pause between each action 10
+(15:30:49:342) --- ClearCache 0
+(15:30:58:384) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:30:58:390) --- Errors 0
+(15:30:58:397) --- Program halted. Worktime - 9 seconds.
+(15:30:58:403) --- ------------------------------------------------------------------------
+(15:49:17:781) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807357
+(15:49:17:806) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:49:17:813) --- Script use different directory, not default — C:\NasTestScript
+(15:49:17:820) --- Admin check passed
+(15:49:17:825) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:49:17:832) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:49:17:838) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:49:17:855) --- Current loop 0
+(15:49:17:860) --- Total loops 5
+(15:49:17:865) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:49:17:870) --- Pause between each action 10
+(15:49:17:875) --- ClearCache 0
+(15:49:28:251) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:49:28:258) --- Errors 0
+(15:49:28:262) --- Program halted. Worktime - 11 seconds.
+(15:49:28:268) --- ------------------------------------------------------------------------
+(15:50:28:551) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807428
+(15:50:28:568) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:50:28:573) --- Script use different directory, not default — C:\NasTestScript
+(15:50:28:580) --- Admin check passed
+(15:50:28:585) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:50:28:592) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:50:28:597) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:50:28:614) --- Current loop 0
+(15:50:28:619) --- Total loops 5
+(15:50:28:623) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:50:28:628) --- Pause between each action 10
+(15:50:28:633) --- ClearCache 0
+(15:50:31:344) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:50:31:351) --- Errors 0
+(15:50:31:356) --- Program halted. Worktime - 3 seconds.
+(15:50:31:361) --- ------------------------------------------------------------------------
+(15:50:42:494) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807442
+(15:50:42:510) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:50:42:515) --- Script use different directory, not default — C:\NasTestScript
+(15:50:42:521) --- Admin check passed
+(15:50:42:526) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:50:42:532) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:50:42:537) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:50:42:554) --- Current loop 0
+(15:50:42:559) --- Total loops 5
+(15:50:42:563) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:50:42:569) --- Pause between each action 10
+(15:50:42:574) --- ClearCache 0
+(15:50:46:721) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:50:46:728) --- Errors 0
+(15:50:46:734) --- Program halted. Worktime - 4 seconds.
+(15:50:46:739) --- ------------------------------------------------------------------------
+(15:50:53:466) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807453
+(15:50:53:482) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:50:53:489) --- Script use different directory, not default — C:\NasTestScript
+(15:50:53:494) --- Admin check passed
+(15:50:53:499) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:50:53:507) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:50:53:512) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:50:53:528) --- Current loop 0
+(15:50:53:533) --- Total loops 5
+(15:50:53:537) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:50:53:544) --- Pause between each action 10
+(15:50:53:549) --- ClearCache 0
+(15:50:56:818) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:50:56:824) --- Errors 0
+(15:50:56:828) --- Program halted. Worktime - 3 seconds.
+(15:50:56:833) --- ------------------------------------------------------------------------
+(15:50:59:856) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807459
+(15:50:59:872) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:50:59:877) --- Script use different directory, not default — C:\NasTestScript
+(15:50:59:883) --- Admin check passed
+(15:50:59:888) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:50:59:894) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:50:59:900) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:50:59:916) --- Current loop 0
+(15:50:59:921) --- Total loops 5
+(15:50:59:924) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:50:59:931) --- Pause between each action 10
+(15:50:59:935) --- ClearCache 0
+(15:51:01:730) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:51:01:737) --- Errors 0
+(15:51:01:743) --- Program halted. Worktime - 2 seconds.
+(15:51:01:753) --- ------------------------------------------------------------------------
+(15:51:05:155) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807465
+(15:51:05:172) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:51:05:178) --- Script use different directory, not default — C:\NasTestScript
+(15:51:05:184) --- Admin check passed
+(15:51:05:189) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:51:05:196) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:51:05:201) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:51:05:218) --- Current loop 0
+(15:51:05:222) --- Total loops 5
+(15:51:05:225) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:51:05:231) --- Pause between each action 10
+(15:51:05:236) --- ClearCache 0
+(15:51:07:909) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:51:07:915) --- Errors 0
+(15:51:07:924) --- Program halted. Worktime - 2 seconds.
+(15:51:07:929) --- ------------------------------------------------------------------------
+(15:51:12:187) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807472
+(15:51:12:201) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:51:12:207) --- Script use different directory, not default — C:\NasTestScript
+(15:51:12:212) --- Admin check passed
+(15:51:12:217) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:51:12:222) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:51:12:227) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:51:12:244) --- Current loop 0
+(15:51:12:249) --- Total loops 5
+(15:51:12:252) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:51:12:258) --- Pause between each action 10
+(15:51:12:263) --- ClearCache 0
+(15:51:16:914) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:51:16:921) --- Errors 0
+(15:51:16:927) --- Program halted. Worktime - 4 seconds.
+(15:51:16:932) --- ------------------------------------------------------------------------
+(15:51:21:050) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807481
+(15:51:21:067) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:51:21:072) --- Script use different directory, not default — C:\NasTestScript
+(15:51:21:078) --- Admin check passed
+(15:51:21:082) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:51:21:088) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:51:21:094) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:51:21:110) --- Current loop 0
+(15:51:21:116) --- Total loops 5
+(15:51:21:120) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:51:21:126) --- Pause between each action 10
+(15:51:21:130) --- ClearCache 0
+(15:51:25:693) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:51:25:703) --- Errors 0
+(15:51:25:708) --- Program halted. Worktime - 4 seconds.
+(15:51:25:713) --- ------------------------------------------------------------------------
+(15:51:31:928) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807491
+(15:51:31:943) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:51:31:949) --- Script use different directory, not default — C:\NasTestScript
+(15:51:31:954) --- Admin check passed
+(15:51:31:959) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:51:31:966) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:51:31:974) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:51:31:990) --- Current loop 0
+(15:51:31:996) --- Total loops 5
+(15:51:31:999) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:51:32:005) --- Pause between each action 10
+(15:51:32:010) --- ClearCache 0
+(15:51:33:999) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:51:34:007) --- Errors 0
+(15:51:34:012) --- Program halted. Worktime - 3 seconds.
+(15:51:34:018) --- ------------------------------------------------------------------------
+(15:51:52:408) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807512
+(15:51:52:424) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:51:52:430) --- Script use different directory, not default — C:\NasTestScript
+(15:51:52:436) --- Admin check passed
+(15:51:52:440) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:51:52:448) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:51:52:456) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:51:52:477) --- Current loop 0
+(15:51:52:482) --- Total loops 5
+(15:51:52:485) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:51:52:491) --- Pause between each action 10
+(15:51:52:496) --- ClearCache 0
+(15:52:04:697) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:52:04:704) --- Errors 0
+(15:52:04:711) --- Program halted. Worktime - 12 seconds.
+(15:52:04:716) --- ------------------------------------------------------------------------
+(15:52:14:664) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807534
+(15:52:14:680) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:14:686) --- Script use different directory, not default — C:\NasTestScript
+(15:52:14:692) --- Admin check passed
+(15:52:14:696) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:14:703) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:14:708) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:52:14:726) --- Current loop 0
+(15:52:14:732) --- Total loops 5
+(15:52:14:736) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:52:14:742) --- Pause between each action 10
+(15:52:14:747) --- ClearCache 0
+(15:52:25:207) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:52:25:215) --- Errors 0
+(15:52:25:220) --- Program halted. Worktime - 11 seconds.
+(15:52:25:226) --- ------------------------------------------------------------------------
+(15:52:36:932) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807556
+(15:52:36:950) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:36:958) --- Script use different directory, not default — C:\NasTestScript
+(15:52:36:966) --- Admin check passed
+(15:52:36:973) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:36:983) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:36:991) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:52:37:015) --- Current loop 0
+(15:52:37:022) --- Total loops 5
+(15:52:37:027) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:52:37:035) --- Pause between each action 10
+(15:52:37:041) --- ClearCache 0
+(15:52:39:624) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:52:39:638) --- Errors 0
+(15:52:39:647) --- Program halted. Worktime - 3 seconds.
+(15:52:39:654) --- ------------------------------------------------------------------------
+(15:52:42:265) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807562
+(15:52:42:288) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:42:297) --- Script use different directory, not default — C:\NasTestScript
+(15:52:42:307) --- Admin check passed
+(15:52:42:313) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:42:324) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:42:333) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:52:42:360) --- Current loop 0
+(15:52:42:370) --- Total loops 5
+(15:52:42:374) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:52:42:383) --- Pause between each action 10
+(15:52:42:391) --- ClearCache 0
+(15:52:44:384) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:52:44:395) --- Errors 0
+(15:52:44:408) --- Program halted. Worktime - 2 seconds.
+(15:52:44:417) --- ------------------------------------------------------------------------
+(15:52:59:351) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807579
+(15:52:59:369) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:52:59:376) --- Script use different directory, not default — C:\NasTestScript
+(15:52:59:383) --- Admin check passed
+(15:52:59:389) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:52:59:397) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:52:59:403) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:52:59:422) --- Current loop 0
+(15:52:59:427) --- Total loops 5
+(15:52:59:431) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:52:59:437) --- Pause between each action 10
+(15:52:59:442) --- ClearCache 0
+(15:53:00:614) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:53:00:620) --- Errors 0
+(15:53:00:625) --- Program halted. Worktime - 1 seconds.
+(15:53:00:630) --- ------------------------------------------------------------------------
+(15:53:06:518) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807586
+(15:53:06:533) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:53:06:539) --- Script use different directory, not default — C:\NasTestScript
+(15:53:06:545) --- Admin check passed
+(15:53:06:551) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:53:06:559) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:53:06:565) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:53:06:584) --- Current loop 0
+(15:53:06:589) --- Total loops 5
+(15:53:06:593) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:53:06:600) --- Pause between each action 10
+(15:53:06:605) --- ClearCache 0
+(15:53:08:026) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:53:08:033) --- Errors 0
+(15:53:08:037) --- Program halted. Worktime - 2 seconds.
+(15:53:08:042) --- ------------------------------------------------------------------------
+(15:53:10:800) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807590
+(15:53:10:817) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:53:10:824) --- Script use different directory, not default — C:\NasTestScript
+(15:53:10:830) --- Admin check passed
+(15:53:10:835) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:53:10:842) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:53:10:848) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:53:10:865) --- Current loop 0
+(15:53:10:871) --- Total loops 5
+(15:53:10:875) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:53:10:882) --- Pause between each action 10
+(15:53:10:887) --- ClearCache 0
+(15:53:12:942) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:53:12:949) --- Errors 0
+(15:53:12:953) --- Program halted. Worktime - 2 seconds.
+(15:53:12:959) --- ------------------------------------------------------------------------
+(15:53:16:573) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807596
+(15:53:16:590) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:53:16:595) --- Script use different directory, not default — C:\NasTestScript
+(15:53:16:600) --- Admin check passed
+(15:53:16:606) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:53:16:612) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:53:16:618) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:53:16:636) --- Current loop 0
+(15:53:16:642) --- Total loops 5
+(15:53:16:645) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:53:16:652) --- Pause between each action 10
+(15:53:16:656) --- ClearCache 0
+(15:53:18:779) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:53:18:786) --- Errors 0
+(15:53:18:791) --- Program halted. Worktime - 2 seconds.
+(15:53:18:796) --- ------------------------------------------------------------------------
+(15:53:26:628) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807606
+(15:53:26:645) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:53:26:651) --- Script use different directory, not default — C:\NasTestScript
+(15:53:26:657) --- Admin check passed
+(15:53:26:662) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:53:26:669) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:53:26:676) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:53:26:692) --- Current loop 0
+(15:53:26:698) --- Total loops 5
+(15:53:26:702) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:53:26:709) --- Pause between each action 10
+(15:53:26:714) --- ClearCache 0
+(15:53:55:296) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:53:55:302) --- Errors 0
+(15:53:55:306) --- Program halted. Worktime - 29 seconds.
+(15:53:55:312) --- ------------------------------------------------------------------------
+(15:55:38:834) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807738
+(15:55:38:849) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:55:38:854) --- Script use different directory, not default — C:\NasTestScript
+(15:55:38:860) --- Admin check passed
+(15:55:38:865) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:55:38:872) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:55:38:877) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:55:38:894) --- Current loop 0
+(15:55:38:899) --- Total loops 5
+(15:55:38:902) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:55:38:909) --- Pause between each action 10
+(15:55:38:914) --- ClearCache 0
+(15:55:41:418) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:55:41:425) --- Errors 0
+(15:55:41:430) --- Program halted. Worktime - 3 seconds.
+(15:55:41:436) --- ------------------------------------------------------------------------
+(15:56:43:731) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807803
+(15:56:43:745) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:56:43:750) --- Script use different directory, not default — C:\NasTestScript
+(15:56:43:757) --- Admin check passed
+(15:56:43:761) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:56:43:767) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:56:43:773) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:56:43:790) --- Current loop 0
+(15:56:43:795) --- Total loops 5
+(15:56:43:798) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:56:43:804) --- Pause between each action 10
+(15:56:43:809) --- ClearCache 0
+(15:56:47:037) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:56:47:043) --- Errors 0
+(15:56:47:047) --- Program halted. Worktime - 4 seconds.
+(15:56:47:053) --- ------------------------------------------------------------------------
+(15:56:51:059) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807811
+(15:56:51:077) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:56:51:084) --- Script use different directory, not default — C:\NasTestScript
+(15:56:51:090) --- Admin check passed
+(15:56:51:096) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:56:51:103) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:56:51:109) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:56:51:128) --- Current loop 0
+(15:56:51:134) --- Total loops 5
+(15:56:51:138) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:56:51:145) --- Pause between each action 10
+(15:56:51:151) --- ClearCache 0
+(15:56:54:143) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:56:54:150) --- Errors 0
+(15:56:54:155) --- Program halted. Worktime - 3 seconds.
+(15:56:54:160) --- ------------------------------------------------------------------------
+(15:57:17:970) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807837
+(15:57:17:987) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:57:17:993) --- Script use different directory, not default — C:\NasTestScript
+(15:57:17:998) --- Admin check passed
+(15:57:18:003) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:57:18:011) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:57:18:016) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:57:18:033) --- Current loop 0
+(15:57:18:039) --- Total loops 5
+(15:57:18:043) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:57:18:049) --- Pause between each action 10
+(15:57:18:054) --- ClearCache 0
+(15:57:33:493) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:57:33:502) --- Errors 0
+(15:57:33:508) --- Program halted. Worktime - 16 seconds.
+(15:57:33:513) --- ------------------------------------------------------------------------
+(15:57:51:824) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807871
+(15:57:51:840) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:57:51:846) --- Script use different directory, not default — C:\NasTestScript
+(15:57:51:853) --- Admin check passed
+(15:57:51:859) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:57:51:865) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:57:51:872) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:57:51:889) --- Current loop 0
+(15:57:51:894) --- Total loops 5
+(15:57:51:898) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:57:51:905) --- Pause between each action 10
+(15:57:51:910) --- ClearCache 0
+(15:57:53:873) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:57:53:880) --- Errors 0
+(15:57:53:885) --- Program halted. Worktime - 2 seconds.
+(15:57:53:891) --- ------------------------------------------------------------------------
+(15:58:08:156) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807888
+(15:58:08:172) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:58:08:179) --- Script use different directory, not default — C:\NasTestScript
+(15:58:08:184) --- Admin check passed
+(15:58:08:189) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:58:08:196) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:58:08:202) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:58:08:219) --- Current loop 0
+(15:58:08:224) --- Total loops 5
+(15:58:08:229) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:58:08:235) --- Pause between each action 10
+(15:58:08:240) --- ClearCache 0
+(15:58:09:576) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:58:09:583) --- Errors 0
+(15:58:09:589) --- Program halted. Worktime - 1 seconds.
+(15:58:09:594) --- ------------------------------------------------------------------------
+(15:58:17:201) --- Program started (NasTestScript.au3). UnixTimeStamp 1361807897
+(15:58:17:218) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(15:58:17:225) --- Script use different directory, not default — C:\NasTestScript
+(15:58:17:231) --- Admin check passed
+(15:58:17:237) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(15:58:17:243) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(15:58:17:249) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(15:58:17:266) --- Current loop 0
+(15:58:17:273) --- Total loops 5
+(15:58:17:276) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(15:58:17:282) --- Pause between each action 10
+(15:58:17:288) --- ClearCache 0
+(15:58:23:316) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(15:58:23:323) --- Errors 0
+(15:58:23:327) --- Program halted. Worktime - 6 seconds.
+(15:58:23:333) --- ------------------------------------------------------------------------
+(16:03:09:890) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808189
+(16:03:09:912) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:03:09:918) --- Script use different directory, not default — C:\NasTestScript
+(16:03:09:924) --- Admin check passed
+(16:03:09:929) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:03:09:936) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:03:09:942) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:03:09:959) --- Current loop 0
+(16:03:09:965) --- Total loops 5
+(16:03:09:968) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:03:09:974) --- Pause between each action 10
+(16:03:09:979) --- ClearCache 0
+(16:03:13:308) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:03:13:314) --- Errors 0
+(16:03:13:319) --- Program halted. Worktime - 4 seconds.
+(16:03:13:324) --- ------------------------------------------------------------------------
+(16:03:22:233) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808202
+(16:03:22:251) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:03:22:258) --- Script use different directory, not default — C:\NasTestScript
+(16:03:22:265) --- Admin check passed
+(16:03:22:270) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:03:22:278) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:03:22:284) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:03:22:303) --- Current loop 0
+(16:03:22:308) --- Total loops 5
+(16:03:22:312) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:03:22:318) --- Pause between each action 10
+(16:03:22:323) --- ClearCache 0
+(16:03:31:575) --- Settings program started C:\Users\afanasmax\Documents\GitHub\NASTestScript\NTS_Settings.exe
+(16:03:54:356) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:03:54:363) --- Errors 0
+(16:03:54:368) --- Program halted. Worktime - 32 seconds.
+(16:03:54:374) --- ------------------------------------------------------------------------
+(16:03:58:905) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808238
+(16:03:58:923) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:03:58:931) --- Script use different directory, not default — C:\NasTestScript
+(16:03:58:938) --- Admin check passed
+(16:03:58:943) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:03:58:951) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:03:58:957) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:03:58:977) --- Current loop 0
+(16:03:58:982) --- Total loops 5
+(16:03:58:986) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:03:58:993) --- Pause between each action 10
+(16:03:59:000) --- ClearCache 0
+(16:04:00:620) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:04:00:627) --- Errors 0
+(16:04:00:632) --- Program halted. Worktime - 2 seconds.
+(16:04:00:638) --- ------------------------------------------------------------------------
+(16:04:02:785) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808242
+(16:04:02:800) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:04:02:806) --- Script use different directory, not default — C:\NasTestScript
+(16:04:02:812) --- Admin check passed
+(16:04:02:817) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:04:02:824) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:04:02:829) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:04:02:847) --- Current loop 0
+(16:04:02:852) --- Total loops 5
+(16:04:02:856) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:04:02:862) --- Pause between each action 10
+(16:04:02:867) --- ClearCache 0
+(16:04:05:873) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:04:05:879) --- Errors 0
+(16:04:05:884) --- Program halted. Worktime - 3 seconds.
+(16:04:05:889) --- ------------------------------------------------------------------------
+(16:04:11:116) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808251
+(16:04:11:131) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:04:11:137) --- Script use different directory, not default — C:\NasTestScript
+(16:04:11:143) --- Admin check passed
+(16:04:11:148) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:04:11:155) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:04:11:161) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:04:11:179) --- Current loop 0
+(16:04:11:186) --- Total loops 5
+(16:04:11:190) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:04:11:196) --- Pause between each action 10
+(16:04:11:201) --- ClearCache 0
+(16:04:25:059) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:04:25:066) --- Errors 0
+(16:04:25:071) --- Program halted. Worktime - 14 seconds.
+(16:04:25:076) --- ------------------------------------------------------------------------
+(16:04:29:190) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808269
+(16:04:29:207) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:04:29:213) --- Script use different directory, not default — C:\NasTestScript
+(16:04:29:220) --- Admin check passed
+(16:04:29:225) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:04:29:231) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:04:29:237) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:04:29:253) --- Current loop 0
+(16:04:29:259) --- Total loops 5
+(16:04:29:262) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:04:29:268) --- Pause between each action 10
+(16:04:29:273) --- ClearCache 0
+(16:04:34:794) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:04:34:801) --- Errors 0
+(16:04:34:805) --- Program halted. Worktime - 5 seconds.
+(16:04:34:810) --- ------------------------------------------------------------------------
+(16:06:25:476) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808385
+(16:06:25:494) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:06:25:500) --- Script use different directory, not default — C:\NasTestScript
+(16:06:25:506) --- Admin check passed
+(16:06:25:511) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:06:25:518) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:06:25:524) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:06:25:541) --- Current loop 0
+(16:06:25:548) --- Total loops 5
+(16:06:25:552) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:06:25:558) --- Pause between each action 10
+(16:06:25:563) --- ClearCache 0
+(16:06:31:458) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:06:31:464) --- Errors 0
+(16:06:31:468) --- Program halted. Worktime - 6 seconds.
+(16:06:31:474) --- ------------------------------------------------------------------------
+(16:06:41:232) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808401
+(16:06:41:249) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:06:41:254) --- Script use different directory, not default — C:\NasTestScript
+(16:06:41:260) --- Admin check passed
+(16:06:41:265) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:06:41:272) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:06:41:279) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:06:41:297) --- Current loop 0
+(16:06:41:302) --- Total loops 5
+(16:06:41:306) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:06:41:312) --- Pause between each action 10
+(16:06:41:317) --- ClearCache 0
+(16:06:42:924) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:06:42:931) --- Errors 0
+(16:06:42:938) --- Program halted. Worktime - 1 seconds.
+(16:06:42:943) --- ------------------------------------------------------------------------
+(16:07:14:051) --- Program started (NasTestScript.au3). UnixTimeStamp 1361808434
+(16:07:14:067) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:07:14:073) --- Script use different directory, not default — C:\NasTestScript
+(16:07:14:080) --- Admin check passed
+(16:07:14:086) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:07:14:093) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:07:14:100) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:07:14:117) --- Current loop 0
+(16:07:14:122) --- Total loops 5
+(16:07:14:126) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:07:14:132) --- Pause between each action 10
+(16:07:14:137) --- ClearCache 0
+(16:07:17:132) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:07:17:138) --- Errors 0
+(16:07:17:142) --- Program halted. Worktime - 3 seconds.
+(16:07:17:148) --- ------------------------------------------------------------------------
+(16:19:59:664) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809199
+(16:19:59:687) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:19:59:694) --- Script use different directory, not default — C:\NasTestScript
+(16:19:59:699) --- Admin check passed
+(16:19:59:704) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:19:59:711) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:19:59:717) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:19:59:734) --- Current loop 0
+(16:19:59:740) --- Total loops 5
+(16:19:59:743) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:19:59:749) --- Pause between each action 10
+(16:19:59:754) --- ClearCache 0
+(16:20:03:836) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:20:03:843) --- Errors 0
+(16:20:03:849) --- Program halted. Worktime - 4 seconds.
+(16:20:03:854) --- ------------------------------------------------------------------------
+(16:23:43:413) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809423
+(16:23:43:436) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:23:43:443) --- Script use different directory, not default — C:\NasTestScript
+(16:23:43:449) --- Admin check passed
+(16:23:43:453) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:23:43:460) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:23:43:466) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:23:43:483) --- Current loop 0
+(16:23:43:488) --- Total loops 5
+(16:23:43:495) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:23:43:504) --- Pause between each action 10
+(16:23:43:509) --- ClearCache 0
+(16:24:28:625) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:24:28:632) --- Errors 0
+(16:24:28:638) --- Program halted. Worktime - 45 seconds.
+(16:24:28:644) --- ------------------------------------------------------------------------
+(16:24:57:664) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809497
+(16:24:57:680) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:24:57:685) --- Script use different directory, not default — C:\NasTestScript
+(16:24:57:691) --- Admin check passed
+(16:24:57:697) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:24:57:703) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:24:57:709) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:24:57:726) --- Current loop 0
+(16:24:57:732) --- Total loops 5
+(16:24:57:736) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:24:57:743) --- Pause between each action 10
+(16:24:57:748) --- ClearCache 0
+(16:25:02:799) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:25:02:807) --- Errors 0
+(16:25:02:812) --- Program halted. Worktime - 5 seconds.
+(16:25:02:821) --- ------------------------------------------------------------------------
+(16:26:12:404) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809572
+(16:26:12:419) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:26:12:424) --- Script use different directory, not default — C:\NasTestScript
+(16:26:12:430) --- Admin check passed
+(16:26:12:435) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:26:12:441) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:26:12:447) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:26:12:463) --- Current loop 0
+(16:26:12:468) --- Total loops 5
+(16:26:12:471) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:26:12:476) --- Pause between each action 10
+(16:26:12:480) --- ClearCache 0
+(16:26:14:246) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:26:14:253) --- Errors 0
+(16:26:14:257) --- Program halted. Worktime - 2 seconds.
+(16:26:14:262) --- ------------------------------------------------------------------------
+(16:27:10:538) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809630
+(16:27:10:555) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:27:10:561) --- Script use different directory, not default — C:\NasTestScript
+(16:27:10:567) --- Admin check passed
+(16:27:10:572) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:27:10:579) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:27:10:589) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:27:10:608) --- Current loop 0
+(16:27:10:614) --- Total loops 5
+(16:27:10:618) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:27:10:624) --- Pause between each action 10
+(16:27:10:629) --- ClearCache 0
+(16:27:17:383) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:27:17:390) --- Errors 0
+(16:27:17:394) --- Program halted. Worktime - 7 seconds.
+(16:27:17:400) --- ------------------------------------------------------------------------
+(16:27:27:210) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809647
+(16:27:27:224) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:27:27:230) --- Script use different directory, not default — C:\NasTestScript
+(16:27:27:236) --- Admin check passed
+(16:27:27:240) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:27:27:246) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:27:27:251) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:27:27:267) --- Current loop 0
+(16:27:27:271) --- Total loops 5
+(16:27:27:275) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:27:27:280) --- Pause between each action 10
+(16:27:27:285) --- ClearCache 0
+(16:27:32:246) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:27:32:252) --- Errors 0
+(16:27:32:256) --- Program halted. Worktime - 5 seconds.
+(16:27:32:261) --- ------------------------------------------------------------------------
+(16:27:35:653) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809655
+(16:27:35:668) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:27:35:675) --- Script use different directory, not default — C:\NasTestScript
+(16:27:35:680) --- Admin check passed
+(16:27:35:685) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:27:35:691) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:27:35:697) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:27:35:713) --- Current loop 0
+(16:27:35:718) --- Total loops 5
+(16:27:35:721) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:27:35:727) --- Pause between each action 10
+(16:27:35:732) --- ClearCache 0
+(16:27:37:583) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:27:37:590) --- Errors 0
+(16:27:37:595) --- Program halted. Worktime - 2 seconds.
+(16:27:37:599) --- ------------------------------------------------------------------------
+(16:27:42:122) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809662
+(16:27:42:139) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:27:42:145) --- Script use different directory, not default — C:\NasTestScript
+(16:27:42:151) --- Admin check passed
+(16:27:42:156) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:27:42:163) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:27:42:169) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:27:42:186) --- Current loop 0
+(16:27:42:192) --- Total loops 5
+(16:27:42:196) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:27:42:202) --- Pause between each action 10
+(16:27:42:207) --- ClearCache 0
+(16:27:43:610) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:27:43:618) --- Errors 0
+(16:27:43:623) --- Program halted. Worktime - 1 seconds.
+(16:27:43:628) --- ------------------------------------------------------------------------
+(16:27:48:560) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809668
+(16:27:48:576) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:27:48:582) --- Script use different directory, not default — C:\NasTestScript
+(16:27:48:588) --- Admin check passed
+(16:27:48:594) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:27:48:601) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:27:48:607) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:27:48:624) --- Current loop 0
+(16:27:48:629) --- Total loops 5
+(16:27:48:633) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:27:48:639) --- Pause between each action 10
+(16:27:48:644) --- ClearCache 0
+(16:27:50:343) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:27:50:352) --- Errors 0
+(16:27:50:359) --- Program halted. Worktime - 2 seconds.
+(16:27:50:364) --- ------------------------------------------------------------------------
+(16:27:57:419) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809677
+(16:27:57:434) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:27:57:440) --- Script use different directory, not default — C:\NasTestScript
+(16:27:57:446) --- Admin check passed
+(16:27:57:451) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:27:57:457) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:27:57:462) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:27:57:479) --- Current loop 0
+(16:27:57:483) --- Total loops 5
+(16:27:57:487) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:27:57:493) --- Pause between each action 10
+(16:27:57:498) --- ClearCache 0
+(16:28:02:116) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:02:122) --- Errors 0
+(16:28:02:126) --- Program halted. Worktime - 5 seconds.
+(16:28:02:131) --- ------------------------------------------------------------------------
+(16:28:08:711) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809688
+(16:28:08:727) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:08:733) --- Script use different directory, not default — C:\NasTestScript
+(16:28:08:739) --- Admin check passed
+(16:28:08:743) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:08:750) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:08:755) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:08:771) --- Current loop 0
+(16:28:08:776) --- Total loops 5
+(16:28:08:779) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:08:785) --- Pause between each action 10
+(16:28:08:790) --- ClearCache 0
+(16:28:10:310) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:10:316) --- Errors 0
+(16:28:10:320) --- Program halted. Worktime - 2 seconds.
+(16:28:10:325) --- ------------------------------------------------------------------------
+(16:28:16:929) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809696
+(16:28:16:945) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:16:950) --- Script use different directory, not default — C:\NasTestScript
+(16:28:16:956) --- Admin check passed
+(16:28:16:962) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:16:970) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:16:975) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:16:991) --- Current loop 0
+(16:28:16:996) --- Total loops 5
+(16:28:17:000) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:17:006) --- Pause between each action 10
+(16:28:17:011) --- ClearCache 0
+(16:28:18:166) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:18:173) --- Errors 0
+(16:28:18:177) --- Program halted. Worktime - 2 seconds.
+(16:28:18:183) --- ------------------------------------------------------------------------
+(16:28:20:749) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809700
+(16:28:20:764) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:20:770) --- Script use different directory, not default — C:\NasTestScript
+(16:28:20:777) --- Admin check passed
+(16:28:20:782) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:20:789) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:20:795) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:20:811) --- Current loop 0
+(16:28:20:816) --- Total loops 5
+(16:28:20:820) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:20:826) --- Pause between each action 10
+(16:28:20:831) --- ClearCache 0
+(16:28:22:388) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:22:395) --- Errors 0
+(16:28:22:399) --- Program halted. Worktime - 2 seconds.
+(16:28:22:405) --- ------------------------------------------------------------------------
+(16:28:29:741) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809709
+(16:28:29:755) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:29:761) --- Script use different directory, not default — C:\NasTestScript
+(16:28:29:767) --- Admin check passed
+(16:28:29:772) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:29:779) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:29:784) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:29:799) --- Current loop 0
+(16:28:29:804) --- Total loops 5
+(16:28:29:808) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:29:814) --- Pause between each action 10
+(16:28:29:819) --- ClearCache 0
+(16:28:30:803) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:30:810) --- Errors 0
+(16:28:30:816) --- Program halted. Worktime - 1 seconds.
+(16:28:30:822) --- ------------------------------------------------------------------------
+(16:28:32:901) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809712
+(16:28:32:917) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:32:923) --- Script use different directory, not default — C:\NasTestScript
+(16:28:32:929) --- Admin check passed
+(16:28:32:934) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:32:941) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:32:946) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:32:962) --- Current loop 0
+(16:28:32:968) --- Total loops 5
+(16:28:32:972) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:32:978) --- Pause between each action 10
+(16:28:32:982) --- ClearCache 0
+(16:28:34:357) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:34:363) --- Errors 0
+(16:28:34:367) --- Program halted. Worktime - 2 seconds.
+(16:28:34:373) --- ------------------------------------------------------------------------
+(16:28:38:744) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809718
+(16:28:38:759) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:38:765) --- Script use different directory, not default — C:\NasTestScript
+(16:28:38:771) --- Admin check passed
+(16:28:38:775) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:38:782) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:38:788) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:38:806) --- Current loop 0
+(16:28:38:812) --- Total loops 5
+(16:28:38:816) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:38:822) --- Pause between each action 10
+(16:28:38:827) --- ClearCache 0
+(16:28:40:005) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:40:011) --- Errors 0
+(16:28:40:015) --- Program halted. Worktime - 2 seconds.
+(16:28:40:020) --- ------------------------------------------------------------------------
+(16:28:42:872) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809722
+(16:28:42:888) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:42:895) --- Script use different directory, not default — C:\NasTestScript
+(16:28:42:901) --- Admin check passed
+(16:28:42:906) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:42:912) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:42:918) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:42:935) --- Current loop 0
+(16:28:42:941) --- Total loops 5
+(16:28:42:944) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:42:951) --- Pause between each action 10
+(16:28:42:956) --- ClearCache 0
+(16:28:44:260) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:44:265) --- Errors 0
+(16:28:44:270) --- Program halted. Worktime - 2 seconds.
+(16:28:44:275) --- ------------------------------------------------------------------------
+(16:28:48:913) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809728
+(16:28:48:929) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:28:48:935) --- Script use different directory, not default — C:\NasTestScript
+(16:28:48:941) --- Admin check passed
+(16:28:48:946) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:28:48:953) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:28:48:959) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:28:48:975) --- Current loop 0
+(16:28:48:980) --- Total loops 5
+(16:28:48:984) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:28:48:991) --- Pause between each action 10
+(16:28:48:996) --- ClearCache 0
+(16:28:55:531) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:28:55:537) --- Errors 0
+(16:28:55:541) --- Program halted. Worktime - 7 seconds.
+(16:28:55:547) --- ------------------------------------------------------------------------
+(16:29:19:639) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809759
+(16:29:19:655) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:29:19:660) --- Script use different directory, not default — C:\NasTestScript
+(16:29:19:666) --- Admin check passed
+(16:29:19:671) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:29:19:679) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:29:19:684) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:29:19:700) --- Current loop 0
+(16:29:19:705) --- Total loops 5
+(16:29:19:709) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:29:19:715) --- Pause between each action 10
+(16:29:19:720) --- ClearCache 0
+(16:29:21:517) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:29:21:524) --- Errors 0
+(16:29:21:528) --- Program halted. Worktime - 2 seconds.
+(16:29:21:534) --- ------------------------------------------------------------------------
+(16:29:27:288) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809767
+(16:29:27:303) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:29:27:309) --- Script use different directory, not default — C:\NasTestScript
+(16:29:27:314) --- Admin check passed
+(16:29:27:319) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:29:27:325) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:29:27:330) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:29:27:345) --- Current loop 0
+(16:29:27:350) --- Total loops 5
+(16:29:27:354) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:29:27:359) --- Pause between each action 10
+(16:29:27:364) --- ClearCache 0
+(16:29:30:173) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:29:30:180) --- Errors 0
+(16:29:30:185) --- Program halted. Worktime - 3 seconds.
+(16:29:30:190) --- ------------------------------------------------------------------------
+(16:29:41:940) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809781
+(16:29:41:956) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:29:41:961) --- Script use different directory, not default — C:\NasTestScript
+(16:29:41:967) --- Admin check passed
+(16:29:41:972) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:29:41:980) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:29:41:986) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:29:42:002) --- Current loop 0
+(16:29:42:007) --- Total loops 5
+(16:29:42:011) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:29:42:018) --- Pause between each action 10
+(16:29:42:023) --- ClearCache 0
+(16:29:44:941) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:29:44:949) --- Errors 0
+(16:29:44:954) --- Program halted. Worktime - 3 seconds.
+(16:29:44:960) --- ------------------------------------------------------------------------
+(16:30:21:856) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809821
+(16:30:21:872) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:30:21:877) --- Script use different directory, not default — C:\NasTestScript
+(16:30:21:883) --- Admin check passed
+(16:30:21:888) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:30:21:895) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:30:21:902) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:30:21:917) --- Current loop 0
+(16:30:21:922) --- Total loops 5
+(16:30:21:926) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:30:21:931) --- Pause between each action 10
+(16:30:21:936) --- ClearCache 0
+(16:30:22:970) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:30:22:976) --- Errors 0
+(16:30:22:981) --- Program halted. Worktime - 1 seconds.
+(16:30:22:987) --- ------------------------------------------------------------------------
+(16:30:26:402) --- Program started (NasTestScript.au3). UnixTimeStamp 1361809826
+(16:30:26:418) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:30:26:423) --- Script use different directory, not default — C:\NasTestScript
+(16:30:26:429) --- Admin check passed
+(16:30:26:433) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:30:26:441) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:30:26:446) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:30:26:464) --- Current loop 0
+(16:30:26:469) --- Total loops 5
+(16:30:26:473) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:30:26:479) --- Pause between each action 10
+(16:30:26:483) --- ClearCache 0
+(16:30:29:379) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:30:29:387) --- Errors 0
+(16:30:29:392) --- Program halted. Worktime - 3 seconds.
+(16:30:29:398) --- ------------------------------------------------------------------------
+(16:34:13:315) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810053
+(16:34:13:336) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:34:13:343) --- Script use different directory, not default — C:\NasTestScript
+(16:34:13:349) --- Admin check passed
+(16:34:13:353) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:34:13:359) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:34:13:365) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:34:13:382) --- Current loop 0
+(16:34:13:388) --- Total loops 5
+(16:34:13:392) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:34:13:399) --- Pause between each action 10
+(16:34:13:404) --- ClearCache 0
+(16:34:15:906) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:34:15:913) --- Errors 0
+(16:34:15:918) --- Program halted. Worktime - 2 seconds.
+(16:34:15:923) --- ------------------------------------------------------------------------
+(16:35:25:992) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810125
+(16:35:26:009) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:35:26:014) --- Script use different directory, not default — C:\NasTestScript
+(16:35:26:021) --- Admin check passed
+(16:35:26:026) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:35:26:032) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:35:26:038) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:35:26:054) --- Current loop 0
+(16:35:26:060) --- Total loops 5
+(16:35:26:064) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:35:26:070) --- Pause between each action 10
+(16:35:26:075) --- ClearCache 0
+(16:35:28:447) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:35:28:455) --- Errors 0
+(16:35:28:460) --- Program halted. Worktime - 3 seconds.
+(16:35:28:466) --- ------------------------------------------------------------------------
+(16:35:33:639) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810133
+(16:35:33:656) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:35:33:662) --- Script use different directory, not default — C:\NasTestScript
+(16:35:33:669) --- Admin check passed
+(16:35:33:674) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:35:33:681) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:35:33:686) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:35:33:703) --- Current loop 0
+(16:35:33:708) --- Total loops 5
+(16:35:33:712) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(16:35:33:719) --- Pause between each action 10
+(16:35:33:724) --- ClearCache 0
+(16:35:37:871) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:35:37:881) --- Errors 0
+(16:35:37:885) --- Program halted. Worktime - 4 seconds.
+(16:35:37:891) --- ------------------------------------------------------------------------
+(16:36:31:056) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810191
+(16:36:31:072) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:36:31:078) --- Script use different directory, not default — C:\NasTestScript
+(16:36:31:085) --- Admin check passed
+(16:36:31:090) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:36:31:097) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:36:31:103) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:36:31:121) --- Current loop 3
+(16:36:31:127) --- Total loops 25
+(16:36:31:132) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:36:31:137) --- Pause between each action 23
+(16:36:31:142) --- ClearCache 1
+(16:36:31:179) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:36:31:186) --- Read test parameters from section FTP
+(16:36:31:192) --- Find test FTP. Selected mode - Put
+(16:36:31:198) --- Find test FTP. Selected mode - Get
+(16:36:31:203) --- Find test FTP. Selected mode - GetPut
+(16:36:31:208) --- Read test parameters from section Samba
+(16:36:31:214) --- Find test Samba. Selected mode - FromNas
+(16:36:31:220) --- Find test Samba. Selected mode - CopyToNas
+(16:36:31:226) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:36:31:231) --- Read test parameters from section HTTP
+(16:36:31:237) --- Find test HTTP. Selected mode - Get
+(16:36:31:242) --- Read test parameters from section Samba_IO
+(16:36:31:248) --- Find test Samba_IO. Selected mode - IOTest
+(16:36:31:254) --- Read test parameters from section Samba_NASPT
+(16:36:31:260) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:36:35:113) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:36:35:120) --- Errors 0
+(16:36:35:124) --- Program halted. Worktime - 4 seconds.
+(16:36:35:130) --- ------------------------------------------------------------------------
+(16:36:38:219) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810198
+(16:36:38:235) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:36:38:241) --- Script use different directory, not default — C:\NasTestScript
+(16:36:38:247) --- Admin check passed
+(16:36:38:252) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:36:38:259) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:36:38:265) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:36:38:282) --- Current loop 3
+(16:36:38:288) --- Total loops 25
+(16:36:38:292) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:36:38:298) --- Pause between each action 23
+(16:36:38:303) --- ClearCache 1
+(16:36:38:338) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:36:38:345) --- Read test parameters from section FTP
+(16:36:38:350) --- Find test FTP. Selected mode - Put
+(16:36:38:355) --- Find test FTP. Selected mode - Get
+(16:36:38:360) --- Find test FTP. Selected mode - GetPut
+(16:36:38:366) --- Read test parameters from section Samba
+(16:36:38:371) --- Find test Samba. Selected mode - FromNas
+(16:36:38:376) --- Find test Samba. Selected mode - CopyToNas
+(16:36:38:383) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:36:38:388) --- Read test parameters from section HTTP
+(16:36:38:393) --- Find test HTTP. Selected mode - Get
+(16:36:38:398) --- Read test parameters from section Samba_IO
+(16:36:38:403) --- Find test Samba_IO. Selected mode - IOTest
+(16:36:38:409) --- Read test parameters from section Samba_NASPT
+(16:36:38:414) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:36:46:453) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:36:46:459) --- Errors 0
+(16:36:46:473) --- Program halted. Worktime - 8 seconds.
+(16:36:46:479) --- ------------------------------------------------------------------------
+(16:36:51:913) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810211
+(16:36:51:928) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:36:51:934) --- Script use different directory, not default — C:\NasTestScript
+(16:36:51:940) --- Admin check passed
+(16:36:51:946) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:36:51:953) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:36:51:959) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:36:51:980) --- Current loop 3
+(16:36:51:986) --- Total loops 25
+(16:36:51:990) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:36:51:995) --- Pause between each action 23
+(16:36:52:000) --- ClearCache 1
+(16:36:52:035) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:36:52:043) --- Read test parameters from section FTP
+(16:36:52:048) --- Find test FTP. Selected mode - Put
+(16:36:52:054) --- Find test FTP. Selected mode - Get
+(16:36:52:058) --- Find test FTP. Selected mode - GetPut
+(16:36:52:064) --- Read test parameters from section Samba
+(16:36:52:069) --- Find test Samba. Selected mode - FromNas
+(16:36:52:077) --- Find test Samba. Selected mode - CopyToNas
+(16:36:52:083) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:36:52:088) --- Read test parameters from section HTTP
+(16:36:52:094) --- Find test HTTP. Selected mode - Get
+(16:36:52:099) --- Read test parameters from section Samba_IO
+(16:36:52:104) --- Find test Samba_IO. Selected mode - IOTest
+(16:36:52:109) --- Read test parameters from section Samba_NASPT
+(16:36:52:114) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:36:57:757) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:36:57:762) --- Errors 0
+(16:36:57:768) --- Program halted. Worktime - 6 seconds.
+(16:36:57:773) --- ------------------------------------------------------------------------
+(16:37:25:531) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810245
+(16:37:25:547) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:37:25:552) --- Script use different directory, not default — C:\NasTestScript
+(16:37:25:558) --- Admin check passed
+(16:37:25:563) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:37:25:571) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:37:25:578) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:37:25:595) --- Current loop 3
+(16:37:25:601) --- Total loops 25
+(16:37:25:605) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:37:25:611) --- Pause between each action 23
+(16:37:25:616) --- ClearCache 1
+(16:37:25:647) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:37:25:655) --- Read test parameters from section FTP
+(16:37:25:661) --- Find test FTP. Selected mode - Put
+(16:37:25:666) --- Find test FTP. Selected mode - Get
+(16:37:25:670) --- Find test FTP. Selected mode - GetPut
+(16:37:25:675) --- Read test parameters from section Samba
+(16:37:25:680) --- Find test Samba. Selected mode - FromNas
+(16:37:25:687) --- Find test Samba. Selected mode - CopyToNas
+(16:37:25:692) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:37:25:698) --- Read test parameters from section HTTP
+(16:37:25:703) --- Find test HTTP. Selected mode - Get
+(16:37:25:708) --- Read test parameters from section Samba_IO
+(16:37:25:713) --- Find test Samba_IO. Selected mode - IOTest
+(16:37:25:719) --- Read test parameters from section Samba_NASPT
+(16:37:25:724) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:37:27:434) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:37:27:441) --- Errors 0
+(16:37:27:445) --- Program halted. Worktime - 2 seconds.
+(16:37:27:451) --- ------------------------------------------------------------------------
+(16:37:30:725) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810250
+(16:37:30:741) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:37:30:747) --- Script use different directory, not default — C:\NasTestScript
+(16:37:30:753) --- Admin check passed
+(16:37:30:758) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:37:30:764) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:37:30:771) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:37:30:788) --- Current loop 3
+(16:37:30:794) --- Total loops 25
+(16:37:30:798) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:37:30:804) --- Pause between each action 23
+(16:37:30:808) --- ClearCache 1
+(16:37:30:847) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:37:30:854) --- Read test parameters from section FTP
+(16:37:30:859) --- Find test FTP. Selected mode - Put
+(16:37:30:864) --- Find test FTP. Selected mode - Get
+(16:37:30:868) --- Find test FTP. Selected mode - GetPut
+(16:37:30:874) --- Read test parameters from section Samba
+(16:37:30:880) --- Find test Samba. Selected mode - FromNas
+(16:37:30:885) --- Find test Samba. Selected mode - CopyToNas
+(16:37:30:891) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:37:30:896) --- Read test parameters from section HTTP
+(16:37:30:901) --- Find test HTTP. Selected mode - Get
+(16:37:30:906) --- Read test parameters from section Samba_IO
+(16:37:30:911) --- Find test Samba_IO. Selected mode - IOTest
+(16:37:30:917) --- Read test parameters from section Samba_NASPT
+(16:37:30:923) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:37:34:440) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:37:34:447) --- Errors 0
+(16:37:34:452) --- Program halted. Worktime - 4 seconds.
+(16:37:34:457) --- ------------------------------------------------------------------------
+(16:37:41:074) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810261
+(16:37:41:090) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:37:41:096) --- Script use different directory, not default — C:\NasTestScript
+(16:37:41:103) --- Admin check passed
+(16:37:41:108) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:37:41:115) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:37:41:121) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:37:41:138) --- Current loop 3
+(16:37:41:144) --- Total loops 25
+(16:37:41:148) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:37:41:154) --- Pause between each action 23
+(16:37:41:158) --- ClearCache 1
+(16:37:41:192) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:37:41:200) --- Read test parameters from section FTP
+(16:37:41:205) --- Find test FTP. Selected mode - Put
+(16:37:41:210) --- Find test FTP. Selected mode - Get
+(16:37:41:215) --- Find test FTP. Selected mode - GetPut
+(16:37:41:220) --- Read test parameters from section Samba
+(16:37:41:225) --- Find test Samba. Selected mode - FromNas
+(16:37:41:230) --- Find test Samba. Selected mode - CopyToNas
+(16:37:41:237) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:37:41:243) --- Read test parameters from section HTTP
+(16:37:41:248) --- Find test HTTP. Selected mode - Get
+(16:37:41:253) --- Read test parameters from section Samba_IO
+(16:37:41:258) --- Find test Samba_IO. Selected mode - IOTest
+(16:37:41:264) --- Read test parameters from section Samba_NASPT
+(16:37:41:270) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:37:42:860) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:37:42:866) --- Errors 0
+(16:37:42:870) --- Program halted. Worktime - 1 seconds.
+(16:37:42:875) --- ------------------------------------------------------------------------
+(16:37:48:234) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810268
+(16:37:48:250) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:37:48:255) --- Script use different directory, not default — C:\NasTestScript
+(16:37:48:261) --- Admin check passed
+(16:37:48:266) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:37:48:272) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:37:48:278) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:37:48:294) --- Current loop 3
+(16:37:48:299) --- Total loops 25
+(16:37:48:303) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:37:48:308) --- Pause between each action 23
+(16:37:48:312) --- ClearCache 1
+(16:37:48:344) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:37:48:352) --- Read test parameters from section FTP
+(16:37:48:357) --- Find test FTP. Selected mode - Put
+(16:37:48:361) --- Find test FTP. Selected mode - Get
+(16:37:48:366) --- Find test FTP. Selected mode - GetPut
+(16:37:48:371) --- Read test parameters from section Samba
+(16:37:48:376) --- Find test Samba. Selected mode - FromNas
+(16:37:48:381) --- Find test Samba. Selected mode - CopyToNas
+(16:37:48:386) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:37:48:392) --- Read test parameters from section HTTP
+(16:37:48:397) --- Find test HTTP. Selected mode - Get
+(16:37:48:402) --- Read test parameters from section Samba_IO
+(16:37:48:407) --- Find test Samba_IO. Selected mode - IOTest
+(16:37:48:413) --- Read test parameters from section Samba_NASPT
+(16:37:48:418) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:37:49:214) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:37:49:220) --- Errors 0
+(16:37:49:225) --- Program halted. Worktime - 1 seconds.
+(16:37:49:231) --- ------------------------------------------------------------------------
+(16:37:57:201) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810277
+(16:37:57:217) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:37:57:222) --- Script use different directory, not default — C:\NasTestScript
+(16:37:57:228) --- Admin check passed
+(16:37:57:232) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:37:57:239) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:37:57:245) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:37:57:263) --- Current loop 3
+(16:37:57:268) --- Total loops 25
+(16:37:57:272) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:37:57:278) --- Pause between each action 23
+(16:37:57:283) --- ClearCache 1
+(16:37:57:315) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:37:57:322) --- Read test parameters from section FTP
+(16:37:57:327) --- Find test FTP. Selected mode - Put
+(16:37:57:332) --- Find test FTP. Selected mode - Get
+(16:37:57:337) --- Find test FTP. Selected mode - GetPut
+(16:37:57:342) --- Read test parameters from section Samba
+(16:37:57:347) --- Find test Samba. Selected mode - FromNas
+(16:37:57:352) --- Find test Samba. Selected mode - CopyToNas
+(16:37:57:357) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:37:57:362) --- Read test parameters from section HTTP
+(16:37:57:367) --- Find test HTTP. Selected mode - Get
+(16:37:57:372) --- Read test parameters from section Samba_IO
+(16:37:57:378) --- Find test Samba_IO. Selected mode - IOTest
+(16:37:57:384) --- Read test parameters from section Samba_NASPT
+(16:37:57:389) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:37:58:772) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:37:58:778) --- Errors 0
+(16:37:58:783) --- Program halted. Worktime - 1 seconds.
+(16:37:58:789) --- ------------------------------------------------------------------------
+(16:38:08:052) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810288
+(16:38:08:066) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:38:08:072) --- Script use different directory, not default — C:\NasTestScript
+(16:38:08:078) --- Admin check passed
+(16:38:08:082) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:38:08:089) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:38:08:095) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:38:08:112) --- Current loop 3
+(16:38:08:117) --- Total loops 25
+(16:38:08:120) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:38:08:126) --- Pause between each action 23
+(16:38:08:132) --- ClearCache 1
+(16:38:08:165) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:38:08:172) --- Read test parameters from section FTP
+(16:38:08:178) --- Find test FTP. Selected mode - Put
+(16:38:08:183) --- Find test FTP. Selected mode - Get
+(16:38:08:189) --- Find test FTP. Selected mode - GetPut
+(16:38:08:194) --- Read test parameters from section Samba
+(16:38:08:199) --- Find test Samba. Selected mode - FromNas
+(16:38:08:204) --- Find test Samba. Selected mode - CopyToNas
+(16:38:08:211) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:38:08:216) --- Read test parameters from section HTTP
+(16:38:08:221) --- Find test HTTP. Selected mode - Get
+(16:38:08:226) --- Read test parameters from section Samba_IO
+(16:38:08:232) --- Find test Samba_IO. Selected mode - IOTest
+(16:38:08:237) --- Read test parameters from section Samba_NASPT
+(16:38:08:242) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:38:27:048) --- Start tests with ini C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:38:27:072) --- Errors 0
+(16:38:27:078) --- Program halted. Worktime - 19 seconds.
+(16:38:27:083) --- ------------------------------------------------------------------------
+(16:40:16:490) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810416
+(16:40:16:509) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:40:16:515) --- Script use different directory, not default — C:\NasTestScript
+(16:40:16:521) --- Admin check passed
+(16:40:16:525) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:40:16:532) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:40:16:538) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:40:16:554) --- Current loop 3
+(16:40:16:559) --- Total loops 25
+(16:40:16:563) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:40:16:568) --- Pause between each action 23
+(16:40:16:573) --- ClearCache 1
+(16:40:16:616) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:40:16:623) --- Read test parameters from section FTP
+(16:40:16:628) --- Find test FTP. Selected mode - Put
+(16:40:16:633) --- Find test FTP. Selected mode - Get
+(16:40:16:638) --- Find test FTP. Selected mode - GetPut
+(16:40:16:643) --- Read test parameters from section Samba
+(16:40:16:649) --- Find test Samba. Selected mode - FromNas
+(16:40:16:654) --- Find test Samba. Selected mode - CopyToNas
+(16:40:16:658) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:40:16:663) --- Read test parameters from section HTTP
+(16:40:16:669) --- Find test HTTP. Selected mode - Get
+(16:40:16:674) --- Read test parameters from section Samba_IO
+(16:40:16:681) --- Find test Samba_IO. Selected mode - IOTest
+(16:40:16:686) --- Read test parameters from section Samba_NASPT
+(16:40:16:692) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:40:18:189) --- Settings program started C:\Users\afanasmax\Documents\GitHub\NASTestScript\NTS_Settings.exe
+(16:40:22:389) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:40:22:395) --- Errors 0
+(16:40:22:404) --- Program halted. Worktime - 6 seconds.
+(16:40:22:410) --- ------------------------------------------------------------------------
+(16:41:05:334) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810465
+(16:41:05:350) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:41:05:357) --- Script use different directory, not default — C:\NasTestScript
+(16:41:05:363) --- Admin check passed
+(16:41:05:368) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:41:05:374) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:41:05:380) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:41:05:398) --- Current loop 3
+(16:41:05:404) --- Total loops 25
+(16:41:05:408) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:41:05:414) --- Pause between each action 23
+(16:41:05:419) --- ClearCache 1
+(16:41:05:456) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:41:05:463) --- Read test parameters from section FTP
+(16:41:05:468) --- Find test FTP. Selected mode - Put
+(16:41:05:474) --- Find test FTP. Selected mode - Get
+(16:41:05:479) --- Find test FTP. Selected mode - GetPut
+(16:41:05:486) --- Read test parameters from section Samba
+(16:41:05:491) --- Find test Samba. Selected mode - FromNas
+(16:41:05:496) --- Find test Samba. Selected mode - CopyToNas
+(16:41:05:502) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:41:05:508) --- Read test parameters from section HTTP
+(16:41:05:514) --- Find test HTTP. Selected mode - Get
+(16:41:05:519) --- Read test parameters from section Samba_IO
+(16:41:05:525) --- Find test Samba_IO. Selected mode - IOTest
+(16:41:05:530) --- Read test parameters from section Samba_NASPT
+(16:41:05:536) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:41:07:351) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:41:07:358) --- Errors 0
+(16:41:07:363) --- Program halted. Worktime - 2 seconds.
+(16:41:07:369) --- ------------------------------------------------------------------------
+(16:41:30:929) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810490
+(16:41:30:944) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:41:30:950) --- Script use different directory, not default — C:\NasTestScript
+(16:41:30:955) --- Admin check passed
+(16:41:30:960) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:41:30:966) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:41:30:972) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:41:30:988) --- Current loop 3
+(16:41:30:993) --- Total loops 25
+(16:41:30:997) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:41:31:002) --- Pause between each action 23
+(16:41:31:006) --- ClearCache 1
+(16:41:31:042) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:41:31:049) --- Read test parameters from section FTP
+(16:41:31:054) --- Find test FTP. Selected mode - Put
+(16:41:31:059) --- Find test FTP. Selected mode - Get
+(16:41:31:064) --- Find test FTP. Selected mode - GetPut
+(16:41:31:068) --- Read test parameters from section Samba
+(16:41:31:076) --- Find test Samba. Selected mode - FromNas
+(16:41:31:083) --- Find test Samba. Selected mode - CopyToNas
+(16:41:31:088) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:41:31:093) --- Read test parameters from section HTTP
+(16:41:31:098) --- Find test HTTP. Selected mode - Get
+(16:41:31:103) --- Read test parameters from section Samba_IO
+(16:41:31:108) --- Find test Samba_IO. Selected mode - IOTest
+(16:41:31:114) --- Read test parameters from section Samba_NASPT
+(16:41:31:119) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:41:36:074) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:41:36:081) --- Errors 0
+(16:41:36:086) --- Program halted. Worktime - 6 seconds.
+(16:41:36:096) --- ------------------------------------------------------------------------
+(16:47:41:143) --- Program started (NasTestScript.au3). UnixTimeStamp 1361810861
+(16:47:41:158) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(16:47:41:164) --- Script use different directory, not default — C:\NasTestScript
+(16:47:41:170) --- Admin check passed
+(16:47:41:174) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(16:47:41:181) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(16:47:41:187) --- INI file found — C:\Users\afanasmax\Documents\GitHub\NASTestScript\settings.ini
+(16:47:41:204) --- Current loop 3
+(16:47:41:209) --- Total loops 25
+(16:47:41:213) --- Choosen tests FTP|Samba|HTTP|Samba_IO|Samba_NASPT
+(16:47:41:218) --- Pause between each action 23
+(16:47:41:223) --- ClearCache 1
+(16:47:41:256) --- Ini file already created C:\Users\afanasmax\Documents\GitHub\NASTestScript\Results\tests.ini
+(16:47:41:263) --- Read test parameters from section FTP
+(16:47:41:268) --- Find test FTP. Selected mode - Put
+(16:47:41:273) --- Find test FTP. Selected mode - Get
+(16:47:41:279) --- Find test FTP. Selected mode - GetPut
+(16:47:41:284) --- Read test parameters from section Samba
+(16:47:41:289) --- Find test Samba. Selected mode - FromNas
+(16:47:41:294) --- Find test Samba. Selected mode - CopyToNas
+(16:47:41:300) --- Find test Samba. Selected mode - CopyFromAndTo
+(16:47:41:305) --- Read test parameters from section HTTP
+(16:47:41:311) --- Find test HTTP. Selected mode - Get
+(16:47:41:316) --- Read test parameters from section Samba_IO
+(16:47:41:321) --- Find test Samba_IO. Selected mode - IOTest
+(16:47:41:327) --- Read test parameters from section Samba_NASPT
+(16:47:41:333) --- Find test Samba_NASPT. Selected mode - NASPTRun
+(16:47:47:878) --- Main GUI destroyed — 1. Test settings didn`t apply.
+(16:47:47:885) --- Errors 0
+(16:47:47:889) --- Program halted. Worktime - 6 seconds.
+(16:47:47:895) --- ------------------------------------------------------------------------

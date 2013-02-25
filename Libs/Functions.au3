@@ -58,7 +58,7 @@
       history ("The system is halting. Reason - " & $halt_option)
 	  Switch $halt_option
 	  Case "reboot"
-   		 ;Shutdown(6)
+   		 Shutdown(6)
 	  Case "sleep"
 		 Shutdown(32) ; 32+4 not working
 	  Case "hibernate"

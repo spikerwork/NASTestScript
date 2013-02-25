@@ -17,10 +17,10 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.2.9
+#AutoIt3Wrapper_Res_Fileversion=0.1.3.2
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
-#AutoIt3Wrapper_Res_Field=ProductVersion|0.1.2.x
+#AutoIt3Wrapper_Res_Field=ProductVersion|0.1.3.x
 #AutoIt3Wrapper_Res_Field=OriginalFilename|NTS_Samba_UD.au3
 #AutoIt3Wrapper_Run_AU3Check=n
 #AutoIt3Wrapper_Res_Language=2057

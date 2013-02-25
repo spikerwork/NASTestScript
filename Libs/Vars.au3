@@ -140,8 +140,20 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $NTS_SettingsFormBackgroundColor=IniRead($inifile, "All", "SettingsFormBackgroundColor", 0xE2EEEF)
 	Global $NTS_SettingsFormBadBackgroundColor=IniRead($inifile, "All", "SettingsFormBadBackgroundColor", 0xeac4c4)
 	Global $NTS_SettingsFormBadFontColor=IniRead($inifile, "All", "SettingsFormBadFontColor", 0x000000)
-	Global $NTS_SettingsFormGroupFont=IniRead($inifile, "All", "FormGroupFont", "Tahoma")
-	Global $NTS_SettingsFormMainFont=IniRead($inifile, "All", "FormMainFont", "Tahoma")
+	Global $NTS_SettingsFormGroupFont=IniRead($inifile, "All", "SettingsFormGroupFont", "Tahoma")
+	Global $NTS_SettingsFormMainFont=IniRead($inifile, "All", "SettingsFormMainFont", "Tahoma")
+
+
+	; NTS main GUI vars
+	Global $NTS_FormWidth=IniRead($inifile, "All", "FormWidth", 600)
+	Global $NTS_FormHeight=IniRead($inifile, "All", "FormHeight", 500)
+	Global $NTS_FormBackgroundColor=IniRead($inifile, "All", "FormBackgroundColor", 0xFFF6E9)
+	Global $NTS_FormBadBackgroundColor=IniRead($inifile, "All", "FormBadBackgroundColor", 0xeac4c4)
+	Global $NTS_FormBadFontColor=IniRead($inifile, "All", "FormBadFontColor", 0x000000)
+	Global $NTS_FormGroupFont=IniRead($inifile, "All", "FormGroupFont", "Tahoma")
+	Global $NTS_FormMainFont=IniRead($inifile, "All", "FormMainFont", "Tahoma")
+
+	Global $NTS_ButtonPushedColor=IniRead($inifile, "All", "ButtonPushedColor", 0xEFEFEF)
 
 	; Run settings
 	Global $ClientPause = IniRead($testsini, "Runs", "ClientPause", 10 ) ; Default pause between actions
