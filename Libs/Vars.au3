@@ -55,6 +55,7 @@ Global $FilesArray[9]=[$NTS, $NTS_Settings, $NTS_Ftp, $NTS_Samba, $NTS_Test, $NT
 
 ; Tests
 Global $NTS_Tests[6]=["FTP", "Samba", "HTTP", "Samba_NASPT", "Samba_IO", "iSCSI_IO"]
+Global $NTS_Tests_All[10]=["FTP|Put", "FTP|Get", "FTP|GetPut", "Samba|FromNas", "Samba|CopyToNas", "Samba|CopyFromAndTo", "HTTP|Get", "Samba_NASPT|NASPTRun", "Samba_IO|IOTest", "iSCSI_IO|IOTest"]
 
 	;;;
 	;;; Other global vars ;;;
@@ -156,8 +157,8 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $NTS_ButtonPushedColor=IniRead($inifile, "All", "ButtonPushedColor", 0xEFEFEF)
 
 	; Run settings
-	Global $ClientPause = IniRead($testsini, "Runs", "ClientPause", 10 ) ; Default pause between actions
-	Global $ClearCache = IniRead($testsini, "Runs", "ClearCache", 0 ) ; Default clear cache (Prefetch) before each test
+	Global $ClientPause = IniRead($testsini, "Runs", "ClientPause", 15 ) ; Default pause between actions
+	Global $ClearCache = IniRead($testsini, "Runs", "ClearCache", 1 ) ; Default clear cache (Prefetch) before each test
 	Global $Current_Loop = IniRead($testsini, "Runs", "LoopNumber", 0) ; Current loop number, refers to $Number_of_loops
 	Global $Number_of_loops = IniRead($testsini, "Runs", "Loops", 5) ; Number of total loops of each test
 	Global $Current_Tests = IniRead($testsini, "Runs", "Tests", _ArrayToString($NTS_Tests, "|")) ; List of current tests to run

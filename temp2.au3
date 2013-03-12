@@ -1,13 +1,10 @@
+Local $sString
+If Assign("sString", "Hello") Then MsgBox(4096, "Assign", $sString) ; This will print the text "Hello"
 
-#include <Array.au3>
 
-Local $avArray[20]
 
-; Populate test array.
-For $i = 0 To UBound($avArray) - 1
-    $avArray[$i] = Random(-20000, 20000, 1)
-Next
+Local $a_b = 12
+Local $s = Eval("a" & "_" & "b") ; $s is set to 12
 
-_ArrayDisplay($avArray, "$avArray")
+$s = Eval("c") ; $s = "" and @error = 1
 
-MsgBox(0, "_ArrayToString() getting $avArray items 1 to 7", _ArrayToString($avArray, @TAB, 1, 7))

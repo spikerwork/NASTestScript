@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.3.4
+#AutoIt3Wrapper_Res_Fileversion=0.1.3.6
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.3.x
@@ -33,12 +33,14 @@
 #include "Libs\head.au3"
 
 Dim $Current_Tests_array ; Array with tests
-Local $t=0, $i, $l=0
+Local $t=0, $i, $l=0, $q=0
 $Current_Tests_array = _StringExplode($Current_Tests, "|", 0) ; Tests to run
+
+If FileExists($testsini) Then history("Ini file already created " & $testsini)
 
 history("Current loop " & $Current_Loop)
 history("Total loops " & $Number_of_loops)
-history("Choosen tests " & $Current_Tests)
+history("Current tests " & $Current_Tests)
 history("Pause between each action " & $ClientPause)
 history("ClearCache " & $ClearCache)
 
@@ -49,19 +51,31 @@ Local $SAMBA_Group
 Local $FTP_Group
 Local $Other_Group
 Local $Run_Group
-Local $FTP_Download_ctrl
-Local $FTP_Upload_ctrl
-Local $FTP_UpDown_ctrl
-Local $Samba_Download_ctrl
-Local $Samba_Upload_ctrl
-Local $Samba_UpDown_ctrl
-Local $HTTP_Download_ctrl
-Local $Samba_IO_ctrl
-Local $Samba_NASPT_ctrl
-Local $iSCSI_IO_ctrl
+Dim $Tests_array
+
+;;; These vars important
+Local $FTP_Put_ctrl
+Local $FTP_Get_ctrl
+Local $FTP_GetPut_ctrl
+
+Local $Samba_FromNas_ctrl
+Local $Samba_CopyToNas_ctrl
+Local $Samba_CopyFromAndTo_ctrl
+
+Local $HTTP_Get_ctrl
+
+Local $Samba_IO_IOTest_ctrl
+
+Local $Samba_NASPT_NASPTRun_ctrl
+
+Local $iSCSI_IO_IOTest_ctrl
+;;;;
+
+
 Local $Cache_ctrl
 Local $Testruns_ctrl
 Local $Pause_ctrl
+Local $Selected_tests[1] ; Array with tests from ini
 
 ; Buttons
 Local $StartButton ; Start test button
@@ -93,12 +107,9 @@ $FTP_Group = GUICtrlCreateGroup("FTP", 10, 50, $NTS_FormWidth*0.45, $NTS_FormHei
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($FTP_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_FormGroupFont)
 
-$FTP_Download_ctrl=GUICtrlCreateCheckbox("Download", 20, $NTS_FormHeight*0.17, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
-$FTP_Upload_ctrl=GUICtrlCreateCheckbox("Upload", 20, $NTS_FormHeight*0.26, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
-$FTP_UpDown_ctrl=GUICtrlCreateCheckbox("Download + Upload", 20, $NTS_FormHeight*0.35, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
+$FTP_Put_ctrl=GUICtrlCreateCheckbox("Download", 20, $NTS_FormHeight*0.17, 200, 20)
+$FTP_Get_ctrl=GUICtrlCreateCheckbox("Upload", 20, $NTS_FormHeight*0.26, 200, 20)
+$FTP_GetPut_ctrl=GUICtrlCreateCheckbox("Download + Upload", 20, $NTS_FormHeight*0.35, 200, 20)
 
 GUICtrlCreateGroup("", -99, -99, 1, 1)
 
@@ -110,12 +121,9 @@ $SAMBA_Group = GUICtrlCreateGroup("SAMBA/CIFS", $NTS_FormWidth*0.50, 50, $NTS_Fo
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($SAMBA_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_FormGroupFont)
 
-$Samba_Download_ctrl=GUICtrlCreateCheckbox("Download", $NTS_FormWidth*0.52, $NTS_FormHeight*0.17, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
-$Samba_Upload_ctrl=GUICtrlCreateCheckbox("Upload", $NTS_FormWidth*0.52, $NTS_FormHeight*0.26, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
-$Samba_UpDown_ctrl=GUICtrlCreateCheckbox("Download + Upload", $NTS_FormWidth*0.52, $NTS_FormHeight*0.35, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
+$Samba_FromNas_ctrl=GUICtrlCreateCheckbox("Download", $NTS_FormWidth*0.52, $NTS_FormHeight*0.17, 200, 20)
+$Samba_CopyToNas_ctrl=GUICtrlCreateCheckbox("Upload", $NTS_FormWidth*0.52, $NTS_FormHeight*0.26, 200, 20)
+$Samba_CopyFromAndTo_ctrl=GUICtrlCreateCheckbox("Download + Upload", $NTS_FormWidth*0.52, $NTS_FormHeight*0.35, 200, 20)
 
 GUICtrlCreateGroup("", -99, -99, 1, 1)
 
@@ -128,15 +136,11 @@ $Other_Group = GUICtrlCreateGroup("Other Tests", 10, $NTS_FormHeight*0.50, $NTS_
 	DllCall("UxTheme.dll", "int", "SetWindowTheme", "hwnd", GUICtrlGetHandle($Other_Group), "wstr", 0, "wstr", 0) ; Skip current windows theme for group element
 	GUICtrlSetFont(-1, $Current_DPI[1]+1, $Current_DPI[2]+400, 0, $NTS_FormGroupFont)
 
-$HTTP_Download_ctrl=GUICtrlCreateCheckbox("HTTP", 20, $NTS_FormHeight*0.57, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
-$Samba_IO_ctrl=GUICtrlCreateCheckbox("Samba IOmeter", 20, $NTS_FormHeight*0.64, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
-$Samba_NASPT_ctrl=GUICtrlCreateCheckbox("Samba NASPT", 20, $NTS_FormHeight*0.71, 200, 20)
-GUICtrlSetState(-1, $GUI_CHECKED)
-$iSCSI_IO_ctrl=GUICtrlCreateCheckbox("iSCSI IOmeter", 20, $NTS_FormHeight*0.78, 200, 20)
-GUICtrlSetState(-1, $GUI_DISABLE)
-
+$HTTP_Get_ctrl=GUICtrlCreateCheckbox("HTTP", 20, $NTS_FormHeight*0.57, 200, 20)
+$Samba_IO_IOTest_ctrl=GUICtrlCreateCheckbox("Samba IOmeter", 20, $NTS_FormHeight*0.64, 200, 20)
+$Samba_NASPT_NASPTRun_ctrl=GUICtrlCreateCheckbox("Samba NASPT", 20, $NTS_FormHeight*0.71, 200, 20)
+$iSCSI_IO_IOTest_ctrl=GUICtrlCreateCheckbox("iSCSI IOmeter", 20, $NTS_FormHeight*0.78, 200, 20)
+GUICtrlSetState(-1, $GUI_DISABLE) ; Unsupported now
 
 GUICtrlCreateGroup("", -99, -99, 1, 1)
 
@@ -194,12 +198,10 @@ Func Check_ini()
 	EndIf
 EndFunc
 
-AdlibRegister("Check_ini", 2000) ; Find ini-file ($inifile) with settings
+AdlibRegister("Check_ini", 2000) ; Find ini-file ($inifile) with settings for NTS_settings.exe
 
 ; Read selected tests from ini if it exist. Apply this parms to GUI elements.
 If FileExists($testsini) Then
-
-	history("Ini file already created " & $testsini)
 
 	While $t <= UBound($Current_Tests_array)-1
 
@@ -216,7 +218,10 @@ If FileExists($testsini) Then
 			Else
 
 				history("Find test " & $Current_Tests_array[$t] & ". Selected mode - " & $var[$i][0])
+				_ArrayAdd($Selected_tests, $Current_Tests_array[$t] & "_" & $var[$i][0])
+				GUICtrlSetState(Eval($Current_Tests_array[$t] & "_" & $var[$i][0] & "_ctrl"), $GUI_CHECKED) ; Check the box, if test found
 
+			$q+=1
 			EndIf
 
 			Next
@@ -226,6 +231,25 @@ If FileExists($testsini) Then
 		$var=0 ; Clear array
 		$t+=1 ; Raise loop
 	WEnd
+
+	_ArrayDelete($Selected_tests, 0)
+	_ArrayInsert($Selected_tests, 0, $q)
+
+Else
+
+	; Create a new array with tests
+
+	For $q = 0 To UBound($NTS_Tests_All)-1
+
+		If $NTS_Tests_All[$q]<>$NTS_Tests_All[9] Then
+
+			_ArrayAdd($Selected_tests, $NTS_Tests_All[$q]) ; By default select all checkboxes, beside iSCSI_IO_IOTest
+			history("Find test " & $NTS_Tests_All[$q])
+			GUICtrlSetState(Eval(StringReplace($NTS_Tests_All[$q], "|", "_") & "_ctrl"), $GUI_CHECKED)
+
+		EndIf
+
+	Next
 
 EndIf
 
@@ -237,15 +261,70 @@ GUISetState()
 ;
 
 While 1
-	;Sleep(2000)
+
 	Switch GUIGetMsg()
 
 	; Run tests
 	Case $StartButton
 
+
 		history("Start tests with ini " & $testsini)
+
+		FileDelete($testsini)
+		;
+		;IniWrite
+
+		For $q = 0 To UBound($NTS_Tests_All)-1
+
+			If $NTS_Tests_All[$q]<>$NTS_Tests_All[9] Then
+
+
+				$Tests_array = _StringExplode($NTS_Tests_All[$q], "|", 0) ; Tests to run
+
+					If (BitAnd(GUICtrlRead(Eval(StringReplace($NTS_Tests_All[$q], "|", "_") & "_ctrl")), $GUI_CHECKED)) = $GUI_CHECKED Then
+
+
+						IniWrite($testsini, $Tests_array[0], "Clear", 0)
+						IniWrite($testsini, $Tests_array[0], "Prepare", 0)
+						IniWrite($testsini, $Tests_array[0], $Tests_array[1], 0)
+						history("Write test to ini - " & $NTS_Tests_All[$q])
+
+
+					EndIf
+
+			EndIf
+
+		Next
+
+		$Selected_tests="" ; Clear var
+
+		$Tests_array=IniReadSectionNames($testsini)
+		If @error Then
+
+			history("Not selected at all! bye idiot!")
+			Exit
+
+		Else
+
+			For $i = 1 To $Tests_array[0]
+				$Selected_tests=$Selected_tests & "|" & $Tests_array[$i]
+			Next
+
+			$Selected_tests=StringMid($Selected_tests,2,StringLen($Selected_tests)-1)
+			history("Selected tests " & $Selected_tests )
+
+			IniWrite($testsini, "Runs", "Tests", $Selected_tests)
+			IniWrite($testsini, "Runs", "Loops", GUICtrlRead($Testruns_ctrl))
+			IniWrite($testsini, "Runs", "LoopNumber", 0)
+			IniWrite($testsini, "Runs", "ClearCache", GUICtrlRead($Cache_ctrl))
+			IniWrite($testsini, "Runs", "ClientPause", GUICtrlRead($Pause_ctrl))
+
+		EndIf
+
 		FileCreateShortcut ($ScriptFolder & "\" & $NTS_Test, @StartupCommonDir & "\NTS_Test.lnk")
-		;halt("reboot")
+
+		halt("reboot")
+
 		ExitLoop
 
 	; Run set settings file
