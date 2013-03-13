@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.3.6
+#AutoIt3Wrapper_Res_Fileversion=0.1.3.10
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.3.x
@@ -35,15 +35,6 @@
 Dim $Current_Tests_array ; Array with tests
 Local $t=0, $i, $l=0, $q=0
 $Current_Tests_array = _StringExplode($Current_Tests, "|", 0) ; Tests to run
-
-If FileExists($testsini) Then history("Ini file already created " & $testsini)
-
-history("Current loop " & $Current_Loop)
-history("Total loops " & $Number_of_loops)
-history("Current tests " & $Current_Tests)
-history("Pause between each action " & $ClientPause)
-history("ClearCache " & $ClearCache)
-
 
 ; Gui vars
 Local $mainGui
@@ -200,8 +191,13 @@ EndFunc
 
 AdlibRegister("Check_ini", 2000) ; Find ini-file ($inifile) with settings for NTS_settings.exe
 
+
 ; Read selected tests from ini if it exist. Apply this parms to GUI elements.
+
+
 If FileExists($testsini) Then
+
+	history("Ini file already created " & $testsini)
 
 	While $t <= UBound($Current_Tests_array)-1
 
@@ -236,7 +232,7 @@ If FileExists($testsini) Then
 	_ArrayInsert($Selected_tests, 0, $q)
 
 Else
-
+	history("Ini file not found " & $testsini)
 	; Create a new array with tests
 
 	For $q = 0 To UBound($NTS_Tests_All)-1
@@ -244,7 +240,7 @@ Else
 		If $NTS_Tests_All[$q]<>$NTS_Tests_All[9] Then
 
 			_ArrayAdd($Selected_tests, $NTS_Tests_All[$q]) ; By default select all checkboxes, beside iSCSI_IO_IOTest
-			history("Find test " & $NTS_Tests_All[$q])
+			history("Enable default test " & $NTS_Tests_All[$q])
 			GUICtrlSetState(Eval(StringReplace($NTS_Tests_All[$q], "|", "_") & "_ctrl"), $GUI_CHECKED)
 
 		EndIf
@@ -253,6 +249,11 @@ Else
 
 EndIf
 
+history("Current loop " & $Current_Loop)
+history("Total loops " & $Number_of_loops)
+history("Current tests " & $Current_Tests)
+history("Pause between each action " & $ClientPause)
+history("ClearCache " & $ClearCache)
 
 GUISetState()
 
@@ -268,10 +269,10 @@ While 1
 	Case $StartButton
 
 
-		history("Start tests with ini " & $testsini)
+		history("Create new testini " & $testsini)
 
-		FileDelete($testsini)
-		;
+		if FileExists ($testsini) Then FileDelete($testsini)
+
 		;IniWrite
 
 		For $q = 0 To UBound($NTS_Tests_All)-1
@@ -283,12 +284,10 @@ While 1
 
 					If (BitAnd(GUICtrlRead(Eval(StringReplace($NTS_Tests_All[$q], "|", "_") & "_ctrl")), $GUI_CHECKED)) = $GUI_CHECKED Then
 
-
 						IniWrite($testsini, $Tests_array[0], "Clear", 0)
 						IniWrite($testsini, $Tests_array[0], "Prepare", 0)
 						IniWrite($testsini, $Tests_array[0], $Tests_array[1], 0)
-						history("Write test to ini - " & $NTS_Tests_All[$q])
-
+						history("Add test to ini - " & $NTS_Tests_All[$q])
 
 					EndIf
 
@@ -323,6 +322,7 @@ While 1
 
 		FileCreateShortcut ($ScriptFolder & "\" & $NTS_Test, @StartupCommonDir & "\NTS_Test.lnk")
 
+		PauseTime(15)
 		halt("reboot")
 
 		ExitLoop

@@ -36,6 +36,27 @@ Else
 
 EndIf
 
+While $F_arra <= Ubound($FilesArray)-1
+
+		If FileExists($ScriptFolder & "\" & $FilesArray[$F_arra])==1 Then
+			history ("Exe file found — " & $FilesArray[$F_arra])
+			$ScriptInstalled=1
+			$filesinfolder+=1
+		EndIf
+
+	$F_arra+=1
+
+WEnd
+
+If $filesinfolder<>$F_arra Then
+	MsgBox(0, "Warning.", "Some files not found. Reinstall Script")
+	history ("Some files not found. Reinstall Script. Found only " & $filesinfolder & " of " & $F_arra)
+	;If FileExists($ScriptFolder & "\" & $WakeInstall) Then Run($ScriptFolder & "\" & $WakeInstall, $ScriptFolder)
+	Exit
+Else
+	history ("All script files present. Found " & $filesinfolder & " of " & $F_arra)
+EndIf
+
 
 ;;;
 ;;; Tray settings

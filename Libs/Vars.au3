@@ -28,8 +28,8 @@ Global $DefaultScriptFolder=@HomeDrive & "\" & $ScriptName ; Default script dire
 Global $ScriptFolder=@ScriptDir ; Script directory
 
 ; Ini files
-Global $inifile = $ScriptFolder & "\" & "settings.ini" ; Main settings of scipt
 Global $resultfolder = "Results"
+Global $inifile = $ScriptFolder & "\" & $resultfolder & "\" & "settings.ini" ; Main settings of scipt
 Global $resultini = $ScriptFolder & "\" & $resultfolder & "\" & "result.ini" ; Results
 Global $testsini = $ScriptFolder & "\" & $resultfolder & "\" & "tests.ini" ; Tests setup
 
@@ -122,6 +122,7 @@ Global $Current_DPI ; DPI of Windows desktop. relative to function CheckDPI()
 	Global $App_HTTP_getlog = IniRead($inifile, "Application", "HTTP_Tool_getlog", "HTTP_get.txt" ) ; HTTP get log
 	Global $App_NASPT = IniRead($inifile, "Application", "NASPT_Tool", "NASPerf.exe" ) ; NASPT exe for test Samba
 	Global $App_NASPT_csv = IniRead($inifile, "Application", "NASPT_Tool_csv", "NASPerf-APP.csv" ) ; NASPT csv file with results
+	Global $NASName="NASPT" ; Name of folder.. maybe enjoy it in future by adding name of each test
 	If @OSArch=="X64" then Global $App_NASPT_folder = IniRead($inifile, "Application", "NASPT_Tool_folder", "C:\Program Files (x86)\Intel\NASPT" ) ; Folder with IOmeter for test Samba/iSCSI
 	If @OSArch=="X86" then Global $App_NASPT_folder = IniRead($inifile, "Application", "NASPT_Tool_folder", "C:\Program Files\Intel\NASPT" ) ; Folder with IOmeter for test Samba/iSCSI
 

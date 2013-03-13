@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.3.5
+#AutoIt3Wrapper_Res_Fileversion=0.1.3.8
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.3.x
@@ -40,7 +40,7 @@ AdlibRegister("NASPT_windows",1000) ; Catch emerging windows from NASPT
 Local $TestResult ; Result of test
 Local $NASPTRun=$App_NASPT_folder & "\" & $App_NASPT ; Exe file of NASPT
 Local $PathToSambaFolder ; Folder wich will contains test files on NAS
-Local $NASName="NASPT" ; Name of folder.. maybe enjoy it in future by adding name of wich test
+
 Dim $Folders_array ;
 
 Local $line, $result, $file ; Some local vars, needed to store results.

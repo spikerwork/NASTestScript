@@ -17,7 +17,7 @@
 #AutoIt3Wrapper_Icon=nas.ico
 #AutoIt3Wrapper_Res_Comment="Nas Test Script"
 #AutoIt3Wrapper_Res_Description="Nas Test Script"
-#AutoIt3Wrapper_Res_Fileversion=0.1.3.5
+#AutoIt3Wrapper_Res_Fileversion=0.1.3.9
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=y
 #AutoIt3Wrapper_Res_Field=ProductName|Nas Test Script
 #AutoIt3Wrapper_Res_Field=ProductVersion|0.1.3.x
@@ -67,7 +67,21 @@ history("Check NAS availability pass on checkrun - " & $l)
 If $Current_Loop>=$Number_of_loops Then
 
 	history("Test finished. Run results ")
+
+	; Clear temp folders and files
+
+	If DirGetSize($ScriptFolder & "\" & $Temp_Folder) <> -1 Then DirRemove( $ScriptFolder & "\" & $Temp_Folder)
+	history($ScriptFolder & "\" & $Temp_Folder & " cleared")
+
+	If DirGetSize($ScriptFolder & "\" & $resultfolder & "\" & $NASName) <> -1 Then DirRemove($ScriptFolder & "\" & $resultfolder & "\" & $NASName)
+	history($ScriptFolder & "\" & $NASName & " cleared")
+
+	If $ClearCache==1 Then Prepare(1) ; If ClearCache enabled, run this function before test prepare
+
+	FileDelete(@StartupCommonDir & "\NTS_Test.lnk")
+
 	MsgBox(0, "Finish", "All tests done.")
+
 	Exit
 
 Else
@@ -149,7 +163,7 @@ EndIf
 	; All tests finished?
 	If $TestsUnDone==0 Then
 		history("Tests finished. Increasing LoopNumber ")
-		IniWrite($testsini,"Runs","LoopNumber",$Current_Loop+1)
+		IniWrite($testsini,"Runs","LoopNumber", $Current_Loop+1)
 		$t=0
 		$i=0
 
