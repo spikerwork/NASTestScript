@@ -1,0 +1,166 @@
+(10:25:52:346) --- Program started (NTS_Test.exe). UnixTimeStamp 1364207152
+(10:25:52:351) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(10:25:52:351) --- Script use different directory, not default — C:\NasTestScript
+(10:25:52:354) --- Admin check passed
+(10:25:52:354) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(10:25:52:357) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(10:25:52:357) --- INI file not found, use default vars
+(10:25:52:365) --- Exe file found — NasTestScript.exe
+(10:25:52:369) --- Exe file found — NTS_Settings.exe
+(10:25:52:372) --- Exe file found — NTS_Ftp.exe
+(10:25:52:375) --- Exe file found — NTS_Samba.exe
+(10:25:52:376) --- Exe file found — NTS_Test.exe
+(10:25:52:379) --- Exe file found — NTS_HTTP.exe
+(10:25:52:382) --- Exe file found — NTS_Samba_UD.exe
+(10:25:52:386) --- Exe file found — NTS_Samba_IO.exe
+(10:25:52:389) --- Exe file found — NTS_Samba_NASPT.exe
+(10:25:52:390) --- All script files present. Found 9 of 9
+(10:25:55:238) --- Current loop 0
+(10:25:55:239) --- Total loops 5
+(10:25:55:239) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(10:25:55:239) --- Pause between each action 15
+(10:25:55:239) --- Pause func triggered. Pause time - 35
+(10:29:17:411) --- Program started (NTS_Test.exe). UnixTimeStamp 1364207357
+(10:29:17:437) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(10:29:17:437) --- Script use different directory, not default — C:\NasTestScript
+(10:29:17:441) --- Admin check passed
+(10:29:17:442) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(10:29:17:443) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(10:29:17:444) --- INI file not found, use default vars
+(10:29:17:451) --- Exe file found — NasTestScript.exe
+(10:29:17:453) --- Exe file found — NTS_Settings.exe
+(10:29:17:456) --- Exe file found — NTS_Ftp.exe
+(10:29:17:458) --- Exe file found — NTS_Samba.exe
+(10:29:17:458) --- Exe file found — NTS_Test.exe
+(10:29:17:461) --- Exe file found — NTS_HTTP.exe
+(10:29:17:463) --- Exe file found — NTS_Samba_UD.exe
+(10:29:17:466) --- Exe file found — NTS_Samba_IO.exe
+(10:29:17:467) --- Exe file found — NTS_Samba_NASPT.exe
+(10:29:17:467) --- All script files present. Found 9 of 9
+(10:29:19:920) --- Current loop 0
+(10:29:19:920) --- Total loops 5
+(10:29:19:921) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(10:29:19:921) --- Pause between each action 15
+(10:29:19:921) --- Pause func triggered. Pause time - 35
+(10:35:47:258) --- Program started (NTS_Test.exe). UnixTimeStamp 1364207747
+(10:35:47:266) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(10:35:47:266) --- Script use different directory, not default — C:\NasTestScript
+(10:35:47:271) --- Admin check passed
+(10:35:47:272) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(10:35:47:275) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(10:35:47:275) --- INI file not found, use default vars
+(10:35:47:286) --- Exe file found — NasTestScript.exe
+(10:35:47:288) --- Exe file found — NTS_Settings.exe
+(10:35:47:291) --- Exe file found — NTS_Ftp.exe
+(10:35:47:296) --- Exe file found — NTS_Samba.exe
+(10:35:47:296) --- Exe file found — NTS_Test.exe
+(10:35:47:301) --- Exe file found — NTS_HTTP.exe
+(10:35:47:306) --- Exe file found — NTS_Samba_UD.exe
+(10:35:47:312) --- Exe file found — NTS_Samba_IO.exe
+(10:35:47:318) --- Exe file found — NTS_Samba_NASPT.exe
+(10:35:47:318) --- All script files present. Found 9 of 9
+(10:35:49:435) --- Current loop 0
+(10:35:49:435) --- Total loops 5
+(10:35:49:436) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(10:35:49:436) --- Pause between each action 15
+(10:35:49:436) --- Pause func triggered. Pause time - 35
+(12:13:26:421) --- Program started (NTS_Test.exe). UnixTimeStamp 1364645606
+(12:13:26:427) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(12:13:26:428) --- Script use different directory, not default — C:\NasTestScript
+(12:13:26:434) --- Admin check passed
+(12:13:26:436) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(12:13:26:440) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(12:13:26:442) --- INI file not found, use default vars
+(12:13:26:444) --- Exe file found — NasTestScript.exe
+(12:13:26:445) --- Exe file found — NTS_Settings.exe
+(12:13:26:446) --- Exe file found — NTS_Ftp.exe
+(12:13:26:447) --- Exe file found — NTS_Samba.exe
+(12:13:26:447) --- Exe file found — NTS_Test.exe
+(12:13:26:449) --- Exe file found — NTS_HTTP.exe
+(12:13:26:452) --- Exe file found — NTS_Samba_UD.exe
+(12:13:26:453) --- Exe file found — NTS_Samba_IO.exe
+(12:13:26:456) --- Exe file found — NTS_Samba_NASPT.exe
+(12:13:26:456) --- All script files present. Found 9 of 9
+(12:13:30:512) --- Current loop 0
+(12:13:30:513) --- Total loops 5
+(12:13:30:514) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(12:13:30:514) --- Pause between each action 15
+(12:13:30:515) --- Pause func triggered. Pause time - 35
+(12:48:41:322) --- Program started (NTS_Test.exe). UnixTimeStamp 1364647721
+(12:48:41:336) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(12:48:41:336) --- Script use different directory, not default — C:\NasTestScript
+(12:48:41:341) --- Admin check passed
+(12:48:41:341) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(12:48:41:345) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(12:48:41:345) --- INI file not found, use default vars
+(12:48:41:348) --- Exe file found — NasTestScript.exe
+(12:48:41:350) --- Exe file found — NTS_Settings.exe
+(12:48:41:353) --- Exe file found — NTS_Ftp.exe
+(12:48:41:357) --- Exe file found — NTS_Samba.exe
+(12:48:41:357) --- Exe file found — NTS_Test.exe
+(12:48:41:360) --- Exe file found — NTS_HTTP.exe
+(12:48:41:363) --- Exe file found — NTS_Samba_UD.exe
+(12:48:41:368) --- Exe file found — NTS_Samba_IO.exe
+(12:48:41:372) --- Exe file found — NTS_Samba_NASPT.exe
+(12:48:41:372) --- All script files present. Found 9 of 9
+(12:48:45:057) --- Current loop 0
+(12:48:45:057) --- Total loops 5
+(12:48:45:058) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(12:48:45:058) --- Pause between each action 15
+(12:48:45:059) --- Pause func triggered. Pause time - 35
+(13:10:07:128) --- Program started (NTS_Test.exe). UnixTimeStamp 1364649007
+(13:10:07:135) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(13:10:07:137) --- Script use different directory, not default — C:\NasTestScript
+(13:10:07:140) --- Admin check passed
+(13:10:07:140) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(13:10:07:144) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(13:10:07:144) --- INI file not found, use default vars
+(13:10:07:147) --- Exe file found — NasTestScript.exe
+(13:10:07:152) --- Exe file found — NTS_Settings.exe
+(13:10:07:154) --- Exe file found — NTS_Ftp.exe
+(13:10:07:158) --- Exe file found — NTS_Samba.exe
+(13:10:07:158) --- Exe file found — NTS_Test.exe
+(13:10:07:162) --- Exe file found — NTS_HTTP.exe
+(13:10:07:165) --- Exe file found — NTS_Samba_UD.exe
+(13:10:07:167) --- Exe file found — NTS_Samba_IO.exe
+(13:10:07:170) --- Exe file found — NTS_Samba_NASPT.exe
+(13:10:07:170) --- All script files present. Found 9 of 9
+(13:10:09:970) --- Current loop 0
+(13:10:09:970) --- Total loops 5
+(13:10:09:971) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(13:10:09:971) --- Pause between each action 15
+(13:10:09:971) --- Pause func triggered. Pause time - 35
+(13:10:50:735) --- Check failed on - 1. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:10:56:276) --- Check failed on - 2. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:01:818) --- Check failed on - 3. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:07:359) --- Check failed on - 4. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:12:901) --- Check failed on - 5. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:18:444) --- Check failed on - 6. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:23:983) --- Check failed on - 7. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:29:525) --- Check failed on - 8. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:35:067) --- Check failed on - 9. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:40:608) --- Check failed on - 10. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:46:150) --- Check failed on - 11. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(13:11:51:691) --- Check failed on - 12. Reason (1 Host is offline, 2 Host is unreachable, 3 Bad destination, 4 Other errors) - 1
+(10:25:46:809) --- Program started (NTS_Test.exe). UnixTimeStamp 1366021546
+(10:25:46:818) --- Working directory — C:\Users\afanasmax\Documents\GitHub\NASTestScript
+(10:25:46:818) --- Script use different directory, not default — C:\NasTestScript
+(10:25:46:819) --- Admin check passed
+(10:25:46:819) --- Run on system: WIN_7(7601) X64 Language (0419) [0419=Rus 0409=En] autoitX64 - 0
+(10:25:46:819) --- Desktop settings: 1920x1080 : 32Bit @ 60Hz. DPI 120
+(10:25:46:821) --- INI file not found, use default vars
+(10:25:46:824) --- Exe file found — NasTestScript.exe
+(10:25:46:829) --- Exe file found — NTS_Settings.exe
+(10:25:46:833) --- Exe file found — NTS_Ftp.exe
+(10:25:46:836) --- Exe file found — NTS_Samba.exe
+(10:25:46:837) --- Exe file found — NTS_Test.exe
+(10:25:46:838) --- Exe file found — NTS_HTTP.exe
+(10:25:46:842) --- Exe file found — NTS_Samba_UD.exe
+(10:25:46:850) --- Exe file found — NTS_Samba_IO.exe
+(10:25:46:863) --- Exe file found — NTS_Samba_NASPT.exe
+(10:25:46:864) --- All script files present. Found 9 of 9
+(10:25:49:098) --- Current loop 0
+(10:25:49:098) --- Total loops 5
+(10:25:49:099) --- Choosen tests FTP|Samba|HTTP|Samba_NASPT|Samba_IO|iSCSI_IO
+(10:25:49:099) --- Pause between each action 15
+(10:25:49:099) --- Pause func triggered. Pause time - 35
